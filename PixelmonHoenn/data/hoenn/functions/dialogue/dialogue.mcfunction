@@ -817,46 +817,46 @@ tag @s[scores={DialogueTrigger=16,TalkTime=515..}] add Dialogue16
 #Devon researcher ambushed
 #https://youtu.be/MgkqxXCmrtI?t=4204
 
-tellraw @s[scores={DialogueTrigger=17,TalkTime=1}] {"text":"<Researcher> Hmmm... Not a one to be found..."}
+tellraw @s[scores={DialogueTrigger=17,TalkTime=1}] {"text":"<Investigador> Hmmm... No hay ni uno por aquí..."}
 execute at @s[scores={DialogueTrigger=17,TalkTime=6}] as @e[x=-2720,y=69,z=-222,distance=..4,type=pixelmon:npc_chatting] at @s run tp @s ~ ~ ~ facing entity @p[distance=..15]
-tellraw @s[scores={DialogueTrigger=17,TalkTime=8}] {"text":"<Researcher> Hello, have you seen any Pokémon called Shroomish around here?"}
-tellraw @s[scores={DialogueTrigger=17,TalkTime=17}] {"text":"<Researcher> I really love that Pokémon."}
+tellraw @s[scores={DialogueTrigger=17,TalkTime=8}] {"text":"<Investigador> Hola, ¿has visto algún Pokémon llamado Shroomish por aquí?"}
+tellraw @s[scores={DialogueTrigger=17,TalkTime=17}] {"text":"<Investigador> Me encanta ese Pokémon."}
 
-#Team Grunt teleports in
+# El recluta se teletransporta
 execute as @s[scores={DialogueTrigger=17,TalkTime=24}] run particle cloud -2720 69 -228 1 1 1 0.15 300
 execute as @s[scores={DialogueTrigger=17,TalkTime=24},tag=!MusicDisabled] run stopsound @s
 execute as @s[scores={DialogueTrigger=17,TalkTime=24},tag=!MusicDisabled] run playsound minecraft:teamappears record @s ~ ~ ~ 1 1 1
 execute as @s[scores={DialogueTrigger=17,TalkTime=24},tag=!MusicDisabled] run scoreboard players set @s MusicCooldown 69
-execute as @s[scores={DialogueTrigger=17,TalkTime=24,GameVersion=1}] run summon pixelmon:npc_chatting -2720 69 -228 {HurtByTimestamp: 0, chatNum: 0, Invulnerable: 0b, FallFlying: 0b, PortalCooldown: 0, AbsorptionAmount: 0.0f, Name: "Magma Grunt", FallDistance: 0.0f, CanUpdate: 1b, DeathTime: 0s, DefaultName: 0b, Commands: {interactCommands: []}, HandDropChances: [0.085f, 0.085f], PersistenceRequired: 1b, trainerLocation: 2, DefaultGreet: 0b, TextureIndex: 4, TrainerIndex: "madame", NameIndex: 4, Health: 20.0f, LeftHanded: 0b, Air: 300s, OnGround: 1b, Rotation: [180.0f, 0.0f], HandItems: [{}, {}], ChatIndex: 0, Profession: -1s,Fire: -1s, ArmorItems: [{}, {}, {}, {}], CanPickUpLoot: 0b, CustomSteveTexture: "magmagruntmale.png", HurtTime: 0s, BaseTrainer: "Steve", Inventory: [], AIMode: 2s}
-execute as @s[scores={DialogueTrigger=17,TalkTime=24,GameVersion=2}] run summon pixelmon:npc_chatting -2720 69 -228 {HurtByTimestamp: 0, chatNum: 0, Invulnerable: 0b, FallFlying: 0b, PortalCooldown: 0, AbsorptionAmount: 0.0f, Name: "Aqua Grunt", FallDistance: 0.0f, CanUpdate: 1b, DeathTime: 0s, DefaultName: 0b, Commands: {interactCommands: []}, HandDropChances: [0.085f, 0.085f], PersistenceRequired: 1b, trainerLocation: 2, DefaultGreet: 0b, TextureIndex: 4, TrainerIndex: "madame", NameIndex: 4, Health: 20.0f, LeftHanded: 0b, Air: 300s, OnGround: 1b, Rotation: [180.0f, 0.0f], HandItems: [{}, {}], ChatIndex: 0, Profession: -1s,Fire: -1s, ArmorItems: [{}, {}, {}, {}], CanPickUpLoot: 0b, CustomSteveTexture: "aquagruntmale.png", HurtTime: 0s, BaseTrainer: "Steve", Inventory: [], AIMode: 2s}
+execute as @s[scores={DialogueTrigger=17,TalkTime=24,GameVersion=1}] run summon pixelmon:npc_chatting -2720 69 -228 {HurtByTimestamp: 0, chatNum: 0, Invulnerable: 0b, FallFlying: 0b, PortalCooldown: 0, AbsorptionAmount: 0.0f, Name: "Grunt Magma", FallDistance: 0.0f, CanUpdate: 1b, DeathTime: 0s, DefaultName: 0b, Commands: {interactCommands: []}, HandDropChances: [0.085f, 0.085f], PersistenceRequired: 1b, trainerLocation: 2, DefaultGreet: 0b, TextureIndex: 4, TrainerIndex: "madame", NameIndex: 4, Health: 20.0f, LeftHanded: 0b, Air: 300s, OnGround: 1b, Rotation: [180.0f, 0.0f], HandItems: [{}, {}], ChatIndex: 0, Profession: -1s,Fire: -1s, ArmorItems: [{}, {}, {}, {}], CanPickUpLoot: 0b, CustomSteveTexture: "magmagruntmale.png", HurtTime: 0s, BaseTrainer: "Steve", Inventory: [], AIMode: 2s}
+execute as @s[scores={DialogueTrigger=17,TalkTime=24,GameVersion=2}] run summon pixelmon:npc_chatting -2720 69 -228 {HurtByTimestamp: 0, chatNum: 0, Invulnerable: 0b, FallFlying: 0b, PortalCooldown: 0, AbsorptionAmount: 0.0f, Name: "Grunt Aqua", FallDistance: 0.0f, CanUpdate: 1b, DeathTime: 0s, DefaultName: 0b, Commands: {interactCommands: []}, HandDropChances: [0.085f, 0.085f], PersistenceRequired: 1b, trainerLocation: 2, DefaultGreet: 0b, TextureIndex: 4, TrainerIndex: "madame", NameIndex: 4, Health: 20.0f, LeftHanded: 0b, Air: 300s, OnGround: 1b, Rotation: [180.0f, 0.0f], HandItems: [{}, {}], ChatIndex: 0, Profession: -1s,Fire: -1s, ArmorItems: [{}, {}, {}, {}], CanPickUpLoot: 0b, CustomSteveTexture: "aquagruntmale.png", HurtTime: 0s, BaseTrainer: "Steve", Inventory: [], AIMode: 2s}
 
 #Red
-tellraw @s[scores={DialogueTrigger=17,TalkTime=30,GameVersion=1}] {"text":"<...> I was going to ambush you, but you had to dawdle in Petalia Woods forever, didn't you?"}
-tellraw @s[scores={DialogueTrigger=17,TalkTime=40,GameVersion=1}] {"text":"<...> I got sick of waiting, so here I am!"}
-tellraw @s[scores={DialogueTrigger=17,TalkTime=47,GameVersion=1}] {"text":"<...> You! Devon researcher! Hand over those papers!"}
+tellraw @s[scores={DialogueTrigger=17,TalkTime=30,GameVersion=1}] {"text":"<...> Iba a emboscarte, pero tenías que perder el tiempo en el Bosque Petalia, ¿verdad?"}
+tellraw @s[scores={DialogueTrigger=17,TalkTime=40,GameVersion=1}] {"text":"<...> Me cansé de esperar, así que aquí estoy!"}
+tellraw @s[scores={DialogueTrigger=17,TalkTime=47,GameVersion=1}] {"text":"<...> ¡Tú! ¡Investigador de Devon! ¡Entrega esos papeles!"}
 
 #Blue
-tellraw @s[scores={DialogueTrigger=17,TalkTime=30,GameVersion=2}] {"text":"<...> I was going to ambush you, but you had to dawdle in Petalia Woods forever, didn't you?"}
-tellraw @s[scores={DialogueTrigger=17,TalkTime=40,GameVersion=2}] {"text":"<...> I got sick of waiting, so here I am!"}
-tellraw @s[scores={DialogueTrigger=17,TalkTime=47,GameVersion=2}] {"text":"<...> You! Devon researcher! Hand over those papers!"}
+tellraw @s[scores={DialogueTrigger=17,TalkTime=30,GameVersion=2}] {"text":"<...> Iba a emboscarte, pero tenías que perder el tiempo en el Bosque Petalia, ¿verdad?"}
+tellraw @s[scores={DialogueTrigger=17,TalkTime=40,GameVersion=2}] {"text":"<...> Me cansé de esperar, así que aquí estoy!"}
+tellraw @s[scores={DialogueTrigger=17,TalkTime=47,GameVersion=2}] {"text":"<...> ¡Tú! Investigador de Devon! ¡Entrega esos papeles!"}
 
 execute at @s[scores={DialogueTrigger=17,TalkTime=54}] as @e[x=-2720,y=69,z=-222,distance=..4,type=pixelmon:npc_chatting] at @s run tp @s ~ ~ ~ facing entity @p[distance=..15]
-tellraw @s[scores={DialogueTrigger=17,TalkTime=54}] {"text":"<Researcher> Aiyeeeh! You're a Pokémon Trainer, aren't you?"}
-tellraw @s[scores={DialogueTrigger=17,TalkTime=61}] {"text":"<Researcher> You've got to help me, please!"}
+tellraw @s[scores={DialogueTrigger=17,TalkTime=54}] {"text":"<Investigador> ¡Aiyeeeh! ¿Eres un entrenador Pokémon, verdad?"}
+tellraw @s[scores={DialogueTrigger=17,TalkTime=61}] {"text":"<Investigador> ¡Tienes que ayudarme, por favor!"}
 
-#Magma Line
-tellraw @s[scores={DialogueTrigger=17,TalkTime=68,GameVersion=1}] {"text":"<...> Hunh? What do you think you're doing?"}
-tellraw @s[scores={DialogueTrigger=17,TalkTime=75,GameVersion=1}] {"text":"<...> What, you're going to protect him?"}
-tellraw @s[scores={DialogueTrigger=17,TalkTime=82,GameVersion=1}] {"text":"<...> No one who crosses Team Magma gets any mercy, not even a kid!"}
-tellraw @s[scores={DialogueTrigger=17,TalkTime=90,GameVersion=1}] {"text":"<...> Come on and battle me!"}
+#Línea Magma
+tellraw @s[scores={DialogueTrigger=17,TalkTime=68,GameVersion=1}] {"text":"<...> ¿Eh? ¿Qué crees que estás haciendo?"}
+tellraw @s[scores={DialogueTrigger=17,TalkTime=75,GameVersion=1}] {"text":"<...> ¿Qué, lo vas a proteger?"}
+tellraw @s[scores={DialogueTrigger=17,TalkTime=82,GameVersion=1}] {"text":"<...> Nadie que se cruce con el Equipo Magma recibe piedad, ¡ni siquiera un niño!"}
+tellraw @s[scores={DialogueTrigger=17,TalkTime=90,GameVersion=1}] {"text":"<...> ¡Ven y pelea conmigo!"}
 
-#Aqua Line
-tellraw @s[scores={DialogueTrigger=17,TalkTime=68,GameVersion=2}] {"text":"<...> Hunh? What do you think you're doing?"}
-tellraw @s[scores={DialogueTrigger=17,TalkTime=75,GameVersion=2}] {"text":"<...> What, you're going to protect him?"}
-tellraw @s[scores={DialogueTrigger=17,TalkTime=82,GameVersion=2}] {"text":"<...> No one who crosses Team Aqua gets any mercy, not even a kid!"}
-tellraw @s[scores={DialogueTrigger=17,TalkTime=90,GameVersion=2}] {"text":"<...> Come on and battle me!"}
+#Línea Aqua
+tellraw @s[scores={DialogueTrigger=17,TalkTime=68,GameVersion=2}] {"text":"<...> ¿Eh? ¿Qué crees que estás haciendo?"}
+tellraw @s[scores={DialogueTrigger=17,TalkTime=75,GameVersion=2}] {"text":"<...> ¿Qué, lo vas a proteger?"}
+tellraw @s[scores={DialogueTrigger=17,TalkTime=82,GameVersion=2}] {"text":"<...> Nadie que se cruce con el Equipo Aqua recibe piedad, ¡ni siquiera un niño!"}
+tellraw @s[scores={DialogueTrigger=17,TalkTime=90,GameVersion=2}] {"text":"<...> ¡Ven y pelea conmigo!"}
 
-#swaps out npc for trainer
+#Cambia npc por entrenador
 execute as @s[scores={DialogueTrigger=17,TalkTime=90}] run tp @e[x=-2720,y=69,z=-228,distance=..3,type=pixelmon:npc_chatting] 10000000 -50000 -10000000
 execute as @s[scores={DialogueTrigger=17,TalkTime=90,GameVersion=1}] unless entity @e[x=-2720,y=69,z=-228,distance=..3,type=pixelmon:npc_trainer] run summon pixelmon:npc_trainer -2720 69 -228 {Brain: {memories: {}}, HurtByTimestamp: 0, NPCLevel: 32, RaiseToCap: 0b, TeamSelectTime: 0, LevelCap: 100, Attributes: [{Base: 0.0d, Name: "forge:step_height_addition"}, {Base: 0.699999988079071d, Name: "minecraft:generic.movement_speed"}, {Base: 0.08d, Name: "forge:entity_gravity"}, {Base: 10.0d, Modifiers: [{Amount: 0.07305606215663946d, Operation: 1, Name: "Random spawn bonus"}], Name: "minecraft:generic.follow_range"}], BattleType: 0, Invulnerable: 0b, AbsorptionAmount: 0.0f, DefaultLose: 1b, Name: "Magma Grunt", FallDistance: 0.0f, WinningsTag: {item0: {id: "minecraft:nether_brick", Count: 1b}}, CanUpdate: 1b, BossTier: "notboss", DefaultName: 1b, hasMegaItem: 0, TeamPreview: 0b, HandDropChances: [0.085f, 0.085f], PersistenceRequired: 1b, FullHeal: 0b, trainerLocation: 2, oldGen: 0, OldGen: 0, pokeStore: {party1: {EVSpeed: 0s, StatsDefense: 14s, IVAttack: 11b, Growth: 3b, PHiddenAbility: 0b, Moveset: [{MoveID: "Tackle", MovePP: 35b}, {MoveID: "Howl", MovePP: 40b}], PersistentData: {}, Gender: 1b, GigantamaxFactor: 0b, Friendship: 0s, eggCycles: -1, EVAttack: 0s, StatsSpecialAttack: 10s, IVSpDef: 11b, CaughtBall: "poke_ball", IVHP: 18b, EVHP: 0s, ndex: 261, palette: "none", StatsSpecialDefense: 11s, Nature: 10b, Ability: "QuickFeet", StatsHP: 26s, IVDefense: 21b, Health: 26, SpecFlags: [], DoesLevel: 1b, EVDefense: 0s, PAbilitySlot: 1, DynamaxLevel: 0, Variant: "", StatsSpeed: 9s, EVSpecialAttack: 0s, StatsAttack: 15s, IVSpeed: 3b, Level: 9, IVSpAtt: 2b, NBT_VERSION: 2b, EVSpecialDefense: 0s, EXP: 0, RelrnMoves: [], ribbons2: []}, TempPartyEnabled: 0b}, EncMode: 1s, Air: 300s, HandItems: [{}, {}], ArmorDropChances: [0.085f, 0.085f, 0.085f, 0.085f], Profession: 0s, Pos: [-2719.491015649672d, 69.0d, -227.49195215342667d], CanPickUpLoot: 1b, HurtTime: 0s, Inventory: [], DefaultWin: 1b, WinMessage: "", Greeting: "", Exitable: 1b, TrainerRotation: 0.0f, Encounters: [], FallFlying: 0b, PortalCooldown: 0, TurnTime: 0, DeathTime: 0s, Commands: {winCommands: [], loseCommands: [], preBattleCommands: [], interactCommands: [], forfeitCommands: []}, GymLeader: 0b, EngageDistance: 10, DefaultGreet: 1b, Motion: [0.0d, -0.0784000015258789d, 0.0d], TrainerIndex: "malemagmagrunt", Health: 20.0f, BattleAIMode: 0s, LoseMessage: "", LeftHanded: 0b, OnGround: 1b, Rotation: [0.0f, 0.0f], ChatIndex: 13, Fire: -1s, ArmorItems: [{}, {}, {}, {}], CustomSteveTexture: "magmagruntmale.png", NumPokemon: 6, "forge:spawn_type": "COMMAND", BaseTrainer: "MaleMagmaGrunt", WinMoney: 360, AIMode: 1s}
 
@@ -869,48 +869,47 @@ tag @s[scores={DialogueTrigger=17,TalkTime=90..}] add Dialogue17
 
 execute as @s[scores={DialogueTrigger=18}] run clear @s minecraft:nether_brick
 
-#Magma line
-tellraw @s[scores={DialogueTrigger=18,TalkTime=1,GameVersion=1}] {"text":"<Team Magma Grunt> Grrr... You've got some nerve meddling with Team Magma!"}
-tellraw @s[scores={DialogueTrigger=18,TalkTime=9,GameVersion=1}] {"text":"<Team Magma Grunt> Come on and battle me again!"}
-tellraw @s[scores={DialogueTrigger=18,TalkTime=17,GameVersion=1}] {"text":"<Team Magma Grunt> I wish I could say that, but I'm out of Pokémon..."}
-tellraw @s[scores={DialogueTrigger=18,TalkTime=25,GameVersion=1}] {"text":"<Team Magma Grunt> And, hey, we of Team Magma are also after something in Férrica."}
-tellraw @s[scores={DialogueTrigger=18,TalkTime=33,GameVersion=1}] {"text":"<Team Magma Grunt> I'll let you go for today!"}
+#Línea Magma
+tellraw @s[scores={DialogueTrigger=18,TalkTime=1,GameVersion=1}] {"text":"<Recluta del Team Magma> Grrr... ¡Tienes valor para entrometerte con el Team Magma!"}
+tellraw @s[scores={DialogueTrigger=18,TalkTime=9,GameVersion=1}] {"text":"<Recluta del Team Magma> ¡Ven y lucha conmigo de nuevo!"}
+tellraw @s[scores={DialogueTrigger=18,TalkTime=17,GameVersion=1}] {"text":"<Recluta del Team Magma> Me gustaría poder decir eso, pero me he quedado sin Pokémon..."}
+tellraw @s[scores={DialogueTrigger=18,TalkTime=25,GameVersion=1}] {"text":"<Recluta del Team Magma> Y, oye, nosotros del Team Magma también estamos detrás de algo en Férrica."}
+tellraw @s[scores={DialogueTrigger=18,TalkTime=33,GameVersion=1}] {"text":"<Recluta del Team Magma> ¡Te dejaré ir por hoy!"}
 
-#Aqua Line
-tellraw @s[scores={DialogueTrigger=18,TalkTime=1,GameVersion=2}] {"text":"<Team Aqua Grunt> Grrr... You've got some nerve meddling with Team Aqua!"}
-tellraw @s[scores={DialogueTrigger=18,TalkTime=9,GameVersion=2}] {"text":"<Team Aqua Grunt> Come on and battle me again!"}
-tellraw @s[scores={DialogueTrigger=18,TalkTime=17,GameVersion=2}] {"text":"<Team Aqua Grunt> I wish I could say that, but I'm out of Pokémon..."}
-tellraw @s[scores={DialogueTrigger=18,TalkTime=25,GameVersion=2}] {"text":"<Team Aqua Grunt> And, hey, we of Team Aqua are also after something in Férrica."}
-tellraw @s[scores={DialogueTrigger=18,TalkTime=33,GameVersion=2}] {"text":"<Team Aqua Grunt> I'll let you go for today!"}
+#Línea Aqua
+tellraw @s[scores={DialogueTrigger=18,TalkTime=1,GameVersion=2}] {"text":"<Recluta del Team Aqua> Grrr... ¡Tienes valor para entrometerte con el Team Aqua!"}
+tellraw @s[scores={DialogueTrigger=18,TalkTime=9,GameVersion=2}] {"text":"<Recluta del Team Aqua> ¡Ven y lucha conmigo de nuevo!"}
+tellraw @s[scores={DialogueTrigger=18,TalkTime=17,GameVersion=2}] {"text":"<Recluta del Team Aqua> Me gustaría poder decir eso, pero me he quedado sin Pokémon..."}
+tellraw @s[scores={DialogueTrigger=18,TalkTime=25,GameVersion=2}] {"text":"<Recluta del Team Aqua> Y, oye, nosotros del Team Aqua también estamos detrás de algo en Férrica."}
+tellraw @s[scores={DialogueTrigger=18,TalkTime=33,GameVersion=2}] {"text":"<Recluta del Team Aqua> ¡Te dejaré ir por hoy!"}
 
 #teleports out
 execute as @s[scores={DialogueTrigger=18,TalkTime=40}] run particle cloud -2720 69 -228 1 1 1 0.15 300
 execute as @s[scores={DialogueTrigger=18,TalkTime=40}] run tp @e[x=-2720,y=69,z=-228,distance=..3,type=pixelmon:npc_trainer] 10000000 -50000 -10000000
 
+tellraw @s[scores={DialogueTrigger=18,TalkTime=45}] {"text":"<Investigador> ¡Uf... Eso estuvo muy cerca!"}
+tellraw @s[scores={DialogueTrigger=18,TalkTime=52}] {"text":"<Investigador> Gracias a ti, no me robó estos papeles. Son muy importantes"}
+tellraw @s[scores={DialogueTrigger=18,TalkTime=60}] {"text":"<Investigador> ¡Ya sé! ¡Te daré esto en agradecimiento!"}
 
-tellraw @s[scores={DialogueTrigger=18,TalkTime=45}] {"text":"<Researcher> Whew... That was awfully close!"}
-tellraw @s[scores={DialogueTrigger=18,TalkTime=52}] {"text":"<Researcher> Thanks to you, he didn't rob me of these important papers."}
-tellraw @s[scores={DialogueTrigger=18,TalkTime=60}] {"text":"<Researcher> I know! I'll give you this as my thanks!"}
-
-tellraw @s[scores={DialogueTrigger=18,TalkTime=67}] ["",{"selector":"@s","italic":true,"color":"gray"},{"text":" obtained the Exp. All!","italic":true,"color":"gray"}]
+tellraw @s[scores={DialogueTrigger=18,TalkTime=67}] ["",{"selector":"@s","italic":true,"color":"gray"},{"text":" obtuvo el Exp. All!","italic":true,"color":"gray"}]
 execute as @s[scores={DialogueTrigger=18,TalkTime=67}] run give @s pixelmon:exp_all
 execute as @s[scores={DialogueTrigger=18,TalkTime=67}] run playsound minecraft:keyitem ambient @s ~ ~ ~ 1 1 1
 
-tellraw @s[scores={DialogueTrigger=18,TalkTime=73}] {"text":"<Researcher> The Exp. Share is a super high-tech device."}
-tellraw @s[scores={DialogueTrigger=18,TalkTime=80}] {"text":"<Researcher> I had to strain every fiber of my brain and body to develop this device!"}
-tellraw @s[scores={DialogueTrigger=18,TalkTime=88}] {"text":"<Researcher> Right click the device, and battle experience will be shared by all party Pokémon!"}
-tellraw @s[scores={DialogueTrigger=18,TalkTime=98}] {"text":"<Researcher> Please give it a try!"}
-tellraw @s[scores={DialogueTrigger=18,TalkTime=105}] {"text":"<Researcher> And with this, I'll restore your Pokémon's health."}
-tellraw @s[scores={DialogueTrigger=18,TalkTime=102}] {"text":"<Researcher> It's another technical advance that I'm proud of!"}
+tellraw @s[scores={DialogueTrigger=18,TalkTime=73}] {"text":"<Investigador> El Compartir XP es un dispositivo súper avanzado."}
+tellraw @s[scores={DialogueTrigger=18,TalkTime=80}] {"text":"<Investigador> ¡Tuve que estrujarme el cerebro para desarrollar este dispositivo!"}
+tellraw @s[scores={DialogueTrigger=18,TalkTime=88}] {"text":"<Investigador> ¡Haz clic derecho en el dispositivo y la experiencia de batalla se compartirá con todos los Pokémon del equipo!"}
+tellraw @s[scores={DialogueTrigger=18,TalkTime=98}] {"text":"<Investigador> ¡Por favor, pruébalo!"}
+tellraw @s[scores={DialogueTrigger=18,TalkTime=105}] {"text":"<Investigador> Y con esto, restauraré la salud de tus Pokémon."}
+tellraw @s[scores={DialogueTrigger=18,TalkTime=102}] {"text":"<Investigador> ¡Es otro avance técnico del que estoy orgulloso!"}
 
 execute as @s[scores={DialogueTrigger=18,TalkTime=109}] run pokeheal
 execute as @s[scores={DialogueTrigger=18,TalkTime=109}] run playsound pixelmon:pixelmon.block.healeractivate ambient @s ~ ~ ~ 1 1 1
-tellraw @s[scores={DialogueTrigger=18,TalkTime=109}] {"text":"You had your Pokémon's HP restored!","italic":true,"color":"gray"}
+tellraw @s[scores={DialogueTrigger=18,TalkTime=109}] {"text":"¡La salud de tus Pokémon ha sido restaurada!","italic":true,"color":"gray"}
 
-tellraw @s[scores={DialogueTrigger=18,TalkTime=116,GameVersion=1}] {"text":"<Researcher> ...Ah! Didn't that Team Aqua thug say they were after something in Férrica, too?"}
-tellraw @s[scores={DialogueTrigger=18,TalkTime=116,GameVersion=2}] {"text":"<Researcher> ...Ah! Didn't that Team Magma thug say they were after something in Férrica, too?"}
+tellraw @s[scores={DialogueTrigger=18,TalkTime=116,GameVersion=1}] {"text":"<Investigador> ...¡Ah! ¿No dijo ese matón del Team Aqua que también estaban detrás de algo en Férrica?"}
+tellraw @s[scores={DialogueTrigger=18,TalkTime=116,GameVersion=2}] {"text":"<Investigador> ...¡Ah! ¿No dijo ese matón del Team Magma que también estaban detrás de algo en Férrica?"}
 
-tellraw @s[scores={DialogueTrigger=18,TalkTime=124}] {"text":"<Researcher> Uh-oh! It's a crisis! I can't be wasting time!"}
+tellraw @s[scores={DialogueTrigger=18,TalkTime=124}] {"text":"<Investigador> ¡Oh no! ¡Es una crisis! ¡No puedo perder el tiempo!"}
 
 #teleport researcher out
 execute as @s[scores={DialogueTrigger=18,TalkTime=130}] run execute as @s run tp @e[x=-2720,y=69,z=-222,distance=..2,type=pixelmon:npc_chatting] 10000000 -50000 -10000000
@@ -929,33 +928,33 @@ tag @s[scores={DialogueTrigger=18,TalkTime=130..}] add Dialogue18
 
 #holds player in place overlooking part of the forest
 
-tellraw @s[scores={DialogueTrigger=19,TalkTime=1}] {"text":"<Team Magma Grunt> ...This is the Petalia recon team checking in."}
-tellraw @s[scores={DialogueTrigger=19,TalkTime=1}] {"text":"<Team Magma Grunt> I'm afraid I have to begin with an apology, Ms. Courtney..."}
-tellraw @s[scores={DialogueTrigger=19,TalkTime=1}] {"text":"<Team Magma Grunt> It's not good news..."}
-tellraw @s[scores={DialogueTrigger=19,TalkTime=1}] {"text":"<Team Magma Grunt> The mission is a no-go..."}
-tellraw @s[scores={DialogueTrigger=19,TalkTime=1}] {"text":"<Team Magma Grunt> A little something cropped up and got in the way..."}
-tellraw @s[scores={DialogueTrigger=19,TalkTime=1}] {"text":"<Team Magma Grunt> ...Roger that."}
-tellraw @s[scores={DialogueTrigger=19,TalkTime=1}] {"text":"<Team Magma Grunt> ...Got it. Will do."}
-tellraw @s[scores={DialogueTrigger=19,TalkTime=1}] {"text":"<Team Magma Grunt> I'll continue investigating that energy we detected."}
+tellraw @s[scores={DialogueTrigger=19,TalkTime=1}] {"text":"<Recluta del Team Magma> ...This is the Petalia recon team checking in."}
+tellraw @s[scores={DialogueTrigger=19,TalkTime=1}] {"text":"<Recluta del Team Magma> I'm afraid I have to begin with an apology, Ms. Courtney..."}
+tellraw @s[scores={DialogueTrigger=19,TalkTime=1}] {"text":"<Recluta del Team Magma> It's not good news..."}
+tellraw @s[scores={DialogueTrigger=19,TalkTime=1}] {"text":"<Recluta del Team Magma> The mission is a no-go..."}
+tellraw @s[scores={DialogueTrigger=19,TalkTime=1}] {"text":"<Recluta del Team Magma> A little something cropped up and got in the way..."}
+tellraw @s[scores={DialogueTrigger=19,TalkTime=1}] {"text":"<Recluta del Team Magma> ...Roger that."}
+tellraw @s[scores={DialogueTrigger=19,TalkTime=1}] {"text":"<Recluta del Team Magma> ...Got it. Will do."}
+tellraw @s[scores={DialogueTrigger=19,TalkTime=1}] {"text":"<Recluta del Team Magma> I'll continue investigating that energy we detected."}
 
 #position 2
 
-tellraw @s[scores={DialogueTrigger=19,TalkTime=1}] {"text":"<Team Magma Grunt> ... ...Phew!"}
-tellraw @s[scores={DialogueTrigger=19,TalkTime=1}] {"text":"<Team Magma Grunt> But that kid sure had some promise as a Trainer, I'd say."}
+tellraw @s[scores={DialogueTrigger=19,TalkTime=1}] {"text":"<Recluta del Team Magma> ... ...Phew!"}
+tellraw @s[scores={DialogueTrigger=19,TalkTime=1}] {"text":"<Recluta del Team Magma> But that kid sure had some promise as a Trainer, I'd say."}
 
-tellraw @s[scores={DialogueTrigger=19,TalkTime=1}] {"text":"<Team Aqua Grunt> ...This is the Petalia recon team checking in."}
-tellraw @s[scores={DialogueTrigger=19,TalkTime=1}] {"text":"<Team Aqua Grunt> I'm afraid I have to begin with an apology, Mr. Matt..."}
-tellraw @s[scores={DialogueTrigger=19,TalkTime=1}] {"text":"<Team Aqua Grunt> It's not good news..."}
-tellraw @s[scores={DialogueTrigger=19,TalkTime=1}] {"text":"<Team Aqua Grunt> The mission is a no-go..."}
-tellraw @s[scores={DialogueTrigger=19,TalkTime=1}] {"text":"<Team Aqua Grunt> A little something cropped up and got in the way..."}
-tellraw @s[scores={DialogueTrigger=19,TalkTime=1}] {"text":"<Team Aqua Grunt> ...Roger that."}
-tellraw @s[scores={DialogueTrigger=19,TalkTime=1}] {"text":"<Team Aqua Grunt> ...Got it. Will do."}
-tellraw @s[scores={DialogueTrigger=19,TalkTime=1}] {"text":"<Team Aqua Grunt> I'll continue investigating that energy we detected."}
+tellraw @s[scores={DialogueTrigger=19,TalkTime=1}] {"text":"<Recluta del Team Aqua> ...This is the Petalia recon team checking in."}
+tellraw @s[scores={DialogueTrigger=19,TalkTime=1}] {"text":"<Recluta del Team Aqua> I'm afraid I have to begin with an apology, Mr. Matt..."}
+tellraw @s[scores={DialogueTrigger=19,TalkTime=1}] {"text":"<Recluta del Team Aqua> It's not good news..."}
+tellraw @s[scores={DialogueTrigger=19,TalkTime=1}] {"text":"<Recluta del Team Aqua> The mission is a no-go..."}
+tellraw @s[scores={DialogueTrigger=19,TalkTime=1}] {"text":"<Recluta del Team Aqua> A little something cropped up and got in the way..."}
+tellraw @s[scores={DialogueTrigger=19,TalkTime=1}] {"text":"<Recluta del Team Aqua> ...Roger that."}
+tellraw @s[scores={DialogueTrigger=19,TalkTime=1}] {"text":"<Recluta del Team Aqua> ...Got it. Will do."}
+tellraw @s[scores={DialogueTrigger=19,TalkTime=1}] {"text":"<Recluta del Team Aqua> I'll continue investigating that energy we detected."}
 
 #position 2
 
-tellraw @s[scores={DialogueTrigger=19,TalkTime=1}] {"text":"<Team Aqua Grunt> ... ...Phew!"}
-tellraw @s[scores={DialogueTrigger=19,TalkTime=1}] {"text":"<Team Aqua Grunt> But that kid sure had some promise as a Trainer, I'd say."}
+tellraw @s[scores={DialogueTrigger=19,TalkTime=1}] {"text":"<Recluta del Team Aqua> ... ...Phew!"}
+tellraw @s[scores={DialogueTrigger=19,TalkTime=1}] {"text":"<Recluta del Team Aqua> But that kid sure had some promise as a Trainer, I'd say."}
 
 #Blinds player
 #Teleports to exit of woods
@@ -1114,8 +1113,8 @@ execute as @s[scores={DialogueTrigger=26,TalkTime=6,GameVersion=2}] run summon p
 #Scientist
 execute as @s[scores={DialogueTrigger=26,TalkTime=12}] run summon pixelmon:npc_chatting -2706 69 -660 {HurtByTimestamp: 0, chatNum: 0, Invulnerable: 0b, FallFlying: 0b, PortalCooldown: 0, AbsorptionAmount: 0.0f, Name: "Runner2", FallDistance: 0.0f, CanUpdate: 1b, DeathTime: 0s, DefaultName: 0b, Commands: {interactCommands: []}, HandDropChances: [0.085f, 0.085f], PersistenceRequired: 1b, trainerLocation: 2, DefaultGreet: 0b, TextureIndex: 4, TrainerIndex: "madame", NameIndex: 4, Health: 20.0f, LeftHanded: 0b, Air: 300s, OnGround: 1b, Rotation: [0.0f, 0.0f], HandItems: [{}, {}], ChatIndex: 0, Profession: -1s,Fire: -1s, ArmorItems: [{}, {}, {}, {}], CanPickUpLoot: 0b, CustomSteveTexture: "scientist_m.png", HurtTime: 0s, BaseTrainer: "Steve", Inventory: [], AIMode: 2s}
 
-tellraw @s[scores={DialogueTrigger=26,TalkTime=15}] {"text":"<Researcher> Wait! Pleeeaaase!"}
-tellraw @s[scores={DialogueTrigger=26,TalkTime=25}] {"text":"<Researcher> Don't take those parts!"}
+tellraw @s[scores={DialogueTrigger=26,TalkTime=15}] {"text":"<Investigador> Wait! Pleeeaaase!"}
+tellraw @s[scores={DialogueTrigger=26,TalkTime=25}] {"text":"<Investigador> Don't take those parts!"}
 
 
 execute as @s[scores={DialogueTrigger=26,TalkTime=30}] run gamemode spectator
@@ -1128,12 +1127,12 @@ tag @s[scores={DialogueTrigger=26,TalkTime=32..}] add Dialogue26
 #https://youtu.be/MgkqxXCmrtI?t=7010
 
 execute at @s[scores={DialogueTrigger=27,TalkTime=1}] as @e[type=pixelmon:npc_chatting,distance=..10,nbt={Name:"Runner2"}] at @s run tp @s ~ ~ ~ facing entity @p[distance=..15]
-tellraw @s[scores={DialogueTrigger=27,TalkTime=3}] {"text":"<Researcher> Oh, you there! You're that fantastic Trainer who helped me in Petalia Woods!"}
+tellraw @s[scores={DialogueTrigger=27,TalkTime=3}] {"text":"<Investigador> Oh, you there! You're that fantastic Trainer who helped me in Petalia Woods!"}
 
-tellraw @s[scores={DialogueTrigger=27,TalkTime=12,GameVersion=1}] {"text":"<Researcher> Help me! I was robbed by Team Magma! I have to get the Devon Parts back!"}
-tellraw @s[scores={DialogueTrigger=27,TalkTime=12,GameVersion=2}] {"text":"<Researcher> Help me! I was robbed by Team Aqua! I have to get the Devon Parts back!"}
+tellraw @s[scores={DialogueTrigger=27,TalkTime=12,GameVersion=1}] {"text":"<Investigador> Help me! I was robbed by Team Magma! I have to get the Devon Parts back!"}
+tellraw @s[scores={DialogueTrigger=27,TalkTime=12,GameVersion=2}] {"text":"<Investigador> Help me! I was robbed by Team Aqua! I have to get the Devon Parts back!"}
 
-tellraw @s[scores={DialogueTrigger=27,TalkTime=22}] {"text":"<Researcher> If I don't... I'm going to be in serious trouble..."}
+tellraw @s[scores={DialogueTrigger=27,TalkTime=22}] {"text":"<Investigador> If I don't... I'm going to be in serious trouble..."}
 
 tag @s[scores={DialogueTrigger=27,TalkTime=22..}] add Dialogue27
 #----------------------------------------------------------------------------------------------------------
@@ -1145,15 +1144,15 @@ execute as @s[scores={DialogueTrigger=28,TalkTime=1},tag=!MusicDisabled] run sto
 execute as @s[scores={DialogueTrigger=28,TalkTime=1},tag=!MusicDisabled] run playsound minecraft:teamappears record @s ~ ~ ~ 1 1 1
 execute as @s[scores={DialogueTrigger=28,TalkTime=1},tag=!MusicDisabled] run scoreboard players set @s MusicCooldown 69
 
-tellraw @s[scores={DialogueTrigger=28,TalkTime=1,GameVersion=1}] {"text":"<Team Magma Grunt> Grah, keelhaul it all!"}
-tellraw @s[scores={DialogueTrigger=28,TalkTime=9,GameVersion=1}] {"text":"<Team Magma Grunt> This hostage Pokémon turned out to be worthless!"}
-tellraw @s[scores={DialogueTrigger=28,TalkTime=17,GameVersion=1}] {"text":"<Team Magma Grunt> And to think I made a getaway... into this tunnel to nowhere!"}
-tellraw @s[scores={DialogueTrigger=28,TalkTime=26,GameVersion=1}] {"text":"<Team Magma Grunt> And you! Now you're here to battle me. Really?"}
+tellraw @s[scores={DialogueTrigger=28,TalkTime=1,GameVersion=1}] {"text":"<Recluta del Team Magma> Grah, keelhaul it all!"}
+tellraw @s[scores={DialogueTrigger=28,TalkTime=9,GameVersion=1}] {"text":"<Recluta del Team Magma> This hostage Pokémon turned out to be worthless!"}
+tellraw @s[scores={DialogueTrigger=28,TalkTime=17,GameVersion=1}] {"text":"<Recluta del Team Magma> And to think I made a getaway... into this tunnel to nowhere!"}
+tellraw @s[scores={DialogueTrigger=28,TalkTime=26,GameVersion=1}] {"text":"<Recluta del Team Magma> And you! Now you're here to battle me. Really?"}
 
-tellraw @s[scores={DialogueTrigger=28,TalkTime=1,GameVersion=2}] {"text":"<Team Aqua Grunt> Grah, keelhaul it all!"}
-tellraw @s[scores={DialogueTrigger=28,TalkTime=9,GameVersion=2}] {"text":"<Team Aqua Grunt> This hostage Pokémon turned out to be worthless!"}
-tellraw @s[scores={DialogueTrigger=28,TalkTime=17,GameVersion=2}] {"text":"<Team Aqua Grunt> And to think I made a getaway... into this tunnel to nowhere!"}
-tellraw @s[scores={DialogueTrigger=28,TalkTime=26,GameVersion=2}] {"text":"<Team Aqua Grunt> And you! Now you're here to battle me. Really?"}
+tellraw @s[scores={DialogueTrigger=28,TalkTime=1,GameVersion=2}] {"text":"<Recluta del Team Aqua> Grah, keelhaul it all!"}
+tellraw @s[scores={DialogueTrigger=28,TalkTime=9,GameVersion=2}] {"text":"<Recluta del Team Aqua> This hostage Pokémon turned out to be worthless!"}
+tellraw @s[scores={DialogueTrigger=28,TalkTime=17,GameVersion=2}] {"text":"<Recluta del Team Aqua> And to think I made a getaway... into this tunnel to nowhere!"}
+tellraw @s[scores={DialogueTrigger=28,TalkTime=26,GameVersion=2}] {"text":"<Recluta del Team Aqua> And you! Now you're here to battle me. Really?"}
 
 tellraw @s[scores={DialogueTrigger=28,TalkTime=33}] {"text":"<Peeko> Pi pikwee!"}
 execute as @s[scores={DialogueTrigger=28,TalkTime=33}] run playsound pixelmon:pixelmon.mob.wingull ambient @s ~ ~ ~ 1 1 1
@@ -1166,15 +1165,15 @@ tag @s[scores={DialogueTrigger=28,TalkTime=33..}] add Dialogue28
 
 clear @s[scores={DialogueTrigger=29}] minecraft:nether_brick
 
-tellraw @s[scores={DialogueTrigger=29,TalkTime=1,GameVersion=1}] {"text":"<Team Magma Grunt> This is plain not right..."}
-tellraw @s[scores={DialogueTrigger=29,TalkTime=8,GameVersion=1}] {"text":"<Team Magma Grunt> The boss told me this would be a slick-and-easy job to pull."}
-tellraw @s[scores={DialogueTrigger=29,TalkTime=16,GameVersion=1}] {"text":"<Team Magma Grunt> All I had to do was steal some parts from Devon."}
-tellraw @s[scores={DialogueTrigger=29,TalkTime=23,GameVersion=1}] {"text":"<Team Magma Grunt> Tch! You want 'em back that badly, then take 'em!"}
+tellraw @s[scores={DialogueTrigger=29,TalkTime=1,GameVersion=1}] {"text":"<Recluta del Team Magma> This is plain not right..."}
+tellraw @s[scores={DialogueTrigger=29,TalkTime=8,GameVersion=1}] {"text":"<Recluta del Team Magma> The boss told me this would be a slick-and-easy job to pull."}
+tellraw @s[scores={DialogueTrigger=29,TalkTime=16,GameVersion=1}] {"text":"<Recluta del Team Magma> All I had to do was steal some parts from Devon."}
+tellraw @s[scores={DialogueTrigger=29,TalkTime=23,GameVersion=1}] {"text":"<Recluta del Team Magma> Tch! You want 'em back that badly, then take 'em!"}
 
-tellraw @s[scores={DialogueTrigger=29,TalkTime=1,GameVersion=2}] {"text":"<Team Aqua Grunt> This is plain not right..."}
-tellraw @s[scores={DialogueTrigger=29,TalkTime=8,GameVersion=2}] {"text":"<Team Aqua Grunt> The boss told me this would be a slick-and-easy job to pull."}
-tellraw @s[scores={DialogueTrigger=29,TalkTime=16,GameVersion=2}] {"text":"<Team Aqua Grunt> All I had to do was steal some parts from Devon."}
-tellraw @s[scores={DialogueTrigger=29,TalkTime=23,GameVersion=2}] {"text":"<Team Aqua Grunt> Tch! You want 'em back that badly, then take 'em!"}
+tellraw @s[scores={DialogueTrigger=29,TalkTime=1,GameVersion=2}] {"text":"<Recluta del Team Aqua> This is plain not right..."}
+tellraw @s[scores={DialogueTrigger=29,TalkTime=8,GameVersion=2}] {"text":"<Recluta del Team Aqua> The boss told me this would be a slick-and-easy job to pull."}
+tellraw @s[scores={DialogueTrigger=29,TalkTime=16,GameVersion=2}] {"text":"<Recluta del Team Aqua> All I had to do was steal some parts from Devon."}
+tellraw @s[scores={DialogueTrigger=29,TalkTime=23,GameVersion=2}] {"text":"<Recluta del Team Aqua> Tch! You want 'em back that badly, then take 'em!"}
 
 tellraw @s[scores={DialogueTrigger=29,TalkTime=30}] ["",{"selector":"@s","italic":true,"color":"gray"},{"text":" obtained the Devon Parts!","italic":true,"color":"gray"}]
 execute as @s[scores={DialogueTrigger=29,TalkTime=30}] run playsound minecraft:keyitem ambient @s ~ ~ ~ 1 1 1
@@ -1212,16 +1211,16 @@ tag @s[scores={DialogueTrigger=29,TalkTime=106..}] add Dialogue29
 #https://youtu.be/MgkqxXCmrtI?t=8566
 
 execute at @s[scores={DialogueTrigger=30,TalkTime=1}] as @e[type=pixelmon:npc_chatting,distance=..10,nbt={Name:"Runner2"}] at @s run tp @s ~ ~ ~ facing entity @p[distance=..15]
-tellraw @s[scores={DialogueTrigger=30,TalkTime=3}] {"text":"<Researcher> Oh! How did it go? Did you get my Devon Parts?"}
-tellraw @s[scores={DialogueTrigger=30,TalkTime=10}] {"text":"<Researcher> You did! You got them back!"}
-tellraw @s[scores={DialogueTrigger=30,TalkTime=17}] {"text":"<Researcher> You really are a great Trainer!"}
-tellraw @s[scores={DialogueTrigger=30,TalkTime=24}] {"text":"<Researcher> I know! As my thanks, I'll give you a Great Ball!"}
+tellraw @s[scores={DialogueTrigger=30,TalkTime=3}] {"text":"<Investigador> Oh! How did it go? Did you get my Devon Parts?"}
+tellraw @s[scores={DialogueTrigger=30,TalkTime=10}] {"text":"<Investigador> You did! You got them back!"}
+tellraw @s[scores={DialogueTrigger=30,TalkTime=17}] {"text":"<Investigador> You really are a great Trainer!"}
+tellraw @s[scores={DialogueTrigger=30,TalkTime=24}] {"text":"<Investigador> I know! As my thanks, I'll give you a Great Ball!"}
 
 tellraw @s[scores={DialogueTrigger=30,TalkTime=31}] ["",{"selector":"@s","italic":true,"color":"gray"},{"text":" obtained a Great Ball!","italic":true,"color":"gray"}]
 execute as @s[scores={DialogueTrigger=30,TalkTime=31}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 execute as @s[scores={DialogueTrigger=30,TalkTime=31}] run give @s pixelmon:great_ball
 
-tellraw @s[scores={DialogueTrigger=30,TalkTime=38}] {"text":"<Researcher> Oh, yes! Young trainer! Please come with me!"}
+tellraw @s[scores={DialogueTrigger=30,TalkTime=38}] {"text":"<Investigador> Oh, yes! Young trainer! Please come with me!"}
 
 #shot of Devon Corp
 execute as @s[scores={DialogueTrigger=30,TalkTime=38}] run tp @e[x=-2661,y=69,z=-713,distance=..30,nbt={Name:"Runner2"}] 10000000 -50000 -10000000
@@ -1237,10 +1236,10 @@ execute as @s[scores={DialogueTrigger=30,TalkTime=50}] unless entity @e[x=-2780,
 
 
 execute at @s[scores={DialogueTrigger=30,TalkTime=54}] as @e[type=pixelmon:npc_chatting,distance=..10] at @s run tp @s ~ ~ ~ facing entity @p[distance=..15]
-tellraw @s[scores={DialogueTrigger=30,TalkTime=55}] {"text":"<Researcher> This is the top floor of the Devon Corporation."}
-tellraw @s[scores={DialogueTrigger=30,TalkTime=63}] {"text":"<Researcher> Our president's office is on this floor."}
-tellraw @s[scores={DialogueTrigger=30,TalkTime=70}] {"text":"<Researcher> I can't tell you how grateful I am for what you've done for our company."}
-tellraw @s[scores={DialogueTrigger=30,TalkTime=78}] {"text":"<Researcher> Could you wait here for just a moment?"}
+tellraw @s[scores={DialogueTrigger=30,TalkTime=55}] {"text":"<Investigador> This is the top floor of the Devon Corporation."}
+tellraw @s[scores={DialogueTrigger=30,TalkTime=63}] {"text":"<Investigador> Our president's office is on this floor."}
+tellraw @s[scores={DialogueTrigger=30,TalkTime=70}] {"text":"<Investigador> I can't tell you how grateful I am for what you've done for our company."}
+tellraw @s[scores={DialogueTrigger=30,TalkTime=78}] {"text":"<Investigador> Could you wait here for just a moment?"}
 
 #researcher tps over to president's desk
 execute as @s[scores={DialogueTrigger=30,TalkTime=85}] run particle cloud -2780 38 -727 1 1 1 0.15 100
@@ -1250,8 +1249,8 @@ execute as @s[scores={DialogueTrigger=30,TalkTime=92}] run particle cloud -2780 
 
 #researcher tps back to stairs
 
-tellraw @s[scores={DialogueTrigger=30,TalkTime=95}] {"text":"<Researcher> Our president would like to have a word with you."}
-tellraw @s[scores={DialogueTrigger=30,TalkTime=103}] {"text":"<Researcher> Please come with me."}
+tellraw @s[scores={DialogueTrigger=30,TalkTime=95}] {"text":"<Investigador> Our president would like to have a word with you."}
+tellraw @s[scores={DialogueTrigger=30,TalkTime=103}] {"text":"<Investigador> Please come with me."}
 
 #tps player over to president's desk
 execute as @s[scores={DialogueTrigger=30,TalkTime=110}] run tp @s -2751.5 38 -717.5 -103 4
@@ -1600,16 +1599,16 @@ tellraw @s[scores={DialogueTrigger=42,TalkTime=1}] {"text":"<Captain Stern> Now 
 
 #Team Grunts teleport in
 
-tellraw @s[scores={DialogueTrigger=42,TalkTime=1}] {"text":"<Team Aqua Grunt> Heh heh heh heh... Hold up a moment! We'll be taking those!"}
-tellraw @s[scores={DialogueTrigger=42,TalkTime=1}] {"text":"<Team Magma Grunt> Hah hah hah hah... Just a moment! We'll be taking those parts!"}
+tellraw @s[scores={DialogueTrigger=42,TalkTime=1}] {"text":"<Recluta del Team Aqua> Heh heh heh heh... Hold up a moment! We'll be taking those!"}
+tellraw @s[scores={DialogueTrigger=42,TalkTime=1}] {"text":"<Recluta del Team Magma> Hah hah hah hah... Just a moment! We'll be taking those parts!"}
 
 tellraw @s[scores={DialogueTrigger=42,TalkTime=1}] {"text":"<Captain Stern> Wh-what was that?! Who are you people?!"}
 
-tellraw @s[scores={DialogueTrigger=42,TalkTime=1}] {"text":"<Team Aqua Grunt> We're Team Aqua!"}
-tellraw @s[scores={DialogueTrigger=42,TalkTime=1}] {"text":"<Team Aqua Grunt> Our boss wants the parts in that case, so shut your yap and fork it over!"}
+tellraw @s[scores={DialogueTrigger=42,TalkTime=1}] {"text":"<Recluta del Team Aqua> We're Team Aqua!"}
+tellraw @s[scores={DialogueTrigger=42,TalkTime=1}] {"text":"<Recluta del Team Aqua> Our boss wants the parts in that case, so shut your yap and fork it over!"}
 
-tellraw @s[scores={DialogueTrigger=42,TalkTime=1}] {"text":"<Team Magma Grunt> We are Team Magma!"}
-tellraw @s[scores={DialogueTrigger=42,TalkTime=1}] {"text":"<Team Magma Grunt> Our boss has need of the parts in that case, so relinquish it to us at once!"}
+tellraw @s[scores={DialogueTrigger=42,TalkTime=1}] {"text":"<Recluta del Team Magma> We are Team Magma!"}
+tellraw @s[scores={DialogueTrigger=42,TalkTime=1}] {"text":"<Recluta del Team Magma> Our boss has need of the parts in that case, so relinquish it to us at once!"}
 
 execute as @s[scores={DialogueTrigger=42,TalkTime=1}] run pokebattle grunt 1
 
@@ -1619,16 +1618,16 @@ tag @s[scores={DialogueTrigger=42,TalkTime=100..}] add Dialogue42
 #Post-Grunt 1 Battle
 
 
-tellraw @s[scores={DialogueTrigger=43,TalkTime=1}] {"text":"<Team Aqua Grunt> Awaaaughhh! I got beat by a little brat?"}
-tellraw @s[scores={DialogueTrigger=43,TalkTime=1}] {"text":"<Team Aqua Grunt> Oh, man, what a disaster... The boss is gonna be furious..."}
-tellraw @s[scores={DialogueTrigger=43,TalkTime=1}] {"text":"<Team Aqua Grunt> Hmph! Sniveling wimp!"}
-tellraw @s[scores={DialogueTrigger=43,TalkTime=1}] {"text":"<Team Aqua Grunt> Stand back and watch me, the 27th-strongest member of Team Aqua, take care of this kid!"}
+tellraw @s[scores={DialogueTrigger=43,TalkTime=1}] {"text":"<Recluta del Team Aqua> Awaaaughhh! I got beat by a little brat?"}
+tellraw @s[scores={DialogueTrigger=43,TalkTime=1}] {"text":"<Recluta del Team Aqua> Oh, man, what a disaster... The boss is gonna be furious..."}
+tellraw @s[scores={DialogueTrigger=43,TalkTime=1}] {"text":"<Recluta del Team Aqua> Hmph! Sniveling wimp!"}
+tellraw @s[scores={DialogueTrigger=43,TalkTime=1}] {"text":"<Recluta del Team Aqua> Stand back and watch me, the 27th-strongest member of Team Aqua, take care of this kid!"}
 
 
-tellraw @s[scores={DialogueTrigger=43,TalkTime=1}] {"text":"<Team Magma Grunt> Absurd! I was defeated by this child?"}
-tellraw @s[scores={DialogueTrigger=43,TalkTime=1}] {"text":"<Team Magma Grunt> This is quite disastrous. At this rate, I will become the target of the boss's fury!"}
-tellraw @s[scores={DialogueTrigger=43,TalkTime=1}] {"text":"<Team Magma Grunt> My, you really are incompetent..."}
-tellraw @s[scores={DialogueTrigger=43,TalkTime=1}] {"text":"<Team Magma Grunt> I suggest you observe while a future Ace Grunt of Team Magma makes short work of this infant."}
+tellraw @s[scores={DialogueTrigger=43,TalkTime=1}] {"text":"<Recluta del Team Magma> Absurd! I was defeated by this child?"}
+tellraw @s[scores={DialogueTrigger=43,TalkTime=1}] {"text":"<Recluta del Team Magma> This is quite disastrous. At this rate, I will become the target of the boss's fury!"}
+tellraw @s[scores={DialogueTrigger=43,TalkTime=1}] {"text":"<Recluta del Team Magma> My, you really are incompetent..."}
+tellraw @s[scores={DialogueTrigger=43,TalkTime=1}] {"text":"<Recluta del Team Magma> I suggest you observe while a future Ace Grunt of Team Magma makes short work of this infant."}
 
 execute as @s[scores={DialogueTrigger=43,TalkTime=1}] run pokebattle grunt 2
 
@@ -1638,16 +1637,16 @@ tag @s[scores={DialogueTrigger=43,TalkTime=100..}] add Dialogue43
 #Post-Grunt 2 Battle
 #https://youtu.be/MgkqxXCmrtI?t=12837
 
-tellraw @s[scores={DialogueTrigger=44,TalkTime=1}] {"text":"<Team Aqua Grunt> They beat the 27th-strongest Grunt in Team Aqua?"}
-tellraw @s[scores={DialogueTrigger=44,TalkTime=1}] {"text":"<Team Aqua Grunt> N-now what? If we don't get that case, we're in for it!"}
-tellraw @s[scores={DialogueTrigger=44,TalkTime=1}] {"text":"<Team Aqua Grunt> Arrgh! I never thought we'd be stopped by some meddling kid!"}
+tellraw @s[scores={DialogueTrigger=44,TalkTime=1}] {"text":"<Recluta del Team Aqua> They beat the 27th-strongest Grunt in Team Aqua?"}
+tellraw @s[scores={DialogueTrigger=44,TalkTime=1}] {"text":"<Recluta del Team Aqua> N-now what? If we don't get that case, we're in for it!"}
+tellraw @s[scores={DialogueTrigger=44,TalkTime=1}] {"text":"<Recluta del Team Aqua> Arrgh! I never thought we'd be stopped by some meddling kid!"}
 
 
 
 
-tellraw @s[scores={DialogueTrigger=44,TalkTime=1}] {"text":"<Team Magma Grunt> How could a future Ace Grunt of Team Magma be defeated?"}
-tellraw @s[scores={DialogueTrigger=44,TalkTime=1}] {"text":"<Team Magma Grunt> Wh-what should we do now? We must obtain that case at once!"}
-tellraw @s[scores={DialogueTrigger=44,TalkTime=1}] {"text":"<Team Magma Grunt> Hmph... I would never have posited that a mere child would prove such an obstacle."}
+tellraw @s[scores={DialogueTrigger=44,TalkTime=1}] {"text":"<Recluta del Team Magma> How could a future Ace Grunt of Team Magma be defeated?"}
+tellraw @s[scores={DialogueTrigger=44,TalkTime=1}] {"text":"<Recluta del Team Magma> Wh-what should we do now? We must obtain that case at once!"}
+tellraw @s[scores={DialogueTrigger=44,TalkTime=1}] {"text":"<Recluta del Team Magma> Hmph... I would never have posited that a mere child would prove such an obstacle."}
 
 #Spawns in leader
 #Shot of them
@@ -1931,17 +1930,17 @@ tag @s[scores={DialogueTrigger=49,TalkTime=100..}] add Dialogue49
 
 #Set up grunts prior at a furhter distance
 
-tellraw @s[scores={DialogueTrigger=50,TalkTime=1}] {"text":"<Team Magma Grunt> Let's keep going through Route 110 and head for Mt. Chimney!"}
-tellraw @s[scores={DialogueTrigger=50,TalkTime=1}] {"text":"<Team Magma Grunt> It'll be quite a long journey."}
-tellraw @s[scores={DialogueTrigger=50,TalkTime=1}] {"text":"<Team Magma Grunt> Let's take a rest in Mauville City, which is on the way."}
+tellraw @s[scores={DialogueTrigger=50,TalkTime=1}] {"text":"<Recluta del Team Magma> Let's keep going through Route 110 and head for Mt. Chimney!"}
+tellraw @s[scores={DialogueTrigger=50,TalkTime=1}] {"text":"<Recluta del Team Magma> It'll be quite a long journey."}
+tellraw @s[scores={DialogueTrigger=50,TalkTime=1}] {"text":"<Recluta del Team Magma> Let's take a rest in Mauville City, which is on the way."}
 
-tellraw @s[scores={DialogueTrigger=50,TalkTime=1}] {"text":"<Team Magma Grunt> I concur!"}
+tellraw @s[scores={DialogueTrigger=50,TalkTime=1}] {"text":"<Recluta del Team Magma> I concur!"}
 
-tellraw @s[scores={DialogueTrigger=50,TalkTime=1}] {"text":"<Team Aqua Grunt> Let's keep going through Route 110 and head for Mt. Chimney!"}
-tellraw @s[scores={DialogueTrigger=50,TalkTime=1}] {"text":"<Team Aqua Grunt> Wow, that's quite far."}
-tellraw @s[scores={DialogueTrigger=50,TalkTime=1}] {"text":"<Team Aqua Grunt> Why don't we take a rest in Mauville City. It's on the way."}
+tellraw @s[scores={DialogueTrigger=50,TalkTime=1}] {"text":"<Recluta del Team Aqua> Let's keep going through Route 110 and head for Mt. Chimney!"}
+tellraw @s[scores={DialogueTrigger=50,TalkTime=1}] {"text":"<Recluta del Team Aqua> Wow, that's quite far."}
+tellraw @s[scores={DialogueTrigger=50,TalkTime=1}] {"text":"<Recluta del Team Aqua> Why don't we take a rest in Mauville City. It's on the way."}
 
-tellraw @s[scores={DialogueTrigger=50,TalkTime=1}] {"text":"<Team Aqua Grunt> Great idea!"}
+tellraw @s[scores={DialogueTrigger=50,TalkTime=1}] {"text":"<Recluta del Team Aqua> Great idea!"}
 
 #tps grunts out
 
@@ -2356,18 +2355,18 @@ tag @s[scores={DialogueTrigger=71,TalkTime=43..}] add Dialogue71
 #After clearing out the tunnel
 #https://youtu.be/MgkqxXCmrtI?t=22446
 
-tellraw @s[scores={DialogueTrigger=72,TalkTime=1}] {"text":"<Researcher> Oh! It's you!"}
-tellraw @s[scores={DialogueTrigger=72,TalkTime=1}] {"text":"<Researcher> You're that Trainer who helped me in Petalia Woods and also got back my case that was stolen and then graciously delivered it to Slateport!"}
-tellraw @s[scores={DialogueTrigger=72,TalkTime=1}] {"text":"<Researcher> Captain Stern informed us that the case arrived safely! I thank you very, very much."}
-tellraw @s[scores={DialogueTrigger=72,TalkTime=1}] {"text":"<Researcher> If I were a rain cloud, I would shower you with gratitude and hail you as a hero!"}
-tellraw @s[scores={DialogueTrigger=72,TalkTime=1}] {"text":"<Researcher> For you, most wonderful Trainer, I bear good news!"}
-tellraw @s[scores={DialogueTrigger=72,TalkTime=1}] {"text":"<Researcher> Recently, our company developed a new kind of Poké Ball."}
-tellraw @s[scores={DialogueTrigger=72,TalkTime=1}] {"text":"<Researcher> As a token of our appreciation for all your help, we would like to give you one!"}
+tellraw @s[scores={DialogueTrigger=72,TalkTime=1}] {"text":"<Investigador> Oh! It's you!"}
+tellraw @s[scores={DialogueTrigger=72,TalkTime=1}] {"text":"<Investigador> You're that Trainer who helped me in Petalia Woods and also got back my case that was stolen and then graciously delivered it to Slateport!"}
+tellraw @s[scores={DialogueTrigger=72,TalkTime=1}] {"text":"<Investigador> Captain Stern informed us that the case arrived safely! I thank you very, very much."}
+tellraw @s[scores={DialogueTrigger=72,TalkTime=1}] {"text":"<Investigador> If I were a rain cloud, I would shower you with gratitude and hail you as a hero!"}
+tellraw @s[scores={DialogueTrigger=72,TalkTime=1}] {"text":"<Investigador> For you, most wonderful Trainer, I bear good news!"}
+tellraw @s[scores={DialogueTrigger=72,TalkTime=1}] {"text":"<Investigador> Recently, our company developed a new kind of Poké Ball."}
+tellraw @s[scores={DialogueTrigger=72,TalkTime=1}] {"text":"<Investigador> As a token of our appreciation for all your help, we would like to give you one!"}
 
 tellraw @s[scores={DialogueTrigger=72,TalkTime=1}] ["",{"selector":"@s","italic":true,"color":"gray"},{"text":" obtained a Repeat Ball!","italic":true,"color":"gray"}]
 execute as @s[scores={DialogueTrigger=72,TalkTime=1}] run give @s pixelmon:repeat_ball
 
-tellraw @s[scores={DialogueTrigger=72,TalkTime=1}] {"text":"<Researcher> Please do try it out! Thank you and bye-bye!"}
+tellraw @s[scores={DialogueTrigger=72,TalkTime=1}] {"text":"<Investigador> Please do try it out! Thank you and bye-bye!"}
 
 #tps out
 
@@ -2393,29 +2392,29 @@ tag @s[scores={DialogueTrigger=73,TalkTime=34..}] add Dialogue73
 #Encountering Team Grunts on the north side
 #https://youtu.be/MgkqxXCmrtI?t=22703
 
-tellraw @s[scores={DialogueTrigger=74,TalkTime=1}] {"text":"<Team Magma Grunt> Where are we supposed to be, um..."}
-tellraw @s[scores={DialogueTrigger=74,TalkTime=1}] {"text":"<Team Magma Grunt> Where are we going, again?"}
+tellraw @s[scores={DialogueTrigger=74,TalkTime=1}] {"text":"<Recluta del Team Magma> Where are we supposed to be, um..."}
+tellraw @s[scores={DialogueTrigger=74,TalkTime=1}] {"text":"<Recluta del Team Magma> Where are we going, again?"}
 
-tellraw @s[scores={DialogueTrigger=74,TalkTime=1}] {"text":"<Team Magma Grunt> It's Mt. Chimney!"}
-tellraw @s[scores={DialogueTrigger=74,TalkTime=1}] {"text":"<Team Magma Grunt> Stay spaced out, and you'll get scolded by Maxie!"}
+tellraw @s[scores={DialogueTrigger=74,TalkTime=1}] {"text":"<Recluta del Team Magma> It's Mt. Chimney!"}
+tellraw @s[scores={DialogueTrigger=74,TalkTime=1}] {"text":"<Recluta del Team Magma> Stay spaced out, and you'll get scolded by Maxie!"}
 
-tellraw @s[scores={DialogueTrigger=74,TalkTime=1}] {"text":"<Team Magma Grunt> Mt. Chimney..."}
-tellraw @s[scores={DialogueTrigger=74,TalkTime=1}] {"text":"<Team Magma Grunt> It'll be a long walk going along Route 112 to get there."}
-tellraw @s[scores={DialogueTrigger=74,TalkTime=1}] {"text":"<Team Magma Grunt> I wish I'd brought some snacks..."}
+tellraw @s[scores={DialogueTrigger=74,TalkTime=1}] {"text":"<Recluta del Team Magma> Mt. Chimney..."}
+tellraw @s[scores={DialogueTrigger=74,TalkTime=1}] {"text":"<Recluta del Team Magma> It'll be a long walk going along Route 112 to get there."}
+tellraw @s[scores={DialogueTrigger=74,TalkTime=1}] {"text":"<Recluta del Team Magma> I wish I'd brought some snacks..."}
 
 #Grunts disappear north
 
 
 
-tellraw @s[scores={DialogueTrigger=74,TalkTime=1}] {"text":"<Team Aqua Grunt> Where are we supposed to be, um..."}
-tellraw @s[scores={DialogueTrigger=74,TalkTime=1}] {"text":"<Team Aqua Grunt> Where are we going, again?"}
+tellraw @s[scores={DialogueTrigger=74,TalkTime=1}] {"text":"<Recluta del Team Aqua> Where are we supposed to be, um..."}
+tellraw @s[scores={DialogueTrigger=74,TalkTime=1}] {"text":"<Recluta del Team Aqua> Where are we going, again?"}
 
-tellraw @s[scores={DialogueTrigger=74,TalkTime=1}] {"text":"<Team Aqua Grunt> It's Mt. Chimney!"}
-tellraw @s[scores={DialogueTrigger=74,TalkTime=1}] {"text":"<Team Aqua Grunt> Stay spaced out, and you'll get scolded by Archie!"}
+tellraw @s[scores={DialogueTrigger=74,TalkTime=1}] {"text":"<Recluta del Team Aqua> It's Mt. Chimney!"}
+tellraw @s[scores={DialogueTrigger=74,TalkTime=1}] {"text":"<Recluta del Team Aqua> Stay spaced out, and you'll get scolded by Archie!"}
 
-tellraw @s[scores={DialogueTrigger=74,TalkTime=1}] {"text":"<Team Aqua Grunt> Mt. Chimney..."}
-tellraw @s[scores={DialogueTrigger=74,TalkTime=1}] {"text":"<Team Aqua Grunt> It'll be a long walk going along Route 112 to get there."}
-tellraw @s[scores={DialogueTrigger=74,TalkTime=1}] {"text":"<Team Aqua Grunt> I wonder if I should buy lunch first..."}
+tellraw @s[scores={DialogueTrigger=74,TalkTime=1}] {"text":"<Recluta del Team Aqua> Mt. Chimney..."}
+tellraw @s[scores={DialogueTrigger=74,TalkTime=1}] {"text":"<Recluta del Team Aqua> It'll be a long walk going along Route 112 to get there."}
+tellraw @s[scores={DialogueTrigger=74,TalkTime=1}] {"text":"<Recluta del Team Aqua> I wonder if I should buy lunch first..."}
 
 #Grunts disappear north
 
@@ -2790,16 +2789,16 @@ tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<Team Aqua Admin> Hm
 tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<Team Aqua Admin> There's nothing to be done about it..."}
 
 tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<Team Magma Admin> You there! I'll have the Meteorite now!"}
-tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<Team Magma Grunt> Yes, sir!"}
+tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<Recluta del Team Magma> Yes, sir!"}
 
 tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<Team Aqua Admin> Hey! Grab that Meteorite!"}
-tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<Team Aqua Grunt> Aye aye!"}
+tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<Recluta del Team Aqua> Aye aye!"}
 
 tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<Professor Cosmo> Wha-wha-wha-what?!"}
 
-tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<Team Magma Grunt> Come now! Hand over the Meteorite!"}
+tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<Recluta del Team Magma> Come now! Hand over the Meteorite!"}
 
-tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<Team Aqua Grunt> Come on! Hand over the Meteorite!"}
+tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<Recluta del Team Aqua> Come on! Hand over the Meteorite!"}
 
 tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<Professor Cosmo> Augh?!"}
 
@@ -2819,8 +2818,8 @@ tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<Team Magma Admin> A
 tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<...> Hmph..."}
 tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<...> Tch!"}
 
-tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<Team Aqua Grunt> Archie! We will go after those monsters!"}
-tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<Team Magma Grunt> Maxie... We must give chase to Team Aqua or else..."}
+tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<Recluta del Team Aqua> Archie! We will go after those monsters!"}
+tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<Recluta del Team Magma> Maxie... We must give chase to Team Aqua or else..."}
 
 tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<Archie> That's right! We're not letting them get away!"}
 tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<Maxie> Hmm..."}
@@ -3694,12 +3693,12 @@ execute as @s[scores={DialogueTrigger=99,TalkTime=45,GameVersion=2}] run playsou
 #tellraw @s[scores={DialogueTrigger=99,TalkTime=1}] {"text":"<Team Magma Admin> ..."}
 #tellraw @s[scores={DialogueTrigger=99,TalkTime=1}] {"text":"<Team Magma Admin> Who are you?"}
 #
-#tellraw @s[scores={DialogueTrigger=99,TalkTime=1}] {"text":"<Team Magma Grunt> Hah?!"}
-#tellraw @s[scores={DialogueTrigger=99,TalkTime=1}] {"text":"<Team Magma Grunt> M-Mistress Courtney!"}
-#tellraw @s[scores={DialogueTrigger=99,TalkTime=1}] {"text":"<Team Magma Grunt> That pipsqueak over there is the kid that I heard keeps getting in our way!"}
-#tellraw @s[scores={DialogueTrigger=99,TalkTime=1}] {"text":"<Team Magma Grunt> But that enviably unruffled-looking fellow there with him..."}
-#tellraw @s[scores={DialogueTrigger=99,TalkTime=1}] {"text":"<Team Magma Grunt> Hm. I feel like I ought to know him from somewhere..."}
-#tellraw @s[scores={DialogueTrigger=99,TalkTime=1}] {"text":"<Team Magma Grunt> Maybe he's a contest star?"}
+#tellraw @s[scores={DialogueTrigger=99,TalkTime=1}] {"text":"<Recluta del Team Magma> Hah?!"}
+#tellraw @s[scores={DialogueTrigger=99,TalkTime=1}] {"text":"<Recluta del Team Magma> M-Mistress Courtney!"}
+#tellraw @s[scores={DialogueTrigger=99,TalkTime=1}] {"text":"<Recluta del Team Magma> That pipsqueak over there is the kid that I heard keeps getting in our way!"}
+#tellraw @s[scores={DialogueTrigger=99,TalkTime=1}] {"text":"<Recluta del Team Magma> But that enviably unruffled-looking fellow there with him..."}
+#tellraw @s[scores={DialogueTrigger=99,TalkTime=1}] {"text":"<Recluta del Team Magma> Hm. I feel like I ought to know him from somewhere..."}
+#tellraw @s[scores={DialogueTrigger=99,TalkTime=1}] {"text":"<Recluta del Team Magma> Maybe he's a contest star?"}
 #
 #tellraw @s[scores={DialogueTrigger=99,TalkTime=1}] {"text":"<Team Magma Courtney> Yes."}
 #tellraw @s[scores={DialogueTrigger=99,TalkTime=1}] {"text":"<Team Magma Courtney> For the time being...get away from me."}
@@ -3714,12 +3713,12 @@ execute as @s[scores={DialogueTrigger=99,TalkTime=45,GameVersion=2}] run playsou
 #
 #tellraw @s[scores={DialogueTrigger=99,TalkTime=1}] {"text":"<Team Aqua Admin> Huhn?! What's this?! You?!"}
 #
-#tellraw @s[scores={DialogueTrigger=99,TalkTime=1}] {"text":"<Team Aqua Grunt> Huh?!"}
-#tellraw @s[scores={DialogueTrigger=99,TalkTime=1}] {"text":"<Team Aqua Grunt> Mr. Matt, sir!"}
-#tellraw @s[scores={DialogueTrigger=99,TalkTime=1}] {"text":"<Team Aqua Grunt> That pipsqueak over there is the kid that I heard keeps getting in our way!"}
-#tellraw @s[scores={DialogueTrigger=99,TalkTime=1}] {"text":"<Team Aqua Grunt> B-but that rather alluring gentleman with them..."}
-#tellraw @s[scores={DialogueTrigger=99,TalkTime=1}] {"text":"<Team Aqua Grunt> Oh, I feel like I should know him from somewhere..."}
-#tellraw @s[scores={DialogueTrigger=99,TalkTime=1}] {"text":"<Team Aqua Grunt> Maybe he's a contest star?"}
+#tellraw @s[scores={DialogueTrigger=99,TalkTime=1}] {"text":"<Recluta del Team Aqua> Huh?!"}
+#tellraw @s[scores={DialogueTrigger=99,TalkTime=1}] {"text":"<Recluta del Team Aqua> Mr. Matt, sir!"}
+#tellraw @s[scores={DialogueTrigger=99,TalkTime=1}] {"text":"<Recluta del Team Aqua> That pipsqueak over there is the kid that I heard keeps getting in our way!"}
+#tellraw @s[scores={DialogueTrigger=99,TalkTime=1}] {"text":"<Recluta del Team Aqua> B-but that rather alluring gentleman with them..."}
+#tellraw @s[scores={DialogueTrigger=99,TalkTime=1}] {"text":"<Recluta del Team Aqua> Oh, I feel like I should know him from somewhere..."}
+#tellraw @s[scores={DialogueTrigger=99,TalkTime=1}] {"text":"<Recluta del Team Aqua> Maybe he's a contest star?"}
 #
 #tellraw @s[scores={DialogueTrigger=99,TalkTime=1}] {"text":"<Team Aqua Admin> Oh ho! I have no time to worry about that!"}
 #tellraw @s[scores={DialogueTrigger=99,TalkTime=1}] {"text":"<Team Aqua Matt> The name's Matt! That's Team Aqua Admin Matt to you!"}
@@ -3749,7 +3748,7 @@ tag @s[scores={DialogueTrigger=99,TalkTime=50..}] add Dialogue99
 #Dialogue 100 - Southern Island
 #Team Post-Battle
 #
-#tellraw @s[scores={DialogueTrigger=100,TalkTime=1}] {"text":"<Team Magma Grunt> Puyah?!"}
+#tellraw @s[scores={DialogueTrigger=100,TalkTime=1}] {"text":"<Recluta del Team Magma> Puyah?!"}
 #tellraw @s[scores={DialogueTrigger=100,TalkTime=7}] {"text":"<Team Magma Courtney> As anticipated."}
 #tellraw @s[scores={DialogueTrigger=100,TalkTime=13}] {"text":"<Team Magma Courtney> Unanticipated."}
 #tellraw @s[scores={DialogueTrigger=100,TalkTime=19}] {"text":"<Team Magma Courtney> You. Target lock...completed."}
@@ -3758,7 +3757,7 @@ tag @s[scores={DialogueTrigger=99,TalkTime=50..}] add Dialogue99
 #
 ##tps Courtney out
 #@s[scores={DialogueTrigger=100,TalkTime=40}]
-#tellraw @s[scores={DialogueTrigger=100,TalkTime=43}] {"text":"<Team Magma Grunt> W-wait for me! Courtne-e-e-y!"}
+#tellraw @s[scores={DialogueTrigger=100,TalkTime=43}] {"text":"<Recluta del Team Magma> W-wait for me! Courtne-e-e-y!"}
 #
 ##tp Grunt out
 #@s[scores={DialogueTrigger=100,TalkTime=48}]
@@ -4359,12 +4358,12 @@ tag @s[scores={DialogueTrigger=118,TalkTime=77..}] add Dialogue118
 #Team Grunts
 #https://youtu.be/MgkqxXCmrtI?t=40620
 
-tellraw @s[scores={DialogueTrigger=119,TalkTime=1}] {"text":"<Team Magma Grunt> All right! We are leaving for Mt. Pyre!"}
-tellraw @s[scores={DialogueTrigger=119,TalkTime=1}] {"text":"<Team Magma Grunt> We are going to obtain that orb before Team Aqua does!"}
+tellraw @s[scores={DialogueTrigger=119,TalkTime=1}] {"text":"<Recluta del Team Magma> All right! We are leaving for Mt. Pyre!"}
+tellraw @s[scores={DialogueTrigger=119,TalkTime=1}] {"text":"<Recluta del Team Magma> We are going to obtain that orb before Team Aqua does!"}
 
 
-tellraw @s[scores={DialogueTrigger=119,TalkTime=1}] {"text":"<Team Aqua Grunt> OK! We're moving out to Mt. Pyre!"}
-tellraw @s[scores={DialogueTrigger=119,TalkTime=1}] {"text":"<Team Aqua Grunt> We're getting our hands on that orb before Team Magma does!"}
+tellraw @s[scores={DialogueTrigger=119,TalkTime=1}] {"text":"<Recluta del Team Aqua> OK! We're moving out to Mt. Pyre!"}
+tellraw @s[scores={DialogueTrigger=119,TalkTime=1}] {"text":"<Recluta del Team Aqua> We're getting our hands on that orb before Team Magma does!"}
 
 #tps out
 
@@ -4567,8 +4566,8 @@ tellraw @s[scores={DialogueTrigger=124,TalkTime=1}] {"text":"<Team Magma Tabitha
 
 #tps in grunts
 
-tellraw @s[scores={DialogueTrigger=124,TalkTime=1}] {"text":"<Team Magma Grunt> Yessir!"}
-tellraw @s[scores={DialogueTrigger=124,TalkTime=1}] {"text":"<Team Magma Grunt> Yessir!"}
+tellraw @s[scores={DialogueTrigger=124,TalkTime=1}] {"text":"<Recluta del Team Magma> Yessir!"}
+tellraw @s[scores={DialogueTrigger=124,TalkTime=1}] {"text":"<Recluta del Team Magma> Yessir!"}
 
 tellraw @s[scores={DialogueTrigger=124,TalkTime=1}] {"text":"<Team Magma Tabitha> This way, Leader Maxie... We should make haste."}
 
@@ -4578,7 +4577,7 @@ tellraw @s[scores={DialogueTrigger=124,TalkTime=1}] {"text":"<Maxie> Let us go."
 
 #submarine sinks
 
-tellraw @s[scores={DialogueTrigger=124,TalkTime=1}] {"text":"<Team Magma Grunt> This is not just for buying time. I'll flatten you!"}
+tellraw @s[scores={DialogueTrigger=124,TalkTime=1}] {"text":"<Recluta del Team Magma> This is not just for buying time. I'll flatten you!"}
 
 #battle grunt
 
@@ -4598,8 +4597,8 @@ tellraw @s[scores={DialogueTrigger=124,TalkTime=1}] {"text":"<Archie> Now then..
 tellraw @s[scores={DialogueTrigger=124,TalkTime=1}] {"text":"<Team Aqua Shelly> ...Got it."}
 tellraw @s[scores={DialogueTrigger=124,TalkTime=1}] {"text":"<Team Aqua Shelly> You guys! Keep that spoiled brat busy until the submarine takes off."}
 
-tellraw @s[scores={DialogueTrigger=124,TalkTime=1}] {"text":"<Team Aqua Grunt> Aye aye!"}
-tellraw @s[scores={DialogueTrigger=124,TalkTime=1}] {"text":"<Team Aqua Grunt> Ma'am!"}
+tellraw @s[scores={DialogueTrigger=124,TalkTime=1}] {"text":"<Recluta del Team Aqua> Aye aye!"}
+tellraw @s[scores={DialogueTrigger=124,TalkTime=1}] {"text":"<Recluta del Team Aqua> Ma'am!"}
 
 tellraw @s[scores={DialogueTrigger=124,TalkTime=1}] {"text":"<Team Aqua Shelly> Let's go. Archie..."}
 
@@ -4610,7 +4609,7 @@ tellraw @s[scores={DialogueTrigger=124,TalkTime=1}] {"text":"<Archie> My little 
 
 #submarine sinks
 
-tellraw @s[scores={DialogueTrigger=124,TalkTime=1}] {"text":"<Team Aqua Grunt> I can fight like Poseidon even on land!"}
+tellraw @s[scores={DialogueTrigger=124,TalkTime=1}] {"text":"<Recluta del Team Aqua> I can fight like Poseidon even on land!"}
 
 #Battle Grunt
 
@@ -4619,16 +4618,16 @@ tag @s[scores={DialogueTrigger=124,TalkTime=100..}] add Dialogue124
 #Dialogue 127 - Slateport City
 #After first grunt
 
-tellraw @s[scores={DialogueTrigger=125,TalkTime=1}] {"text":"<Team Magma Grunt> I was the one who was flattened..."}
+tellraw @s[scores={DialogueTrigger=125,TalkTime=1}] {"text":"<Recluta del Team Magma> I was the one who was flattened..."}
 
-tellraw @s[scores={DialogueTrigger=125,TalkTime=1}] {"text":"<Team Magma Grunt> Seems I have no choice..."}
-tellraw @s[scores={DialogueTrigger=125,TalkTime=1}] {"text":"<Team Magma Grunt> It takes me, a Team Magma Ace Grunt, to take care of you!"}
+tellraw @s[scores={DialogueTrigger=125,TalkTime=1}] {"text":"<Recluta del Team Magma> Seems I have no choice..."}
+tellraw @s[scores={DialogueTrigger=125,TalkTime=1}] {"text":"<Recluta del Team Magma> It takes me, a Team Magma Ace Grunt, to take care of you!"}
 
 
-tellraw @s[scores={DialogueTrigger=125,TalkTime=1}] {"text":"<Team Aqua Grunt> P-P-Poseidon is not so good at battles on land!"}
+tellraw @s[scores={DialogueTrigger=125,TalkTime=1}] {"text":"<Recluta del Team Aqua> P-P-Poseidon is not so good at battles on land!"}
 
-tellraw @s[scores={DialogueTrigger=125,TalkTime=1}] {"text":"<Team Aqua Grunt> Hmph! What a pathetic man!"}
-tellraw @s[scores={DialogueTrigger=125,TalkTime=1}] {"text":"<Team Aqua Grunt> I'm the 26th-strongest Team Aqua Grunt. Leave this to me!"}
+tellraw @s[scores={DialogueTrigger=125,TalkTime=1}] {"text":"<Recluta del Team Aqua> Hmph! What a pathetic man!"}
+tellraw @s[scores={DialogueTrigger=125,TalkTime=1}] {"text":"<Recluta del Team Aqua> I'm the 26th-strongest Team Aqua Grunt. Leave this to me!"}
 
 #battle grunt 2
 
@@ -4636,21 +4635,21 @@ tag @s[scores={DialogueTrigger=125,TalkTime=100..}] add Dialogue125
 #---------------------------------
 #Dialogue 126 - After second grunt
 
-tellraw @s[scores={DialogueTrigger=126,TalkTime=1}] {"text":"<Team Magma Grunt> But, but... I'm a Team Magma Ace Grunt. How could I have lost?"}
+tellraw @s[scores={DialogueTrigger=126,TalkTime=1}] {"text":"<Recluta del Team Magma> But, but... I'm a Team Magma Ace Grunt. How could I have lost?"}
 
-tellraw @s[scores={DialogueTrigger=126,TalkTime=1}] {"text":"<Team Magma Grunt> Mission complete!"}
-tellraw @s[scores={DialogueTrigger=126,TalkTime=1}] {"text":"<Team Magma Grunt> Let's head for the hideout and join the project to modify the submarine!"}
+tellraw @s[scores={DialogueTrigger=126,TalkTime=1}] {"text":"<Recluta del Team Magma> Mission complete!"}
+tellraw @s[scores={DialogueTrigger=126,TalkTime=1}] {"text":"<Recluta del Team Magma> Let's head for the hideout and join the project to modify the submarine!"}
 
-tellraw @s[scores={DialogueTrigger=126,TalkTime=1}] {"text":"<Team Magma Grunt> Yes! I can't wait to see the progress on the submarine."}
+tellraw @s[scores={DialogueTrigger=126,TalkTime=1}] {"text":"<Recluta del Team Magma> Yes! I can't wait to see the progress on the submarine."}
 
 
 
-tellraw @s[scores={DialogueTrigger=126,TalkTime=1}] {"text":"<Team Aqua Grunt> I'm the 26th-strongest Team Aqua Grunt. But, but...I lost!"}
+tellraw @s[scores={DialogueTrigger=126,TalkTime=1}] {"text":"<Recluta del Team Aqua> I'm the 26th-strongest Team Aqua Grunt. But, but...I lost!"}
 
-tellraw @s[scores={DialogueTrigger=126,TalkTime=1}] {"text":"<Team Aqua Grunt> Mission complete! I'm going to check out the modified sub in our hideout!"}
-tellraw @s[scores={DialogueTrigger=126,TalkTime=1}] {"text":"<Team Aqua Grunt> I'm psyched to see all the modding on the sub!"}
+tellraw @s[scores={DialogueTrigger=126,TalkTime=1}] {"text":"<Recluta del Team Aqua> Mission complete! I'm going to check out the modified sub in our hideout!"}
+tellraw @s[scores={DialogueTrigger=126,TalkTime=1}] {"text":"<Recluta del Team Aqua> I'm psyched to see all the modding on the sub!"}
 
-tellraw @s[scores={DialogueTrigger=126,TalkTime=1}] {"text":"<Team Aqua Grunt> Yes! I can't wait to see the progress on the submarine."}
+tellraw @s[scores={DialogueTrigger=126,TalkTime=1}] {"text":"<Recluta del Team Aqua> Yes! I can't wait to see the progress on the submarine."}
 
 #team tps off
 
@@ -7542,20 +7541,20 @@ tellraw @s[scores={DialogueTrigger=186,TalkTime=1}] {"text":"<...> Awawawa?!"}
 #tps scientist out
 
 tellraw @s[scores={DialogueTrigger=186,TalkTime=1}] {"text":"<...> Waaah?!"}
-tellraw @s[scores={DialogueTrigger=186,TalkTime=1}] {"text":"<Researcher> Ouch..."}
-tellraw @s[scores={DialogueTrigger=186,TalkTime=1}] {"text":"<Researcher> Oooh? You're that fantastic Trainer who helped me before!"}
+tellraw @s[scores={DialogueTrigger=186,TalkTime=1}] {"text":"<Investigador> Ouch..."}
+tellraw @s[scores={DialogueTrigger=186,TalkTime=1}] {"text":"<Investigador> Oooh? You're that fantastic Trainer who helped me before!"}
 
 #Team grunt tps out
-tellraw @s[scores={DialogueTrigger=186,TalkTime=1}] {"text":"<Team Magma Grunt> Yo, geek!"}
-tellraw @s[scores={DialogueTrigger=186,TalkTime=1}] {"text":"<Team Aqua Grunt> Yo, geek!"}
+tellraw @s[scores={DialogueTrigger=186,TalkTime=1}] {"text":"<Recluta del Team Magma> Yo, geek!"}
+tellraw @s[scores={DialogueTrigger=186,TalkTime=1}] {"text":"<Recluta del Team Aqua> Yo, geek!"}
 
-tellraw @s[scores={DialogueTrigger=186,TalkTime=1}] {"text":"<Researcher> Aiieee! You've got to help me, please!"}
+tellraw @s[scores={DialogueTrigger=186,TalkTime=1}] {"text":"<Investigador> Aiieee! You've got to help me, please!"}
 
-tellraw @s[scores={DialogueTrigger=186,TalkTime=1}] {"text":"<Team Magma Grunt> Whoa! You're the kid Trainer I met before!"}
-tellraw @s[scores={DialogueTrigger=186,TalkTime=1}] {"text":"<Team Magma Grunt> Aargh! You're getting in my way again!"}
+tellraw @s[scores={DialogueTrigger=186,TalkTime=1}] {"text":"<Recluta del Team Magma> Whoa! You're the kid Trainer I met before!"}
+tellraw @s[scores={DialogueTrigger=186,TalkTime=1}] {"text":"<Recluta del Team Magma> Aargh! You're getting in my way again!"}
 
-tellraw @s[scores={DialogueTrigger=186,TalkTime=1}] {"text":"<Team Aqua Grunt> Whoa! You're the kid Trainer I met before!"}
-tellraw @s[scores={DialogueTrigger=186,TalkTime=1}] {"text":"<Team Aqua Grunt> Aargh! You're getting in my way again!"}
+tellraw @s[scores={DialogueTrigger=186,TalkTime=1}] {"text":"<Recluta del Team Aqua> Whoa! You're the kid Trainer I met before!"}
+tellraw @s[scores={DialogueTrigger=186,TalkTime=1}] {"text":"<Recluta del Team Aqua> Aargh! You're getting in my way again!"}
 
 #pokebattle
 
@@ -7565,8 +7564,8 @@ tag @s[scores={DialogueTrigger=186,TalkTime=100..}] add Dialogue186
 #Post-Grunt Battle
 #https://youtu.be/MgkqxXCmrtI?t=67703
 
-tellraw @s[scores={DialogueTrigger=187,TalkTime=1}] {"text":"<Team Magma Grunt> Grrrr... Am I destined to lose to you all the time?"}
-tellraw @s[scores={DialogueTrigger=187,TalkTime=1}] {"text":"<Team Aqua Grunt> Grrrr... Am I destined to lose to you all the time?"}
+tellraw @s[scores={DialogueTrigger=187,TalkTime=1}] {"text":"<Recluta del Team Magma> Grrrr... Am I destined to lose to you all the time?"}
+tellraw @s[scores={DialogueTrigger=187,TalkTime=1}] {"text":"<Recluta del Team Aqua> Grrrr... Am I destined to lose to you all the time?"}
 
 #tps out
 
@@ -7618,22 +7617,22 @@ tellraw @s[scores={DialogueTrigger=189,TalkTime=1}] {"text":"<Team Aqua Grunt 3>
 
 #tps out
 
-tellraw @s[scores={DialogueTrigger=189,TalkTime=1}] {"text":"<Researcher> Th-th-thank you! You helped me again!"}
-tellraw @s[scores={DialogueTrigger=189,TalkTime=1}] {"text":"<Researcher> As my thanks, I'll give you another Great Ba—"}
-tellraw @s[scores={DialogueTrigger=189,TalkTime=1}] {"text":"<Researcher> Oh, now is not the time for this!"}
-tellraw @s[scores={DialogueTrigger=189,TalkTime=1}] {"text":"<Researcher> We're in big trouble!"}
+tellraw @s[scores={DialogueTrigger=189,TalkTime=1}] {"text":"<Investigador> Th-th-thank you! You helped me again!"}
+tellraw @s[scores={DialogueTrigger=189,TalkTime=1}] {"text":"<Investigador> As my thanks, I'll give you another Great Ba—"}
+tellraw @s[scores={DialogueTrigger=189,TalkTime=1}] {"text":"<Investigador> Oh, now is not the time for this!"}
+tellraw @s[scores={DialogueTrigger=189,TalkTime=1}] {"text":"<Investigador> We're in big trouble!"}
 
-tellraw @s[scores={DialogueTrigger=189,TalkTime=1}] {"text":"<Researcher> Team Aqua stole the control device for the Link Cable that our company had been developing..."}
-tellraw @s[scores={DialogueTrigger=189,TalkTime=1}] {"text":"<Researcher> It's a special tool called the dimensional shifter."}
-tellraw @s[scores={DialogueTrigger=189,TalkTime=1}] {"text":"<Researcher> The person who stole it was a huge man with bulging muscles!"}
+tellraw @s[scores={DialogueTrigger=189,TalkTime=1}] {"text":"<Investigador> Team Aqua stole the control device for the Link Cable that our company had been developing..."}
+tellraw @s[scores={DialogueTrigger=189,TalkTime=1}] {"text":"<Investigador> It's a special tool called the dimensional shifter."}
+tellraw @s[scores={DialogueTrigger=189,TalkTime=1}] {"text":"<Investigador> The person who stole it was a huge man with bulging muscles!"}
 
-tellraw @s[scores={DialogueTrigger=189,TalkTime=1}] {"text":"<Researcher> Team Magma stole the control device for the Link Cable that our company had been developing.."}.
-tellraw @s[scores={DialogueTrigger=189,TalkTime=1}] {"text":"<Researcher> It's a special tool called the dimensional shifter."}
-tellraw @s[scores={DialogueTrigger=189,TalkTime=1}] {"text":"<Researcher> The person who stole it was short and pretty, and she had a nasty look in her eyes!"}
+tellraw @s[scores={DialogueTrigger=189,TalkTime=1}] {"text":"<Investigador> Team Magma stole the control device for the Link Cable that our company had been developing.."}.
+tellraw @s[scores={DialogueTrigger=189,TalkTime=1}] {"text":"<Investigador> It's a special tool called the dimensional shifter."}
+tellraw @s[scores={DialogueTrigger=189,TalkTime=1}] {"text":"<Investigador> The person who stole it was short and pretty, and she had a nasty look in her eyes!"}
 
-tellraw @s[scores={DialogueTrigger=189,TalkTime=1}] {"text":"<Researcher> What shall I do? What would you do? WHAT SHALL I DO?"}
-tellraw @s[scores={DialogueTrigger=189,TalkTime=1}] {"text":"<Researcher> They must have headed for the Mossdeep Space Center..."}
-tellraw @s[scores={DialogueTrigger=189,TalkTime=1}] {"text":"<Researcher> Steven must have gone ahead to the Space Center, but...I'm worried..."}
+tellraw @s[scores={DialogueTrigger=189,TalkTime=1}] {"text":"<Investigador> What shall I do? What would you do? WHAT SHALL I DO?"}
+tellraw @s[scores={DialogueTrigger=189,TalkTime=1}] {"text":"<Investigador> They must have headed for the Mossdeep Space Center..."}
+tellraw @s[scores={DialogueTrigger=189,TalkTime=1}] {"text":"<Investigador> Steven must have gone ahead to the Space Center, but...I'm worried..."}
 
 tag @s[scores={DialogueTrigger=189,TalkTime=100..}] add Dialogue189
 #-----------------------------------------------------------------------------------------------------
@@ -9671,26 +9670,26 @@ tag @s[scores={DialogueTrigger=251,TalkTime=100..}] add Dialogue251
 #Team Grunts
 #https://youtu.be/MgkqxXCmrtI?t=89017
 
-tellraw @s[scores={DialogueTrigger=252,TalkTime=1}] {"text":"<Team Magma Grunt> Eek! You...!"}
-tellraw @s[scores={DialogueTrigger=252,TalkTime=1}] {"text":"<Team Aqua Grunt> So you really came... Blast it..."}
-tellraw @s[scores={DialogueTrigger=252,TalkTime=1}] {"text":"<Team Aqua Grunt> Hrmph! Then I guess I've just got to do it..."}
-tellraw @s[scores={DialogueTrigger=252,TalkTime=1}] {"text":"<Team Magma Grunt> No! It's too dangerous, baby!"}
-tellraw @s[scores={DialogueTrigger=252,TalkTime=1}] {"text":"<Team Aqua Grunt> It's fine, darling! I'll take care of this!"}
-tellraw @s[scores={DialogueTrigger=252,TalkTime=1}] {"text":"<Team Aqua Grunt> You just take this chance to get away!"}
-tellraw @s[scores={DialogueTrigger=252,TalkTime=1}] {"text":"<Team Magma Grunt> What are you talking about, baby?"}
-tellraw @s[scores={DialogueTrigger=252,TalkTime=1}] {"text":"<Team Magma Grunt> I couldn't possibly leave you here!"}
-tellraw @s[scores={DialogueTrigger=252,TalkTime=1}] {"text":"<Team Magma Grunt> Didn't we make a promise to each other?!"}
-tellraw @s[scores={DialogueTrigger=252,TalkTime=1}] {"text":"<Team Magma Grunt> We're supposed to survive together!"}
-tellraw @s[scores={DialogueTrigger=252,TalkTime=1}] {"text":"<Team Aqua Grunt> D-darling..."}
-tellraw @s[scores={DialogueTrigger=252,TalkTime=1}] {"text":"<Team Magma Grunt> If we're going to get caught anyway, then let's get caught together!"}
-tellraw @s[scores={DialogueTrigger=252,TalkTime=1}] {"text":"<Team Magma Grunt> I won't leave you here alone!"}
-tellraw @s[scores={DialogueTrigger=252,TalkTime=1}] {"text":"<Team Magma Grunt> Whatever punishment awaits us for betraying our teams..."}
-tellraw @s[scores={DialogueTrigger=252,TalkTime=1}] {"text":"<Team Magma Grunt> We'll face it together!"}
+tellraw @s[scores={DialogueTrigger=252,TalkTime=1}] {"text":"<Recluta del Team Magma> Eek! You...!"}
+tellraw @s[scores={DialogueTrigger=252,TalkTime=1}] {"text":"<Recluta del Team Aqua> So you really came... Blast it..."}
+tellraw @s[scores={DialogueTrigger=252,TalkTime=1}] {"text":"<Recluta del Team Aqua> Hrmph! Then I guess I've just got to do it..."}
+tellraw @s[scores={DialogueTrigger=252,TalkTime=1}] {"text":"<Recluta del Team Magma> No! It's too dangerous, baby!"}
+tellraw @s[scores={DialogueTrigger=252,TalkTime=1}] {"text":"<Recluta del Team Aqua> It's fine, darling! I'll take care of this!"}
+tellraw @s[scores={DialogueTrigger=252,TalkTime=1}] {"text":"<Recluta del Team Aqua> You just take this chance to get away!"}
+tellraw @s[scores={DialogueTrigger=252,TalkTime=1}] {"text":"<Recluta del Team Magma> What are you talking about, baby?"}
+tellraw @s[scores={DialogueTrigger=252,TalkTime=1}] {"text":"<Recluta del Team Magma> I couldn't possibly leave you here!"}
+tellraw @s[scores={DialogueTrigger=252,TalkTime=1}] {"text":"<Recluta del Team Magma> Didn't we make a promise to each other?!"}
+tellraw @s[scores={DialogueTrigger=252,TalkTime=1}] {"text":"<Recluta del Team Magma> We're supposed to survive together!"}
+tellraw @s[scores={DialogueTrigger=252,TalkTime=1}] {"text":"<Recluta del Team Aqua> D-darling..."}
+tellraw @s[scores={DialogueTrigger=252,TalkTime=1}] {"text":"<Recluta del Team Magma> If we're going to get caught anyway, then let's get caught together!"}
+tellraw @s[scores={DialogueTrigger=252,TalkTime=1}] {"text":"<Recluta del Team Magma> I won't leave you here alone!"}
+tellraw @s[scores={DialogueTrigger=252,TalkTime=1}] {"text":"<Recluta del Team Magma> Whatever punishment awaits us for betraying our teams..."}
+tellraw @s[scores={DialogueTrigger=252,TalkTime=1}] {"text":"<Recluta del Team Magma> We'll face it together!"}
 tellraw @s[scores={DialogueTrigger=252,TalkTime=1}] {"text":"<...> No need to worry about that."}
 
 #Team Magma Grunt tps in
 
-tellraw @s[scores={DialogueTrigger=252,TalkTime=1}] {"text":"<Team Magma Grunt> Y-you!!! But why?!"}
+tellraw @s[scores={DialogueTrigger=252,TalkTime=1}] {"text":"<Recluta del Team Magma> Y-you!!! But why?!"}
 tellraw @s[scores={DialogueTrigger=252,TalkTime=1}] {"text":"<Team Magma Grunt 2> Team Magma...and Team Aqua both..."}
 tellraw @s[scores={DialogueTrigger=252,TalkTime=1}] {"text":"<Team Magma Grunt 2> We've all changed."}
 tellraw @s[scores={DialogueTrigger=252,TalkTime=1}] {"text":"<Team Magma Grunt 2> And all because of this Champion next to me."}
@@ -9699,20 +9698,20 @@ tellraw @s[scores={DialogueTrigger=252,TalkTime=1}] {"text":"<...> Yeah. That's 
 
 #Team Aqua Grunt 2 tps in
 
-tellraw @s[scores={DialogueTrigger=252,TalkTime=1}] {"text":"<Team Aqua Grunt> You..."}
+tellraw @s[scores={DialogueTrigger=252,TalkTime=1}] {"text":"<Recluta del Team Aqua> You..."}
 tellraw @s[scores={DialogueTrigger=252,TalkTime=1}] {"text":"<Team Aqua Grunt 2> No one's going to come chasing after a couple of runaways like you anymore."}
-tellraw @s[scores={DialogueTrigger=252,TalkTime=1}] {"text":"<Team Magma Grunt> Then why... How did you even find us?"}
+tellraw @s[scores={DialogueTrigger=252,TalkTime=1}] {"text":"<Recluta del Team Magma> Then why... How did you even find us?"}
 tellraw @s[scores={DialogueTrigger=252,TalkTime=1}] {"text":"<Team Magma Grunt 2> I know how you think. And besides..."}
 tellraw @s[scores={DialogueTrigger=252,TalkTime=1}] {"text":"<Team Magma Grunt 2> Our leader Maxie came here, too. I could guess he had some reason for that."}
 tellraw @s[scores={DialogueTrigger=252,TalkTime=1}] {"text":"<Team Magma Grunt 2> He never misses a detail, after all. I'm sure he knew the two of you were here."}
 tellraw @s[scores={DialogueTrigger=252,TalkTime=1}] {"text":"<Team Aqua Grunt 2> And our Archie is just the same."}
 tellraw @s[scores={DialogueTrigger=252,TalkTime=1}] {"text":"<Team Aqua Grunt 2> He's testing himself against the fine Trainers at the Battle Maison, taking a good hard look at who he is."}
 tellraw @s[scores={DialogueTrigger=252,TalkTime=1}] {"text":"<Team Aqua Grunt 2> I don't think he's bothered at all about some runaway like you."}
-tellraw @s[scores={DialogueTrigger=252,TalkTime=1}] {"text":"<Team Aqua Grunt>  that's how it is, huh?"}
+tellraw @s[scores={DialogueTrigger=252,TalkTime=1}] {"text":"<Recluta del Team Aqua>  that's how it is, huh?"}
 tellraw @s[scores={DialogueTrigger=252,TalkTime=1}] {"text":"<Team Magma Grunt 2> You know."}
 tellraw @s[scores={DialogueTrigger=252,TalkTime=1}] {"text":"<Team Magma Grunt 2> To be honest, I came here to bring you back with me, but looks like maybe I shouldn't have bothered."}
 tellraw @s[scores={DialogueTrigger=252,TalkTime=1}] {"text":"<Team Magma Grunt 2> Just...take good care of her, you hear?"}
-tellraw @s[scores={DialogueTrigger=252,TalkTime=1}] {"text":"<Team Magma Grunt> You mean..."}
+tellraw @s[scores={DialogueTrigger=252,TalkTime=1}] {"text":"<Recluta del Team Magma> You mean..."}
 
 #tp Magma Grunt 2 out
 
@@ -9723,7 +9722,7 @@ tellraw @s[scores={DialogueTrigger=252,TalkTime=1}] {"text":"<Team Aqua Grunt 2>
 
 #tp Aqua Grunt 2 out
 
-tellraw @s[scores={DialogueTrigger=252,TalkTime=1}] {"text":"<Team Aqua Grunt> Y-you busybody... You bet I will..."}
+tellraw @s[scores={DialogueTrigger=252,TalkTime=1}] {"text":"<Recluta del Team Aqua> Y-you busybody... You bet I will..."}
 
 tag @s[scores={DialogueTrigger=252,TalkTime=100..}] add Dialogue252
 #-----------------------------------------------------------------------------------------------------
@@ -9731,31 +9730,31 @@ tag @s[scores={DialogueTrigger=252,TalkTime=100..}] add Dialogue252
 #Upon revisiting Magma and Aqua Grunts
 #https://youtu.be/MgkqxXCmrtI?t=89173
 
-tellraw @s[scores={DialogueTrigger=253,TalkTime=1}] {"text":"<Team Magma Grunt> We've been awaiting you, Champion!"}
-tellraw @s[scores={DialogueTrigger=253,TalkTime=1}] {"text":"<Team Aqua Grunt> You sure kept us waiting, Champ."}
-tellraw @s[scores={DialogueTrigger=253,TalkTime=1}] {"text":"<Team Magma Grunt> We spent a long time thinking things through after what happened last time."}
-tellraw @s[scores={DialogueTrigger=253,TalkTime=1}] {"text":"<Team Magma Grunt> And in the end...we both decided that we should go back to our own teams."}
-tellraw @s[scores={DialogueTrigger=253,TalkTime=1}] {"text":"<Team Aqua Grunt> Team Aqua and Team Magma..."}
-tellraw @s[scores={DialogueTrigger=253,TalkTime=1}] {"text":"<Team Aqua Grunt> We've decided to each go back to our own teams..."}
-tellraw @s[scores={DialogueTrigger=253,TalkTime=1}] {"text":"<Team Aqua Grunt> And we were thinking maybe we could help mediate things between them."}
-tellraw @s[scores={DialogueTrigger=253,TalkTime=1}] {"text":"<Team Magma Grunt> Even a couple of Grunts like us have managed to find a way to understand one another."}
-tellraw @s[scores={DialogueTrigger=253,TalkTime=1}] {"text":"<Team Magma Grunt> It seems like there has to be a way for everyone to recognize one another and move forward."}
-tellraw @s[scores={DialogueTrigger=253,TalkTime=1}] {"text":"<Team Aqua Grunt> But we were only able to dream of something like that because both teams have changed already..."}
-tellraw @s[scores={DialogueTrigger=253,TalkTime=1}] {"text":"<Team Aqua Grunt> And I think that's all thanks to what you've done."}
-tellraw @s[scores={DialogueTrigger=253,TalkTime=1}] {"text":"<Team Magma Grunt> And so that is why we hoped to ask you for a favor, Champion."}
-tellraw @s[scores={DialogueTrigger=253,TalkTime=1}] {"text":"<Team Aqua Grunt> That's right. It's something we could only ask you to do."}
+tellraw @s[scores={DialogueTrigger=253,TalkTime=1}] {"text":"<Recluta del Team Magma> We've been awaiting you, Champion!"}
+tellraw @s[scores={DialogueTrigger=253,TalkTime=1}] {"text":"<Recluta del Team Aqua> You sure kept us waiting, Champ."}
+tellraw @s[scores={DialogueTrigger=253,TalkTime=1}] {"text":"<Recluta del Team Magma> We spent a long time thinking things through after what happened last time."}
+tellraw @s[scores={DialogueTrigger=253,TalkTime=1}] {"text":"<Recluta del Team Magma> And in the end...we both decided that we should go back to our own teams."}
+tellraw @s[scores={DialogueTrigger=253,TalkTime=1}] {"text":"<Recluta del Team Aqua> Team Aqua and Team Magma..."}
+tellraw @s[scores={DialogueTrigger=253,TalkTime=1}] {"text":"<Recluta del Team Aqua> We've decided to each go back to our own teams..."}
+tellraw @s[scores={DialogueTrigger=253,TalkTime=1}] {"text":"<Recluta del Team Aqua> And we were thinking maybe we could help mediate things between them."}
+tellraw @s[scores={DialogueTrigger=253,TalkTime=1}] {"text":"<Recluta del Team Magma> Even a couple of Grunts like us have managed to find a way to understand one another."}
+tellraw @s[scores={DialogueTrigger=253,TalkTime=1}] {"text":"<Recluta del Team Magma> It seems like there has to be a way for everyone to recognize one another and move forward."}
+tellraw @s[scores={DialogueTrigger=253,TalkTime=1}] {"text":"<Recluta del Team Aqua> But we were only able to dream of something like that because both teams have changed already..."}
+tellraw @s[scores={DialogueTrigger=253,TalkTime=1}] {"text":"<Recluta del Team Aqua> And I think that's all thanks to what you've done."}
+tellraw @s[scores={DialogueTrigger=253,TalkTime=1}] {"text":"<Recluta del Team Magma> And so that is why we hoped to ask you for a favor, Champion."}
+tellraw @s[scores={DialogueTrigger=253,TalkTime=1}] {"text":"<Recluta del Team Aqua> That's right. It's something we could only ask you to do."}
 
 #Triggercommand outputs
-tellraw @s[scores={DialogueTrigger=253,TalkTime=1}] {"text":"<Team Magma Grunt> I want you to take my Camerupt. Will you accept it from a Team Magma Grunt like me?"}
+tellraw @s[scores={DialogueTrigger=253,TalkTime=1}] {"text":"<Recluta del Team Magma> I want you to take my Camerupt. Will you accept it from a Team Magma Grunt like me?"}
 #[Yes]
 
-tellraw @s[scores={DialogueTrigger=253,TalkTime=1}] {"text":"<Team Magma Grunt> Thank you very much. Please take good care of Camerupt. It loves to run more than anything, so I hope you'll play with it a whole lot..."}
+tellraw @s[scores={DialogueTrigger=253,TalkTime=1}] {"text":"<Recluta del Team Magma> Thank you very much. Please take good care of Camerupt. It loves to run more than anything, so I hope you'll play with it a whole lot..."}
 execute as @s[scores={DialogueTrigger=253,TalkTime=1}] run pokegive @s camerupt lvl:40
 
-tellraw @s[scores={DialogueTrigger=253,TalkTime=1}] {"text":"<Team Aqua Grunt> I want you to take my Sharpedo. Will you take a Pokémon from a Team Aqua Grunt like me?"}
+tellraw @s[scores={DialogueTrigger=253,TalkTime=1}] {"text":"<Recluta del Team Aqua> I want you to take my Sharpedo. Will you take a Pokémon from a Team Aqua Grunt like me?"}
 #[Yes]
 
-tellraw @s[scores={DialogueTrigger=253,TalkTime=1}] {"text":"<Team Aqua Grunt> Thanks for this. I'll leave Sharpedo in your care. Riding around on this fella's back while surfing... It's the best."}
+tellraw @s[scores={DialogueTrigger=253,TalkTime=1}] {"text":"<Recluta del Team Aqua> Thanks for this. I'll leave Sharpedo in your care. Riding around on this fella's back while surfing... It's the best."}
 execute as @s[scores={DialogueTrigger=253,TalkTime=1}] run pokegive @s sharpedo lvl:40
 
 tag @s[scores={DialogueTrigger=253,TalkTime=100..}] add Dialogue253
