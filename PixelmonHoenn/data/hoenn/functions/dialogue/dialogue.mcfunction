@@ -1062,7 +1062,7 @@ tellraw @s[scores={DialogueTrigger=24,TalkTime=8}] {"text":"<Petra> I knew you a
 tellraw @s[scores={DialogueTrigger=24,TalkTime=15}] {"text":"<Petra> Now, would you kindly demonstrate how you battle with your Pokémon?"}
 
 execute as @s[scores={DialogueTrigger=24,TalkTime=23}] run tp @s -2988 91 1356 180 0
-execute as @s[scores={DialogueTrigger=24,TalkTime=23}] run pokebattle @s Petra
+execute as @s[scores={DialogueTrigger=24,TalkTime=23}] run pokebattle @s Roxanne
 
 tag @s[scores={DialogueTrigger=24,TalkTime=23..}] add Dialogue24
 #--------------------------
