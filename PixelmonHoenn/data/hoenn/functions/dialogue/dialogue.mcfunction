@@ -443,100 +443,99 @@ tag @s[scores={DialogueTrigger=11,TalkTime=63..}] add Dialogue11
 #After battling rival for the first time
 #https://youtu.be/MgkqxXCmrtI?t=1472
 
-#Spawns Brendan or May
+# Spawns Aura or Bruno
 execute as @s[scores={DialogueTrigger=12,TalkTime=1,Rival=1}] unless entity @e[x=-2040,y=49,z=319,dy=3,type=pixelmon:npc_chatting] run summon pixelmon:npc_chatting -2040 50 319 {HurtByTimestamp: 0, chatNum: 0, Invulnerable: 0b, FallFlying: 0b, PortalCooldown: 0, AbsorptionAmount: 0.0f, Name: "May", FallDistance: 0.0f, CanUpdate: 1b, DeathTime: 0s, DefaultName: 0b, Commands: {interactCommands: []}, HandDropChances: [0.085f, 0.085f], PersistenceRequired: 1b, trainerLocation: 2, DefaultGreet: 0b, TextureIndex: 4, TrainerIndex: "madame", NameIndex: 4, Health: 20.0f, LeftHanded: 0b, Air: 300s, OnGround: 1b, Rotation: [180.0f, 0.0f], HandItems: [{}, {}], ChatIndex: 0, Profession: -1s,Fire: -1s, ArmorItems: [{}, {}, {}, {}], CanPickUpLoot: 0b, CustomSteveTexture: "may.png", HurtTime: 0s, BaseTrainer: "Steve", Inventory: [], AIMode: 2s}
 execute as @s[scores={DialogueTrigger=12,TalkTime=1,Rival=2}] unless entity @e[x=-2040,y=49,z=319,dy=3,type=pixelmon:npc_chatting] run summon pixelmon:npc_chatting -2040 50 319 {HurtByTimestamp: 0, chatNum: 0, Invulnerable: 0b, FallFlying: 0b, PortalCooldown: 0, AbsorptionAmount: 0.0f, Name: "Brendan", FallDistance: 0.0f, CanUpdate: 1b, DeathTime: 0s, DefaultName: 0b, Commands: {interactCommands: []}, HandDropChances: [0.085f, 0.085f], PersistenceRequired: 1b, trainerLocation: 2, DefaultGreet: 0b, TextureIndex: 4, TrainerIndex: "madame", NameIndex: 4, Health: 20.0f, LeftHanded: 0b, Air: 300s, OnGround: 1b, Rotation: [180.0f, 0.0f], HandItems: [{}, {}], ChatIndex: 0, Profession: -1s,Fire: -1s, ArmorItems: [{}, {}, {}, {}], CanPickUpLoot: 0b, CustomSteveTexture: "brendan.png", HurtTime: 0s, BaseTrainer: "Steve", Inventory: [], AIMode: 2s}
 
 execute as @p[x=-2040,y=49,z=319,distance=..10,tag=!Dialogue12,scores={Rival=1}] if entity @e[x=-2040,y=49,z=319,dy=3,type=pixelmon:npc_chatting,nbt={CustomSteveTexture:"brendan.png"}] run data merge entity @e[x=-2040,y=49,z=319,dy=3,type=pixelmon:npc_chatting,limit=1] {CustomSteveTexture:"may.png"}
 execute as @p[x=-2040,y=49,z=319,distance=..10,tag=!Dialogue12,scores={Rival=2}] if entity @e[x=-2040,y=49,z=319,dy=3,type=pixelmon:npc_chatting,nbt={CustomSteveTexture:"may.png"}] run data merge entity @e[x=-2040,y=49,z=319,dy=3,type=pixelmon:npc_chatting,limit=1] {CustomSteveTexture:"brendan.png"}
 
-tellraw @s[scores={DialogueTrigger=12,TalkTime=1,Rival=1}] {"text":"<Professor Birch> So I hear you beat May on your first try."}
-tellraw @s[scores={DialogueTrigger=12,TalkTime=8,Rival=1}] {"text":"<Professor Birch> That's amazing! May's been helping with my research for a long time, so she has a pretty long history as a Trainer already."}
-tellraw @s[scores={DialogueTrigger=12,TalkTime=18,Rival=1}] {"text":"<Professor Birch> Mm-hmm! I think that settles it!"}
-tellraw @s[scores={DialogueTrigger=12,TalkTime=25,Rival=1}] ["",{"text":"<Professor Birch> "},{"selector":"@s"},{"text":", I ordered this Pokédex for my research, but I think you should take it."}]
+tellraw @s[scores={DialogueTrigger=12,TalkTime=1,Rival=1}] {"text":"<Profesor Abedul> Así que escuché que venciste a Aura en tu primer intento."}
+tellraw @s[scores={DialogueTrigger=12,TalkTime=8,Rival=1}] {"text":"<Profesor Abedul> ¡Eso es increíble! Aura ha estado ayudando con mi investigación durante mucho tiempo, así que ya tiene una larga trayectoria como Entrenadora."}
+tellraw @s[scores={DialogueTrigger=12,TalkTime=18,Rival=1}] {"text":"<Profesor Abedul> ¡Mm-hmm! ¡Creo que eso lo confirma!"}
+tellraw @s[scores={DialogueTrigger=12,TalkTime=25,Rival=1}] ["",{"text":"<Profesor Abedul> "},{"selector":"@s"},{"text":", pedí esta Pokédex para mi investigación, pero creo que deberías quedártela."}]
 
-tellraw @s[scores={DialogueTrigger=12,TalkTime=1,Rival=2}] {"text":"<Professor Birch> So I hear you beat Brendan on your first try."}
-tellraw @s[scores={DialogueTrigger=12,TalkTime=8,Rival=2}] {"text":"<Professor Birch> Amazing! Brendan's been helping with my research for a long time, so he has a pretty long history as a Trainer already."}
-tellraw @s[scores={DialogueTrigger=12,TalkTime=18,Rival=2}] {"text":"<Professor Birch> Mm-hmm! I think that settles it!"}
-tellraw @s[scores={DialogueTrigger=12,TalkTime=25,Rival=2}] ["",{"text":"<Professor Birch> "},{"selector":"@s"},{"text":", I ordered this Pokédex for my research, but I think you should take it."}]
+tellraw @s[scores={DialogueTrigger=12,TalkTime=1,Rival=2}] {"text":"<Profesor Abedul> Así que escuché que venciste a Bruno en tu primer intento."}
+tellraw @s[scores={DialogueTrigger=12,TalkTime=8,Rival=2}] {"text":"<Profesor Abedul> ¡Increíble! Bruno ha estado ayudando con mi investigación durante mucho tiempo, así que ya tiene una larga trayectoria como Entrenador."}
+tellraw @s[scores={DialogueTrigger=12,TalkTime=18,Rival=2}] {"text":"<Profesor Abedul> ¡Mm-hmm! ¡Creo que eso lo confirma!"}
+tellraw @s[scores={DialogueTrigger=12,TalkTime=25,Rival=2}] ["",{"text":"<Profesor Abedul> "},{"selector":"@s"},{"text":", pedí esta Pokédex para mi investigación, pero creo que deberías quedártela."}]
 
-tellraw @s[scores={DialogueTrigger=12,TalkTime=32}] ["",{"selector":"@s","italic":true,"color":"gray"},{"text":" received a Pokédex!","italic":true,"color":"gray"}]
+tellraw @s[scores={DialogueTrigger=12,TalkTime=32}] ["",{"text":"¡","italic":true,"color":"gray"},{"selector":"@s","italic":true,"color":"gray"},{"text":" recibió una Pokédex!","italic":true,"color":"gray"}]
 execute as @s[scores={DialogueTrigger=12,TalkTime=32}] run playsound minecraft:keyitem ambient @s ~ ~ ~ 1 1 1
 
-tellraw @s[scores={DialogueTrigger=12,TalkTime=37}] {"text":"<Professor Birch> That Pokédex is a high-tech tool that automatically makes a record of any Pokémon you meet or catch."}
+tellraw @s[scores={DialogueTrigger=12,TalkTime=37}] {"text":"<Profesor Abedul> Esa Pokédex es una herramienta de alta tecnología que registra automáticamente cualquier Pokémon que encuentres o atrapes."}
 
-tellraw @s[scores={DialogueTrigger=12,TalkTime=46,Rival=1}] {"text":"<Professor Birch> My girl May takes hers with her everywhere she goes."}
-tellraw @s[scores={DialogueTrigger=12,TalkTime=54,Rival=1}] {"text":"<Professor Birch> Whenever she catches a rare Pokémon and records its data in the Pokédex, why, she comes to seek me out wherever I am in the field and show me!"}
+tellraw @s[scores={DialogueTrigger=12,TalkTime=46,Rival=1}] {"text":"<Profesor Abedul> Mi hija Aura lleva la suya a todas partes."}
+tellraw @s[scores={DialogueTrigger=12,TalkTime=54,Rival=1}] {"text":"<Profesor Abedul> Siempre que atrapa un Pokémon raro y registra sus datos en la Pokédex, ¡viene a buscarme en el campo para mostrármelos!"}
 
-tellraw @s[scores={DialogueTrigger=12,TalkTime=46,Rival=2}] {"text":"<Professor Birch> My boy Brendan takes his with him everywhere he goes."}
-tellraw @s[scores={DialogueTrigger=12,TalkTime=54,Rival=2}] {"text":"<Professor Birch> Whenever he catches a rare Pokémon and records its data in the Pokédex, why, he comes to seek me out wherever I am in the field and show me!"}
+tellraw @s[scores={DialogueTrigger=12,TalkTime=46,Rival=2}] {"text":"<Profesor Abedul> Mi hijo Bruno lleva la suya a todas partes."}
+tellraw @s[scores={DialogueTrigger=12,TalkTime=54,Rival=2}] {"text":"<Profesor Abedul> Siempre que atrapa un Pokémon raro y registra sus datos en la Pokédex, ¡viene a buscarme en el campo para mostrármelos!"}
 
-tellraw @s[scores={DialogueTrigger=12,TalkTime=64}] {"text":"<Professor Birch> The Pokémon and people you will meet..."}
-tellraw @s[scores={DialogueTrigger=12,TalkTime=71}] {"text":"<Professor Birch> And the great expanse of nature that lies before you!"}
-tellraw @s[scores={DialogueTrigger=12,TalkTime=78}] {"text":"<Professor Birch> Experience them both while you fill in your Pokédex. I'd love it if your world seemed wider than ever!"}
-tellraw @s[scores={DialogueTrigger=12,TalkTime=85}] {"text":"<Professor Birch> Though I'd love it even more if you came back from time to time to show me what progress you've made."}
-tellraw @s[scores={DialogueTrigger=12,TalkTime=94}] {"text":"<Professor Birch> ...Arghhh! I'm getting the itch to get out and do fieldwork again!"}
+tellraw @s[scores={DialogueTrigger=12,TalkTime=64}] {"text":"<Profesor Abedul> Los Pokémon y las personas que conocerás..."}
+tellraw @s[scores={DialogueTrigger=12,TalkTime=71}] {"text":"<Profesor Abedul> ¡Y la gran extensión de la naturaleza que se extiende ante ti!"}
+tellraw @s[scores={DialogueTrigger=12,TalkTime=78}] {"text":"<Profesor Abedul> ¡Experiméntalos mientras completas tu Pokédex! Me encantaría que tu mundo pareciera más amplio que nunca."}
+tellraw @s[scores={DialogueTrigger=12,TalkTime=85}] {"text":"<Profesor Abedul> Aunque me encantaría aún más si volvieras de vez en cuando para mostrarme el progreso que has hecho."}
+tellraw @s[scores={DialogueTrigger=12,TalkTime=94}] {"text":"<Profesor Abedul> ...¡Arghhh! ¡Me está dando ganas de salir y hacer trabajo de campo otra vez!"}
 
+tellraw @s[scores={DialogueTrigger=12,TalkTime=102,Rival=1}] ["",{"text":"<Aura> Oh, wow, "},{"selector":"@s"},{"text":"! ¡Ahora también tienes una Pokédex!"}]
+tellraw @s[scores={DialogueTrigger=12,TalkTime=109,Rival=1}] {"text":"<Aura> Eso es genial. ¡Igual que yo!"}
+tellraw @s[scores={DialogueTrigger=12,TalkTime=116,Rival=1}] {"text":"<Aura> Entonces... ¡Te daré algo también!"}
+tellraw @s[scores={DialogueTrigger=12,TalkTime=123,Rival=1}] {"text":"<Aura> ¡Algunas Poké Balls que puedes usar para atrapar Pokémon salvajes!"}
 
-tellraw @s[scores={DialogueTrigger=12,TalkTime=102,Rival=1}] ["",{"text":"<May> Oh, wow, "},{"selector":"@s"},{"text":"! Now you've got a Pokédex, too!"}]
-tellraw @s[scores={DialogueTrigger=12,TalkTime=109,Rival=1}] {"text":"<May> That's great. Just like me!"}
-tellraw @s[scores={DialogueTrigger=12,TalkTime=116,Rival=1}] {"text":"<May> Then here... I'll give you something, too!"}
-tellraw @s[scores={DialogueTrigger=12,TalkTime=123,Rival=1}] {"text":"<May> Some Poké Balls that you can use to catch wild Pokémon!"}
-
-tellraw @s[scores={DialogueTrigger=12,TalkTime=129,Rival=1}] ["",{"selector":"@s","italic":true,"color":"gray"},{"text":" obtained Poké Balls!","italic":true,"color":"gray"}]
+tellraw @s[scores={DialogueTrigger=12,TalkTime=129,Rival=1}] ["",{"text":"¡","italic":true,"color":"gray"},{"selector":"@s","italic":true,"color":"gray"},{"text":" obtuvo Poké Balls!","italic":true,"color":"gray"}]
 execute as @s[scores={DialogueTrigger=12,TalkTime=129,Rival=1}] run give @s pixelmon:poke_ball 10
 execute as @s[scores={DialogueTrigger=12,TalkTime=129,Rival=1}] run playsound minecraft:keyitem ambient @s ~ ~ ~ 1 1 1
 
-tellraw @s[scores={DialogueTrigger=12,TalkTime=135,Rival=1}] {"text":"<May> If you catch a Pokémon in the wild and battle together with it for a while, it will grow stronger for you!"}
-tellraw @s[scores={DialogueTrigger=12,TalkTime=144,Rival=1}] {"text":"<May> Take that as a bit of advice from a more experienced Trainer like me!"}
-tellraw @s[scores={DialogueTrigger=12,TalkTime=151,Rival=1}] {"text":"<May> I'm going to get ready to head out from Littleroot soon myself."}
-tellraw @s[scores={DialogueTrigger=12,TalkTime=159,Rival=1}] {"text":"<May> I can't wait to see what kind of Pokémon I'm going to meet..."}
+tellraw @s[scores={DialogueTrigger=12,TalkTime=135,Rival=1}] {"text":"<Aura> Si atrapas un Pokémon salvaje y luchas con él durante un tiempo, ¡se volverá más fuerte contigo!"}
+tellraw @s[scores={DialogueTrigger=12,TalkTime=144,Rival=1}] {"text":"<Aura> ¡Tómalo como un consejo de una Entrenadora más experimentada como yo!"}
+tellraw @s[scores={DialogueTrigger=12,TalkTime=151,Rival=1}] {"text":"<Aura> Yo me voy a preparar para salir de Villa Raiz pronto."}
+tellraw @s[scores={DialogueTrigger=12,TalkTime=159,Rival=1}] {"text":"<Aura> No puedo esperar a ver qué tipo de Pokémon voy a conocer..."}
 
+tellraw @s[scores={DialogueTrigger=12,TalkTime=102,Rival=2}] ["",{"text":"<Bruno> Oh, wow, "},{"selector":"@s"},{"text":"! ¡Ahora también tienes una Pokédex!"}]
+tellraw @s[scores={DialogueTrigger=12,TalkTime=109,Rival=2}] {"text":"<Bruno> Eso es genial. ¡Igual que yo!"}
+tellraw @s[scores={DialogueTrigger=12,TalkTime=116,Rival=2}] {"text":"<Bruno> Entonces... ¡Te daré algo también!"}
+tellraw @s[scores={DialogueTrigger=12,TalkTime=123,Rival=2}] {"text":"<Bruno> ¡Algunas Poké Balls que puedes usar para atrapar Pokémon salvajes!"}
 
-tellraw @s[scores={DialogueTrigger=12,TalkTime=102,Rival=2}] ["",{"text":"<Brendan> Oh, wow, "},{"selector":"@s"},{"text":"! Now you've got a Pokédex, too!"}]
-tellraw @s[scores={DialogueTrigger=12,TalkTime=109,Rival=2}] {"text":"<Brendan> That's great. Just like me!"}
-tellraw @s[scores={DialogueTrigger=12,TalkTime=116,Rival=2}] {"text":"<Brendan> Then here... I'll give you something, too!"}
-tellraw @s[scores={DialogueTrigger=12,TalkTime=123,Rival=2}] {"text":"<Brendan> Some Poké Balls that you can use to catch wild Pokémon!"}
-
-tellraw @s[scores={DialogueTrigger=12,TalkTime=129,Rival=2}] ["",{"selector":"@s","italic":true,"color":"gray"},{"text":" obtained Poké Balls!","italic":true,"color":"gray"}]
+tellraw @s[scores={DialogueTrigger=12,TalkTime=129,Rival=2}] ["",{"selector":"@s","italic":true,"color":"gray"},{"text":" obtuvo Poké Balls!","italic":true,"color":"gray"}]
 execute as @s[scores={DialogueTrigger=12,TalkTime=129,Rival=2}] run give @s pixelmon:poke_ball 10
 execute as @s[scores={DialogueTrigger=12,TalkTime=129,Rival=2}] run playsound minecraft:keyitem ambient @s ~ ~ ~ 1 1 1
 
-tellraw @s[scores={DialogueTrigger=12,TalkTime=135,Rival=2}] {"text":"<Brendan> If you catch a Pokémon in the wild and battle together with it for a while, it will grow stronger for you!"}
-tellraw @s[scores={DialogueTrigger=12,TalkTime=144,Rival=2}] {"text":"<Brendan> Take that as a bit of advice from a more experienced Trainer like me!"}
-tellraw @s[scores={DialogueTrigger=12,TalkTime=151,Rival=2}] {"text":"<Brendan> I'm going to get ready to head out from Littleroot soon myself."}
-tellraw @s[scores={DialogueTrigger=12,TalkTime=159,Rival=2}] {"text":"<Brendan> I can't wait to see what kind of Pokémon I'm going to meet..."}
+tellraw @s[scores={DialogueTrigger=12,TalkTime=135,Rival=2}] {"text":"<Bruno> Si atrapas un Pokémon salvaje y luchas con él durante un tiempo, ¡se volverá más fuerte contigo!"}
+tellraw @s[scores={DialogueTrigger=12,TalkTime=144,Rival=2}] {"text":"<Bruno> ¡Tómalo como un consejo de un Entrenador más experimentado como yo!"}
+tellraw @s[scores={DialogueTrigger=12,TalkTime=151,Rival=2}] {"text":"<Bruno> Yo me voy a preparar para salir de Villa Raiz pronto."}
+tellraw @s[scores={DialogueTrigger=12,TalkTime=159,Rival=2}] {"text":"<Bruno> No puedo esperar a ver qué tipo de Pokémon voy a conocer..."}
 
 #tp out
 execute as @s[scores={DialogueTrigger=12,TalkTime=166}] run particle cloud -2040 49 319 1 1 1 0.15 300
 execute as @s[scores={DialogueTrigger=12,TalkTime=166}] run tp @e[type=pixelmon:npc_chatting,x=-2040,y=49,z=319,dy=3] 10000000 -50000 -10000000
 
 tag @s[scores={DialogueTrigger=12,TalkTime=166..}] add Dialogue12
+
 #----------------------------------------------------------------------------------------------------------
-#Dialogue 13 - Littleroot Town
-#Mom after Birch's Lab
-#https://youtu.be/MgkqxXCmrtI?t=1634
+# Diálogo 13 - Pueblo Littleroot
+# Mamá después del Laboratorio del Profesor Abedul
+# https://youtu.be/MgkqxXCmrtI?t=1634
 
-tellraw @s[scores={DialogueTrigger=13,TalkTime=1}] ["",{"text":"<...> "},{"selector":"@s"},{"text":"! Wait!"}]
+tellraw @s[scores={DialogueTrigger=13,TalkTime=1}] ["",{"text":"<...> "},{"selector":"@s"},{"text":"¡Espera!"}]
 
-#mom tps in
+# Mamá aparece
 execute as @s[scores={DialogueTrigger=13,TalkTime=7}] run particle cloud -2026 69 285 1 1 1 0.15 300
 execute as @s[scores={DialogueTrigger=13,TalkTime=7}] run summon pixelmon:npc_chatting -2026 69 285 {Brain: {memories: {}}, HurtByTimestamp: 0, ForgeData: {}, chatNum: 0, Attributes: [{Base: 0.08d, Name: "forge:entity_gravity"}, {Base: 0.699999988079071d, Name: "minecraft:generic.movement_speed"}, {Base: 0.0d, Name: "forge:step_height_addition"}], Invulnerable: 0b, FallFlying: 0b, PortalCooldown: 0, AbsorptionAmount: 0.0f, Name: "Mom", FallDistance: 0.0f, CanUpdate: 1b, DeathTime: 0s, DefaultName: 0b, Commands: {interactCommands: []}, HandDropChances: [0.085f, 0.085f], PersistenceRequired: 1b, Tags: ["NpcChatting"], trainerLocation: 2, DefaultGreet: 0b, Motion: [0.0d, -0.0784000015258789d, 0.0d], TextureIndex: 0, TrainerIndex: "bride", NameIndex: 3, Health: 20.0f, LeftHanded: 0b, Air: 300s, OnGround: 1b, Rotation: [0.0f, 0.0f], HandItems: [{}, {}], ChatIndex: 1, ArmorDropChances: [0.085f, 0.085f, 0.085f, 0.085f], Profession: -1s, Fire: -1s, ArmorItems: [{}, {}, {}, {}], CanPickUpLoot: 0b, CustomSteveTexture: "dress.png", HurtTime: 0s, BaseTrainer: "Steve", Inventory: [], AIMode: 3s}
 
-tellraw @s[scores={DialogueTrigger=13,TalkTime=10}] ["",{"text":"<Mom> "},{"selector":"@s"},{"text":"! "},{"selector":"@s"},{"text":"!"}]
-tellraw @s[scores={DialogueTrigger=13,TalkTime=17}] {"text":"<Mom> Did you introduce yourself to Professor Birch?"}
-tellraw @s[scores={DialogueTrigger=13,TalkTime=24}] {"text":"<Mom> Oh! What an adorable Pokémon!"}
-tellraw @s[scores={DialogueTrigger=13,TalkTime=31}] {"text":"<Mom> You got it from the professor?"}
-tellraw @s[scores={DialogueTrigger=13,TalkTime=38}] {"text":"<Mom> How nice! You are your father's child, all right..."}
-tellraw @s[scores={DialogueTrigger=13,TalkTime=46}] {"text":"<Mom> You look good together with a Pokémon!"}
-tellraw @s[scores={DialogueTrigger=13,TalkTime=50}] {"text":"<Mom> ..."}
-tellraw @s[scores={DialogueTrigger=13,TalkTime=53}] {"text":"<Mom> To think that you have your very own Pokémon now..."}
-tellraw @s[scores={DialogueTrigger=13,TalkTime=60}] {"text":"<Mom> Your father will be overjoyed. But don't push yourself too hard."}
-tellraw @s[scores={DialogueTrigger=13,TalkTime=68}] {"text":"<Mom> If anything happens, you can always come home, honey."}
+tellraw @s[scores={DialogueTrigger=13,TalkTime=10}] ["",{"text":"<Mamá> "},{"selector":"@s"},{"text":" ¡"},{"selector":"@s"},{"text":"!"}]
+tellraw @s[scores={DialogueTrigger=13,TalkTime=17}] {"text":"<Mamá> ¿Te presentaste al Profesor Abedul?"}
+tellraw @s[scores={DialogueTrigger=13,TalkTime=24}] {"text":"<Mamá> ¡Oh! ¡Qué Pokémon tan adorable!"}
+tellraw @s[scores={DialogueTrigger=13,TalkTime=31}] {"text":"<Mamá> ¿Te lo dio el profesor?"}
+tellraw @s[scores={DialogueTrigger=13,TalkTime=38}] {"text":"<Mamá> ¡Qué bien! Eres hijo de tu padre, eso es seguro..."}
+tellraw @s[scores={DialogueTrigger=13,TalkTime=46}] {"text":"<Mamá> ¡Te ves muy bien con un Pokémon!"}
+tellraw @s[scores={DialogueTrigger=13,TalkTime=50}] {"text":"<Mamá> ..."}
+tellraw @s[scores={DialogueTrigger=13,TalkTime=53}] {"text":"<Mamá> Pensar que ahora tienes tu propio Pokémon..."}
+tellraw @s[scores={DialogueTrigger=13,TalkTime=60}] {"text":"<Mamá> Tu padre estará encantado. Pero no te esfuerces demasiado."}
+tellraw @s[scores={DialogueTrigger=13,TalkTime=68}] {"text":"<Mamá> Si pasa algo, siempre puedes volver a casa, cariño."}
 
-#mom tps out
-execute as @s[scores={DialogueTrigger=12,TalkTime=75}] run particle cloud -2026 69 285 1 1 1 0.15 300
-execute as @s[scores={DialogueTrigger=12,TalkTime=75}] run tp @e[type=pixelmon:npc_chatting,x=-2026,y=69,z=285,distance=..3] 10000000 -50000 -10000000
+# Mamá desaparece
+execute as @s[scores={DialogueTrigger=13,TalkTime=75}] run particle cloud -2026 69 285 1 1 1 0.15 300
+execute as @s[scores={DialogueTrigger=13,TalkTime=75}] run tp @e[type=pixelmon:npc_chatting,x=-2026,y=69,z=285,distance=..3] 10000000 -50000 -10000000
 
 tag @s[scores={DialogueTrigger=13,TalkTime=75..}] add Dialogue13
 
