@@ -4119,94 +4119,95 @@ tag @s[scores={DialogueTrigger=105,TalkTime=85..}] add Dialogue105
 #https://youtu.be/MgkqxXCmrtI?t=36669
 
 clear @s[scores={DialogueTrigger=106}] minecraft:nether_brick
-tellraw @s[scores={DialogueTrigger=106,TalkTime=1,Rival=1}] {"text":"<Aura> Hm! Well, you did battle me like I asked, so I'll give you a reward."}
+tellraw @s[scores={DialogueTrigger=106,TalkTime=1,Rival=1}] {"text":"<Aura> ¡Hm! Bueno, me batallaste como pedí, así que te daré una recompensa.","color":"white"}
 
 execute as @s[scores={DialogueTrigger=106,TalkTime=10,Rival=1}] run playsound minecraft:keyitem ambient @s ~ ~ ~ 1 1 1
 execute as @s[scores={DialogueTrigger=106,TalkTime=10,Rival=1}] run give @s pixelmon:hm2
 execute as @s[scores={DialogueTrigger=106,TalkTime=10,Rival=1}] run function hoenn:spawn/flyhm
-tellraw @s[scores={DialogueTrigger=106,TalkTime=10,Rival=1}] [{"selector":"@s","italic":true,"color":"gray"},{"text":" obtained HM02 Fly!","italic":true,"color":"gray"}]
+tellraw @s[scores={DialogueTrigger=106,TalkTime=10,Rival=1}] [{"selector":"@s","italic":true,"color":"gray"},{"text":" obtuvo HM02 Vuelo!","italic":true,"color":"gray"}]
 
-tellraw @s[scores={DialogueTrigger=106,TalkTime=18,Rival=1}] {"text":"<Aura> If you use Fly, your Pokémon will carry you back to anywhere you've been before."}
-tellraw @s[scores={DialogueTrigger=106,TalkTime=28,Rival=1}] {"text":"<Aura> But you must have the Gym Badge from Fortree City to use Fly outside of battle."}
-tellraw @s[scores={DialogueTrigger=106,TalkTime=38,Rival=1}] {"text":"<Aura> That's the most important bit, so don't forget!"}
-tellraw @s[scores={DialogueTrigger=106,TalkTime=45,Rival=1}] {"text":"<Aura> Maybe you should Fly home and visit Littleroot sometimes."}
-tellraw @s[scores={DialogueTrigger=106,TalkTime=52,Rival=1}] ["",{"text":"<Aura> I bet your mom worries about you, "},{"selector":"@s"},{"text":"..."}]
-tellraw @s[scores={DialogueTrigger=106,TalkTime=59,Rival=1}] {"text":"<Aura> Well, till we meet again!"}
+tellraw @s[scores={DialogueTrigger=106,TalkTime=18,Rival=1}] {"text":"<Aura> Si usas Vuelo, tus Pokémon te llevarán de vuelta a cualquier lugar donde hayas estado antes.","color":"white"}
+tellraw @s[scores={DialogueTrigger=106,TalkTime=28,Rival=1}] {"text":"<Aura> Pero debes tener la Medalla del Gimnasio de Fortree para usar Vuelo fuera de combate.","color":"white"}
+tellraw @s[scores={DialogueTrigger=106,TalkTime=38,Rival=1}] {"text":"<Aura> ¡Esa es la parte más importante, así que no lo olvides!","color":"white"}
+tellraw @s[scores={DialogueTrigger=106,TalkTime=45,Rival=1}] {"text":"<Aura> Tal vez deberías volar a casa y visitar Littleroot a veces.","color":"white"}
+tellraw @s[scores={DialogueTrigger=106,TalkTime=52,Rival=1}] ["",{"text":"<Aura> Apuesto a que tu mamá se preocupa por ti, "},{"selector":"@s"},{"text":"...","color":"white"}]
+tellraw @s[scores={DialogueTrigger=106,TalkTime=59,Rival=1}] {"text":"<Aura> Bueno, ¡hasta la próxima!","color":"white"}
 execute as @s[scores={DialogueTrigger=106,TalkTime=59,Rival=1}] as @e[x=-867,y=79,z=-1300,distance=..5,type=pixelmon:npc_trainer] run data merge entity @s {Rotation:[180f,0.0f]}
-tellraw @s[scores={DialogueTrigger=106,TalkTime=66,Rival=1}] {"text":"<Aura> And next time I won't lose!"}
+tellraw @s[scores={DialogueTrigger=106,TalkTime=66,Rival=1}] {"text":"<Aura> ¡Y la próxima vez no perderé!","color":"white"}
 
 #tp out
 execute as @s[scores={DialogueTrigger=106,TalkTime=66,Rival=1}] run particle cloud -867 79 -1300 1 1 1 0.15 300
 execute as @s[scores={DialogueTrigger=106,TalkTime=66,Rival=1}] run tp @e[x=-867,y=79,z=-1300,distance=..5,type=pixelmon:npc_trainer] 10000000 -50000 -10000000
 
-
-tellraw @s[scores={DialogueTrigger=106,TalkTime=1,Rival=2}] {"text":"<Bruno> I'd say you're good enough to search for Pokémon anywhere by now."}
-tellraw @s[scores={DialogueTrigger=106,TalkTime=10,Rival=2}] {"text":"<Bruno> Here, I'll give you this, so try it out. You should be able to use it fine."}
+tellraw @s[scores={DialogueTrigger=106,TalkTime=1,Rival=2}] {"text":"<Bruno> Diría que ahora eres lo suficientemente bueno como para buscar Pokémon en cualquier lugar.","color":"white"}
+tellraw @s[scores={DialogueTrigger=106,TalkTime=10,Rival=2}] {"text":"<Bruno> Aquí, te daré esto, así que pruébalo. Deberías poder usarlo bien.","color":"white"}
 
 execute as @s[scores={DialogueTrigger=106,TalkTime=20,Rival=2}] run playsound minecraft:keyitem ambient @s ~ ~ ~ 1 1 1
 execute as @s[scores={DialogueTrigger=106,TalkTime=20,Rival=2}] run give @s pixelmon:hm2
 execute as @s[scores={DialogueTrigger=106,TalkTime=20,Rival=2}] run function hoenn:spawn/flyhm
-tellraw @s[scores={DialogueTrigger=106,TalkTime=20,Rival=2}] {"text":"@s obtained HM02 Fly!","italic":true,"color":"gray"}
+tellraw @s[scores={DialogueTrigger=106,TalkTime=20,Rival=2}] {"text":"@s obtuvo HM02 Vuelo!","italic":true,"color":"gray"}
 
-tellraw @s[scores={DialogueTrigger=106,TalkTime=27,Rival=2}] {"text":"<Bruno> With Fly, your Pokémon can carry you back to just about anyplace you've visited before."}
-tellraw @s[scores={DialogueTrigger=106,TalkTime=37,Rival=2}] {"text":"<Bruno> Of course, you'll need the Fortree Gym Badge first, though..."}
-tellraw @s[scores={DialogueTrigger=106,TalkTime=45,Rival=2}] {"text":"<Bruno> Well, I'm going on ahead."}
+tellraw @s[scores={DialogueTrigger=106,TalkTime=27,Rival=2}] {"text":"<Bruno> Con Vuelo, tus Pokémon pueden llevarte de vuelta a casi cualquier lugar que hayas visitado antes.","color":"white"}
+tellraw @s[scores={DialogueTrigger=106,TalkTime=37,Rival=2}] {"text":"<Bruno> Por supuesto, necesitarás la Medalla del Gimnasio de Fortree primero, sin embargo...","color":"white"}
+tellraw @s[scores={DialogueTrigger=106,TalkTime=45,Rival=2}] {"text":"<Bruno> Bueno, me adelanto.","color":"white"}
 execute as @s[scores={DialogueTrigger=106,TalkTime=52,Rival=2}] as @e[x=-867,y=79,z=-1300,distance=..5,type=pixelmon:npc_trainer] run data merge entity @s {Rotation:[180f,0.0f]}
-tellraw @s[scores={DialogueTrigger=106,TalkTime=52,Rival=2}] {"text":"<Bruno> But I'm definitely winning next time!"}
+tellraw @s[scores={DialogueTrigger=106,TalkTime=52,Rival=2}] {"text":"<Bruno> ¡Pero la próxima vez definitivamente ganaré!","color":"white"}
 
 execute as @s[scores={DialogueTrigger=106,TalkTime=60,Rival=2}] run particle cloud -867 79 -1300 1 1 1 0.15 300
 execute as @s[scores={DialogueTrigger=106,TalkTime=60,Rival=2}] run tp @e[x=-867,y=79,z=-1300,distance=..5,type=pixelmon:npc_trainer] 10000000 -50000 -10000000
 
 tag @s[scores={DialogueTrigger=106,TalkTime=66..}] add Dialogue106
+
 #-----------------------------------------------------------------------------------------------------
-#Dialogue 107 - Fortree City
-#Hidden Power TM Coin Flip First Dialogue
+#Diálogo 107 - Ciudad Fortree
+#Primera Diálogo del TM Poder Oculto, Lanzar Moneda
 #https://youtu.be/MgkqxXCmrtI?t=36919
 
-tellraw @s[scores={DialogueTrigger=107,TalkTime=1}] {"text":"<Old Woman> People... Pokémon..."}
-tellraw @s[scores={DialogueTrigger=107,TalkTime=1}] {"text":"<Old Woman> Their hidden powers are awakened by living in natural environments..."}
-tellraw @s[scores={DialogueTrigger=107,TalkTime=1}] {"text":"<Old Woman> Let this old woman see if your hidden power has awakened."}
-tellraw @s[scores={DialogueTrigger=107,TalkTime=1}] {"text":"<Old Woman> Let's see..."}
-tellraw @s[scores={DialogueTrigger=107,TalkTime=1}] {"text":"<Old Woman> I hold a coin in my hand."}
-tellraw @s[scores={DialogueTrigger=107,TalkTime=1}] {"text":"<Old Woman> Now tell me, which hand holds the coin, the right hand or the left?"}
-tellraw @s[scores={DialogueTrigger=107,TalkTime=1}] ["",{"text":"["},{"text":"Left hand","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 23"}},{"text":"] \u0020["},{"text":"Right hand","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 24"}},{"text":"]"}]
+tellraw @s[scores={DialogueTrigger=107,TalkTime=1}] {"text":"<Anciana> La gente... Los Pokémon...","color":"white"}
+tellraw @s[scores={DialogueTrigger=107,TalkTime=1}] {"text":"<Anciana> Sus poderes ocultos se despiertan al vivir en entornos naturales...","color":"white"}
+tellraw @s[scores={DialogueTrigger=107,TalkTime=1}] {"text":"<Anciana> Deja que esta anciana vea si tu poder oculto se ha despertado.","color":"white"}
+tellraw @s[scores={DialogueTrigger=107,TalkTime=1}] {"text":"<Anciana> Vamos a ver...","color":"white"}
+tellraw @s[scores={DialogueTrigger=107,TalkTime=1}] {"text":"<Anciana> Sostengo una moneda en mi mano.","color":"white"}
+tellraw @s[scores={DialogueTrigger=107,TalkTime=1}] {"text":"<Anciana> Ahora dime, ¿en qué mano está la moneda, en la mano derecha o en la izquierda?","color":"white"}
+tellraw @s[scores={DialogueTrigger=107,TalkTime=1}] ["",{"text":"["},{"text":"Mano izquierda","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 23"}},{"text":"] \u0020["},{"text":"Mano derecha","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 24"}},{"text":"]"}]
 
-#Incorrect answers, runs a TriggerCommands number to reset.
-tellraw @s[scores={DialogueTrigger=107,TalkTime=1}] {"text":"<Old Woman> No, too bad. You guessed wrong."}
+#Respuestas incorrectas, ejecuta un número de TriggerCommands para reiniciar.
+tellraw @s[scores={DialogueTrigger=107,TalkTime=1}] {"text":"<Anciana> No, qué lástima. Has adivinado mal.","color":"white"}
 
 tag @s[scores={DialogueTrigger=107,TalkTime=100..}] add Dialogue107
 #--------------------------------------
-#Dialogue 108 - Fortree City
-#Hidden Power TM Coin Flip First Dialogue
-#Answers Right Hand
+#Diálogo 108 - Ciudad Fortree
+#Primera Diálogo del TM Poder Oculto, Lanzar Moneda
+#Respuestas Mano Derecha
 
-tellraw @s[scores={DialogueTrigger=108,TalkTime=1}] {"text":"<Old Woman> You are correct! Let us try again."}
-tellraw @s[scores={DialogueTrigger=108,TalkTime=1}] {"text":"<Old Woman> I hold a coin in my hand."}
-tellraw @s[scores={DialogueTrigger=108,TalkTime=1}] {"text":"<Old Woman> Now tell me, which hand holds the coin, the right hand or the left?"}
-tellraw @s[scores={DialogueTrigger=108,TalkTime=1}] ["",{"text":"["},{"text":"Left hand","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 23"}},{"text":"] \u0020["},{"text":"Right hand","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 25"}},{"text":"]"}]
+tellraw @s[scores={DialogueTrigger=108,TalkTime=1}] {"text":"<Anciana> ¡Correcto! Vamos a intentarlo de nuevo.","color":"white"}
+tellraw @s[scores={DialogueTrigger=108,TalkTime=1}] {"text":"<Anciana> Sostengo una moneda en mi mano.","color":"white"}
+tellraw @s[scores={DialogueTrigger=108,TalkTime=1}] {"text":"<Anciana> Ahora dime, ¿en qué mano está la moneda, en la mano derecha o en la izquierda?","color":"white"}
+tellraw @s[scores={DialogueTrigger=108,TalkTime=1}] ["",{"text":"["},{"text":"Mano izquierda","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 23"}},{"text":"] \u0020["},{"text":"Mano derecha","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 25"}},{"text":"]"}]
 
 tag @s[scores={DialogueTrigger=108,TalkTime=100..}] add Dialogue108
 #--------------------------------------
-#Dialogue 109 - Fortree City
-#Right Hand Second Time
+#Diálogo 109 - Ciudad Fortree
+#Segunda Mano Derecha
 
-tellraw @s[scores={DialogueTrigger=109,TalkTime=1}] {"text":"<Old Woman> Yes, correct again! We shall try once more."}
-tellraw @s[scores={DialogueTrigger=109,TalkTime=1}] {"text":"<Old Woman> I hold a coin in my hand."}
-tellraw @s[scores={DialogueTrigger=109,TalkTime=1}] {"text":"<Old Woman> Now tell me, which hand holds the coin, the right hand or the left?"}
-tellraw @s[scores={DialogueTrigger=109,TalkTime=1}] ["",{"text":"["},{"text":"Left hand","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 26"}},{"text":"] \u0020["},{"text":"Right hand","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 23"}},{"text":"]"}]
+tellraw @s[scores={DialogueTrigger=109,TalkTime=1}] {"text":"<Anciana> ¡Sí, correcto otra vez! Vamos a intentarlo una vez más.","color":"white"}
+tellraw @s[scores={DialogueTrigger=109,TalkTime=1}] {"text":"<Anciana> Sostengo una moneda en mi mano.","color":"white"}
+tellraw @s[scores={DialogueTrigger=109,TalkTime=1}] {"text":"<Anciana> Ahora dime, ¿en qué mano está la moneda, en la mano derecha o en la izquierda?","color":"white"}
+tellraw @s[scores={DialogueTrigger=109,TalkTime=1}] ["",{"text":"["},{"text":"Mano izquierda","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 26"}},{"text":"] \u0020["},{"text":"Mano derecha","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 23"}},{"text":"]"}]
 
 tag @s[scores={DialogueTrigger=109,TalkTime=100..}] add Dialogue109
 #--------------------------------------
-#Dialogue 110 - Fortree City
-#Left Hand final answer
+#Diálogo 110 - Ciudad Fortree
+#Respuesta Final Mano Izquierda
 
-tellraw @s[scores={DialogueTrigger=110,TalkTime=1}] {"text":"<Old Woman> Splendid! Your hidden power has awakened!"}
-tellraw @s[scores={DialogueTrigger=110,TalkTime=1}] {"text":"<Old Woman> Here, take this and awaken the hidden power of your Pokémon."}
+tellraw @s[scores={DialogueTrigger=110,TalkTime=1}] {"text":"<Anciana> ¡Espléndido! ¡Tu poder oculto se ha despertado!","color":"white"}
+tellraw @s[scores={DialogueTrigger=110,TalkTime=1}] {"text":"<Anciana> Aquí, toma esto y despierta el poder oculto de tus Pokémon.","color":"white"}
 
-tellraw @s[scores={DialogueTrigger=110,TalkTime=1}] ["",{"selector":"@s","italic":true,"color":"gray"},{"text":" obtained TM10 Hidden Power!","italic":true,"color":"gray"}]
+tellraw @s[scores={DialogueTrigger=110,TalkTime=1}] ["",{"selector":"@s","italic":true,"color":"gray"},{"text":" obtuvo TM10 Poder Oculto!","italic":true,"color":"gray"}]
 execute as @s[scores={DialogueTrigger=110,TalkTime=1}] run give @s pixelmon:tm_gen6{tm:10s}
 
-tellraw @s[scores={DialogueTrigger=110,TalkTime=1}] {"text":"<Old Woman> Hidden Power varies in type depending on the Pokémon using it."}
+tellraw @s[scores={DialogueTrigger=110,TalkTime=1}] {"text":"<Anciana> Poder Oculto varía en tipo dependiendo del Pokémon que lo use.","color":"white"}
+
 
 tag @s[scores={DialogueTrigger=110,TalkTime=100..}] add Dialogue110
 #-----------------------------------------------------------------------------------------------------
