@@ -1464,8 +1464,8 @@ tag @s[scores={DialogueTrigger=36,TalkTime=200..}] add Dialogue36
 #tellraw @s[scores={DialogueTrigger=37,TalkTime=1}] {"text":"<Sr. Arenque> Oho! It looks as though you have delivered your chit good and proper."}
 #tellraw @s[scores={DialogueTrigger=37,TalkTime=1}] {"text":"<Sr. Arenque> Ah, but that reminds me! I've had a message from President Stone, saying he has another favor to ask."}
 #tellraw @s[scores={DialogueTrigger=37,TalkTime=1}] {"text":"<Sr. Arenque> It's about them Devon Parts that you recovered for him before."}
-#tellraw @s[scores={DialogueTrigger=37,TalkTime=1}] {"text":"<Sr. Arenque> Seems as though they should go to some fellow called Stern at Slateport's shipyard."}
-#tellraw @s[scores={DialogueTrigger=37,TalkTime=1}] {"text":"<Sr. Arenque> This old seadog will see you there safely! Weigh anchors! We're for Slateport!"}
+#tellraw @s[scores={DialogueTrigger=37,TalkTime=1}] {"text":"<Sr. Arenque> Seems as though they should go to some fellow called Stern at Portual's shipyard."}
+#tellraw @s[scores={DialogueTrigger=37,TalkTime=1}] {"text":"<Sr. Arenque> This old seadog will see you there safely! Weigh anchors! We're for Portual!"}
 
 tellraw @s[scores={DialogueTrigger=37,TalkTime=1},tag=Dialogue35] {"text":"<Sr. Arenque> Ahora que tienes la medalla de esta ciudad, ¿qué tal si vamos a Ciudad Portual?"}
 tellraw @s[scores={DialogueTrigger=37,TalkTime=9},tag=Dialogue35] {"text":"<Sr. Arenque> ¡O podríamos regresar a mi Cabaña, lo que prefieras!"}
@@ -1483,7 +1483,7 @@ tag @s[scores={DialogueTrigger=37,TalkTime=9..}] add Dialogue37
 
 #----------------------------------------------------------------------------------------------------------
 #Dialogue 37 - Azuliza Town
-#Mr. Briney taking player to either Petalia or Slateport
+#Mr. Briney taking player to either Petalia or Portual
 
 tellraw @s[scores={DialogueTrigger=38,TalkTime=1,Temp=1}] {"text":"<Sr. Arenque> ¿Ciudad Portual, eh? ¡Anclas a bordo! ¡Peeko, vamos a zarpar, querido!"}
 tellraw @s[scores={DialogueTrigger=38,TalkTime=1,Temp=2}] {"text":"<Sr. Arenque> ¿Ciudad Petalia, eh? ¡Anclas a bordo! ¡Peeko, vamos a zarpar, querido!"}
@@ -1512,7 +1512,7 @@ tag @s[scores={DialogueTrigger=38,TalkTime=15..}] add Dialogue38
 
 #tag @s[scores={DialogueTrigger=???,TalkTime=100..}] add Dialogue???
 #----------------------------------------------------------------------------------------------------------
-#Dialogue 39 - Slateport City
+#Dialogue 39 - Ciudad Portual
 #Fan Club President when talked to
 
 tellraw @s[scores={DialogueTrigger=39,TalkTime=1}] {"text":"<Presidente del Club de Fans> ¡Ejem! Soy el presidente del Club de Fans de Pokémon!"}
@@ -1530,7 +1530,7 @@ tellraw @s[scores={DialogueTrigger=39,TalkTime=1}] {"text":"<Presidente del Club
 
 tag @s[scores={DialogueTrigger=39,TalkTime=100..}] add Dialogue39
 #---------------
-#Dialogue 40 - Slateport City
+#Dialogue 40 - Ciudad Portual
 #Fan Club President when Pokemon is sent out
 
 tellraw @s[scores={DialogueTrigger=40,TalkTime=1}] {"text":"¿Cómo está creciendo tu Pokémon? Permíteme examinarlo."}
@@ -1558,7 +1558,7 @@ tellraw @s[scores={DialogueTrigger=40,TalkTime=1}] {"text":"Después de todo, es
 
 tag @s[scores={DialogueTrigger=40,TalkTime=100..}] add Dialogue40
 #----------------------------------------------------------------------------------------------------------
-#Dialogue 41 - Slateport City
+#Dialogue 41 - Ciudad Portual
 #Upon entering Stern's Shipyard
 #https://youtu.be/MgkqxXCmrtI?t=12399
 
@@ -1588,7 +1588,7 @@ tellraw @s[scores={DialogueTrigger=41,TalkTime=50}] {"text":"<Dock> Lo siento, p
 
 tag @s[scores={DialogueTrigger=41,TalkTime=50..}] add Dialogue41
 #----------------------------------------------------------------------------------------------------------
-#Dialogue 42 - Slateport City
+#Dialogue 42 - Ciudad Portual
 #Oceanic Museum finding Mr. Stern
 #https://youtu.be/MgkqxXCmrtI?t=12626
 
@@ -1616,7 +1616,7 @@ execute as @s[scores={DialogueTrigger=42,TalkTime=1}] run pokebattle grunt 1
 tag @s[scores={DialogueTrigger=42,TalkTime=100..}] add Dialogue42
 
 #----------------------------
-#Diálogo 43 - Ciudad Slateport
+#Diálogo 43 - Ciudad Portual
 #Después de la Batalla con el Recluta 1
 
 tellraw @s[scores={DialogueTrigger=43,TalkTime=1}] {"text":"<Recluta del Team Aqua> ¡Aaaaaagh! ¿Fui vencido por un niño pequeño?"}
@@ -1633,7 +1633,7 @@ execute as @s[scores={DialogueTrigger=43,TalkTime=1}] run pokebattle grunt 2
 
 tag @s[scores={DialogueTrigger=43,TalkTime=100..}] add Dialogue43
 #----------------------------
-#Dialogue 44 - Slateport City
+#Dialogue 44 - Ciudad Portual
 #Post-Grunt 2 Battle
 #https://youtu.be/MgkqxXCmrtI?t=12837
 
@@ -1742,113 +1742,113 @@ tag @s[scores={DialogueTrigger=44,TalkTime=100..}] add Dialogue44
 
 #without a Pass
 
-tellraw @s[scores={DialogueTrigger=45,TalkTime=1}] {"text":"<Contest Clerk> Welcome to the Pokémon Contest Spectacular!"}
-tellraw @s[scores={DialogueTrigger=45,TalkTime=1}] {"text":"<Contest Clerk> ...Oh? You don't seem to have a Contest Pass."}
-tellraw @s[scores={DialogueTrigger=45,TalkTime=1}] {"text":"<Contest Clerk> We only accept Trainers who have Contest Passes as contestants of the Pokémon Contest Spectacular!"}
-tellraw @s[scores={DialogueTrigger=45,TalkTime=1}] {"text":"<Contest Clerk> Well, let me see... You might be able to get it from somebody."}
-tellraw @s[scores={DialogueTrigger=45,TalkTime=1}] {"text":"<Contest Clerk> Slateport City is a big place. Why don't you try sightseeing in different places?"}
-tellraw @s[scores={DialogueTrigger=45,TalkTime=1}] {"text":"<Contest Clerk> Please come again."}
+tellraw @s[scores={DialogueTrigger=45,TalkTime=1}] {"text":"<Empleado del Concurso> ¡Bienvenido al Espectacular Concurso Pokémon!"}
+tellraw @s[scores={DialogueTrigger=45,TalkTime=1}] {"text":"<Empleado del Concurso> ...¿Oh? Parece que no tienes una Tarjeta de Concurso."}
+tellraw @s[scores={DialogueTrigger=45,TalkTime=1}] {"text":"<Empleado del Concurso> ¡Solo aceptamos Entrenadores con Tarjeta de Concurso como concursantes del Espectacular Concurso Pokémon!"}
+tellraw @s[scores={DialogueTrigger=45,TalkTime=1}] {"text":"<Empleado del Concurso> Bueno, déjame ver... Podrías obtenerla de alguien."}
+tellraw @s[scores={DialogueTrigger=45,TalkTime=1}] {"text":"<Empleado del Concurso> Ciudad Portual es un lugar grande. ¿Por qué no intentas hacer turismo en distintos lugares?"}
+tellraw @s[scores={DialogueTrigger=45,TalkTime=1}] {"text":"<Empleado del Concurso> Por favor, vuelve de nuevo."}
 
-#With a pass, first time
-#https://youtu.be/MgkqxXCmrtI?t=13679
-tellraw @s[scores={DialogueTrigger=45,TalkTime=1}] {"text":"<Contest Clerk> Welcome to the Pokémon Contest Spectacular!"}
-tellraw @s[scores={DialogueTrigger=45,TalkTime=1}] {"text":"<Contest Clerk> It looks like you've brought your Contest Pass."}
-tellraw @s[scores={DialogueTrigger=45,TalkTime=1}] {"text":"<Contest Clerk> Keep on trying until you become a contest star!"}
-tellraw @s[scores={DialogueTrigger=45,TalkTime=1}] {"text":"<Contest Clerk> Before we begin, some advice for first-timers..."}
-tellraw @s[scores={DialogueTrigger=45,TalkTime=1}] {"text":"<Contest Clerk> During the contest, your Pokémon will show the audience just how lovely it is!"}
-tellraw @s[scores={DialogueTrigger=45,TalkTime=1}] {"text":"<Contest Clerk> First up is the Introduction Round!"}
-tellraw @s[scores={DialogueTrigger=45,TalkTime=1}] {"text":"<Contest Clerk> The appearance of Pokémon that have raised their Coolness, Cuteness, or other conditions will be judged."}
-tellraw @s[scores={DialogueTrigger=45,TalkTime=1}] {"text":"<Contest Clerk> After the Introduction Round, it's time for the Talent Round!"}
-tellraw @s[scores={DialogueTrigger=45,TalkTime=1}] {"text":"<Contest Clerk> It's a competition to determine how well Pokémon can use their moves over the course of five turns."}
-tellraw @s[scores={DialogueTrigger=45,TalkTime=1}] {"text":"<Contest Clerk> Use moves that match the condition of the contest to make the audience go crazy!"}
-tellraw @s[scores={DialogueTrigger=45,TalkTime=1}] {"text":"<Contest Clerk> If you check the moves of the Pokémon that you want to put in the contest, you can see that they're split into five different conditions, such as Coolness and Cuteness."}
-tellraw @s[scores={DialogueTrigger=45,TalkTime=1}] {"text":"<Contest Clerk> If you're in a contest with the same title as that condition, you can use that move to appeal to the crowd!"}
-tellraw @s[scores={DialogueTrigger=45,TalkTime=1}] {"text":"<Contest Clerk> After you place first in a Normal Rank contest, you can win your way through higher ranks!"}
-tellraw @s[scores={DialogueTrigger=45,TalkTime=1}] {"text":"<Contest Clerk> Very well..."}
-tellraw @s[scores={DialogueTrigger=45,TalkTime=1}] {"text":"<Contest Clerk> Right this way, please!"}
+# Con tarjeta, primera vez
+tellraw @s[scores={DialogueTrigger=45,TalkTime=1}] {"text":"<Empleado del Concurso> ¡Bienvenido al Espectacular Concurso Pokémon!"}
+tellraw @s[scores={DialogueTrigger=45,TalkTime=1}] {"text":"<Empleado del Concurso> Parece que has traído tu Tarjeta de Concurso."}
+tellraw @s[scores={DialogueTrigger=45,TalkTime=1}] {"text":"<Empleado del Concurso> ¡Sigue intentándolo hasta convertirte en una estrella del concurso!"}
+tellraw @s[scores={DialogueTrigger=45,TalkTime=1}] {"text":"<Empleado del Concurso> Antes de comenzar, algunos consejos para los principiantes..."}
+tellraw @s[scores={DialogueTrigger=45,TalkTime=1}] {"text":"<Empleado del Concurso> Durante el concurso, ¡tu Pokémon mostrará a la audiencia lo encantador que es!"}
+tellraw @s[scores={DialogueTrigger=45,TalkTime=1}] {"text":"<Empleado del Concurso> ¡Primero es la Ronda de Introducción!"}
+tellraw @s[scores={DialogueTrigger=45,TalkTime=1}] {"text":"<Empleado del Concurso> Se juzgará la apariencia de los Pokémon que hayan aumentado su Atractivo, Dulzura u otras condiciones."}
+tellraw @s[scores={DialogueTrigger=45,TalkTime=1}] {"text":"<Empleado del Concurso> Después de la Ronda de Introducción, es el momento de la Ronda de Talento!"}
+tellraw @s[scores={DialogueTrigger=45,TalkTime=1}] {"text":"<Empleado del Concurso> Es una competencia para determinar qué tan bien pueden usar sus movimientos los Pokémon durante cinco turnos."}
+tellraw @s[scores={DialogueTrigger=45,TalkTime=1}] {"text":"<Empleado del Concurso> ¡Usa movimientos que coincidan con la condición del concurso para hacer que la audiencia enloquezca!"}
+tellraw @s[scores={DialogueTrigger=45,TalkTime=1}] {"text":"<Empleado del Concurso> Si revisas los movimientos de los Pokémon que quieres poner en el concurso, puedes ver que están divididos en cinco condiciones diferentes, como Atractivo y Dulzura."}
+tellraw @s[scores={DialogueTrigger=45,TalkTime=1}] {"text":"<Empleado del Concurso> Si estás en un concurso con el mismo título que esa condición, ¡puedes usar ese movimiento para atraer a la multitud!"}
+tellraw @s[scores={DialogueTrigger=45,TalkTime=1}] {"text":"<Empleado del Concurso> Después de obtener el primer lugar en un concurso de Rango Normal, ¡puedes avanzar a rangos más altos!"}
+tellraw @s[scores={DialogueTrigger=45,TalkTime=1}] {"text":"<Empleado del Concurso> Muy bien..."}
+tellraw @s[scores={DialogueTrigger=45,TalkTime=1}] {"text":"<Empleado del Concurso> ¡Por aquí, por favor!"}
 
-#With a pass, Returning
-tellraw @s[scores={DialogueTrigger=45,TalkTime=1}] {"text":"<Contest Clerk> Rediscover the charm of Pokémon! Welcome to the Pokémon Contest Spectacular!"}
-tellraw @s[scores={DialogueTrigger=45,TalkTime=1}] {"text":"<Contest Clerk> Would you like to participate in the contest?"}
-tellraw @s[scores={DialogueTrigger=45,TalkTime=1}] ["",{"text":"["},{"text":"Enter","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set #"}},{"text":"]"}]
+# Con tarjeta, Regresando
+tellraw @s[scores={DialogueTrigger=45,TalkTime=1}] {"text":"<Empleado del Concurso> Redescubre el encanto de los Pokémon! ¡Bienvenido al Espectacular Concurso Pokémon!"}
+tellraw @s[scores={DialogueTrigger=45,TalkTime=1}] {"text":"<Empleado del Concurso> ¿Te gustaría participar en el concurso?"}
+tellraw @s[scores={DialogueTrigger=45,TalkTime=1}] ["",{"text":"["},{"text":"Entrar","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set #"}},{"text":"]"}]
 
 tag @s[scores={DialogueTrigger=45,TalkTime=100..}] add Dialogue45
 #----------------------------------------------------------------------------------------------------------
-#Dialogue 46 - Slateport City
+#Dialogue 46 - Ciudad Portual
 #
 #https://youtu.be/MgkqxXCmrtI?t=13368
 
 #Pans to overhead shot
 
-tellraw @s[scores={DialogueTrigger=46,TalkTime=1}] {"text":"Hey! That's Lisia and Ali doing a shoot over there!"}
-tellraw @s[scores={DialogueTrigger=46,TalkTime=1}] {"text":"Are you serious?! Lisia! Let's go!"}
+tellraw @s[scores={DialogueTrigger=46,TalkTime=1}] {"text":"¡Eh! ¡Ariana y Ali haciendo una sesión de fotos por allá!"}
+tellraw @s[scores={DialogueTrigger=46,TalkTime=1}] {"text":"¿¡En serio?! ¡Ariana! ¡Vamos!"}
 
-#Sets up NPCs and display
+# Configura NPCs y visualización
 
-#Brings camera overhead of crowd
+# Trae la cámara por encima de la multitud
 
-tellraw @s[scores={DialogueTrigger=46,TalkTime=1}] {"text":"<Lisia> Hiiiiii, ev-er-y-bo-dy!"}
-tellraw @s[scores={DialogueTrigger=46,TalkTime=1}] {"text":"<Lisia> Lisia here! Me and my Altaria, Ali, have come to Slateport City's Contest Spectacular Hall for a bit of FUN!"}
-tellraw @s[scores={DialogueTrigger=46,TalkTime=1}] {"text":"<Altaria> Ali-li-li!"}
-tellraw @s[scores={DialogueTrigger=46,TalkTime=1}] {"text":"<Lisia> Well then, watch me as I dive right in again today!"}
+tellraw @s[scores={DialogueTrigger=46,TalkTime=1}] {"text":"<Ariana> ¡Hola a todo el mundo!"}
+tellraw @s[scores={DialogueTrigger=46,TalkTime=1}] {"text":"<Ariana> ¡Ariana aquí! ¡Mi Altaria, Ali, y yo hemos venido al Salón de Concursos de Ciudad Portual para divertirnos un poco!"}
+tellraw @s[scores={DialogueTrigger=46,TalkTime=1}] {"text":"<Altaria> ¡Ali-li-li!"}
+tellraw @s[scores={DialogueTrigger=46,TalkTime=1}] {"text":"<Ariana> ¡Pues bien, miradme mientras me sumerjo de nuevo hoy!"}
 
-tellraw @s[scores={DialogueTrigger=46,TalkTime=1}] {"text":"<Audience> Yeaaahhhh!"}
+tellraw @s[scores={DialogueTrigger=46,TalkTime=1}] {"text":"<Audiencia> ¡Yeeeaahhhh!"}
 
-tellraw @s[scores={DialogueTrigger=46,TalkTime=1}] {"text":"<Lisia> Dazzling, dizzying, doldrums defying!"}
+tellraw @s[scores={DialogueTrigger=46,TalkTime=1}] {"text":"<Ariana> ¡Deslumbrante, mareante, desafiando las penas!"}
 
-tellraw @s[scores={DialogueTrigger=46,TalkTime=1}] {"text":"<Audience> Dazzling! Dizzying!"}
+tellraw @s[scores={DialogueTrigger=46,TalkTime=1}] {"text":"<Audiencia> ¡Deslumbrante! ¡Mareante!"}
 
-tellraw @s[scores={DialogueTrigger=46,TalkTime=1}] {"text":"<Lisia> Lisia's...Miraculous...Contest Scouting!"}
+tellraw @s[scores={DialogueTrigger=46,TalkTime=1}] {"text":"<Ariana> El...Milagroso...¡Sondeo de Concursos de Ariana!"}
 
-tellraw @s[scores={DialogueTrigger=46,TalkTime=1}] {"text":"<Audience> START!"}
-tellraw @s[scores={DialogueTrigger=46,TalkTime=1}] {"text":"<Audience> Lissi! Scout me to be your next boyfriend!"}
-tellraw @s[scores={DialogueTrigger=46,TalkTime=1}] {"text":"<Audience> Lisia! Aliii!"}
+tellraw @s[scores={DialogueTrigger=46,TalkTime=1}] {"text":"<Audiencia> ¡EMPIEZA!"}
+tellraw @s[scores={DialogueTrigger=46,TalkTime=1}] {"text":"<Audiencia> ¡Ariana! ¡Escógeme para ser tu próximo novio!"}
+tellraw @s[scores={DialogueTrigger=46,TalkTime=1}] {"text":"<Audiencia> ¡Ariana! ¡Aliii!"}
 
-tellraw @s[scores={DialogueTrigger=46,TalkTime=1}] {"text":"<Lisia> All righty! I'm going to bring another fantastic Trainer into the wild world of contesting!"}
-tellraw @s[scores={DialogueTrigger=46,TalkTime=1}] {"text":"<Lisia> Eenie...meenie...miney..."}
+tellraw @s[scores={DialogueTrigger=46,TalkTime=1}] {"text":"<Ariana> ¡Muy bien! Voy a traer a otro Entrenador fantástico al salvaje mundo de los concursos!"}
+tellraw @s[scores={DialogueTrigger=46,TalkTime=1}] {"text":"<Ariana> Pito...pito...gorgorito..."}
 
-#teleport player to audience
+# Teletransporta al jugador a la audiencia
 
-tellraw @s[scores={DialogueTrigger=46,TalkTime=1}] {"text":"<Lisia> You there, watching me with that baffled expression on your face!"}
-tellraw @s[scores={DialogueTrigger=46,TalkTime=1}] {"text":"<Lisia> Hi! Have you never joined in a contest?"}
-tellraw @s[scores={DialogueTrigger=46,TalkTime=1}] {"text":"<Lisia> That's just what I want to hear!"}
-tellraw @s[scores={DialogueTrigger=46,TalkTime=1}] {"text":"<Lisia> Then let's get this show on the road! This is the Trainer I'm gonna scout today!"}
-tellraw @s[scores={DialogueTrigger=46,TalkTime=1}] {"text":"<Lisia> And their name is..."}
+tellraw @s[scores={DialogueTrigger=46,TalkTime=1}] {"text":"<Ariana> ¡Tú, allí, que estás mirándome con esa expresión desconcertada en tu cara!"}
+tellraw @s[scores={DialogueTrigger=46,TalkTime=1}] {"text":"<Ariana> ¡Hola! ¿Nunca has participado en un concurso?"}
+tellraw @s[scores={DialogueTrigger=46,TalkTime=1}] {"text":"<Ariana> ¡Eso es justo lo que quería oír!"}
+tellraw @s[scores={DialogueTrigger=46,TalkTime=1}] {"text":"<Ariana> ¡Entonces pongamos esto en marcha! ¡Este es el Entrenador que voy a descubrir hoy!"}
+tellraw @s[scores={DialogueTrigger=46,TalkTime=1}] {"text":"<Ariana> Y su nombre es..."}
 
-tellraw @s[scores={DialogueTrigger=46,TalkTime=1}] ["",{"text":"<Lisia> "},{"selector":"@s"},{"text":"!"}]
-tellraw @s[scores={DialogueTrigger=46,TalkTime=1}] ["",{"text":"<Lisia> When I took a good look, I could easily see that "},{"selector":"@s"},{"text":" is a powerful Trainer,"}]
-tellraw @s[scores={DialogueTrigger=46,TalkTime=1}] {"text":"<Lisia> with several Badges of their own already!"}
-tellraw @s[scores={DialogueTrigger=46,TalkTime=1}] ["",{"text":"<Lisia> "},{"selector":"@s"},{"text":"!"}]
-tellraw @s[scores={DialogueTrigger=46,TalkTime=1}] {"text":"<Lisia> You can enjoy Contest Spectaculars at the Pokémon Contest Hall right here."}
-tellraw @s[scores={DialogueTrigger=46,TalkTime=1}] {"text":"<Lisia> Now listen up, because I don't just want to see you making your Pokémon strong."}
-tellraw @s[scores={DialogueTrigger=46,TalkTime=1}] {"text":"<Lisia> I want to see you bringing out a whole new brilliant side of them to show off!"}
-tellraw @s[scores={DialogueTrigger=46,TalkTime=1}] {"text":"<Lisia> So here you go! Take these!"}
-tellraw @s[scores={DialogueTrigger=46,TalkTime=1}] {"text":"<Lisia> This is a Contest Pass, which is the first thing that anyone needs to take part in a Contest Spectacular!"}
-tellraw @s[scores={DialogueTrigger=46,TalkTime=1}] {"text":"<Lisia> And this one is a Pokéblock Kit, which will let you make Pokéblocks for your Pokémon out of Berries!"}
+tellraw @s[scores={DialogueTrigger=46,TalkTime=1}] ["",{"text":"<Ariana> "},{"selector":"@s"},{"text":"!"}]
+tellraw @s[scores={DialogueTrigger=46,TalkTime=1}] ["",{"text":"<Ariana> Cuando me fijé bien, pude ver fácilmente que "},{"selector":"@s"},{"text":" es un Entrenador poderoso,"}]
+tellraw @s[scores={DialogueTrigger=46,TalkTime=1}] {"text":"<Ariana> ¡con varias Medallas ya!"}
+tellraw @s[scores={DialogueTrigger=46,TalkTime=1}] ["",{"text":"<Ariana> "},{"selector":"@s"},{"text":"!"}]
+tellraw @s[scores={DialogueTrigger=46,TalkTime=1}] {"text":"<Ariana> Puedes disfrutar de los Espectáculos de Concursos en el Salón de Concursos Pokémon justo aquí."}
+tellraw @s[scores={DialogueTrigger=46,TalkTime=1}] {"text":"<Ariana> Ahora escucha, porque no solo quiero ver que fortalezcas a tus Pokémon."}
+tellraw @s[scores={DialogueTrigger=46,TalkTime=1}] {"text":"<Ariana> ¡Quiero ver que saques una nueva y brillante faceta de ellos para mostrar!"}
+tellraw @s[scores={DialogueTrigger=46,TalkTime=1}] {"text":"<Ariana> ¡Así que aquí tienes! ¡Toma esto!"}
+tellraw @s[scores={DialogueTrigger=46,TalkTime=1}] {"text":"<Ariana> Esta es una Tarjeta de Concurso, que es lo primero que cualquiera necesita para participar en un Espectáculo de Concursos!"}
+tellraw @s[scores={DialogueTrigger=46,TalkTime=1}] {"text":"<Ariana> Y esta es un Kit de Pokéblocks, que te permitirá hacer Pokéblocks para tus Pokémon con Bayas!"}
 
-tellraw @s[scores={DialogueTrigger=46,TalkTime=1}] ["",{"selector":"@s","italic":true,"color":"gray"},{"text":" obtained the Contest Pass!","italic":true,"color":"gray"}]
+tellraw @s[scores={DialogueTrigger=46,TalkTime=1}] ["",{"selector":"@s","italic":true,"color":"gray"},{"text":" ¡obtuviste la Tarjeta de Concurso!","italic":true,"color":"gray"}]
 
-tellraw @s[scores={DialogueTrigger=46,TalkTime=1}] ["",{"text":"<Lisia> "},{"selector":"@s"},{"text":"'s story begins today!"}]
-tellraw @s[scores={DialogueTrigger=46,TalkTime=1}] {"text":"<Lisia> Yep! And this chapter should be titled..."}
-tellraw @s[scores={DialogueTrigger=46,TalkTime=1}] {"text":"<Lisia> \"A Sudden Encounter! Miraculous Contest Scouting!\""}
-tellraw @s[scores={DialogueTrigger=46,TalkTime=1}] {"text":"<Lisia> That's what I'd call it! Now, everybody out there watching..."}
-tellraw @s[scores={DialogueTrigger=46,TalkTime=1}] ["",{"text":"<Lisia> You'd better expect great things from "},{"selector":"@s"},{"text":", because I do!"}]
-tellraw @s[scores={DialogueTrigger=46,TalkTime=1}] {"text":"<Lisia> That's it for today's Lisia's Miraculous Contest Scouting! See you all next time!"}
+tellraw @s[scores={DialogueTrigger=46,TalkTime=1}] ["",{"text":"<Ariana> ¡La historia de "},{"selector":"@s"},{"text":" comienza hoy!"}]
+tellraw @s[scores={DialogueTrigger=46,TalkTime=1}] {"text":"<Ariana> ¡Sí! Y este capítulo debería titularse..."}
+tellraw @s[scores={DialogueTrigger=46,TalkTime=1}] {"text":"<Ariana> \"¡Un Encuentro Repentino! ¡Sondeo Milagroso de Concursos!\""}
+tellraw @s[scores={DialogueTrigger=46,TalkTime=1}] {"text":"<Ariana> ¡Así lo llamaría yo! Ahora, a todos vosotros allá afuera mirando..."}
+tellraw @s[scores={DialogueTrigger=46,TalkTime=1}] ["",{"text":"<Ariana> ¡Más os vale esperar grandes cosas de "},{"selector":"@s"},{"text":" porque yo lo hago!"}]
+tellraw @s[scores={DialogueTrigger=46,TalkTime=1}] {"text":"<Ariana> ¡Eso es todo por el Sondeo Milagroso de Concursos de Ariana de hoy! ¡Nos vemos la próxima vez!"}
 
-tellraw @s[scores={DialogueTrigger=46,TalkTime=1}] {"text":"<Altaria> Al-tariii!"}
+tellraw @s[scores={DialogueTrigger=46,TalkTime=1}] {"text":"<Altaria> ¡Al-tariii!"}
 
-tellraw @s[scores={DialogueTrigger=46,TalkTime=1}] {"text":"<Audience> Clap! Clap! Clap!"}
-tellraw @s[scores={DialogueTrigger=46,TalkTime=1}] {"text":"<Audience> Lissi, you're so cute!"}
+tellraw @s[scores={DialogueTrigger=46,TalkTime=1}] {"text":"<Audiencia> ¡Aplaudir! ¡Aplaudir! ¡Aplaudir!"}
+tellraw @s[scores={DialogueTrigger=46,TalkTime=1}] {"text":"<Audiencia> ¡Ariana, eres tan linda!"}
 
-tellraw @s[scores={DialogueTrigger=46,TalkTime=1}] {"text":"<Lisia> If you feel up for it, try your hand in a contest for me, OK? Tee-hee!"}
+tellraw @s[scores={DialogueTrigger=46,TalkTime=1}] {"text":"<Ariana> Si te sientes con ánimos, intenta participar en un concurso, ¿vale? ¡Jeje!"}
 
-#Lisia telports out
+
+#Ariana telports out
 
 #Teleports everyone else out
 
 tag @s[scores={DialogueTrigger=46,TalkTime=100..}] add Dialogue46
 #----------------------------------------------------------------------------------------------------------
-#Dialogue 47 - Slateport Contest Hall
+#Dialogue 47 - Portual Contest Hall
 #Player wanting to start a contest
 #https://youtu.be/MgkqxXCmrtI?t=13567
 #Likely won't include
@@ -1857,44 +1857,46 @@ tellraw @s[scores={DialogueTrigger=47,TalkTime=1}] ["",{"text":"Ohhh! ","bold":t
 
 #tps Liasa to player
 
-tellraw @s[scores={DialogueTrigger=47,TalkTime=1}] {"text":"<Lisia> Could it be? Oh, could it, could it?"}
-tellraw @s[scores={DialogueTrigger=47,TalkTime=1}] {"text":"<Lisia> Are you really going to try a contest for me?!"}
-tellraw @s[scores={DialogueTrigger=47,TalkTime=1}] {"text":"<Lisia> Oooh! I'm happier than a Gloom with a Sun Stone!"}
-tellraw @s[scores={DialogueTrigger=47,TalkTime=1}] {"text":"<Lisia> Ah! I know! This chapter of your story should definitely be called..."}
-tellraw @s[scores={DialogueTrigger=47,TalkTime=1}] {"text":"<Lisia> \"My Big Beginning! A Heart-Pounding Contest Debut!\""}
-tellraw @s[scores={DialogueTrigger=47,TalkTime=1}] {"text":"<Lisia> That's what I'm calling it!"}
-tellraw @s[scores={DialogueTrigger=47,TalkTime=1}] {"text":"<Lisia> Ohhh, but if you're gonna take the stage, you've gotta come here with me first!"}
+tellraw @s[scores={DialogueTrigger=47,TalkTime=1}] {"text":"<Ariana> ¿Podría ser? ¿Oh, podría, podría?"}
+tellraw @s[scores={DialogueTrigger=47,TalkTime=1}] {"text":"<Ariana> ¿Realmente vas a intentar un concurso para mí?!"}
+tellraw @s[scores={DialogueTrigger=47,TalkTime=1}] {"text":"<Ariana> ¡Oooh! ¡Estoy más feliz que un Gloom con una Piedra Solar!"}
+tellraw @s[scores={DialogueTrigger=47,TalkTime=1}] {"text":"<Ariana> ¡Ah! ¡Ya sé! ¡Este capítulo de tu historia debería llamarse definitivamente..."}
+tellraw @s[scores={DialogueTrigger=47,TalkTime=1}] {"text":"<Ariana> \"¡Mi Gran Comienzo! ¡Un Debut en el Concurso que Acelera el Corazón!\""}
+tellraw @s[scores={DialogueTrigger=47,TalkTime=1}] {"text":"<Ariana> ¡Así lo voy a llamar!"}
+tellraw @s[scores={DialogueTrigger=47,TalkTime=1}] {"text":"<Ariana> Ohhh, pero si vas a subir al escenario, ¡tienes que venir aquí conmigo primero!"}
 
-#tps player to makeup room
+# Teletransporta al jugador a la sala de maquillaje
 
-tellraw @s[scores={DialogueTrigger=47,TalkTime=1}] {"text":"<Lisia> So! If you're taking on a Contest Spectacular, there's something you hafta have from me!"}
-tellraw @s[scores={DialogueTrigger=47,TalkTime=1}] {"text":"<Lisia> Tee hee... I know it's sudden. Sorry!"}
-tellraw @s[scores={DialogueTrigger=47,TalkTime=1}] ["",{"text":"<Lisia> Truth is... You're actually the 100th Trainer that I've scouted, "},{"selector":"@s"},{"text":"!"}]
-tellraw @s[scores={DialogueTrigger=47,TalkTime=1}] {"text":"<Lisia> That's a really big deal, you know!"}
-tellraw @s[scores={DialogueTrigger=47,TalkTime=1}] {"text":"<Lisia> It's gotta be fate! Right? Tee hee!"}
-tellraw @s[scores={DialogueTrigger=47,TalkTime=1}] {"text":"<Lisia> I think you're just the Trainer I've been looking for!"}
-tellraw @s[scores={DialogueTrigger=47,TalkTime=1}] {"text":"<Lisia> Oopsies! So-o-o-orry! Got a little carried away!"}
-tellraw @s[scores={DialogueTrigger=47,TalkTime=1}] {"text":"<Lisia> But, um, the point was... Would you like to...?"}
-tellraw @s[scores={DialogueTrigger=47,TalkTime=1}] {"text":"<Lisia> Well, do you think...? Um, wanna wear this for your contest debut?"}
-tellraw @s[scores={DialogueTrigger=47,TalkTime=1}] {"text":"<Lisia> S-s-s-so..."}
-tellraw @s[scores={DialogueTrigger=47,TalkTime=1}] {"text":"<Lisia> So COOOOOOL!"}
-tellraw @s[scores={DialogueTrigger=47,TalkTime=1}] {"text":"<Lisia> Oh, wow! It's PERFECT for you!"}
-tellraw @s[scores={DialogueTrigger=47,TalkTime=1}] {"text":"<Lisia> Eeeee! I just can't wait!"}
-tellraw @s[scores={DialogueTrigger=47,TalkTime=1}] ["",{"text":"<Lisia> Your first time on a live contest stage, "},{"selector":"@s"},{"text":"!"}]
-tellraw @s[scores={DialogueTrigger=47,TalkTime=1}] {"text":"<Lisia> It's gonna be so so so AWESOME! I'm not gonna blink for even a second!"}
-tellraw @s[scores={DialogueTrigger=47,TalkTime=1}] {"text":"<Lisia> I'll be cheering for you!"}
+tellraw @s[scores={DialogueTrigger=47,TalkTime=1}] {"text":"<Ariana> ¡Así que! Si vas a participar en un Espectáculo de Concursos, hay algo que necesitas de mi parte!"}
+tellraw @s[scores={DialogueTrigger=47,TalkTime=1}] {"text":"<Ariana> Jeje... ¡Sé que es repentino! ¡Lo siento!"}
+tellraw @s[scores={DialogueTrigger=47,TalkTime=1}] ["",{"text":"<Ariana> La verdad es que... Eres el Entrenador número 100 que he descubierto, "},{"selector":"@s"},{"text":"!"}]
+tellraw @s[scores={DialogueTrigger=47,TalkTime=1}] {"text":"<Ariana> ¡Eso es un gran acontecimiento, sabes!"}
+tellraw @s[scores={DialogueTrigger=47,TalkTime=1}] {"text":"<Ariana> ¡Tiene que ser el destino! ¿Verdad? Jeje!"}
+tellraw @s[scores={DialogueTrigger=47,TalkTime=1}] {"text":"<Ariana> ¡Creo que eres justo el Entrenador que he estado buscando!"}
+tellraw @s[scores={DialogueTrigger=47,TalkTime=1}] {"text":"<Ariana> ¡Ups! ¡Lo siento! ¡Me emocioné un poco!"}
+tellraw @s[scores={DialogueTrigger=47,TalkTime=1}] {"text":"<Ariana> Pero, um, el punto era... ¿Te gustaría...?"}
+tellraw @s[scores={DialogueTrigger=47,TalkTime=1}] {"text":"<Ariana> Bueno, ¿crees...? Um, ¿quieres ponerte esto para tu debut en el concurso?"}
+tellraw @s[scores={DialogueTrigger=47,TalkTime=1}] {"text":"<Ariana> ¡¡Oh-oh-oh...!!"}
+tellraw @s[scores={DialogueTrigger=47,TalkTime=1}] {"text":"<Ariana> ¡¡QUÉ GUAY!!"}
+tellraw @s[scores={DialogueTrigger=47,TalkTime=1}] {"text":"<Ariana> ¡Oh, wow! ¡Es PERFECTO para ti!"}
+tellraw @s[scores={DialogueTrigger=47,TalkTime=1}] {"text":"<Ariana> ¡Eeeee! ¡No puedo esperar!"}
+tellraw @s[scores={DialogueTrigger=47,TalkTime=1}] ["",{"text":"<Ariana> Tu primera vez en un escenario de concurso en vivo, "},{"selector":"@s"},{"text":"!"}]
+tellraw @s[scores={DialogueTrigger=47,TalkTime=1}] {"text":"<Ariana> ¡Va a ser tan, tan, tan GENIAL! ¡No voy a parpadear ni un segundo!"}
+tellraw @s[scores={DialogueTrigger=47,TalkTime=1}] {"text":"<Ariana> ¡Estaré animándote!"}
 
 tag @s[scores={DialogueTrigger=47,TalkTime=100..}] add Dialogue47
+
 #------------------------------------
-#Dialogue 48 - Post Contest dialogue
-tellraw @s[scores={DialogueTrigger=48,TalkTime=1}] ["",{"text":"<Lisia> "},{"selector":"@s"},{"text":"! Wow! Gratz!"}]
-tellraw @s[scores={DialogueTrigger=48,TalkTime=1}] {"text":"<Lisia> I watched it all! You were great!"}
-tellraw @s[scores={DialogueTrigger=48,TalkTime=1}] {"text":"<Lisia> \"I Really Did It! A Star Is Born!\""}
-tellraw @s[scores={DialogueTrigger=48,TalkTime=1}] {"text":"<Lisia> That's what I'm calling it!"}
-tellraw @s[scores={DialogueTrigger=48,TalkTime=1}] ["",{"text":"<Lisia> "},{"selector":"@s"},{"text":"! You've gotta keep up this pace and just go as far as you can go!"}]
-tellraw @s[scores={DialogueTrigger=48,TalkTime=1}] {"text":"<Lisia> Become a real contest star!"}
-tellraw @s[scores={DialogueTrigger=48,TalkTime=1}] {"text":"<Lisia> If you could have as much fun with Contest Spectaculars as me, I'd be happy as Slugma on a sunny day!"}
-tellraw @s[scores={DialogueTrigger=48,TalkTime=1}] {"text":"<Lisia> You could become a massive star! I've got a good feeling about you!"}
+#Diálogo 48 - Diálogo posterior al Concurso
+tellraw @s[scores={DialogueTrigger=48,TalkTime=1}] ["",{"text":"<Ariana> "},{"selector":"@s"},{"text":"! ¡Vaya! ¡Felicidades!"}]
+tellraw @s[scores={DialogueTrigger=48,TalkTime=1}] {"text":"<Ariana> ¡Lo vi todo! ¡Estuviste genial!"}
+tellraw @s[scores={DialogueTrigger=48,TalkTime=1}] {"text":"<Ariana> \"¡Realmente Lo Hice! ¡Nace una Estrella!\""}
+tellraw @s[scores={DialogueTrigger=48,TalkTime=1}] {"text":"<Ariana> ¡Así lo voy a llamar!"}
+tellraw @s[scores={DialogueTrigger=48,TalkTime=1}] ["",{"text":"<Ariana> "},{"selector":"@s"},{"text":"! ¡Tienes que mantener este ritmo y llegar tan lejos como puedas!"}]
+tellraw @s[scores={DialogueTrigger=48,TalkTime=1}] {"text":"<Ariana> ¡Conviértete en una verdadera estrella de concursos!"}
+tellraw @s[scores={DialogueTrigger=48,TalkTime=1}] {"text":"<Ariana> ¡Si puedes divertirte tanto con los Espectáculos de Concursos como yo, estaría tan feliz como un Slugma en un día soleado!"}
+tellraw @s[scores={DialogueTrigger=48,TalkTime=1}] {"text":"<Ariana> ¡Podrías convertirte en una gran estrella! ¡Tengo un buen presentimiento sobre ti!"}
+
 
 tag @s[scores={DialogueTrigger=48,TalkTime=100..}] add Dialogue48
 #----------------------------------------------------------------------------------------------------------
@@ -2352,7 +2354,7 @@ tag @s[scores={DialogueTrigger=71,TalkTime=43..}] add Dialogue71
 #https://youtu.be/MgkqxXCmrtI?t=22446
 
 tellraw @s[scores={DialogueTrigger=72,TalkTime=1}] {"text":"<Investigador> Oh! It's you!"}
-tellraw @s[scores={DialogueTrigger=72,TalkTime=1}] {"text":"<Investigador> You're that Trainer who helped me in Petalia Woods and also got back my case that was stolen and then graciously delivered it to Slateport!"}
+tellraw @s[scores={DialogueTrigger=72,TalkTime=1}] {"text":"<Investigador> You're that Trainer who helped me in Petalia Woods and also got back my case that was stolen and then graciously delivered it to Portual!"}
 tellraw @s[scores={DialogueTrigger=72,TalkTime=1}] {"text":"<Investigador> Captain Stern informed us that the case arrived safely! I thank you very, very much."}
 tellraw @s[scores={DialogueTrigger=72,TalkTime=1}] {"text":"<Investigador> If I were a rain cloud, I would shower you with gratitude and hail you as a hero!"}
 tellraw @s[scores={DialogueTrigger=72,TalkTime=1}] {"text":"<Investigador> For you, most wonderful Trainer, I bear good news!"}
@@ -2999,7 +3001,7 @@ tag @s[scores={DialogueTrigger=86,TalkTime=100..}] add Dialogue86
 tellraw @s[scores={DialogueTrigger=87,TalkTime=1}] {"text":"<Magno> The power contained in the Meteorite..."}
 tellraw @s[scores={DialogueTrigger=87,TalkTime=1}] {"text":"<Magno> If we merge the explosive energy contained within the planet's core with the Meteorite's power..."}
 tellraw @s[scores={DialogueTrigger=87,TalkTime=1}] {"text":"<Magno> I remember those eyes. And the indomitable will that seems to burn behind them."}
-tellraw @s[scores={DialogueTrigger=87,TalkTime=1}] {"text":"<Magno> Ahhh. Now I recall. You are the one who defied us at Slateport's Oceanic Museum."}
+tellraw @s[scores={DialogueTrigger=87,TalkTime=1}] {"text":"<Magno> Ahhh. Now I recall. You are the one who defied us at Portual's Oceanic Museum."}
 tellraw @s[scores={DialogueTrigger=87,TalkTime=1}] {"text":"<Magno> And, your presence here tells me that you have defeated Tabitha."}
 tellraw @s[scores={DialogueTrigger=87,TalkTime=1}] {"text":"<Magno> Yes, I see now that the stirring of interest I felt was not misplaced."}
 tellraw @s[scores={DialogueTrigger=87,TalkTime=1}] {"text":"<Magno> Hmph. You show true promise. Fine. I will attempt to educate you."}
@@ -3017,7 +3019,7 @@ tellraw @s[scores={DialogueTrigger=87,TalkTime=1}] {"text":"<Magno> And here, at
 tellraw @s[scores={DialogueTrigger=87,TalkTime=1}] {"text":"<Magno> Hmph... I should not say too much. That is the end of today's lesson."}
 tellraw @s[scores={DialogueTrigger=87,TalkTime=1}] {"text":"<Magno> Now then. I believe it is time we begin."}
 tellraw @s[scores={DialogueTrigger=87,TalkTime=1}] {"text":"<Magno> The time for the purge has come."}
-tellraw @s[scores={DialogueTrigger=87,TalkTime=1}] {"text":"<Magno> I do believe that I made myself quite clear when we were last in Slateport."}
+tellraw @s[scores={DialogueTrigger=87,TalkTime=1}] {"text":"<Magno> I do believe that I made myself quite clear when we were last in Portual."}
 tellraw @s[scores={DialogueTrigger=87,TalkTime=1}] {"text":"<Magno> I warned you that any fool standing in our way would be met without mercy!"}
 tellraw @s[scores={DialogueTrigger=87,TalkTime=1}] {"text":"<Magno> I will bury you by my own hand."}
 tellraw @s[scores={DialogueTrigger=87,TalkTime=1}] {"text":"<Magno> I hope you appreciate this honor!"}
@@ -3030,7 +3032,7 @@ tellraw @s[scores={DialogueTrigger=87,TalkTime=1}] {"text":"<Aquiles> The great 
 tellraw @s[scores={DialogueTrigger=87,TalkTime=1}] {"text":"<Aquiles> And it's the key to controlling the super-ancient Pokémon's power?"}
 tellraw @s[scores={DialogueTrigger=87,TalkTime=1}] {"text":"<Aquiles> Ah! You..."}
 tellraw @s[scores={DialogueTrigger=87,TalkTime=1}] {"text":"<Aquiles> Uh... No... Oh!"}
-tellraw @s[scores={DialogueTrigger=87,TalkTime=1}] {"text":"<Aquiles> Now I know how I know you! You're the little scamp that got in our way in Slateport's museum!"}
+tellraw @s[scores={DialogueTrigger=87,TalkTime=1}] {"text":"<Aquiles> Now I know how I know you! You're the little scamp that got in our way in Portual's museum!"}
 tellraw @s[scores={DialogueTrigger=87,TalkTime=1}] {"text":"<Aquiles> If you made it here to me, you musta swept right past Shelly, huh?"}
 tellraw @s[scores={DialogueTrigger=87,TalkTime=1}] {"text":"<Aquiles> Heh...heheheh... Krmph! Bwahahahahaha!"}
 tellraw @s[scores={DialogueTrigger=87,TalkTime=1}] {"text":"<Aquiles> I figured you were a big deal the first time I laid eyes on you, but...whoa!"}
@@ -4389,9 +4391,9 @@ tellraw @s[scores={DialogueTrigger=119,TalkTime=1}] {"text":"<Magno> and crush t
 tellraw @s[scores={DialogueTrigger=119,TalkTime=1}] {"text":"<Magno> Fufufu..."}
 tellraw @s[scores={DialogueTrigger=119,TalkTime=1}] {"text":"<Magno> With this Red Orb in my possession, I have no need for the power of the Meteorite to awaken the beast from the deep!"}
 tellraw @s[scores={DialogueTrigger=119,TalkTime=1}] {"text":"<Magno> All that I need now is a way to reach the place where it sleeps..."}
-tellraw @s[scores={DialogueTrigger=119,TalkTime=1}] {"text":"<Magno> The only task remaining is obtaining the submarine being constructed in Slateport!"}
+tellraw @s[scores={DialogueTrigger=119,TalkTime=1}] {"text":"<Magno> The only task remaining is obtaining the submarine being constructed in Portual!"}
 tellraw @s[scores={DialogueTrigger=119,TalkTime=1}] {"text":"<Magno> We move out at once, team!"}
-tellraw @s[scores={DialogueTrigger=119,TalkTime=1}] {"text":"<Magno> Our next destination...Slateport City!"}
+tellraw @s[scores={DialogueTrigger=119,TalkTime=1}] {"text":"<Magno> Our next destination...Ciudad Portual!"}
 
 tellraw @s[scores={DialogueTrigger=119,TalkTime=1}] {"text":"<Team Magma Cortney> ..."}
 tellraw @s[scores={DialogueTrigger=119,TalkTime=1}] {"text":"<Team Magma Cortney> ...Analyzing."}
@@ -4412,8 +4414,8 @@ tellraw @s[scores={DialogueTrigger=119,TalkTime=1}] {"text":"<Aquiles> How about
 tellraw @s[scores={DialogueTrigger=119,TalkTime=1}] {"text":"<Aquiles> You'd better use your full strength, too, so you don't offend our honored guest!"}
 tellraw @s[scores={DialogueTrigger=119,TalkTime=1}] {"text":"<Aquiles> Bwahahahaha! With this Blue Orb in my hands, I won't even need the power of the Meteorite to awaken the beast from the deep!"}
 tellraw @s[scores={DialogueTrigger=119,TalkTime=1}] {"text":"<Aquiles> All I need now is a way to get to the place where it sleeps..."}
-tellraw @s[scores={DialogueTrigger=119,TalkTime=1}] {"text":"<Aquiles> All I have to do is get that submarine they're making in Slateport!"}
-tellraw @s[scores={DialogueTrigger=119,TalkTime=1}] {"text":"<Aquiles> Come on, boys! We're for Slateport City!"}
+tellraw @s[scores={DialogueTrigger=119,TalkTime=1}] {"text":"<Aquiles> All I have to do is get that submarine they're making in Portual!"}
+tellraw @s[scores={DialogueTrigger=119,TalkTime=1}] {"text":"<Aquiles> Come on, boys! We're for Ciudad Portual!"}
 
 tellraw @s[scores={DialogueTrigger=119,TalkTime=1}] {"text":"<Team Aqua Matt> All right then, until the Boss makes his getaway, I'll be your opponent!"}
 
@@ -4453,7 +4455,7 @@ tellraw @s[scores={DialogueTrigger=120,TalkTime=1}] ["",{"selector":"@s","italic
 
 tellraw @s[scores={DialogueTrigger=120,TalkTime=1}] {"text":"<Old Lady> And I beg you..."}
 tellraw @s[scores={DialogueTrigger=120,TalkTime=1}] {"text":"<Old Lady> Chase after those thieves and take back their orb! That wretched leader of theirs..."}
-tellraw @s[scores={DialogueTrigger=120,TalkTime=1}] {"text":"<Old Lady> I'm sure he said they were headed for Slateport City next..."}
+tellraw @s[scores={DialogueTrigger=120,TalkTime=1}] {"text":"<Old Lady> I'm sure he said they were headed for Ciudad Portual next..."}
 
 tag @s[scores={DialogueTrigger=120,TalkTime=100..}] add Dialogue120
 #-----------------------------------------------------------------------------------------------------
@@ -4488,8 +4490,8 @@ tellraw @s[scores={DialogueTrigger=122,TalkTime=1}] {"text":"<Fisherman> They're
 
 tag @s[scores={DialogueTrigger=122,TalkTime=100..}] add Dialogue122
 #-----------------------------------------------------------------------------------------------------
-#Dialogue 123 - Slateport City
-#Slateport Harbor
+#Dialogue 123 - Ciudad Portual
+#Portual Harbor
 #https://youtu.be/MgkqxXCmrtI?t=46181
 
 #View of overhead shot
@@ -4540,7 +4542,7 @@ tellraw @s[scores={DialogueTrigger=123,TalkTime=1}] {"text":"<Captain Stern> Ple
 
 tag @s[scores={DialogueTrigger=123,TalkTime=100..}] add Dialogue123
 #-----------------------------------------------------------------------------------------------------
-#Dialogue 124 - Slateport Harbor
+#Dialogue 124 - Portual Harbor
 #Team leaders taking Submarine
 #https://youtu.be/MgkqxXCmrtI?t=46289
 
@@ -4611,7 +4613,7 @@ tellraw @s[scores={DialogueTrigger=124,TalkTime=1}] {"text":"<Recluta del Team A
 
 tag @s[scores={DialogueTrigger=124,TalkTime=100..}] add Dialogue124
 #-------------------------------------
-#Dialogue 127 - Slateport City
+#Dialogue 127 - Ciudad Portual
 #After first grunt
 
 tellraw @s[scores={DialogueTrigger=125,TalkTime=1}] {"text":"<Recluta del Team Magma> I was the one who was flattened..."}
@@ -4669,7 +4671,7 @@ tellraw @s[scores={DialogueTrigger=126,TalkTime=1}] ["",{"text":"["},{"text":"Ye
 
 tag @s[scores={DialogueTrigger=126,TalkTime=100..}] add Dialogue126
 #-----------------------
-#Dialogue 127 - Slateport City
+#Dialogue 127 - Ciudad Portual
 #Captain Stern Fast Travel
 #https://youtu.be/MgkqxXCmrtI?t=46536
 
@@ -4683,7 +4685,7 @@ tellraw @s[scores={DialogueTrigger=127,TalkTime=1}] {"text":"<Captain Stern> We 
 tellraw @s[scores={DialogueTrigger=127,TalkTime=1}] {"text":"<Captain Stern> Those thieves who stole my submarine must be hiding out somewhere in this city..."}
 tellraw @s[scores={DialogueTrigger=127,TalkTime=1}] ["",{"text":"<Captain Stern> "},{"selector":"@s"},{"text":", please..."}]
 tellraw @s[scores={DialogueTrigger=127,TalkTime=1}] {"text":"<Captain Stern> Find my sub for me..."}
-tellraw @s[scores={DialogueTrigger=127,TalkTime=1}] {"text":"<Captain Stern> I'll be heading back to the shipyard in Slateport to start dealing with the aftermath of all this..."}
+tellraw @s[scores={DialogueTrigger=127,TalkTime=1}] {"text":"<Captain Stern> I'll be heading back to the shipyard in Portual to start dealing with the aftermath of all this..."}
 
 #tps Stern out
 
@@ -8860,7 +8862,7 @@ execute as @s[scores={DialogueTrigger=210,TalkTime=36}] run give @s pixelmon:ss_
 execute as @s[scores={DialogueTrigger=210,TalkTime=36}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 
 tellraw @s[scores={DialogueTrigger=210,TalkTime=43}] {"text":"<Papá> Hm, so it was a ferry ticket, was it?"}
-tellraw @s[scores={DialogueTrigger=210,TalkTime=50}] {"text":"<Papá> As I recall, you can catch the ferry from the ports in Slateport and Lilycove."}
+tellraw @s[scores={DialogueTrigger=210,TalkTime=50}] {"text":"<Papá> As I recall, you can catch the ferry from the ports in Portual and Lilycove."}
 tellraw @s[scores={DialogueTrigger=210,TalkTime=60}] ["",{"text":"<Papá> "},{"selector":"@s"},{"text":"!"}]
 tellraw @s[scores={DialogueTrigger=210,TalkTime=66}] {"text":"<Papá> If you have ambition as a Trainer, I want you to take that ferry to the Battle Resort."}
 tellraw @s[scores={DialogueTrigger=210,TalkTime=76}] {"text":"<Papá> I think it will teach you that there is no end to a Trainer's chosen path."}
@@ -9011,7 +9013,7 @@ tellraw @s[scores={DialogueTrigger=217,TalkTime=1}] {"text":"<Wattson> All the e
 
 tag @s[scores={DialogueTrigger=217,TalkTime=100..}] add Dialogue217
 #-----------------------------------------------------------------------------------------------------
-#Dialogue 218 - Slateport City
+#Dialogue 218 - Ciudad Portual
 #If player has the scanner in their inventory
 #https://youtu.be/MgkqxXCmrtI?t=77756
 
@@ -9026,7 +9028,7 @@ tellraw @s[scores={DialogueTrigger=218,TalkTime=17}] ["",{"text":"["},{"text":"Y
 
 tag @s[scores={DialogueTrigger=218,TalkTime=17..}] add Dialogue218
 #-----------------------------------------------------------------------------------------------------
-#Dialogue 219 - Slateport City
+#Dialogue 219 - Ciudad Portual
 #Player handing over scanner
 #https://youtu.be/MgkqxXCmrtI?t=77765
 
@@ -9413,21 +9415,21 @@ execute as @s[scores={DialogueTrigger=264,TalkTime=10}] run tellraw @s ["",{"tex
 tag @s[scores={DialogueTrigger=264,TalkTime=10..}] add Dialogue264
 
 #-----------------------------------------------------------------------------------------------------
-#Dialogue 242 - Lillycove or Slateport Harbor
+#Dialogue 242 - Lillycove or Portual Harbor
 #https://youtu.be/MgkqxXCmrtI?t=85438
 
 tellraw @s[scores={DialogueTrigger=242,TalkTime=1}] {"text":"<Lass> Hello. Are you here for the ferry? May I see your ticket?"}
 tellraw @s[tag=Dialogue210,scores={DialogueTrigger=242,TalkTime=9}] ["",{"selector":"@s","italic":true,"color":"gray"},{"text":" showed the woman their ticket.","italic":true,"color":"gray"}]
 tellraw @s[tag=Dialogue210,scores={DialogueTrigger=242,TalkTime=16}] {"text":"<Lass> Perfect! That's all you need! And where would you like to go?"}
 execute as @s[tag=Dialogue210,scores={DialogueTrigger=242,TalkTime=16}] run scoreboard players enable @s TriggerCommand
-tellraw @s[x=2422,y=79,z=2585,distance=..50,tag=Dialogue210,scores={DialogueTrigger=242,TalkTime=16}] ["",{"text":"["},{"text":"The Battle Resort","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 519"}},{"text":"] \u0020["},{"text":"Slateport City","color":"yellow","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 518"}},{"text":"]"}]
+tellraw @s[x=2422,y=79,z=2585,distance=..50,tag=Dialogue210,scores={DialogueTrigger=242,TalkTime=16}] ["",{"text":"["},{"text":"The Battle Resort","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 519"}},{"text":"] \u0020["},{"text":"Ciudad Portual","color":"yellow","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 518"}},{"text":"]"}]
 tellraw @s[x=2212,y=79,z=2585,distance=..50,tag=Dialogue210,scores={DialogueTrigger=242,TalkTime=16}] ["",{"text":"["},{"text":"The Battle Resort","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 519"}},{"text":"] \u0020["},{"text":"Lilycove City","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 517"}},{"text":"]"}]
-tellraw @s[x=2512,y=70,z=1044,distance=..50,tag=Dialogue210,scores={DialogueTrigger=242,TalkTime=16}] ["",{"text":"["},{"text":"Slateport City","color":"yellow","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 518"}},{"text":"] \u0020["},{"text":"Lilycove City","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 517"}},{"text":"]"}]
+tellraw @s[x=2512,y=70,z=1044,distance=..50,tag=Dialogue210,scores={DialogueTrigger=242,TalkTime=16}] ["",{"text":"["},{"text":"Ciudad Portual","color":"yellow","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 518"}},{"text":"] \u0020["},{"text":"Lilycove City","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 517"}},{"text":"]"}]
 
 #change depending on player's location
-#[The Battle Resort]  [Slateport City]
+#[The Battle Resort]  [Ciudad Portual]
 #[The Battle Resort] [Lilycove City]
-#[Slateport City]  [Lilycove City]
+#[Ciudad Portual]  [Lilycove City]
 
 #if ticket not present
 tellraw @s[tag=!Dialogue210,scores={DialogueTrigger=242,TalkTime=9}] ["",{"selector":"@s","italic":true,"color":"gray"},{"text":" doesn't have a ticket!","italic":true,"color":"gray"}]
@@ -9452,7 +9454,7 @@ tellraw @s[scores={DialogueTrigger=243,TalkTime=22}] {"text":"<Sailor> We hope y
 #Start 5 minute timer, arrives
 tellraw @s[scores={DialogueTrigger=243,TalkTime=35}] {"text":"<Intercom> Our journey will take about five minutes. Feel free to walk about the ship in the meantime!"}
 
-tellraw @s[scores={DialogueTrigger=243,TalkTime=435,Temp=2}] {"text":"<Intercom> We will be landing in Slateport City shortly."}
+tellraw @s[scores={DialogueTrigger=243,TalkTime=435,Temp=2}] {"text":"<Intercom> We will be landing in Ciudad Portual shortly."}
 tellraw @s[scores={DialogueTrigger=243,TalkTime=435,Temp=1}] {"text":"<Intercom> We will be landing in Lilycove City shortly."}
 tellraw @s[scores={DialogueTrigger=243,TalkTime=435,Temp=3}] {"text":"<Intercom> We will be landing at the Battle Resort shortly."}
 
@@ -9464,7 +9466,7 @@ tag @s[scores={DialogueTrigger=243,TalkTime=455..}] add Dialogue243
 #----------------------------------------
 #Dialogue 244 - Arriving from S.S. Tidal
 
-tellraw @s[scores={DialogueTrigger=244,TalkTime=1,Temp=2}] {"text":"<Intercom> We will be landing in Slateport City shortly."}
+tellraw @s[scores={DialogueTrigger=244,TalkTime=1,Temp=2}] {"text":"<Intercom> We will be landing in Ciudad Portual shortly."}
 tellraw @s[scores={DialogueTrigger=244,TalkTime=1,Temp=1}] {"text":"<Intercom> We will be landing in Lilycove City shortly."}
 tellraw @s[scores={DialogueTrigger=244,TalkTime=1,Temp=3}] {"text":"<Intercom> We will be landing at the Battle Resort shortly."}
 tellraw @s[scores={DialogueTrigger=244,TalkTime=1}] {"text":"<Intercom> Thank you for sailing with us."}
