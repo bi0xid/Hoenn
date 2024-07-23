@@ -596,8 +596,8 @@ execute as @s[scores={DialogueTrigger=15,TalkTime=10,Rival=2}] unless entity @e[
 tellraw @s[scores={DialogueTrigger=15,TalkTime=13,Rival=1}] ["",{"text":"<Aura> ¿Cómo va, "},{"selector":"@s"},{"text":"?"}]
 execute at @s[scores={DialogueTrigger=15,TalkTime=13}] as @e[type=pixelmon:npc_chatting,distance=..10] at @s run tp @s ~ ~ ~ facing entity @p[distance=..15]
 tellraw @s[scores={DialogueTrigger=15,TalkTime=20,Rival=1}] {"text":"<Aura> ¿Has estado usando tu DexNav y perfeccionando tus habilidades de sigilo?"}
-#tellraw @s[scores={DialogueTrigger=15,TalkTime=1}] {"text":"<May> I hope you already checked out the DexNav's Detector Mode."}
-#tellraw @s[scores={DialogueTrigger=15,TalkTime=1}] {"text":"<May> It reacts to Pokémon in the area, so it's really handy!"}
+#tellraw @s[scores={DialogueTrigger=15,TalkTime=1}] {"text":"<Aura> I hope you already checked out the DexNav's Detector Mode."}
+#tellraw @s[scores={DialogueTrigger=15,TalkTime=1}] {"text":"<Aura> It reacts to Pokémon in the area, so it's really handy!"}
 tellraw @s[scores={DialogueTrigger=15,TalkTime=28,Rival=1}] {"text":"<Aura> ¡Ah!"}
 
 
@@ -928,33 +928,35 @@ tag @s[scores={DialogueTrigger=18,TalkTime=130..}] add Dialogue18
 
 #holds player in place overlooking part of the forest
 
-tellraw @s[scores={DialogueTrigger=19,TalkTime=1}] {"text":"<Recluta del Team Magma> ...This is the Petalia recon team checking in."}
-tellraw @s[scores={DialogueTrigger=19,TalkTime=1}] {"text":"<Recluta del Team Magma> I'm afraid I have to begin with an apology, Ms. Courtney..."}
-tellraw @s[scores={DialogueTrigger=19,TalkTime=1}] {"text":"<Recluta del Team Magma> It's not good news..."}
-tellraw @s[scores={DialogueTrigger=19,TalkTime=1}] {"text":"<Recluta del Team Magma> The mission is a no-go..."}
-tellraw @s[scores={DialogueTrigger=19,TalkTime=1}] {"text":"<Recluta del Team Magma> A little something cropped up and got in the way..."}
-tellraw @s[scores={DialogueTrigger=19,TalkTime=1}] {"text":"<Recluta del Team Magma> ...Roger that."}
-tellraw @s[scores={DialogueTrigger=19,TalkTime=1}] {"text":"<Recluta del Team Magma> ...Got it. Will do."}
-tellraw @s[scores={DialogueTrigger=19,TalkTime=1}] {"text":"<Recluta del Team Magma> I'll continue investigating that energy we detected."}
+#Línea Magma
+tellraw @s[scores={DialogueTrigger=19,TalkTime=1}] {"text":"<Recluta del Team Magma> ...Este es el equipo de reconocimiento de Petalia reportándose."}
+tellraw @s[scores={DialogueTrigger=19,TalkTime=9}] {"text":"<Recluta del Team Magma> Me temo que debo comenzar con una disculpa, Srta. Courtney..."}
+tellraw @s[scores={DialogueTrigger=19,TalkTime=17}] {"text":"<Recluta del Team Magma> No son buenas noticias..."}
+tellraw @s[scores={DialogueTrigger=19,TalkTime=25}] {"text":"<Recluta del Team Magma> La misión no puede seguir adelante..."}
+tellraw @s[scores={DialogueTrigger=19,TalkTime=33}] {"text":"<Recluta del Team Magma> Surgió un pequeño inconveniente y se interpuso..."}
+tellraw @s[scores={DialogueTrigger=19,TalkTime=41}] {"text":"<Recluta del Team Magma> ...Entendido."}
+tellraw @s[scores={DialogueTrigger=19,TalkTime=49}] {"text":"<Recluta del Team Magma> ...Recibido. Lo haré."}
+tellraw @s[scores={DialogueTrigger=19,TalkTime=57}] {"text":"<Recluta del Team Magma> Continuaré investigando esa energía que detectamos."}
 
-#position 2
+#Posición 2
 
-tellraw @s[scores={DialogueTrigger=19,TalkTime=1}] {"text":"<Recluta del Team Magma> ... ...Phew!"}
-tellraw @s[scores={DialogueTrigger=19,TalkTime=1}] {"text":"<Recluta del Team Magma> But that kid sure had some promise as a Trainer, I'd say."}
+tellraw @s[scores={DialogueTrigger=19,TalkTime=65}] {"text":"<Recluta del Team Magma> ... ...¡Uf!"}
+tellraw @s[scores={DialogueTrigger=19,TalkTime=73}] {"text":"<Recluta del Team Magma> Pero ese chico seguro tiene potencial como Entrenador, diría yo."}
 
-tellraw @s[scores={DialogueTrigger=19,TalkTime=1}] {"text":"<Recluta del Team Aqua> ...This is the Petalia recon team checking in."}
-tellraw @s[scores={DialogueTrigger=19,TalkTime=1}] {"text":"<Recluta del Team Aqua> I'm afraid I have to begin with an apology, Mr. Matt..."}
-tellraw @s[scores={DialogueTrigger=19,TalkTime=1}] {"text":"<Recluta del Team Aqua> It's not good news..."}
-tellraw @s[scores={DialogueTrigger=19,TalkTime=1}] {"text":"<Recluta del Team Aqua> The mission is a no-go..."}
-tellraw @s[scores={DialogueTrigger=19,TalkTime=1}] {"text":"<Recluta del Team Aqua> A little something cropped up and got in the way..."}
-tellraw @s[scores={DialogueTrigger=19,TalkTime=1}] {"text":"<Recluta del Team Aqua> ...Roger that."}
-tellraw @s[scores={DialogueTrigger=19,TalkTime=1}] {"text":"<Recluta del Team Aqua> ...Got it. Will do."}
-tellraw @s[scores={DialogueTrigger=19,TalkTime=1}] {"text":"<Recluta del Team Aqua> I'll continue investigating that energy we detected."}
+#Línea Aqua
+tellraw @s[scores={DialogueTrigger=19,TalkTime=81}] {"text":"<Recluta del Team Aqua> ...Este es el equipo de reconocimiento de Petalia reportándose."}
+tellraw @s[scores={DialogueTrigger=19,TalkTime=89}] {"text":"<Recluta del Team Aqua> Me temo que debo comenzar con una disculpa, Sr. Matt..."}
+tellraw @s[scores={DialogueTrigger=19,TalkTime=97}] {"text":"<Recluta del Team Aqua> No son buenas noticias..."}
+tellraw @s[scores={DialogueTrigger=19,TalkTime=105}] {"text":"<Recluta del Team Aqua> La misión no puede seguir adelante..."}
+tellraw @s[scores={DialogueTrigger=19,TalkTime=113}] {"text":"<Recluta del Team Aqua> Surgió un pequeño inconveniente y se interpuso..."}
+tellraw @s[scores={DialogueTrigger=19,TalkTime=121}] {"text":"<Recluta del Team Aqua> ...Entendido."}
+tellraw @s[scores={DialogueTrigger=19,TalkTime=129}] {"text":"<Recluta del Team Aqua> ...Recibido. Lo haré."}
+tellraw @s[scores={DialogueTrigger=19,TalkTime=137}] {"text":"<Recluta del Team Aqua> Continuaré investigando esa energía que detectamos."}
 
-#position 2
+#Posición 2
 
-tellraw @s[scores={DialogueTrigger=19,TalkTime=1}] {"text":"<Recluta del Team Aqua> ... ...Phew!"}
-tellraw @s[scores={DialogueTrigger=19,TalkTime=1}] {"text":"<Recluta del Team Aqua> But that kid sure had some promise as a Trainer, I'd say."}
+tellraw @s[scores={DialogueTrigger=19,TalkTime=145}] {"text":"<Recluta del Team Aqua> ... ...¡Uf!"}
+tellraw @s[scores={DialogueTrigger=19,TalkTime=153}] {"text":"<Recluta del Team Aqua> Pero ese chico seguro tiene potencial como Entrenador, diría yo."}
 
 #Blinds player
 #Teleports to exit of woods
@@ -970,25 +972,25 @@ tag @s[scores={DialogueTrigger=19,TalkTime=100..}] add Dialogue19
 execute as @s[scores={DialogueTrigger=20,TalkTime=1,Rival=1}] unless entity @e[x=-2741,y=69,z=-565,distance=..3,type=pixelmon:npc_chatting] run summon pixelmon:npc_chatting -2741 69 -565 {HurtByTimestamp: 0, chatNum: 0, Invulnerable: 0b, FallFlying: 0b, PortalCooldown: 0, AbsorptionAmount: 0.0f, Name: "May", FallDistance: 0.0f, CanUpdate: 1b, DeathTime: 0s, DefaultName: 0b, Commands: {interactCommands: []}, HandDropChances: [0.085f, 0.085f], PersistenceRequired: 1b, trainerLocation: 2, DefaultGreet: 0b, TextureIndex: 4, TrainerIndex: "madame", NameIndex: 4, Health: 20.0f, LeftHanded: 0b, Air: 300s, OnGround: 1b, Rotation: [0.0f, 0.0f], HandItems: [{}, {}], ChatIndex: 0, Profession: -1s,Fire: -1s, ArmorItems: [{}, {}, {}, {}], CanPickUpLoot: 0b, CustomSteveTexture: "may.png", HurtTime: 0s, BaseTrainer: "Steve", Inventory: [], AIMode: 2s}
 execute as @s[scores={DialogueTrigger=20,TalkTime=1,Rival=2}] unless entity @e[x=-2741,y=69,z=-565,distance=..3,type=pixelmon:npc_chatting] run summon pixelmon:npc_chatting -2741 69 -565 {HurtByTimestamp: 0, chatNum: 0, Invulnerable: 0b, FallFlying: 0b, PortalCooldown: 0, AbsorptionAmount: 0.0f, Name: "Brendan", FallDistance: 0.0f, CanUpdate: 1b, DeathTime: 0s, DefaultName: 0b, Commands: {interactCommands: []}, HandDropChances: [0.085f, 0.085f], PersistenceRequired: 1b, trainerLocation: 2, DefaultGreet: 0b, TextureIndex: 4, TrainerIndex: "madame", NameIndex: 4, Health: 20.0f, LeftHanded: 0b, Air: 300s, OnGround: 1b, Rotation: [0.0f, 0.0f], HandItems: [{}, {}], ChatIndex: 0, Profession: -1s,Fire: -1s, ArmorItems: [{}, {}, {}, {}], CanPickUpLoot: 0b, CustomSteveTexture: "brendan.png", HurtTime: 0s, BaseTrainer: "Steve", Inventory: [], AIMode: 2s}
 
-tellraw @s[scores={DialogueTrigger=20,TalkTime=5,Rival=1}] ["",{"text":"<May> So you made it here to Férrica, too, "},{"selector":"@s"},{"text":"."}]
-tellraw @s[scores={DialogueTrigger=20,TalkTime=5,Rival=2}] ["",{"text":"<Brendan> So you made it here to Férrica, too, "},{"selector":"@s"},{"text":"."}]
+tellraw @s[scores={DialogueTrigger=20,TalkTime=5,Rival=1}] ["",{"text":"<Aura> Así que también llegaste a Férrica, "},{"selector":"@s"},{"text":"."}]
+tellraw @s[scores={DialogueTrigger=20,TalkTime=5,Rival=2}] ["",{"text":"<Bruno> Así que también llegaste a Férrica, "},{"selector":"@s"},{"text":"."}]
 
 execute as @s[scores={DialogueTrigger=20,TalkTime=16}] run gamemode spectator
 execute as @s[scores={DialogueTrigger=20,TalkTime=16}] run tp @s -2650 122 -534 154 32
-tellraw @s[scores={DialogueTrigger=20,TalkTime=20,Rival=1}] {"text":"<May> It's really big here, isn't it? Littleroot can't even compare."}
-tellraw @s[scores={DialogueTrigger=20,TalkTime=20,Rival=2}] {"text":"<Brendan> It's a real city, huh? Nothing like Littleroot."}
+tellraw @s[scores={DialogueTrigger=20,TalkTime=20,Rival=1}] {"text":"<Aura> Es realmente grande, ¿no crees? Villa Raíz ni se compara."}
+tellraw @s[scores={DialogueTrigger=20,TalkTime=20,Rival=2}] {"text":"<Bruno> Es una verdadera ciudad, ¿eh? Nada como Villa Raíz."}
 
 execute as @s[scores={DialogueTrigger=20,TalkTime=30}] run tp @s -2687 87 -656 -150 28
-tellraw @s[scores={DialogueTrigger=20,TalkTime=32,Rival=1}] ["",{"text":"<May> Oh, and "},{"selector":"@s"},{"text":", have you heard? There's a Pokémon Gym here, too!"}]
-tellraw @s[scores={DialogueTrigger=20,TalkTime=32,Rival=2}] {"text":"<Brendan> Oh, did you know? There's a Pokémon Gym here, too."}
+tellraw @s[scores={DialogueTrigger=20,TalkTime=32,Rival=1}] ["",{"text":"<Aura> ¡Oh, y "},{"selector":"@s"},{"text":", ¿has oído? ¡También hay un Gimnasio Pokémon aquí!"}]
+tellraw @s[scores={DialogueTrigger=20,TalkTime=32,Rival=2}] {"text":"<Bruno> Oye, ¿sabías? También hay un Gimnasio Pokémon aquí."}
 
 #execute as @s[scores={DialogueTrigger=20,TalkTime=16..40}] run tp @s ~-0.05 ~ ~-0.05
 
 execute as @s[scores={DialogueTrigger=20,TalkTime=40}] run gamemode adventure
 execute as @s[scores={DialogueTrigger=20,TalkTime=40}] run tp @s -2741 69 -561 180 ~
 
-tellraw @s[scores={DialogueTrigger=20,TalkTime=42,Rival=1}] {"text":"<May> Once I catch a couple more Pokémon, I'll be sure to take it on with my team! See you later!"}
-tellraw @s[scores={DialogueTrigger=20,TalkTime=42,Rival=2}] {"text":"<Brendan> Soon as I gather a few more Pokémon, I'll be trying my team against it! See ya!"}
+tellraw @s[scores={DialogueTrigger=20,TalkTime=42,Rival=1}] {"text":"<Aura> ¡En cuanto atrape un par más de Pokémon, me aseguraré de desafiarlo con mi equipo! ¡Nos vemos!"}
+tellraw @s[scores={DialogueTrigger=20,TalkTime=42,Rival=2}] {"text":"<Bruno> Tan pronto como consiga unos cuantos Pokémon más, ¡lo intentaré con mi equipo! ¡Nos vemos!"}
 
 #Tps out
 execute as @s[scores={DialogueTrigger=20,TalkTime=50}] run particle cloud -2741 69 -565 1 1 1 0.15 300
@@ -1000,21 +1002,21 @@ tag @s[scores={DialogueTrigger=20,TalkTime=50..}] add Dialogue20
 #Cut HM Obtaining
 #https://youtu.be/MgkqxXCmrtI?t=6046
 
-tellraw @s[scores={DialogueTrigger=21,TalkTime=1}] {"text":"<Cutter> That determined expression..."}
-tellraw @s[scores={DialogueTrigger=21,TalkTime=8}] {"text":"<Cutter> That limber way you move..."}
-tellraw @s[scores={DialogueTrigger=21,TalkTime=15}] {"text":"<Cutter> And your well-trained Pokémon..."}
-tellraw @s[scores={DialogueTrigger=21,TalkTime=22}] {"text":"<Cutter> You're obviously a skilled Trainer!"}
-tellraw @s[scores={DialogueTrigger=21,TalkTime=29}] {"text":"<Cutter> No, wait, don't say a word. I can tell just by looking at you."}
-tellraw @s[scores={DialogueTrigger=21,TalkTime=37}] {"text":"<Cutter> I'm sure that you will be capable of putting this HM to good use."}
-tellraw @s[scores={DialogueTrigger=21,TalkTime=46}] {"text":"<Cutter> No need to be modest or shy. Go on, take it!"}
+tellraw @s[scores={DialogueTrigger=21,TalkTime=1}] {"text":"<Cutter> Esa expresión decidida..."}
+tellraw @s[scores={DialogueTrigger=21,TalkTime=8}] {"text":"<Cutter> Esa forma ágil de moverte..."}
+tellraw @s[scores={DialogueTrigger=21,TalkTime=15}] {"text":"<Cutter> Y tus Pokémon bien entrenados..."}
+tellraw @s[scores={DialogueTrigger=21,TalkTime=22}] {"text":"<Cutter> ¡Obviamente eres un Entrenador habilidoso!"}
+tellraw @s[scores={DialogueTrigger=21,TalkTime=29}] {"text":"<Cutter> No, espera, no digas una palabra. Puedo saberlo solo con mirarte."}
+tellraw @s[scores={DialogueTrigger=21,TalkTime=37}] {"text":"<Cutter> Estoy seguro de que serás capaz de darle un buen uso a esta MO."}
+tellraw @s[scores={DialogueTrigger=21,TalkTime=46}] {"text":"<Cutter> No necesitas ser modesto o tímido. ¡Adelante, tómala!"}
 
 execute as @s[scores={DialogueTrigger=21,TalkTime=54}] run give @s pixelmon:hm1
 execute as @s[scores={DialogueTrigger=21,TalkTime=54}] run function hoenn:spawn/cuthm
 execute as @s[scores={DialogueTrigger=21,TalkTime=54}] run playsound minecraft:tmget ambient @s ~ ~ ~ 1 1 1
-tellraw @s[scores={DialogueTrigger=21,TalkTime=54}] ["",{"selector":"@s","italic":true,"color":"gray"},{"text":" obtained HM01 Cut!","italic":true,"color":"gray"}]
+tellraw @s[scores={DialogueTrigger=21,TalkTime=54}] ["",{"selector":"@s","italic":true,"color":"gray"},{"text":" obtuvo MO01 Corte!","italic":true,"color":"gray"}]
 
-tellraw @s[scores={DialogueTrigger=21,TalkTime=60}] {"text":"<Cutter> That's an axe that can chop down prickly trees if the Trainer has earned the Stone Badge."}
-tellraw @s[scores={DialogueTrigger=21,TalkTime=70}] {"text":"<Cutter> HMs like this can be used outside of battle, too, with the right Badges!"}
+tellraw @s[scores={DialogueTrigger=21,TalkTime=60}] {"text":"<Cutter> Es un hacha que puede talar árboles espinosos si el Entrenador ha ganado la Medalla de Piedra."}
+tellraw @s[scores={DialogueTrigger=21,TalkTime=70}] {"text":"<Cutter> ¡Las MOs como esta pueden usarse fuera de combate también, con las Medallas adecuadas!"}
 
 tag @s[scores={DialogueTrigger=21,TalkTime=70..}] add Dialogue21
 #----------------------------------------------------------------------------------------------------------
@@ -1023,32 +1025,33 @@ tag @s[scores={DialogueTrigger=21,TalkTime=70..}] add Dialogue21
 #https://youtu.be/MgkqxXCmrtI?t=6461
 
 
-tellraw @s[scores={DialogueTrigger=22,TalkTime=1}] {"text":"<...> Hello."}
-tellraw @s[scores={DialogueTrigger=22,TalkTime=7}] {"text":"<...> You must be a new challenger."}
-tellraw @s[scores={DialogueTrigger=22,TalkTime=14}] {"text":"<Petra> I am Petra, the Férrica City Pokémon Gym Leader."}
-tellraw @s[scores={DialogueTrigger=22,TalkTime=22}] {"text":"<Petra> I became a Gym Leader so that I may apply in battle all that I've learned at the Pokémon Trainers' School."}
-tellraw @s[scores={DialogueTrigger=22,TalkTime=32}] {"text":"<Petra> If you defeat me in a Pokémon battle, I'll present you with a Gym Badge as proof of your strength as a Trainer."}
-tellraw @s[scores={DialogueTrigger=22,TalkTime=43}] {"text":"<Petra> Please take up the challenge."}
-tellraw @s[scores={DialogueTrigger=22,TalkTime=50}] {"text":"<Petra> I look forward to seeing you as a challenger. Until then, farewell."}
+# Dialogue 22 - Petra
+tellraw @s[scores={DialogueTrigger=22,TalkTime=1}] {"text":"<...> Hola."}
+tellraw @s[scores={DialogueTrigger=22,TalkTime=7}] {"text":"<...> Debes ser un nuevo contendiente."}
+tellraw @s[scores={DialogueTrigger=22,TalkTime=14}] {"text":"<Petra> Soy Petra, la Líder del Gimnasio Pokémon de Ciudad Férrica."}
+tellraw @s[scores={DialogueTrigger=22,TalkTime=22}] {"text":"<Petra> Me convertí en Líder de Gimnasio para poder aplicar en batalla todo lo que he aprendido en la Escuela de Entrenadores Pokémon."}
+tellraw @s[scores={DialogueTrigger=22,TalkTime=32}] {"text":"<Petra> Si me derrotas en una batalla Pokémon, te entregaré una Medalla de Gimnasio como prueba de tu fuerza como Entrenador."}
+tellraw @s[scores={DialogueTrigger=22,TalkTime=43}] {"text":"<Petra> Por favor, acepta el desafío."}
+tellraw @s[scores={DialogueTrigger=22,TalkTime=50}] {"text":"<Petra> Espero verte como contendiente. Hasta entonces, adiós."}
 
-#tps away
-
+# tps away
 tag @s[scores={DialogueTrigger=22,TalkTime=100..}] add Dialogue22
-#----------------------------------------------------------------------------------------------------------
-#Dialogue 23 - Férrica Gym
-#Gym Guy first introduction
-#https://youtu.be/MgkqxXCmrtI?t=6485
 
-tellraw @s[scores={DialogueTrigger=23,TalkTime=1}] {"text":"<Gym Guy> Yo, how's it going?"}
-tellraw @s[scores={DialogueTrigger=23,TalkTime=1}] {"text":"<Gym Guy> Listen, my friend! Would you like to become the Champion?"}
-tellraw @s[scores={DialogueTrigger=23,TalkTime=1}] {"text":"<Gym Guy> I'm no Trainer, not me, but I can sure give you winning advice."}
-tellraw @s[scores={DialogueTrigger=23,TalkTime=1}] {"text":"<Gym Guy> That's settled, then! We'll aim for the Pokémon Championship together!"}
-tellraw @s[scores={DialogueTrigger=23,TalkTime=1}] {"text":"<Gym Guy> It's your job as a Trainer to collect Gym Badges, am I right?"}
-tellraw @s[scores={DialogueTrigger=23,TalkTime=1}] {"text":"<Gym Guy> But Gym Leaders aren't pushovers! And that's where I come in!"}
-tellraw @s[scores={DialogueTrigger=23,TalkTime=1}] {"text":"<Gym Guy> I'm here to provide expert advice!"}
-tellraw @s[scores={DialogueTrigger=23,TalkTime=1}] {"text":"<Gym Guy> Petra, the Gym Leader here, is a user of Rock-type Pokémon."}
-tellraw @s[scores={DialogueTrigger=23,TalkTime=1}] {"text":"<Gym Guy> The Rock type is very durable, but it can't stand Water-type and Grass-type moves."}
-tellraw @s[scores={DialogueTrigger=23,TalkTime=1}] {"text":"<Gym Guy> Well, go for it!"}
+#----------------------------------------------------------------------------------------------------------
+# Dialogue 23 - Férrica Gym
+# Gym Guy first introduction
+# https://youtu.be/MgkqxXCmrtI?t=6485
+
+tellraw @s[scores={DialogueTrigger=23,TalkTime=1}] {"text":"<Chico del Gimnasio> ¡Hola, cómo va?"}
+tellraw @s[scores={DialogueTrigger=23,TalkTime=1}] {"text":"<Chico del Gimnasio> ¡Escucha, amigo! ¿Te gustaría convertirte en el Campeón?"}
+tellraw @s[scores={DialogueTrigger=23,TalkTime=1}] {"text":"<Chico del Gimnasio> Yo no soy Entrenador, pero puedo darte consejos para ganar."}
+tellraw @s[scores={DialogueTrigger=23,TalkTime=1}] {"text":"<Chico del Gimnasio> ¡Eso está decidido! ¡Nos apuntaremos juntos al Campeonato Pokémon!"}
+tellraw @s[scores={DialogueTrigger=23,TalkTime=1}] {"text":"<Chico del Gimnasio> Tu trabajo como Entrenador es recolectar Medallas de Gimnasio, ¿verdad?"}
+tellraw @s[scores={DialogueTrigger=23,TalkTime=1}] {"text":"<Chico del Gimnasio> ¡Pero los Líderes de Gimnasio no son fáciles! ¡Y ahí es donde entro yo!"}
+tellraw @s[scores={DialogueTrigger=23,TalkTime=1}] {"text":"<Chico del Gimnasio> ¡Estoy aquí para proporcionarte consejos expertos!"}
+tellraw @s[scores={DialogueTrigger=23,TalkTime=1}] {"text":"<Chico del Gimnasio> Petra, la Líder de Gimnasio, usa Pokémon de tipo Roca."}
+tellraw @s[scores={DialogueTrigger=23,TalkTime=1}] {"text":"<Chico del Gimnasio> El tipo Roca es muy fuerte, pero no puede soportar los movimientos de tipo Agua y Planta."}
+tellraw @s[scores={DialogueTrigger=23,TalkTime=1}] {"text":"<Chico del Gimnasio> ¡Bueno, ve a por ello!"}
 
 tag @s[scores={DialogueTrigger=23,TalkTime=100..}] add Dialogue23
 #----------------------------------------------------------------------------------------------------------
@@ -1056,9 +1059,9 @@ tag @s[scores={DialogueTrigger=23,TalkTime=100..}] add Dialogue23
 #Petra pre-battle
 #https://youtu.be/MgkqxXCmrtI?t=6726
 
-tellraw @s[scores={DialogueTrigger=24,TalkTime=1}] {"text":"<Petra> Just as I expected..."}
-tellraw @s[scores={DialogueTrigger=24,TalkTime=8}] {"text":"<Petra> I knew you and your Pokémon would be able to get this far."}
-tellraw @s[scores={DialogueTrigger=24,TalkTime=15}] {"text":"<Petra> Now, would you kindly demonstrate how you battle with your Pokémon?"}
+tellraw @s[scores={DialogueTrigger=24,TalkTime=1}] {"text":"<Petra> Tal y como lo esperaba..."}
+tellraw @s[scores={DialogueTrigger=24,TalkTime=8}] {"text":"<Petra> Sabía que tú y tus Pokémon llegaríais hasta aquí."}
+tellraw @s[scores={DialogueTrigger=24,TalkTime=15}] {"text":"<Petra> Ahora, ¿podrías demostrarme cómo combates con tus Pokémon?"}
 
 execute as @s[scores={DialogueTrigger=24,TalkTime=23}] run tp @s -2988 91 1356 180 0
 execute as @s[scores={DialogueTrigger=24,TalkTime=23}] run pokebattle @s Roxanne
@@ -1069,27 +1072,27 @@ tag @s[scores={DialogueTrigger=24,TalkTime=23..}] add Dialogue24
 #Petra post-battle
 
 clear @s[scores={DialogueTrigger=25}] minecraft:nether_brick
-tellraw @s[scores={DialogueTrigger=25,TalkTime=1}] {"text":"<Petra> I understand."}
-tellraw @s[scores={DialogueTrigger=25,TalkTime=8}] {"text":"<Petra> The Pokémon League's rules state that Trainers receive this if they defeat a Gym Leader."}
-tellraw @s[scores={DialogueTrigger=25,TalkTime=18}] {"text":"<Petra> Please accept the official Pokémon League Stone Badge."}
+tellraw @s[scores={DialogueTrigger=25,TalkTime=1}] {"text":"<Petra> Entiendo."}
+tellraw @s[scores={DialogueTrigger=25,TalkTime=8}] {"text":"<Petra> Las reglas de la Liga Pokémon indican que los Entrenadores reciben esto si derrotan a un Líder de Gimnasio."}
+tellraw @s[scores={DialogueTrigger=25,TalkTime=18}] {"text":"<Petra> Por favor, acepta la Medalla Piedra oficial de la Liga Pokémon."}
 
-tellraw @s[scores={DialogueTrigger=25,TalkTime=26}] ["",{"selector":"@s","italic":true,"color":"gray"},{"text":" received the Stone Badge from Petra.","italic":true,"color":"gray"}]
+tellraw @s[scores={DialogueTrigger=25,TalkTime=26}] ["",{"selector":"@s","italic":true,"color":"gray"},{"text":" recibió la Medalla Piedra de Petra.","italic":true,"color":"gray"}]
 execute as @s[scores={DialogueTrigger=25,TalkTime=26}] run give @s pixelmon:stone_badge
 execute as @s[scores={DialogueTrigger=25,TalkTime=26}] run stopsound @s record
 execute as @s[scores={DialogueTrigger=25,TalkTime=26}] run scoreboard players set @s MusicCooldown 10
 execute as @s[scores={DialogueTrigger=25,TalkTime=26}] run playsound minecraft:badgeget ambient @s ~ ~ ~ 1 1 1
 execute as @s[scores={DialogueTrigger=25,TalkTime=26}] run advancement grant @s only hoenn:badges/badge1
 
-tellraw @s[scores={DialogueTrigger=25,TalkTime=33}] {"text":"<Petra> The Stone Badge enables Pokémon to use the HM move Cut outside of battle."}
-tellraw @s[scores={DialogueTrigger=25,TalkTime=41}] {"text":"<Petra> And... Please take this with you, too."}
+tellraw @s[scores={DialogueTrigger=25,TalkTime=33}] {"text":"<Petra> La Medalla de Piedra permite a los Pokémon usar el movimiento MO Corte fuera de combate."}
+tellraw @s[scores={DialogueTrigger=25,TalkTime=41}] {"text":"<Petra> Y... Por favor, lleva esto contigo también."}
 
-tellraw @s[scores={DialogueTrigger=25,TalkTime=48}] ["",{"selector":"@s","italic":true,"color":"gray"},{"text":" obtained TM39 Rock Tomb!","italic":true,"color":"gray"}]
+tellraw @s[scores={DialogueTrigger=25,TalkTime=48}] ["",{"selector":"@s","italic":true,"color":"gray"},{"text":" obtuvo MT39 Tumba Rocas!","italic":true,"color":"gray"}]
 execute as @s[scores={DialogueTrigger=25,TalkTime=48}] run give @s pixelmon:tm_gen6{tm:39s}
 execute as @s[scores={DialogueTrigger=25,TalkTime=48}] run playsound minecraft:tmget ambient @s ~ ~ ~ 1 1 1
 
-tellraw @s[scores={DialogueTrigger=25,TalkTime=55}] {"text":"<Petra> The move Rock Tomb not only inflicts damage by dropping rocks, it also lowers the target's Speed."}
-tellraw @s[scores={DialogueTrigger=25,TalkTime=65}] {"text":"<Petra> If you use a TM, it instantly teaches the move to a Pokémon."}
-tellraw @s[scores={DialogueTrigger=25,TalkTime=73}] {"text":"<Petra> You can use a TM as many times as you want, so please try it out!"}
+tellraw @s[scores={DialogueTrigger=25,TalkTime=55}] {"text":"<Petra> El movimiento Tumba Rocas no solo inflige daño al soltar rocas, sino que también reduce la Velocidad del objetivo."}
+tellraw @s[scores={DialogueTrigger=25,TalkTime=65}] {"text":"<Petra> Si usas una MT, enseña el movimiento al instante a un Pokémon."}
+tellraw @s[scores={DialogueTrigger=25,TalkTime=73}] {"text":"<Petra> Puedes usar una MT tantas veces como quieras, así que por favor pruébala!"}
 
 tag @s[scores={DialogueTrigger=25,TalkTime=73..}] add Dialogue25
 #----------------------------------------------------------------------------------------------------------
@@ -1097,7 +1100,7 @@ tag @s[scores={DialogueTrigger=25,TalkTime=73..}] add Dialogue25
 #Teams after beating gym
 #https://youtu.be/MgkqxXCmrtI?t=6955
 
-tellraw @s[scores={DialogueTrigger=26,TalkTime=3}] {"text":"Out of the way! Move it!","bold":true}
+tellraw @s[scores={DialogueTrigger=26,TalkTime=3}] {"text":"¡Fuera de mi camino! ¡Muévete!","bold":true}
 execute as @s[scores={DialogueTrigger=26,TalkTime=3},tag=!MusicDisabled] run stopsound @s record
 execute as @s[scores={DialogueTrigger=26,TalkTime=3},tag=!MusicDisabled] run playsound minecraft:helpme record @s ~ ~ ~ 1 1 1
 execute as @s[scores={DialogueTrigger=26,TalkTime=3},tag=!MusicDisabled] run scoreboard players set @s MusicCooldown 27
@@ -1113,8 +1116,8 @@ execute as @s[scores={DialogueTrigger=26,TalkTime=6,GameVersion=2}] run summon p
 #Scientist
 execute as @s[scores={DialogueTrigger=26,TalkTime=12}] run summon pixelmon:npc_chatting -2706 69 -660 {HurtByTimestamp: 0, chatNum: 0, Invulnerable: 0b, FallFlying: 0b, PortalCooldown: 0, AbsorptionAmount: 0.0f, Name: "Runner2", FallDistance: 0.0f, CanUpdate: 1b, DeathTime: 0s, DefaultName: 0b, Commands: {interactCommands: []}, HandDropChances: [0.085f, 0.085f], PersistenceRequired: 1b, trainerLocation: 2, DefaultGreet: 0b, TextureIndex: 4, TrainerIndex: "madame", NameIndex: 4, Health: 20.0f, LeftHanded: 0b, Air: 300s, OnGround: 1b, Rotation: [0.0f, 0.0f], HandItems: [{}, {}], ChatIndex: 0, Profession: -1s,Fire: -1s, ArmorItems: [{}, {}, {}, {}], CanPickUpLoot: 0b, CustomSteveTexture: "scientist_m.png", HurtTime: 0s, BaseTrainer: "Steve", Inventory: [], AIMode: 2s}
 
-tellraw @s[scores={DialogueTrigger=26,TalkTime=15}] {"text":"<Investigador> Wait! Pleeeaaase!"}
-tellraw @s[scores={DialogueTrigger=26,TalkTime=25}] {"text":"<Investigador> Don't take those parts!"}
+tellraw @s[scores={DialogueTrigger=26,TalkTime=15}] {"text":"<Investigador> ¡Espera! ¡Por favoooooor!"}
+tellraw @s[scores={DialogueTrigger=26,TalkTime=25}] {"text":"<Investigador> ¡No toques eso!"}
 
 
 execute as @s[scores={DialogueTrigger=26,TalkTime=30}] run gamemode spectator
@@ -1127,13 +1130,12 @@ tag @s[scores={DialogueTrigger=26,TalkTime=32..}] add Dialogue26
 #https://youtu.be/MgkqxXCmrtI?t=7010
 
 execute at @s[scores={DialogueTrigger=27,TalkTime=1}] as @e[type=pixelmon:npc_chatting,distance=..10,nbt={Name:"Runner2"}] at @s run tp @s ~ ~ ~ facing entity @p[distance=..15]
-tellraw @s[scores={DialogueTrigger=27,TalkTime=3}] {"text":"<Investigador> Oh, you there! You're that fantastic Trainer who helped me in Petalia Woods!"}
+tellraw @s[scores={DialogueTrigger=27,TalkTime=3}] {"text":"<Investigador> ¡Oh, tú! ¡Eres ese fantástico Entrenador que me ayudó en el Bosque Petalia!"}
 
-tellraw @s[scores={DialogueTrigger=27,TalkTime=12,GameVersion=1}] {"text":"<Investigador> Help me! I was robbed by Team Magma! I have to get the Devon Parts back!"}
-tellraw @s[scores={DialogueTrigger=27,TalkTime=12,GameVersion=2}] {"text":"<Investigador> Help me! I was robbed by Team Aqua! I have to get the Devon Parts back!"}
+tellraw @s[scores={DialogueTrigger=27,TalkTime=12,GameVersion=1}] {"text":"<Investigador> ¡Ayúdame! ¡Me robaron el Team Magma! ¡Tengo que recuperar las Piezas Devon!"}
+tellraw @s[scores={DialogueTrigger=27,TalkTime=12,GameVersion=2}] {"text":"<Investigador> ¡Ayúdame! ¡Me robaron el Team Aqua! ¡Tengo que recuperar las Piezas Devon!"}
 
-tellraw @s[scores={DialogueTrigger=27,TalkTime=22}] {"text":"<Investigador> If I don't... I'm going to be in serious trouble..."}
-
+tellraw @s[scores={DialogueTrigger=27,TalkTime=22}] {"text":"<Investigador> Si no lo hago... Voy a estar en serios problemas..."}
 tag @s[scores={DialogueTrigger=27,TalkTime=22..}] add Dialogue27
 #----------------------------------------------------------------------------------------------------------
 #Dialogue 28 - Rusturf Tunnel
@@ -1144,15 +1146,15 @@ execute as @s[scores={DialogueTrigger=28,TalkTime=1},tag=!MusicDisabled] run sto
 execute as @s[scores={DialogueTrigger=28,TalkTime=1},tag=!MusicDisabled] run playsound minecraft:teamappears record @s ~ ~ ~ 1 1 1
 execute as @s[scores={DialogueTrigger=28,TalkTime=1},tag=!MusicDisabled] run scoreboard players set @s MusicCooldown 69
 
-tellraw @s[scores={DialogueTrigger=28,TalkTime=1,GameVersion=1}] {"text":"<Recluta del Team Magma> Grah, keelhaul it all!"}
-tellraw @s[scores={DialogueTrigger=28,TalkTime=9,GameVersion=1}] {"text":"<Recluta del Team Magma> This hostage Pokémon turned out to be worthless!"}
-tellraw @s[scores={DialogueTrigger=28,TalkTime=17,GameVersion=1}] {"text":"<Recluta del Team Magma> And to think I made a getaway... into this tunnel to nowhere!"}
-tellraw @s[scores={DialogueTrigger=28,TalkTime=26,GameVersion=1}] {"text":"<Recluta del Team Magma> And you! Now you're here to battle me. Really?"}
+tellraw @s[scores={DialogueTrigger=28,TalkTime=1,GameVersion=1}] {"text":"<Recluta del Team Magma> ¡Grrr, maldición!"}
+tellraw @s[scores={DialogueTrigger=28,TalkTime=9,GameVersion=1}] {"text":"<Recluta del Team Magma> ¡Este Pokémon rehén resultó ser inútil!"}
+tellraw @s[scores={DialogueTrigger=28,TalkTime=17,GameVersion=1}] {"text":"<Recluta del Team Magma> ¡Y pensar que escapé... a este túnel sin salida!"}
+tellraw @s[scores={DialogueTrigger=28,TalkTime=26,GameVersion=1}] {"text":"<Recluta del Team Magma> ¡Y tú! Ahora estás aquí para luchar conmigo. ¿En serio?"}
 
-tellraw @s[scores={DialogueTrigger=28,TalkTime=1,GameVersion=2}] {"text":"<Recluta del Team Aqua> Grah, keelhaul it all!"}
-tellraw @s[scores={DialogueTrigger=28,TalkTime=9,GameVersion=2}] {"text":"<Recluta del Team Aqua> This hostage Pokémon turned out to be worthless!"}
-tellraw @s[scores={DialogueTrigger=28,TalkTime=17,GameVersion=2}] {"text":"<Recluta del Team Aqua> And to think I made a getaway... into this tunnel to nowhere!"}
-tellraw @s[scores={DialogueTrigger=28,TalkTime=26,GameVersion=2}] {"text":"<Recluta del Team Aqua> And you! Now you're here to battle me. Really?"}
+tellraw @s[scores={DialogueTrigger=28,TalkTime=1,GameVersion=2}] {"text":"<Recluta del Team Aqua> ¡Grrr, maldición!"}
+tellraw @s[scores={DialogueTrigger=28,TalkTime=9,GameVersion=2}] {"text":"<Recluta del Team Aqua> ¡Este Pokémon rehén resultó ser inútil!"}
+tellraw @s[scores={DialogueTrigger=28,TalkTime=17,GameVersion=2}] {"text":"<Recluta del Team Aqua> ¡Y pensar que escapé... a este túnel sin salida!"}
+tellraw @s[scores={DialogueTrigger=28,TalkTime=26,GameVersion=2}] {"text":"<Recluta del Team Aqua> ¡Y tú! Ahora estás aquí para luchar conmigo. ¿En serio?"}
 
 tellraw @s[scores={DialogueTrigger=28,TalkTime=33}] {"text":"<Peeko> Pi pikwee!"}
 execute as @s[scores={DialogueTrigger=28,TalkTime=33}] run playsound pixelmon:pixelmon.mob.wingull ambient @s ~ ~ ~ 1 1 1
@@ -1165,19 +1167,19 @@ tag @s[scores={DialogueTrigger=28,TalkTime=33..}] add Dialogue28
 
 clear @s[scores={DialogueTrigger=29}] minecraft:nether_brick
 
-tellraw @s[scores={DialogueTrigger=29,TalkTime=1,GameVersion=1}] {"text":"<Recluta del Team Magma> This is plain not right..."}
-tellraw @s[scores={DialogueTrigger=29,TalkTime=8,GameVersion=1}] {"text":"<Recluta del Team Magma> The boss told me this would be a slick-and-easy job to pull."}
-tellraw @s[scores={DialogueTrigger=29,TalkTime=16,GameVersion=1}] {"text":"<Recluta del Team Magma> All I had to do was steal some parts from Devon."}
-tellraw @s[scores={DialogueTrigger=29,TalkTime=23,GameVersion=1}] {"text":"<Recluta del Team Magma> Tch! You want 'em back that badly, then take 'em!"}
+tellraw @s[scores={DialogueTrigger=29,TalkTime=1,GameVersion=1}] {"text":"<Recluta del Team Magma> Esto no está nada bien..."}
+tellraw @s[scores={DialogueTrigger=29,TalkTime=8,GameVersion=1}] {"text":"<Recluta del Team Magma> El jefe me dijo que sería un trabajo fácil y rápido."}
+tellraw @s[scores={DialogueTrigger=29,TalkTime=16,GameVersion=1}] {"text":"<Recluta del Team Magma> Todo lo que tenía que hacer era robar unas piezas de Devon."}
+tellraw @s[scores={DialogueTrigger=29,TalkTime=23,GameVersion=1}] {"text":"<Recluta del Team Magma> ¡Tch! Si las quieres tanto, entonces ¡tómalas!"}
 
-tellraw @s[scores={DialogueTrigger=29,TalkTime=1,GameVersion=2}] {"text":"<Recluta del Team Aqua> This is plain not right..."}
-tellraw @s[scores={DialogueTrigger=29,TalkTime=8,GameVersion=2}] {"text":"<Recluta del Team Aqua> The boss told me this would be a slick-and-easy job to pull."}
-tellraw @s[scores={DialogueTrigger=29,TalkTime=16,GameVersion=2}] {"text":"<Recluta del Team Aqua> All I had to do was steal some parts from Devon."}
-tellraw @s[scores={DialogueTrigger=29,TalkTime=23,GameVersion=2}] {"text":"<Recluta del Team Aqua> Tch! You want 'em back that badly, then take 'em!"}
+tellraw @s[scores={DialogueTrigger=29,TalkTime=1,GameVersion=2}] {"text":"<Recluta del Team Aqua> Esto no está nada bien..."}
+tellraw @s[scores={DialogueTrigger=29,TalkTime=8,GameVersion=2}] {"text":"<Recluta del Team Aqua> El jefe me dijo que sería un trabajo fácil y rápido."}
+tellraw @s[scores={DialogueTrigger=29,TalkTime=16,GameVersion=2}] {"text":"<Recluta del Team Aqua> Todo lo que tenía que hacer era robar unas piezas de Devon."}
+tellraw @s[scores={DialogueTrigger=29,TalkTime=23,GameVersion=2}] {"text":"<Recluta del Team Aqua> ¡Tch! Si las quieres tanto, entonces ¡tómalas!"}
 
-tellraw @s[scores={DialogueTrigger=29,TalkTime=30}] ["",{"selector":"@s","italic":true,"color":"gray"},{"text":" obtained the Devon Parts!","italic":true,"color":"gray"}]
+tellraw @s[scores={DialogueTrigger=29,TalkTime=30}] ["",{"selector":"@s","italic":true,"color":"gray"},{"text":" obtuvo las Piezas Devon!","italic":true,"color":"gray"}]
 execute as @s[scores={DialogueTrigger=29,TalkTime=30}] run playsound minecraft:keyitem ambient @s ~ ~ ~ 1 1 1
-execute as @s[scores={DialogueTrigger=29,TalkTime=30}] run give @s music_disc_13{display:{Name:'["",{"text":"Devon Parts","italic":false}]',Lore:['["",{"text":"A case that contains mechanical","italic":false}]','["",{"text":"parts of some sort made by the","italic":false}]','["",{"text":"Devon Corporation.","italic":false}]']},HideFlags:62}
+execute as @s[scores={DialogueTrigger=29,TalkTime=30}] run give @s music_disc_13{display:{Name:'["",{"text":"Piezas Devon","italic":false}]',Lore:['["",{"text":"Un estuche que contiene piezas","italic":false}]','["",{"text":"mecánicas de algún tipo hechas","italic":false}]','["",{"text":"por la Corporación Devon.","italic":false}]']},HideFlags:62}
 
 #grunt tps out
 execute as @s[scores={DialogueTrigger=29,TalkTime=35}] run particle cloud -2361 42 -821 1 1 1 0.15 300
@@ -1185,16 +1187,16 @@ execute as @s[scores={DialogueTrigger=29,TalkTime=35}] run tp @e[x=-2361,y=42,z=
 
 #tps Mr. Briney in
 execute as @s[scores={DialogueTrigger=29,TalkTime=40}] run particle cloud -2357 42 -818 1 1 1 0.15 300
-execute as @s[scores={DialogueTrigger=29,TalkTime=40}] run summon pixelmon:npc_chatting -2357 42 -818 {Brain: {memories: {}}, HurtByTimestamp: 0, ForgeData: {}, chatNum: 1, Attributes: [{Base: 0.699999988079071d, Name: "minecraft:generic.movement_speed"}, {Base: 0.08d, Name: "forge:entity_gravity"}, {Base: 0.0d, Name: "forge:step_height_addition"}], Invulnerable: 0b, FallFlying: 0b, PortalCooldown: 0, AbsorptionAmount: 0.0f, Name: "Mr. Briney", FallDistance: 0.0f, CanUpdate: 1b, DeathTime: 0s, DefaultName: 0b, Commands: {interactCommands: []}, HandDropChances: [0.085f, 0.085f], PersistenceRequired: 1b, trainerLocation: 2, DefaultGreet: 0b, Motion: [0.0d, -0.0784000015258789d, 0.0d], TextureIndex: 0, TrainerIndex: "oldman", NameIndex: 1, Health: 20.0f, LeftHanded: 0b, Air: 300s, OnGround: 1b, Rotation: [4.863678f, -2.0854604f], HandItems: [{}, {}], ChatIndex: 0, ArmorDropChances: [0.085f, 0.085f, 0.085f, 0.085f], Profession: -1s, Pos: [-2717.5d, 69.0d, -34.5d], Fire: -1s, ArmorItems: [{}, {}, {}, {}], CanPickUpLoot: 0b, CustomSteveTexture: "npcchat1.png", chat0: "Hoh hoh hoh hoh! My pretty Peeko's as full of energy as usual!", HurtTime: 0s, BaseTrainer: "Steve", Inventory: [], AIMode: 2s}
+execute as @s[scores={DialogueTrigger=29,TalkTime=40}] run summon pixelmon:npc_chatting -2357 42 -818 {Brain: {memories: {}}, HurtByTimestamp: 0, ForgeData: {}, chatNum: 1, Attributes: [{Base: 0.699999988079071d, Name: "minecraft:generic.movement_speed"}, {Base: 0.08d, Name: "forge:entity_gravity"}, {Base: 0.0d, Name: "forge:step_height_addition"}], Invulnerable: 0b, FallFlying: 0b, PortalCooldown: 0, AbsorptionAmount: 0.0f, Name: "Mr. Briney", FallDistance: 0.0f, CanUpdate: 1b, DeathTime: 0s, DefaultName: 0b, Commands: {interactCommands: []}, HandDropChances: [0.085f, 0.085f], PersistenceRequired: 1b, trainerLocation: 2, DefaultGreet: 0b, Motion: [0.0d, -0.0784000015258789d, 0.0d], TextureIndex: 0, TrainerIndex: "oldman", NameIndex: 1, Health: 20.0f, LeftHanded: 0b, Air: 300s, OnGround: 1b, Rotation: [4.863678f, -2.0854604f], HandItems: [{}, {}], ChatIndex: 0, ArmorDropChances: [0.085f, 0.085f, 0.085f, 0.085f], Profession: -1s, Pos: [-2717.5d, 69.0d, -34.5d], Fire: -1s, ArmorItems: [{}, {}, {}, {}], CanPickUpLoot: 0b, CustomSteveTexture: "npcchat1.png", chat0: "¡Hoh hoh hoh hoh! ¡Mi precioso Peeko's tiene tanta energía como siempre!", HurtTime: 0s, BaseTrainer: "Steve", Inventory: [], AIMode: 2s}
 
-tellraw @s[scores={DialogueTrigger=29,TalkTime=43}] {"text":"<Mr. Briney> Peeko! Am I glad to see you're safe!"}
-tellraw @s[scores={DialogueTrigger=29,TalkTime=50}] {"text":"<Mr. Briney> My Peeko owes her life an' freedom to you! They call me Mr. Briney. And you are?"}
+tellraw @s[scores={DialogueTrigger=29,TalkTime=43}] {"text":"<Sr. Arenque> ¡Peeko! ¡Qué alegría ver que estás a salvo!"}
+tellraw @s[scores={DialogueTrigger=29,TalkTime=50}] {"text":"<Sr. Arenque> ¡Mi Peeko te debe su vida y libertad! Me llaman Sr. Arenque. ¿Y tú eres?"}
 execute at @s[scores={DialogueTrigger=29,TalkTime=50}] as @e[type=pixelmon:npc_chatting,distance=..10] at @s run tp @s ~ ~ ~ facing entity @p[distance=..15]
-tellraw @s[scores={DialogueTrigger=29,TalkTime=60}] ["",{"text":"<Mr. Briney> Ah, so it's "},{"selector":"@s"},{"text":", is it now!"}]
-tellraw @s[scores={DialogueTrigger=29,TalkTime=67}] ["",{"text":"<Mr. Briney> Then I sincerely thank you, "},{"selector":"@s"},{"text":"!"}]
-tellraw @s[scores={DialogueTrigger=29,TalkTime=74}] {"text":"<Mr. Briney> If there's ever a thing I can do to help you in turn, don't you hesitate to tell me."}
-tellraw @s[scores={DialogueTrigger=29,TalkTime=84}] {"text":"<Mr. Briney> If I'm to be found, it will always be at my cottage by the sea near Petalia Woods."}
-tellraw @s[scores={DialogueTrigger=29,TalkTime=93}] {"text":"<Mr. Briney> Come, Peeko! High time we're under way to home!"}
+tellraw @s[scores={DialogueTrigger=29,TalkTime=60}] ["",{"text":"<Sr. Arenque> ¡Ah, así que eres "},{"selector":"@s"},{"text":", ¿verdad!"}]
+tellraw @s[scores={DialogueTrigger=29,TalkTime=67}] ["",{"text":"<Sr. Arenque> Entonces, ¡te doy las gracias de verdad, "},{"selector":"@s"},{"text":"!"}]
+tellraw @s[scores={DialogueTrigger=29,TalkTime=74}] {"text":"<Sr. Arenque> Si alguna vez hay algo que pueda hacer para ayudarte, no dudes en decírmelo."}
+tellraw @s[scores={DialogueTrigger=29,TalkTime=84}] {"text":"<Sr. Arenque> Si buscas, siempre me encontrarás en mi cabaña junto al mar cerca del Bosque Petalia."}
+tellraw @s[scores={DialogueTrigger=29,TalkTime=93}] {"text":"<Sr. Arenque> ¡Vamos, Peeko! ¡Es hora de volver a casa!"}
 
 tellraw @s[scores={DialogueTrigger=29,TalkTime=100}] {"text":"<Peeko> Pikwee!"}
 execute as @s[scores={DialogueTrigger=29,TalkTime=100}] run playsound pixelmon:pixelmon.mob.wingull ambient @s ~ ~ ~ 1 1 1
@@ -1211,16 +1213,16 @@ tag @s[scores={DialogueTrigger=29,TalkTime=106..}] add Dialogue29
 #https://youtu.be/MgkqxXCmrtI?t=8566
 
 execute at @s[scores={DialogueTrigger=30,TalkTime=1}] as @e[type=pixelmon:npc_chatting,distance=..10,nbt={Name:"Runner2"}] at @s run tp @s ~ ~ ~ facing entity @p[distance=..15]
-tellraw @s[scores={DialogueTrigger=30,TalkTime=3}] {"text":"<Investigador> Oh! How did it go? Did you get my Devon Parts?"}
-tellraw @s[scores={DialogueTrigger=30,TalkTime=10}] {"text":"<Investigador> You did! You got them back!"}
-tellraw @s[scores={DialogueTrigger=30,TalkTime=17}] {"text":"<Investigador> You really are a great Trainer!"}
-tellraw @s[scores={DialogueTrigger=30,TalkTime=24}] {"text":"<Investigador> I know! As my thanks, I'll give you a Great Ball!"}
+tellraw @s[scores={DialogueTrigger=30,TalkTime=3}] {"text":"<Investigador> ¡Oh! ¿Cómo te fue? ¿Conseguiste mis Partes Devon?"}
+tellraw @s[scores={DialogueTrigger=30,TalkTime=10}] {"text":"¡Lo hiciste! ¡Las recuperaste!"}
+tellraw @s[scores={DialogueTrigger=30,TalkTime=17}] {"text":"¡Eres realmente un gran Entrenador!"}
+tellraw @s[scores={DialogueTrigger=30,TalkTime=24}] {"text":"¡Lo sé! Como agradecimiento, te daré una Super Ball!"}
 
-tellraw @s[scores={DialogueTrigger=30,TalkTime=31}] ["",{"selector":"@s","italic":true,"color":"gray"},{"text":" obtained a Great Ball!","italic":true,"color":"gray"}]
+tellraw @s[scores={DialogueTrigger=30,TalkTime=31}] ["",{"selector":"@s","italic":true,"color":"gray"},{"text":" ha obtenido una Super Ball!","italic":true,"color":"gray"}]
 execute as @s[scores={DialogueTrigger=30,TalkTime=31}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 execute as @s[scores={DialogueTrigger=30,TalkTime=31}] run give @s pixelmon:great_ball
 
-tellraw @s[scores={DialogueTrigger=30,TalkTime=38}] {"text":"<Investigador> Oh, yes! Young trainer! Please come with me!"}
+tellraw @s[scores={DialogueTrigger=30,TalkTime=38}] {"text":"<Investigador> ¡Oh, sí! ¡Joven entrenador! ¡Por favor, ven conmigo!"}
 
 #shot of Devon Corp
 execute as @s[scores={DialogueTrigger=30,TalkTime=38}] run tp @e[x=-2661,y=69,z=-713,distance=..30,nbt={Name:"Runner2"}] 10000000 -50000 -10000000
@@ -1236,10 +1238,10 @@ execute as @s[scores={DialogueTrigger=30,TalkTime=50}] unless entity @e[x=-2780,
 
 
 execute at @s[scores={DialogueTrigger=30,TalkTime=54}] as @e[type=pixelmon:npc_chatting,distance=..10] at @s run tp @s ~ ~ ~ facing entity @p[distance=..15]
-tellraw @s[scores={DialogueTrigger=30,TalkTime=55}] {"text":"<Investigador> This is the top floor of the Devon Corporation."}
-tellraw @s[scores={DialogueTrigger=30,TalkTime=63}] {"text":"<Investigador> Our president's office is on this floor."}
-tellraw @s[scores={DialogueTrigger=30,TalkTime=70}] {"text":"<Investigador> I can't tell you how grateful I am for what you've done for our company."}
-tellraw @s[scores={DialogueTrigger=30,TalkTime=78}] {"text":"<Investigador> Could you wait here for just a moment?"}
+tellraw @s[scores={DialogueTrigger=30,TalkTime=55}] {"text":"<Investigador> Este es el último piso de la Corporación Devon."}
+tellraw @s[scores={DialogueTrigger=30,TalkTime=63}] {"text":"<Investigador> La oficina de nuestro presidente está en este piso."}
+tellraw @s[scores={DialogueTrigger=30,TalkTime=70}] {"text":"<Investigador> No puedo decirte lo agradecido que estoy por lo que has hecho por nuestra compañía."}
+tellraw @s[scores={DialogueTrigger=30,TalkTime=78}] {"text":"<Investigador> ¿Podrías esperar aquí un momento?"}
 
 #researcher tps over to president's desk
 execute as @s[scores={DialogueTrigger=30,TalkTime=85}] run particle cloud -2780 38 -727 1 1 1 0.15 100
@@ -1249,18 +1251,18 @@ execute as @s[scores={DialogueTrigger=30,TalkTime=92}] run particle cloud -2780 
 
 #researcher tps back to stairs
 
-tellraw @s[scores={DialogueTrigger=30,TalkTime=95}] {"text":"<Investigador> Our president would like to have a word with you."}
-tellraw @s[scores={DialogueTrigger=30,TalkTime=103}] {"text":"<Investigador> Please come with me."}
+tellraw @s[scores={DialogueTrigger=30,TalkTime=95}] {"text":"<Investigador> Nuestro presidente quiere decirte algo."}
+tellraw @s[scores={DialogueTrigger=30,TalkTime=103}] {"text":"<Investigador> Por favor, ven conmigo."}
 
 #tps player over to president's desk
 execute as @s[scores={DialogueTrigger=30,TalkTime=110}] run tp @s -2751.5 38 -717.5 -103 4
 execute as @s[scores={DialogueTrigger=30,TalkTime=110}] run tp @e[x=-2780,y=38,z=-727,distance=..3,type=pixelmon:npc_chatting] 10000000 -50000 -10000000
 
 execute at @s[scores={DialogueTrigger=30,TalkTime=115}] as @e[type=pixelmon:npc_chatting,distance=..10] at @s run tp @s ~ ~ ~ facing entity @p[distance=..15]
-tellraw @s[scores={DialogueTrigger=30,TalkTime=117}] {"text":"<Mr. Stone> I'm Mr. Stone, the president of the Devon Corporation."}
-tellraw @s[scores={DialogueTrigger=30,TalkTime=124}] {"text":"<Mr. Stone> I heard just now how we have quite a bit to thank you for."}
-tellraw @s[scores={DialogueTrigger=30,TalkTime=132}] {"text":"<Mr. Stone> So you helped out my staff not just once, but twice!"}
-tellraw @s[scores={DialogueTrigger=30,TalkTime=140}] {"text":"<Mr. Stone> There's a favor I'd like to ask of a reliable Trainer like you."}
+tellraw @s[scores={DialogueTrigger=30,TalkTime=117}] {"text":"<Sr. Peñas> Soy el Sr. Peñas, el presidente de la Corporación Devon."}
+tellraw @s[scores={DialogueTrigger=30,TalkTime=124}] {"text":"<Sr. Peñas> Acabo de escuchar que tenemos mucho que agradecerte."}
+tellraw @s[scores={DialogueTrigger=30,TalkTime=132}] {"text":"<Sr. Peñas> ¡Así que ayudaste a mi personal no solo una vez, sino dos veces!"}
+tellraw @s[scores={DialogueTrigger=30,TalkTime=140}] {"text":"<Sr. Peñas> Hay un favor que me gustaría pedirle a un Entrenador fiable como tú."}
 #tellraw @s[scores={DialogueTrigger=30,TalkTime=1}] {"text":"<Mr. Stone> Now I want you to know I'm a president you can trust."}
 #tellraw @s[scores={DialogueTrigger=30,TalkTime=1}] {"text":"<Mr. Stone> I'd never be so mean as to ask a favor for nothing in return."}
 #tellraw @s[scores={DialogueTrigger=30,TalkTime=1}] {"text":"<Mr. Stone> Here, give me your PokéNav Plus for a moment."}
@@ -1271,15 +1273,15 @@ tellraw @s[scores={DialogueTrigger=30,TalkTime=140}] {"text":"<Mr. Stone> There'
 #tellraw @s[scores={DialogueTrigger=30,TalkTime=1}] {"text":"<Mr. Stone> It is an indispensable tool for any Trainer who is traveling out in the world."}
 #tellraw @s[scores={DialogueTrigger=30,TalkTime=1}] {"text":"<Mr. Stone> Use it, and you'll be able to get the latest news from around the region and from your own friends, anytime and anyplace."}
 #tellraw @s[scores={DialogueTrigger=30,TalkTime=1}] {"text":"<Mr. Stone> Now let me get to the important issue of what it is I need you to do..."}
-tellraw @s[scores={DialogueTrigger=30,TalkTime=149}] {"text":"<Mr. Stone> I want to ask you to deliver this Letter to a man named Steven. You should find him in Dewford."}
+tellraw @s[scores={DialogueTrigger=30,TalkTime=149}] {"text":"<Sr. Peñas> Quiero pedirte que entregues esta Carta a un hombre llamado Máximo. Deberías encontrarlo en Azuliza."}
 
-tellraw @s[scores={DialogueTrigger=30,TalkTime=159}] ["",{"selector":"@s","italic":true,"color":"gray"},{"text":" obtained the Letter!","italic":true,"color":"gray"}]
+tellraw @s[scores={DialogueTrigger=30,TalkTime=159}] ["",{"selector":"@s","italic":true,"color":"gray"},{"text":" obtuvo la Carta!","italic":true,"color":"gray"}]
 execute as @s[scores={DialogueTrigger=30,TalkTime=159}] run playsound minecraft:keyitem ambient @s ~ ~ ~ 1 1 1
-execute as @s[scores={DialogueTrigger=30,TalkTime=159}] run give @s music_disc_cat{display:{Name:'["",{"text":"Letter","italic":false}]',Lore:['["",{"text":"An extremely important letter","italic":false}]','["",{"text":"to Steven from the President","italic":false}]','["",{"text":"of Devon Corporation.","italic":false}]']},HideFlags:62}
+execute as @s[scores={DialogueTrigger=30,TalkTime=159}] run give @s music_disc_cat{display:{Name:'["",{"text":"Carta","italic":false}]',Lore:['["",{"text":"Una carta extremadamente importante","italic":false}]','["",{"text":"para Máximo del Presidente","italic":false}]','["",{"text":"de la Corporación Devon.","italic":false}]']},HideFlags:62}
 
-tellraw @s[scores={DialogueTrigger=30,TalkTime=166}] {"text":"<Mr. Stone> You'll have to cross the sea to reach Dewford, of course."}
-tellraw @s[scores={DialogueTrigger=30,TalkTime=174}] {"text":"<Mr. Stone> I'll ask Mr. Briney, the old sailor who lives in that hut on Route 104, to help with the crossing."}
-tellraw @s[scores={DialogueTrigger=30,TalkTime=185}] {"text":"<Mr. Stone> Go find him, and he should agree to help you. I'm counting on you, young trainer!"}
+tellraw @s[scores={DialogueTrigger=30,TalkTime=166}] {"text":"<Sr. Peñas> Tendrás que cruzar el mar para llegar a Azuliza, por supuesto."}
+tellraw @s[scores={DialogueTrigger=30,TalkTime=174}] {"text":"<Sr. Peñas> Pediré al Sr. Arenque, el viejo marinero que vive en esa cabaña en la Ruta 104, que te ayude con la travesía."}
+tellraw @s[scores={DialogueTrigger=30,TalkTime=185}] {"text":"<Sr. Peñas> Ve a encontrarlo, y debería aceptar ayudarte. ¡Cuento contigo, joven entrenador!"}
 #tellraw @s[scores={DialogueTrigger=30,TalkTime=1}] {"text":"<Mr. Stone> If you're ever unsure of what to do, just come and talk with me again!"}
 
 tag @s[scores={DialogueTrigger=30,TalkTime=185..}] add Dialogue30
@@ -1293,43 +1295,41 @@ execute as @s[scores={DialogueTrigger=31,TalkTime=1},tag=!MusicDisabled] run pla
 execute as @s[scores={DialogueTrigger=31,TalkTime=1},tag=!MusicDisabled] run scoreboard players set @s MusicCooldown 102
 execute at @s[scores={DialogueTrigger=31,TalkTime=1}] as @e[type=pixelmon:npc_chatting,distance=..10] at @s run tp @s ~ ~ ~ facing entity @p[distance=..15]
 
-tellraw @s[scores={DialogueTrigger=31,TalkTime=1,Rival=1}] ["",{"text":"<May> Oh! Hey, "},{"selector":"@s"},{"text":"! Have you been catching lots of Pokémon?"}]
-tellraw @s[scores={DialogueTrigger=31,TalkTime=10,Rival=1}] {"text":"<May> I'm doing pretty good on that front, at least."}
-tellraw @s[scores={DialogueTrigger=31,TalkTime=17,Rival=1}] {"text":"<May> I caught so many Pokémon in Petalia Woods that I ran out of Poké Balls!"}
-tellraw @s[scores={DialogueTrigger=31,TalkTime=25,Rival=1}] {"text":"<May> Oh yeah... And I passed by Mr. Briney when I was in Petalia Woods."}
-tellraw @s[scores={DialogueTrigger=31,TalkTime=33,Rival=1}] {"text":"<May> Hmm. I guess he must have been on his way home to his cottage on Route 104."}
-tellraw @s[scores={DialogueTrigger=31,TalkTime=42,Rival=1}] ["",{"text":"<May> "},{"selector":"@s"},{"text":", you just moved here so there's no way you could know, but Mr. Briney was once a highly respected seafarer."}]
+tellraw @s[scores={DialogueTrigger=31,TalkTime=1,Rival=1}] ["",{"text":"<Aura> ¡Oh! Hola, "},{"selector":"@s"},{"text":"! ¿Has estado capturando muchos Pokémon?"}]
+tellraw @s[scores={DialogueTrigger=31,TalkTime=10,Rival=1}] {"text":"<Aura> Estoy bastante bien en ese aspecto, al menos."}
+tellraw @s[scores={DialogueTrigger=31,TalkTime=17,Rival=1}] {"text":"<Aura> ¡Capturé tantos Pokémon en el Bosque Petalia que me quedé sin Poké Balls!"}
+tellraw @s[scores={DialogueTrigger=31,TalkTime=25,Rival=1}] {"text":"<Aura> Ah, sí... Y pasé por donde estaba el Sr. Arenque cuando estuve en el Bosque Petalia."}
+tellraw @s[scores={DialogueTrigger=31,TalkTime=33,Rival=1}] {"text":"<Aura> Hmm. Supongo que él debía estar de regreso a su cabaña en la Ruta 104."}
+tellraw @s[scores={DialogueTrigger=31,TalkTime=42,Rival=1}] ["",{"text":"<Aura> "},{"selector":"@s"},{"text":", como acabas de mudarte, no podrías saberlo, pero el Sr. Arenque fue una vez un navegante muy respetado."}]
 
-
-
-tellraw @s[scores={DialogueTrigger=31,TalkTime=1,Rival=2}] ["",{"text":"<Brendan> Hey, "},{"selector":"@s"},{"text":". How's your Pokédex? Completed any entries yet?"}]
-tellraw @s[scores={DialogueTrigger=31,TalkTime=10,Rival=2}] {"text":"<Brendan> Mine pretty much rules."}
-tellraw @s[scores={DialogueTrigger=31,TalkTime=17,Rival=2}] {"text":"<Brendan> I went on a Pokémon-catching frenzy in Petalia Woods until I ran out of Poké Balls!"}
-tellraw @s[scores={DialogueTrigger=31,TalkTime=26,Rival=2}] {"text":"<Brendan> Oh, yeah. I passed by Mr. Briney in Petalia Woods."}
-tellraw @s[scores={DialogueTrigger=31,TalkTime=33,Rival=2}] {"text":"<Brendan> I bet he was on his way home to his cottage on Route 104."}
-tellraw @s[scores={DialogueTrigger=31,TalkTime=41,Rival=2}] {"text":"<Brendan> I guess you wouldn't know, since you just moved here and all, but they say that old guy used to be an amazing sailor!"}
+tellraw @s[scores={DialogueTrigger=31,TalkTime=1,Rival=2}] ["",{"text":"<Bruno> Hola, "},{"selector":"@s"},{"text":". ¿Cómo va tu Pokédex? ¿Ya has completado alguna entrada?"}]
+tellraw @s[scores={DialogueTrigger=31,TalkTime=10,Rival=2}] {"text":"<Bruno> La mía es casi perfecta."}
+tellraw @s[scores={DialogueTrigger=31,TalkTime=17,Rival=2}] {"text":"<Bruno> Me lancé a capturar Pokémon en el Bosque Petalia hasta que me quedé sin Poké Balls!"}
+tellraw @s[scores={DialogueTrigger=31,TalkTime=26,Rival=2}] {"text":"<Bruno> Ah, sí. Pasé por donde estaba el Sr. Arenque en el Bosque Petalia."}
+tellraw @s[scores={DialogueTrigger=31,TalkTime=33,Rival=2}] {"text":"<Bruno> Apuesto a que él estaba de regreso a su cabaña en la Ruta 104."}
+tellraw @s[scores={DialogueTrigger=31,TalkTime=41,Rival=2}] {"text":"<Bruno> Supongo que no lo sabrías, ya que acabas de mudarte y todo eso, pero dicen que ese anciano solía ser un marinero increíble!"}
 
 tag @s[scores={DialogueTrigger=31,TalkTime=43..}] add Dialogue31
 #----------------------------------------------------------------------------------------------------------
 #Dialogue 32 - Mr. Briney's Cottage
 #https://youtu.be/MgkqxXCmrtI?t=9012
 
-#tellraw @s[scores={DialogueTrigger=32,TalkTime=1}] {"text":"<Mr. Briney> Hold on, lass! Belay that, Peeko!"}
-#tellraw @s[scores={DialogueTrigger=32,TalkTime=1}] ["",{"text":"<Mr. Briney> Oh, if it ain't "},{"selector":"@s"},{"text":"! You're the one who saved my Peeko!"}]
-#tellraw @s[scores={DialogueTrigger=32,TalkTime=1}] {"text":"<Mr. Briney> Aye, but we owe you for that day!"}
-#tellraw @s[scores={DialogueTrigger=32,TalkTime=1}] {"text":"<Mr. Briney> What's that? You want to sail with me?"}
-#tellraw @s[scores={DialogueTrigger=32,TalkTime=1}] {"text":"<Mr. Briney> What's this all about, then?"}
-#tellraw @s[scores={DialogueTrigger=32,TalkTime=1}] {"text":"<Mr. Briney> A letter bound for Dewford? Certainly, that'd be no problem at all."}
-#tellraw @s[scores={DialogueTrigger=32,TalkTime=1}] {"text":"<Mr. Briney> You've come to the right man! Shall we hoist sail for Dewford at once?"}
+#tellraw @s[scores={DialogueTrigger=32,TalkTime=1}] {"text":"<Sr. Arenque> Hold on, lass! Belay that, Peeko!"}
+#tellraw @s[scores={DialogueTrigger=32,TalkTime=1}] ["",{"text":"<Sr. Arenque> Oh, if it ain't "},{"selector":"@s"},{"text":"! You're the one who saved my Peeko!"}]
+#tellraw @s[scores={DialogueTrigger=32,TalkTime=1}] {"text":"<Sr. Arenque> Aye, but we owe you for that day!"}
+#tellraw @s[scores={DialogueTrigger=32,TalkTime=1}] {"text":"<Sr. Arenque> What's that? You want to sail with me?"}
+#tellraw @s[scores={DialogueTrigger=32,TalkTime=1}] {"text":"<Sr. Arenque> What's this all about, then?"}
+#tellraw @s[scores={DialogueTrigger=32,TalkTime=1}] {"text":"<Sr. Arenque> A letter bound for Azuliza? Certainly, that'd be no problem at all."}
+#tellraw @s[scores={DialogueTrigger=32,TalkTime=1}] {"text":"<Sr. Arenque> You've come to the right man! Shall we hoist sail for Azuliza at once?"}
 #
 #execute as @s[scores={DialogueTrigger=32,TalkTime=1}] run scoreboard players enable @s TriggerCommand
-#tellraw @s[scores={DialogueTrigger=32,TalkTime=1}] ["",{"text":"["},{"text":"Head to Dewford","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 12"}},{"text":"]"}]
+#tellraw @s[scores={DialogueTrigger=32,TalkTime=1}] ["",{"text":"["},{"text":"Head to Azuliza","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 12"}},{"text":"]"}]
 
 #Version 1 menu just taking player between cities
-tellraw @s[scores={DialogueTrigger=32,TalkTime=1}] {"text":"<Mr. Briney> What's that? You want to sail with me?"}
-tellraw @s[scores={DialogueTrigger=32,TalkTime=10}] {"text":"<Mr. Briney> You've come to the right man! Shall we hoist sail for Dewford at once?"}
+tellraw @s[scores={DialogueTrigger=32,TalkTime=1}] {"text":"<Sr. Arenque> ¿Qué es eso? ¿Quieres navegar conmigo?"}
+tellraw @s[scores={DialogueTrigger=32,TalkTime=10}] {"text":"<Sr. Arenque> ¡Has venido al hombre adecuado! ¿Deberíamos izar las velas hacia Azuliza de inmediato?"}
 execute as @s[scores={DialogueTrigger=32,TalkTime=10}] run scoreboard players enable @s TriggerCommand
-tellraw @s[scores={DialogueTrigger=32,TalkTime=10}] ["",{"text":"["},{"text":"Head to Dewford","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 12"}},{"text":"]"}]
+tellraw @s[scores={DialogueTrigger=32,TalkTime=10}] ["",{"text":"["},{"text":"Dirígete a Azuliza","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 12"}},{"text":"]"}]
 
 
 tag @s[scores={DialogueTrigger=32,TalkTime=10..}] add Dialogue32
@@ -1337,72 +1337,72 @@ tag @s[scores={DialogueTrigger=32,TalkTime=10..}] add Dialogue32
 #Dialogue 33 - Mr. Briney's Cottage
 #https://youtu.be/MgkqxXCmrtI?t=9034
 
-#tellraw @s[scores={DialogueTrigger=33,TalkTime=1}] {"text":"<Mr. Briney> Dewford, we're a-coming! Anchors aweigh!"}
-#tellraw @s[scores={DialogueTrigger=33,TalkTime=1}] {"text":"<Mr. Briney> Peeko, we're setting sail, my darling!"}
+#tellraw @s[scores={DialogueTrigger=33,TalkTime=1}] {"text":"<Sr. Arenque> Azuliza, we're a-coming! Anchors aweigh!"}
+#tellraw @s[scores={DialogueTrigger=33,TalkTime=1}] {"text":"<Sr. Arenque> Peeko, we're setting sail, my darling!"}
 #
 ##Cutscene shots?
 #
-#tellraw @s[scores={DialogueTrigger=33,TalkTime=1}] {"text":"<Mr. Briney> Ahoy! We've struck land in Dewford."}
-#tellraw @s[scores={DialogueTrigger=33,TalkTime=1}] {"text":"<Mr. Briney> I suppose you'll be heading ashore to deliver that letter to what's-his-name or whomever."}
-#tellraw @s[scores={DialogueTrigger=33,TalkTime=1}] {"text":"<Mr. Briney> If you're ever feeling lost and adrift though, try calling in on the island's Pokémon Gym."}
-#tellraw @s[scores={DialogueTrigger=33,TalkTime=1}] {"text":"<Mr. Briney> The Leader, Brawly, surely knows everyone and everything that goes on in his town!"}
+#tellraw @s[scores={DialogueTrigger=33,TalkTime=1}] {"text":"<Sr. Arenque> Ahoy! We've struck land in Azuliza."}
+#tellraw @s[scores={DialogueTrigger=33,TalkTime=1}] {"text":"<Sr. Arenque> I suppose you'll be heading ashore to deliver that letter to what's-his-name or whomever."}
+#tellraw @s[scores={DialogueTrigger=33,TalkTime=1}] {"text":"<Sr. Arenque> If you're ever feeling lost and adrift though, try calling in on the island's Pokémon Gym."}
+#tellraw @s[scores={DialogueTrigger=33,TalkTime=1}] {"text":"<Sr. Arenque> The Leader, Brawly, surely knows everyone and everything that goes on in his town!"}
 
 #Version 1
-tellraw @s[scores={DialogueTrigger=33,TalkTime=1}] {"text":"<Mr. Briney> Dewford, we're a-coming! Anchors aweigh!"}
-tellraw @s[scores={DialogueTrigger=33,TalkTime=8}] {"text":"<Mr. Briney> Peeko, we're setting sail, my darling!"}
+tellraw @s[scores={DialogueTrigger=33,TalkTime=1}] {"text":"<Sr. Arenque> ¡Azuliza, vamos en camino! ¡Anclas arriba!"}
+tellraw @s[scores={DialogueTrigger=33,TalkTime=8}] {"text":"<Sr. Arenque> ¡Peeko, zarpamos, querido!"}
 
 #Blinds player, tps to destination
 execute as @s[scores={DialogueTrigger=33,TalkTime=16}] run effect give @s minecraft:blindness 5 1 true
 execute as @s[scores={DialogueTrigger=33,TalkTime=16}] run tp @s -2419 70 838.5 -110 9
 
-tellraw @s[scores={DialogueTrigger=33,TalkTime=20}] {"text":"<Mr. Briney> Ahoy! We've struck land in Dewford."}
-tellraw @s[scores={DialogueTrigger=33,TalkTime=27}] {"text":"<Mr. Briney> If you're ever feeling lost and adrift though, try calling in on the island's Pokémon Gym."}
-tellraw @s[scores={DialogueTrigger=33,TalkTime=37}] {"text":"<Mr. Briney> The Leader, Brawly, surely knows everyone and everything that goes on in his town!"}
+tellraw @s[scores={DialogueTrigger=33,TalkTime=20}] {"text":"<Sr. Arenque> ¡Ahoy! Hemos llegado a tierra en Azuliza."}
+tellraw @s[scores={DialogueTrigger=33,TalkTime=27}] {"text":"<Sr. Arenque> Si alguna vez te sientes perdido y a la deriva, intenta visitar el Gimnasio Pokémon de la isla."}
+tellraw @s[scores={DialogueTrigger=33,TalkTime=37}] {"text":"<Sr. Arenque> ¡El Líder, Marcial, seguramente conoce a todos y todo lo que ocurre en su ciudad!"}
 
 tag @s[scores={DialogueTrigger=33,TalkTime=37..}] add Dialogue33
 #----------------------------------------------------------------------------------------------------------
-#Dialogue 34 - Dewford Gym
+#Dialogue 34 - Azuliza Gym
 #Brawly Pre-Battle
 #https://youtu.be/MgkqxXCmrtI?t=10272
 
-tellraw @s[scores={DialogueTrigger=34,TalkTime=1}] {"text":"<Brawly> I'm Brawly! Dewford's Gym Leader!"}
-tellraw @s[scores={DialogueTrigger=34,TalkTime=8}] {"text":"<Brawly> I've been churned in the rough waves of these parts..."}
-tellraw @s[scores={DialogueTrigger=34,TalkTime=15}] {"text":"<Brawly> And I've grown tough using the cave at the outskirts of this town as my training ground, as well as using the equipment in this Gym."}
-tellraw @s[scores={DialogueTrigger=34,TalkTime=26}] {"text":"<Brawly> So you want to challenge me?"}
-tellraw @s[scores={DialogueTrigger=34,TalkTime=33}] {"text":"<Brawly> Let me see what you're made of!"}
+tellraw @s[scores={DialogueTrigger=34,TalkTime=1}] {"text":"<Marcial> ¡Soy Marcial! ¡El Líder del Gimnasio de Azuliza!"}
+tellraw @s[scores={DialogueTrigger=34,TalkTime=8}] {"text":"<Marcial> He sido forjado en las duras olas de esta región..."}
+tellraw @s[scores={DialogueTrigger=34,TalkTime=15}] {"text":"<Marcial> Y me he vuelto fuerte usando la cueva en las afueras de esta ciudad como mi campo de entrenamiento, así como utilizando el equipo en este Gimnasio."}
+tellraw @s[scores={DialogueTrigger=34,TalkTime=26}] {"text":"<Marcial> ¿Así que quieres desafiarme?"}
+tellraw @s[scores={DialogueTrigger=34,TalkTime=33}] {"text":"<Marcial> ¡Déjame ver de qué estás hecho!"}
 
 execute as @s[scores={DialogueTrigger=34,TalkTime=40}] run tp @s -2433 67 1424
 execute as @s[scores={DialogueTrigger=34,TalkTime=40}] run pokebattle @s Brawly
 
 tag @s[scores={DialogueTrigger=34,TalkTime=40..}] add Dialogue34
 #--------------------------
-#Dialogue 35 - Dewford Gym
+#Dialogue 35 - Azuliza Gym
 #Brawly Post-Battle
 
 clear @s[scores={DialogueTrigger=35}] minecraft:nether_brick
-tellraw @s[scores={DialogueTrigger=35,TalkTime=1}] {"text":"<Brawly> OK, you've got me. Take this Gym Badge!"}
+tellraw @s[scores={DialogueTrigger=35,TalkTime=1}] {"text":"<Marcial> OK, you've got me. Take this Gym Badge!"}
 
-tellraw @s[scores={DialogueTrigger=35,TalkTime=10}] ["",{"selector":"@s","italic":true,"color":"gray"},{"text":" received the Knuckle Badge from Brawly.","italic":true,"color":"gray"}]
+tellraw @s[scores={DialogueTrigger=35,TalkTime=10}] ["",{"selector":"@s","italic":true,"color":"gray"},{"text":" received the Knuckle Badge from Marcial.","italic":true,"color":"gray"}]
 execute as @s[scores={DialogueTrigger=35,TalkTime=10}] run give @s pixelmon:knuckle_badge
 execute as @s[scores={DialogueTrigger=35,TalkTime=10}] run stopsound @s record
 execute as @s[scores={DialogueTrigger=35,TalkTime=10}] run scoreboard players set @s MusicCooldown 10
 execute as @s[scores={DialogueTrigger=35,TalkTime=10}] run playsound minecraft:badgeget ambient @s ~ ~ ~ 1 1 1
 execute as @s[scores={DialogueTrigger=35,TalkTime=10}] run advancement grant @s only hoenn:badges/badge2
 
-tellraw @s[scores={DialogueTrigger=35,TalkTime=17}] {"text":"<Brawly> Hmm... You know what? I think you can make full use of this, too."}
-tellraw @s[scores={DialogueTrigger=35,TalkTime=26}] {"text":"<Brawly> I'm sure this will help your Pokémon bulk up muscle!"}
+tellraw @s[scores={DialogueTrigger=35,TalkTime=17}] {"text":"<Marcial> Hmm... You know what? I think you can make full use of this, too."}
+tellraw @s[scores={DialogueTrigger=35,TalkTime=26}] {"text":"<Marcial> I'm sure this will help your Pokémon bulk up muscle!"}
 
 tellraw @s[scores={DialogueTrigger=35,TalkTime=33}] ["",{"selector":"@s","italic":true,"color":"gray"},{"text":" obtained TM08 Bulk Up!","italic":true,"color":"gray"}]
 execute as @s[scores={DialogueTrigger=35,TalkTime=33}] run give @s pixelmon:tm_gen6{tm:8s}
 execute as @s[scores={DialogueTrigger=35,TalkTime=33}] run playsound minecraft:tmget ambient @s ~ ~ ~ 1 1 1
 
-tellraw @s[scores={DialogueTrigger=35,TalkTime=40}] {"text":"<Brawly> Bulk Up temporarily enhances the Pokémon's muscle power."}
-tellraw @s[scores={DialogueTrigger=35,TalkTime=47}] {"text":"<Brawly> The move boosts both Attack and Defense stats of the Pokémon."}
-tellraw @s[scores={DialogueTrigger=35,TalkTime=55}] {"text":"<Brawly> I can see your talent becoming a giant wave that causes a storm of astonishment with Trainers one day!"}
-tellraw @s[scores={DialogueTrigger=35,TalkTime=65}] {"text":"<Brawly> I look forward to the day when I can surf your giant wave!"}
-tellraw @s[scores={DialogueTrigger=35,TalkTime=72}] {"text":"<Brawly> By the way, have you been to Granite Cave? It's located to the north of this town."}
-tellraw @s[scores={DialogueTrigger=35,TalkTime=80}] {"text":"<Brawly> It's full of fascinating stuff, like rare stones and wall paintings thousands of years old."}
-tellraw @s[scores={DialogueTrigger=35,TalkTime=89}] {"text":"<Brawly> My friend Steven rushed to the cave after I told him about it."}
+tellraw @s[scores={DialogueTrigger=35,TalkTime=40}] {"text":"<Marcial> Bulk Up temporarily enhances the Pokémon's muscle power."}
+tellraw @s[scores={DialogueTrigger=35,TalkTime=47}] {"text":"<Marcial> The move boosts both Attack and Defense stats of the Pokémon."}
+tellraw @s[scores={DialogueTrigger=35,TalkTime=55}] {"text":"<Marcial> I can see your talent becoming a giant wave that causes a storm of astonishment with Trainers one day!"}
+tellraw @s[scores={DialogueTrigger=35,TalkTime=65}] {"text":"<Marcial> I look forward to the day when I can surf your giant wave!"}
+tellraw @s[scores={DialogueTrigger=35,TalkTime=72}] {"text":"<Marcial> By the way, have you been to Granite Cave? It's located to the north of this town."}
+tellraw @s[scores={DialogueTrigger=35,TalkTime=80}] {"text":"<Marcial> It's full of fascinating stuff, like rare stones and wall paintings thousands of years old."}
+tellraw @s[scores={DialogueTrigger=35,TalkTime=89}] {"text":"<Marcial> My friend Steven rushed to the cave after I told him about it."}
 
 tag @s[scores={DialogueTrigger=35,TalkTime=89..}] add Dialogue35
 #----------------------------------------------------------------------------------------------------------
@@ -1421,16 +1421,16 @@ execute at @s[scores={DialogueTrigger=36,TalkTime=26}] as @e[type=pixelmon:npc_c
 tellraw @s[scores={DialogueTrigger=36,TalkTime=31}] {"text":"<...> You are...?"}
 tellraw @s[scores={DialogueTrigger=36,TalkTime=37}] {"text":"<...> ..."}
 tellraw @s[scores={DialogueTrigger=36,TalkTime=43}] ["",{"text":"<...> Ah, I see. It's a pleasure, "},{"selector":"@s"},{"text":"."}]
-tellraw @s[scores={DialogueTrigger=36,TalkTime=50}] {"text":"<Steven> My apologies. My name is Steven."}
-tellraw @s[scores={DialogueTrigger=36,TalkTime=57}] {"text":"<Steven> I'm interested in rare stones, so I travel here and there."}
-tellraw @s[scores={DialogueTrigger=36,TalkTime=65}] {"text":"<Steven> Today my journey brought me here, but what about you?"}
-tellraw @s[scores={DialogueTrigger=36,TalkTime=73}] {"text":"<Steven> Oh? A letter for me?"}
+tellraw @s[scores={DialogueTrigger=36,TalkTime=50}] {"text":"<Máximo> My apologies. My name is Steven."}
+tellraw @s[scores={DialogueTrigger=36,TalkTime=57}] {"text":"<Máximo> I'm interested in rare stones, so I travel here and there."}
+tellraw @s[scores={DialogueTrigger=36,TalkTime=65}] {"text":"<Máximo> Today my journey brought me here, but what about you?"}
+tellraw @s[scores={DialogueTrigger=36,TalkTime=73}] {"text":"<Máximo> Oh? A letter for me?"}
 execute as @s[scores={DialogueTrigger=36,TalkTime=80}] run clear @s minecraft:music_disc_cat
 tellraw @s[scores={DialogueTrigger=36,TalkTime=80}] ["",{"selector":"@s","italic":true,"color":"gray"},{"text":" \u200bgave Steven the letter they had been entrusted with!","italic":true,"color":"gray"}]
-tellraw @s[scores={DialogueTrigger=36,TalkTime=87}] {"text":"<Steven> Why, thank you..."}
-tellraw @s[scores={DialogueTrigger=36,TalkTime=94}] {"text":"<Steven> It must have been some trouble to track me down. I suppose I must repay you in some way."}
-tellraw @s[scores={DialogueTrigger=36,TalkTime=103}] {"text":"<Steven> Let me see..."}
-tellraw @s[scores={DialogueTrigger=36,TalkTime=110}] {"text":"<Steven> I will give you this TM. Please accept it. It contains my favorite move, Steel Wing."}
+tellraw @s[scores={DialogueTrigger=36,TalkTime=87}] {"text":"<Máximo> Why, thank you..."}
+tellraw @s[scores={DialogueTrigger=36,TalkTime=94}] {"text":"<Máximo> It must have been some trouble to track me down. I suppose I must repay you in some way."}
+tellraw @s[scores={DialogueTrigger=36,TalkTime=103}] {"text":"<Máximo> Let me see..."}
+tellraw @s[scores={DialogueTrigger=36,TalkTime=110}] {"text":"<Máximo> I will give you this TM. Please accept it. It contains my favorite move, Steel Wing."}
 
 tellraw @s[scores={DialogueTrigger=36,TalkTime=118}] ["",{"selector":"@s","italic":true,"color":"gray"},{"text":" obtained TM51 Steel Wing!","italic":true,"color":"gray"}]
 execute as @s[scores={DialogueTrigger=36,TalkTime=118}] run playsound minecraft:tmget ambient @s ~ ~ ~ 1 1 1
@@ -1439,16 +1439,16 @@ execute as @s[scores={DialogueTrigger=36,TalkTime=118}] run give @s pixelmon:tm_
 #View of overhead, Steven looking at the wall
 
 execute as @s[scores={DialogueTrigger=36,TalkTime=125}] as @e[x=2564,y=171,z=-2599,distance=..3,type=pixelmon:npc_chatting] run data merge entity @s {Rotation:[180f,0.0f]}
-tellraw @s[scores={DialogueTrigger=36,TalkTime=125}] {"text":"<Steven> If you don't mind me asking... Do you feel anything in particular when you look up at this wall?"}
-tellraw @s[scores={DialogueTrigger=36,TalkTime=136}] {"text":"<Steven> A primal world, lost thousands of years in the past..."}
-tellraw @s[scores={DialogueTrigger=36,TalkTime=144}] {"text":"<Steven> A Legendary Pokémon of tremendous power became humanity's greatest threat..."}
-tellraw @s[scores={DialogueTrigger=36,TalkTime=154}] {"text":"<Steven> The terror aroused by that power is clear to see in this ancient artwork."}
+tellraw @s[scores={DialogueTrigger=36,TalkTime=125}] {"text":"<Máximo> If you don't mind me asking... Do you feel anything in particular when you look up at this wall?"}
+tellraw @s[scores={DialogueTrigger=36,TalkTime=136}] {"text":"<Máximo> A primal world, lost thousands of years in the past..."}
+tellraw @s[scores={DialogueTrigger=36,TalkTime=144}] {"text":"<Máximo> A Legendary Pokémon of tremendous power became humanity's greatest threat..."}
+tellraw @s[scores={DialogueTrigger=36,TalkTime=154}] {"text":"<Máximo> The terror aroused by that power is clear to see in this ancient artwork."}
 
 execute at @s[scores={DialogueTrigger=36,TalkTime=164}] as @e[type=pixelmon:npc_chatting,distance=..10] at @s run tp @s ~ ~ ~ facing entity @p[distance=..15]
-tellraw @s[scores={DialogueTrigger=36,TalkTime=164}] {"text":"<Steven> ...Yes. But not all power is terrible. Your Pokémon are clearly quite capable as well."}
-tellraw @s[scores={DialogueTrigger=36,TalkTime=174}] {"text":"<Steven> Looking at you all together... I think that you have in you what it takes to become a Pokémon League Champion."}
-tellraw @s[scores={DialogueTrigger=36,TalkTime=186}] {"text":"<Steven> As long as you keep training, that is."}
-tellraw @s[scores={DialogueTrigger=36,TalkTime=193}] {"text":"<Steven> Good luck to you. I must be going now."}
+tellraw @s[scores={DialogueTrigger=36,TalkTime=164}] {"text":"<Máximo> ...Yes. But not all power is terrible. Your Pokémon are clearly quite capable as well."}
+tellraw @s[scores={DialogueTrigger=36,TalkTime=174}] {"text":"<Máximo> Looking at you all together... I think that you have in you what it takes to become a Pokémon League Champion."}
+tellraw @s[scores={DialogueTrigger=36,TalkTime=186}] {"text":"<Máximo> As long as you keep training, that is."}
+tellraw @s[scores={DialogueTrigger=36,TalkTime=193}] {"text":"<Máximo> Good luck to you. I must be going now."}
 
 #Steven teleports out
 execute as @s[scores={DialogueTrigger=36,TalkTime=200}] run particle cloud 2564 171 -2599 1 1 1 0.15 300
@@ -1456,24 +1456,24 @@ execute as @s[scores={DialogueTrigger=36,TalkTime=200}] run tp @e[x=2564,y=171,z
 
 tag @s[scores={DialogueTrigger=36,TalkTime=200..}] add Dialogue36
 #----------------------------------------------------------------------------------------------------------
-#Dialogue 37 - Dewford Town
+#Dialogue 37 - Azuliza Town
 #Mr. Briney after delivering Steven's Letter
 #https://youtu.be/MgkqxXCmrtI?t=10962
 
-#tellraw @s[scores={DialogueTrigger=37,TalkTime=1}] {"text":"<Mr. Briney> Oho! It looks as though you have delivered your chit good and proper."}
-#tellraw @s[scores={DialogueTrigger=37,TalkTime=1}] {"text":"<Mr. Briney> Ah, but that reminds me! I've had a message from President Stone, saying he has another favor to ask."}
-#tellraw @s[scores={DialogueTrigger=37,TalkTime=1}] {"text":"<Mr. Briney> It's about them Devon Parts that you recovered for him before."}
-#tellraw @s[scores={DialogueTrigger=37,TalkTime=1}] {"text":"<Mr. Briney> Seems as though they should go to some fellow called Stern at Slateport's shipyard."}
-#tellraw @s[scores={DialogueTrigger=37,TalkTime=1}] {"text":"<Mr. Briney> This old seadog will see you there safely! Weigh anchors! We're for Slateport!"}
+#tellraw @s[scores={DialogueTrigger=37,TalkTime=1}] {"text":"<Sr. Arenque> Oho! It looks as though you have delivered your chit good and proper."}
+#tellraw @s[scores={DialogueTrigger=37,TalkTime=1}] {"text":"<Sr. Arenque> Ah, but that reminds me! I've had a message from President Stone, saying he has another favor to ask."}
+#tellraw @s[scores={DialogueTrigger=37,TalkTime=1}] {"text":"<Sr. Arenque> It's about them Devon Parts that you recovered for him before."}
+#tellraw @s[scores={DialogueTrigger=37,TalkTime=1}] {"text":"<Sr. Arenque> Seems as though they should go to some fellow called Stern at Slateport's shipyard."}
+#tellraw @s[scores={DialogueTrigger=37,TalkTime=1}] {"text":"<Sr. Arenque> This old seadog will see you there safely! Weigh anchors! We're for Slateport!"}
 
-tellraw @s[scores={DialogueTrigger=37,TalkTime=1},tag=Dialogue35] {"text":"<Mr. Briney> Now that you've got this here town's badge, what about for Slateport?"}
-tellraw @s[scores={DialogueTrigger=37,TalkTime=9},tag=Dialogue35] {"text":"<Mr. Briney> Or we could head back to my Cottage, up to you!"}
+tellraw @s[scores={DialogueTrigger=37,TalkTime=1},tag=Dialogue35] {"text":"<Sr. Arenque> Now that you've got this here town's badge, what about for Slateport?"}
+tellraw @s[scores={DialogueTrigger=37,TalkTime=9},tag=Dialogue35] {"text":"<Sr. Arenque> Or we could head back to my Cottage, up to you!"}
 
 execute as @s[scores={DialogueTrigger=37,TalkTime=9},tag=Dialogue35] run scoreboard players enable @s TriggerCommand
 tellraw @s[scores={DialogueTrigger=37,TalkTime=9},tag=Dialogue35] ["",{"text":"["},{"text":"Route 104 (near Petalia)","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 14"}},{"text":"] ["},{"text":"Route 109 (near Slateport)","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 13"}},{"text":"]"}]
 
 #Without Brawly Badge
-tellraw @s[scores={DialogueTrigger=37,TalkTime=1},tag=!Dialogue35] {"text":"<Mr. Briney> How's about it, did you want to go back to my Cottage?"}
+tellraw @s[scores={DialogueTrigger=37,TalkTime=1},tag=!Dialogue35] {"text":"<Sr. Arenque> How's about it, did you want to go back to my Cottage?"}
 execute as @s[scores={DialogueTrigger=37,TalkTime=1},tag=!Dialogue35] run scoreboard players enable @s TriggerCommand
 tellraw @s[scores={DialogueTrigger=37,TalkTime=1},tag=!Dialogue35] ["",{"text":"["},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 14"}},{"text":"]"}]
 execute as @s[scores={DialogueTrigger=37,TalkTime=1},tag=!Dialogue35] run scoreboard players add @s TalkTime 9
@@ -1481,20 +1481,20 @@ execute as @s[scores={DialogueTrigger=37,TalkTime=1},tag=!Dialogue35] run scoreb
 tag @s[scores={DialogueTrigger=37,TalkTime=9..}] add Dialogue37
 
 #----------------------------------------------------------------------------------------------------------
-#Dialogue 37 - Dewford Town
+#Dialogue 37 - Azuliza Town
 #Mr. Briney taking player to either Petalia or Slateport
 
-tellraw @s[scores={DialogueTrigger=38,TalkTime=1,Temp=1}] {"text":"<Mr. Briney> Slateport City, is it? Anchors aweigh! Peeko, we're setting sail, my darling!"}
-tellraw @s[scores={DialogueTrigger=38,TalkTime=1,Temp=2}] {"text":"<Mr. Briney> Petalia City, is it? Anchors aweigh! Peeko, we're setting sail, my darling!"}
+tellraw @s[scores={DialogueTrigger=38,TalkTime=1,Temp=1}] {"text":"<Sr. Arenque> Slateport City, is it? Anchors aweigh! Peeko, we're setting sail, my darling!"}
+tellraw @s[scores={DialogueTrigger=38,TalkTime=1,Temp=2}] {"text":"<Sr. Arenque> Petalia City, is it? Anchors aweigh! Peeko, we're setting sail, my darling!"}
 
 #Cutscene shots
 execute as @s[scores={DialogueTrigger=38,TalkTime=10}] run effect give @s minecraft:blindness 5 1 true
 execute as @s[scores={DialogueTrigger=38,TalkTime=11,Temp=1}] run tp @s -1438.1 70 685.15 -37 7
 execute as @s[scores={DialogueTrigger=38,TalkTime=11,Temp=2}] run tp @s -2718 69 -30.5 -182 7
 
-tellraw @s[scores={DialogueTrigger=38,TalkTime=15,Temp=1}] {"text":"<Mr. Briney> Ahoy! We've made land in Slateport!"}
-tellraw @s[scores={DialogueTrigger=38,TalkTime=15,Temp=2}] {"text":"<Mr. Briney> Ahoy! We've made land in Petalia!"}
-#tellraw @s[scores={DialogueTrigger=37,TalkTime=1}] {"text":"<Mr. Briney> I suppose you're off to visit Captain Stern and deliver those Devon Parts?"}
+tellraw @s[scores={DialogueTrigger=38,TalkTime=15,Temp=1}] {"text":"<Sr. Arenque> Ahoy! We've made land in Slateport!"}
+tellraw @s[scores={DialogueTrigger=38,TalkTime=15,Temp=2}] {"text":"<Sr. Arenque> Ahoy! We've made land in Petalia!"}
+#tellraw @s[scores={DialogueTrigger=37,TalkTime=1}] {"text":"<Sr. Arenque> I suppose you're off to visit Captain Stern and deliver those Devon Parts?"}
 
 tag @s[scores={DialogueTrigger=38,TalkTime=15..}] add Dialogue38
 #----------------------------------------------------------------------------------------------------------
@@ -1997,30 +1997,30 @@ tag @s[scores={DialogueTrigger=51,TalkTime=100..}] add Dialogue51
 #Rival Pre-Battle
 #https://youtu.be/MgkqxXCmrtI?t=16530
 
-tellraw @s[scores={DialogueTrigger=58,TalkTime=1}] ["",{"text":"<May> Hey, "},{"selector":"@s"},{"text":"! It's been ages!"}]
-tellraw @s[scores={DialogueTrigger=58,TalkTime=1}] {"text":"<May> Nice timing, too. I was just searching for Pokémon, you know?"}
-tellraw @s[scores={DialogueTrigger=58,TalkTime=1}] {"text":"<May> My dad is always going on about how nature used to be even more diverse, way back in the day."}
-tellraw @s[scores={DialogueTrigger=58,TalkTime=1}] {"text":"<May> He says that there used to be way more kinds of Pokémon than there are now!"}
-tellraw @s[scores={DialogueTrigger=58,TalkTime=1}] {"text":"<May> So that's why we do fieldwork, him and me."}
-tellraw @s[scores={DialogueTrigger=58,TalkTime=1}] {"text":"<May> We really want to find out what happened to those Pokémon in the past."}
-tellraw @s[scores={DialogueTrigger=58,TalkTime=1}] {"text":"<May> On my journey up to now, I've met a lot of different Pokémon, and I think I've gotten to understand a lot of them, too."}
-tellraw @s[scores={DialogueTrigger=58,TalkTime=1}] {"text":"<May> Me and my Pokémon have really grown."}
-tellraw @s[scores={DialogueTrigger=58,TalkTime=1}] {"text":"<May> So..."}
-tellraw @s[scores={DialogueTrigger=58,TalkTime=1}] {"text":"<May> How about a little battle?"}
+tellraw @s[scores={DialogueTrigger=58,TalkTime=1}] ["",{"text":"<Aura> Hey, "},{"selector":"@s"},{"text":"! It's been ages!"}]
+tellraw @s[scores={DialogueTrigger=58,TalkTime=1}] {"text":"<Aura> Nice timing, too. I was just searching for Pokémon, you know?"}
+tellraw @s[scores={DialogueTrigger=58,TalkTime=1}] {"text":"<Aura> My dad is always going on about how nature used to be even more diverse, way back in the day."}
+tellraw @s[scores={DialogueTrigger=58,TalkTime=1}] {"text":"<Aura> He says that there used to be way more kinds of Pokémon than there are now!"}
+tellraw @s[scores={DialogueTrigger=58,TalkTime=1}] {"text":"<Aura> So that's why we do fieldwork, him and me."}
+tellraw @s[scores={DialogueTrigger=58,TalkTime=1}] {"text":"<Aura> We really want to find out what happened to those Pokémon in the past."}
+tellraw @s[scores={DialogueTrigger=58,TalkTime=1}] {"text":"<Aura> On my journey up to now, I've met a lot of different Pokémon, and I think I've gotten to understand a lot of them, too."}
+tellraw @s[scores={DialogueTrigger=58,TalkTime=1}] {"text":"<Aura> Me and my Pokémon have really grown."}
+tellraw @s[scores={DialogueTrigger=58,TalkTime=1}] {"text":"<Aura> So..."}
+tellraw @s[scores={DialogueTrigger=58,TalkTime=1}] {"text":"<Aura> How about a little battle?"}
 
 execute as @s[scores={DialogueTrigger=58,TalkTime=1}] run pokebattle
 
 
-tellraw @s[scores={DialogueTrigger=58,TalkTime=1}] ["",{"text":"<Brendan> Hey, "},{"selector":"@s"},{"text":". So this is where you've been."}]
-tellraw @s[scores={DialogueTrigger=58,TalkTime=1}] {"text":"<Brendan> How've things been going?"}
-tellraw @s[scores={DialogueTrigger=58,TalkTime=1}] {"text":"<Brendan> I was just checking out the Pokémon around here to help with my dad's research."}
-tellraw @s[scores={DialogueTrigger=58,TalkTime=1}] {"text":"<Brendan> He says that a long, long time ago, nature used to be way more diverse and there were lots more kinds of Pokémon, too."}
-tellraw @s[scores={DialogueTrigger=58,TalkTime=1}] {"text":"<Brendan> My dad and I want to learn more about those Pokémon from the past, you know?"}
-tellraw @s[scores={DialogueTrigger=58,TalkTime=1}] {"text":"<Brendan> That's why we do fieldwork. And this journey has really helped."}
-tellraw @s[scores={DialogueTrigger=58,TalkTime=1}] {"text":"<Brendan> I've met a lot of Pokémon on my way here and learned about them, too."}
-tellraw @s[scores={DialogueTrigger=58,TalkTime=1}] {"text":"<Brendan> Which reminds me!"}
-tellraw @s[scores={DialogueTrigger=58,TalkTime=1}] {"text":"<Brendan> Come on! It's the first time we've met in ages, so let's have a battle!"}
-tellraw @s[scores={DialogueTrigger=58,TalkTime=1}] ["",{"text":"<Brendan> Show me what you and your team have accomplished on your journey, "},{"selector":"@s"},{"text":"!"}]
+tellraw @s[scores={DialogueTrigger=58,TalkTime=1}] ["",{"text":"<Bruno> Hey, "},{"selector":"@s"},{"text":". So this is where you've been."}]
+tellraw @s[scores={DialogueTrigger=58,TalkTime=1}] {"text":"<Bruno> How've things been going?"}
+tellraw @s[scores={DialogueTrigger=58,TalkTime=1}] {"text":"<Bruno> I was just checking out the Pokémon around here to help with my dad's research."}
+tellraw @s[scores={DialogueTrigger=58,TalkTime=1}] {"text":"<Bruno> He says that a long, long time ago, nature used to be way more diverse and there were lots more kinds of Pokémon, too."}
+tellraw @s[scores={DialogueTrigger=58,TalkTime=1}] {"text":"<Bruno> My dad and I want to learn more about those Pokémon from the past, you know?"}
+tellraw @s[scores={DialogueTrigger=58,TalkTime=1}] {"text":"<Bruno> That's why we do fieldwork. And this journey has really helped."}
+tellraw @s[scores={DialogueTrigger=58,TalkTime=1}] {"text":"<Bruno> I've met a lot of Pokémon on my way here and learned about them, too."}
+tellraw @s[scores={DialogueTrigger=58,TalkTime=1}] {"text":"<Bruno> Which reminds me!"}
+tellraw @s[scores={DialogueTrigger=58,TalkTime=1}] {"text":"<Bruno> Come on! It's the first time we've met in ages, so let's have a battle!"}
+tellraw @s[scores={DialogueTrigger=58,TalkTime=1}] ["",{"text":"<Bruno> Show me what you and your team have accomplished on your journey, "},{"selector":"@s"},{"text":"!"}]
 
 execute as @s[scores={DialogueTrigger=58,TalkTime=1}] run pokebattle
 
@@ -2029,45 +2029,45 @@ tag @s[scores={DialogueTrigger=58,TalkTime=100..}] add Dialogue58
 #Dialogue 59 - Route 110
 #Rival Pre-Battle
 
-tellraw @s[scores={DialogueTrigger=59,TalkTime=1}] ["",{"text":"<May> "},{"selector":"@s"},{"text":", you've been busy training, too, haven't you?"}]
-tellraw @s[scores={DialogueTrigger=59,TalkTime=1}] {"text":"<May> Oops! But look at us! Our teams look pretty tired."}
-tellraw @s[scores={DialogueTrigger=59,TalkTime=1}] {"text":"<May> Let's get them taken care of first."}
+tellraw @s[scores={DialogueTrigger=59,TalkTime=1}] ["",{"text":"<Aura> "},{"selector":"@s"},{"text":", you've been busy training, too, haven't you?"}]
+tellraw @s[scores={DialogueTrigger=59,TalkTime=1}] {"text":"<Aura> Oops! But look at us! Our teams look pretty tired."}
+tellraw @s[scores={DialogueTrigger=59,TalkTime=1}] {"text":"<Aura> Let's get them taken care of first."}
 
 execute as @s[scores={DialogueTrigger=59,TalkTime=1}] run pokeheal
 
-tellraw @s[scores={DialogueTrigger=59,TalkTime=1}] {"text":"<May> And now I think you deserve a reward, too! Here, this is from me!"}
+tellraw @s[scores={DialogueTrigger=59,TalkTime=1}] {"text":"<Aura> And now I think you deserve a reward, too! Here, this is from me!"}
 
 execute as @s[scores={DialogueTrigger=59,TalkTime=1}] run give @s pixelmon:item_finder
 tellraw @s[scores={DialogueTrigger=59,TalkTime=1}] ["",{"selector":"@s","italic":true,"color":"gray"},{"text":" recieved the Dowsing Machine!","italic":true,"color":"gray"}]
 
-tellraw @s[scores={DialogueTrigger=59,TalkTime=1}] {"text":"<May> That's a Dowsing Machine. Try it out—if there's a hidden item anywhere near you, that little thing will react to tell you."}
-tellraw @s[scores={DialogueTrigger=59,TalkTime=1}] {"text":"<May> Pay attention, and it'll lead you right to items!"}
-tellraw @s[scores={DialogueTrigger=59,TalkTime=1}] {"text":"<May> And it's fun to see all those waving bits above your head."}
-tellraw @s[scores={DialogueTrigger=59,TalkTime=1}] {"text":"<May> Try it, and I bet you'll be hooked!"}
-tellraw @s[scores={DialogueTrigger=59,TalkTime=1}] ["",{"text":"<May> See you later then, "},{"selector":"@s"},{"text":"! Let's meet again!"}]
-tellraw @s[scores={DialogueTrigger=59,TalkTime=1}] {"text":"<May> I hope we'll both be able to meet even more Pokémon on our journeys!"}
+tellraw @s[scores={DialogueTrigger=59,TalkTime=1}] {"text":"<Aura> That's a Dowsing Machine. Try it out—if there's a hidden item anywhere near you, that little thing will react to tell you."}
+tellraw @s[scores={DialogueTrigger=59,TalkTime=1}] {"text":"<Aura> Pay attention, and it'll lead you right to items!"}
+tellraw @s[scores={DialogueTrigger=59,TalkTime=1}] {"text":"<Aura> And it's fun to see all those waving bits above your head."}
+tellraw @s[scores={DialogueTrigger=59,TalkTime=1}] {"text":"<Aura> Try it, and I bet you'll be hooked!"}
+tellraw @s[scores={DialogueTrigger=59,TalkTime=1}] ["",{"text":"<Aura> See you later then, "},{"selector":"@s"},{"text":"! Let's meet again!"}]
+tellraw @s[scores={DialogueTrigger=59,TalkTime=1}] {"text":"<Aura> I hope we'll both be able to meet even more Pokémon on our journeys!"}
 
 #tps May out
 
 
-tellraw @s[scores={DialogueTrigger=59,TalkTime=1}] ["",{"text":"<Brendan> Sheesh, "},{"selector":"@s"},{"text":", when did you go and train your Pokémon up that well?"}]
-tellraw @s[scores={DialogueTrigger=59,TalkTime=1}] {"text":"<Brendan> It's, like, I don't know... It's pretty surprising, OK!"}
-tellraw @s[scores={DialogueTrigger=59,TalkTime=1}] {"text":"<Brendan> Both our teams look pretty wiped out after that, huh!"}
-tellraw @s[scores={DialogueTrigger=59,TalkTime=1}] {"text":"<Brendan> Here, let me help them out."}
+tellraw @s[scores={DialogueTrigger=59,TalkTime=1}] ["",{"text":"<Bruno> Sheesh, "},{"selector":"@s"},{"text":", when did you go and train your Pokémon up that well?"}]
+tellraw @s[scores={DialogueTrigger=59,TalkTime=1}] {"text":"<Bruno> It's, like, I don't know... It's pretty surprising, OK!"}
+tellraw @s[scores={DialogueTrigger=59,TalkTime=1}] {"text":"<Bruno> Both our teams look pretty wiped out after that, huh!"}
+tellraw @s[scores={DialogueTrigger=59,TalkTime=1}] {"text":"<Bruno> Here, let me help them out."}
 
 execute as @s[scores={DialogueTrigger=59,TalkTime=1}] run pokeheal
 
-tellraw @s[scores={DialogueTrigger=59,TalkTime=1}] {"text":"<Brendan> And this is for you."}
+tellraw @s[scores={DialogueTrigger=59,TalkTime=1}] {"text":"<Bruno> And this is for you."}
 
 execute as @s[scores={DialogueTrigger=59,TalkTime=1}] run give @s pixelmon:item_finder
 tellraw @s[scores={DialogueTrigger=59,TalkTime=1}] ["",{"selector":"@s","italic":true,"color":"gray"},{"text":" recieved the Dowsing Machine!","italic":true,"color":"gray"}]
 
-tellraw @s[scores={DialogueTrigger=59,TalkTime=1}] {"text":"<Brendan> That's a Dowsing Machine. Use it to root around for items that aren't visible."}
-tellraw @s[scores={DialogueTrigger=59,TalkTime=1}] {"text":"<Brendan> If it senses something nearby, it'll react, see?"}
-tellraw @s[scores={DialogueTrigger=59,TalkTime=1}] {"text":"<Brendan> Truth is, once I started using it, I got pretty hooked on it. It's addicting!"}
-tellraw @s[scores={DialogueTrigger=59,TalkTime=1}] {"text":"<Brendan> But I recommend you give it a try."}
-tellraw @s[scores={DialogueTrigger=59,TalkTime=1}] {"text":"<Brendan> I guess I'm off to get started surveying the next area then."}
-tellraw @s[scores={DialogueTrigger=59,TalkTime=1}] ["",{"text":"<Brendan> I hope you meet a lot of Pokémon, too, "},{"selector":"@s"},{"text":"!"}]
+tellraw @s[scores={DialogueTrigger=59,TalkTime=1}] {"text":"<Bruno> That's a Dowsing Machine. Use it to root around for items that aren't visible."}
+tellraw @s[scores={DialogueTrigger=59,TalkTime=1}] {"text":"<Bruno> If it senses something nearby, it'll react, see?"}
+tellraw @s[scores={DialogueTrigger=59,TalkTime=1}] {"text":"<Bruno> Truth is, once I started using it, I got pretty hooked on it. It's addicting!"}
+tellraw @s[scores={DialogueTrigger=59,TalkTime=1}] {"text":"<Bruno> But I recommend you give it a try."}
+tellraw @s[scores={DialogueTrigger=59,TalkTime=1}] {"text":"<Bruno> I guess I'm off to get started surveying the next area then."}
+tellraw @s[scores={DialogueTrigger=59,TalkTime=1}] ["",{"text":"<Bruno> I hope you meet a lot of Pokémon, too, "},{"selector":"@s"},{"text":"!"}]
 
 #tp Brendan out
 
@@ -2430,39 +2430,39 @@ execute as @s[scores={DialogueTrigger=75,TalkTime=1}] run function hoenn:tools/f
 execute as @s[scores={DialogueTrigger=75,TalkTime=1,Rival=1}] run particle cloud -1694 79 -1088 1 1 1 0.15 150
 execute as @s[scores={DialogueTrigger=75,TalkTime=1,Rival=1}] run summon pixelmon:npc_chatting -1694 79 -1088 {Brain: {memories: {}}, HurtByTimestamp: 0, chatNum: 0, Attributes: [{Base: 0.699999988079071d, Name: "minecraft:generic.movement_speed"}, {Base: 0.08d, Name: "forge:entity_gravity"}, {Base: 0.0d, Name: "forge:step_height_addition"}], Invulnerable: 0b, FallFlying: 0b, PortalCooldown: 0, AbsorptionAmount: 0.0f, Name: "May", FallDistance: 0.0f, CanUpdate: 1b, DeathTime: 0s, DefaultName: 0b, Commands: {interactCommands: []}, HandDropChances: [0.085f, 0.085f], PersistenceRequired: 1b, trainerLocation: 2, DefaultGreet: 0b, Motion: [0.0d, -0.0784000015258789d, 0.0d], TextureIndex: 4, TrainerIndex: "aquagruntmale", NameIndex: 4, Health: 20.0f, LeftHanded: 0b, Air: 300s, OnGround: 1b, Rotation: [5.6355925f, -2.2701373f], HandItems: [{}, {}], ChatIndex: 2, ArmorDropChances: [0.085f, 0.085f, 0.085f, 0.085f], Profession: -1s, Pos: [-1693.5d, 79.0d, -1087.5d], Fire: -1s, ArmorItems: [{}, {}, {}, {}], CanPickUpLoot: 0b, CustomSteveTexture: "may.png", HurtTime: 0s, BaseTrainer: "Steve", Inventory: [], AIMode: 3s}
 
-tellraw @s[scores={DialogueTrigger=75,TalkTime=5,Rival=1}] {"text":"<May> Ah!"}
-tellraw @s[scores={DialogueTrigger=75,TalkTime=12,Rival=1}] ["",{"text":"<May> "},{"selector":"@s"},{"text":"!"}]
-tellraw @s[scores={DialogueTrigger=75,TalkTime=18,Rival=1}] {"text":"<May> Look! Right up there! That's Mt. Chimney!"}
+tellraw @s[scores={DialogueTrigger=75,TalkTime=5,Rival=1}] {"text":"<Aura> Ah!"}
+tellraw @s[scores={DialogueTrigger=75,TalkTime=12,Rival=1}] ["",{"text":"<Aura> "},{"selector":"@s"},{"text":"!"}]
+tellraw @s[scores={DialogueTrigger=75,TalkTime=18,Rival=1}] {"text":"<Aura> Look! Right up there! That's Mt. Chimney!"}
 
 #Cutscene view
 execute as @s[scores={DialogueTrigger=75,TalkTime=23,Rival=1}] run gamemode spectator
 execute as @s[scores={DialogueTrigger=75,TalkTime=23,Rival=1}] run tp @s -1703 119 -1082 135 0
 
-tellraw @s[scores={DialogueTrigger=75,TalkTime=25,Rival=1}] {"text":"<May> It sure is big..."}
-tellraw @s[scores={DialogueTrigger=75,TalkTime=33,Rival=1}] {"text":"<May> No, more like huge..."}
-tellraw @s[scores={DialogueTrigger=75,TalkTime=40,Rival=1}] {"text":"<May> It totally takes my breath away!"}
-tellraw @s[scores={DialogueTrigger=75,TalkTime=47,Rival=1}] {"text":"<May> I'd love to take the Cable Car all the way up to the top someday..."}
+tellraw @s[scores={DialogueTrigger=75,TalkTime=25,Rival=1}] {"text":"<Aura> It sure is big..."}
+tellraw @s[scores={DialogueTrigger=75,TalkTime=33,Rival=1}] {"text":"<Aura> No, more like huge..."}
+tellraw @s[scores={DialogueTrigger=75,TalkTime=40,Rival=1}] {"text":"<Aura> It totally takes my breath away!"}
+tellraw @s[scores={DialogueTrigger=75,TalkTime=47,Rival=1}] {"text":"<Aura> I'd love to take the Cable Car all the way up to the top someday..."}
 
 #Back to normal view
 execute as @s[scores={DialogueTrigger=75,TalkTime=53,Rival=1}] run gamemode adventure
 execute as @s[scores={DialogueTrigger=75,TalkTime=53,Rival=1}] run tp @s -1690.25 79 -1085.5 120 12
 
-tellraw @s[scores={DialogueTrigger=75,TalkTime=55,Rival=1}] ["",{"text":"<May> Hm? Hey, "},{"selector":"@s"},{"text":", don't your Pokémon seem a bit ragged around the edges?"}]
-tellraw @s[scores={DialogueTrigger=75,TalkTime=64,Rival=1}] {"text":"<May> Here, let me give them a little boost!"}
+tellraw @s[scores={DialogueTrigger=75,TalkTime=55,Rival=1}] ["",{"text":"<Aura> Hm? Hey, "},{"selector":"@s"},{"text":", don't your Pokémon seem a bit ragged around the edges?"}]
+tellraw @s[scores={DialogueTrigger=75,TalkTime=64,Rival=1}] {"text":"<Aura> Here, let me give them a little boost!"}
 
 execute as @s[scores={DialogueTrigger=75,TalkTime=71,Rival=1}] run pokeheal
 tellraw @s[scores={DialogueTrigger=75,TalkTime=71,Rival=1}] {"text":"Your team's health was restored!","italic":true,"color":"gray"}
 
-tellraw @s[scores={DialogueTrigger=75,TalkTime=78,Rival=1}] {"text":"<May> Here! Take this, too!"}
+tellraw @s[scores={DialogueTrigger=75,TalkTime=78,Rival=1}] {"text":"<Aura> Here! Take this, too!"}
 
 execute as @s[scores={DialogueTrigger=75,TalkTime=85,Rival=1}] run give @s pixelmon:hm4
 execute as @s[scores={DialogueTrigger=75,TalkTime=85,Rival=1}] run playsound keyitem ambient @s ~ ~ ~ 1 1 1
 tellraw @s[scores={DialogueTrigger=75,TalkTime=85,Rival=1}] ["",{"selector":"@s","italic":true,"color":"gray"},{"text":" obtained HM04 Strength","italic":true,"color":"gray"}]
 
-tellraw @s[scores={DialogueTrigger=75,TalkTime=92,Rival=1}] {"text":"<May> I bet you can find all kinds of ways to use it in the mountains that lie ahead!"}
-tellraw @s[scores={DialogueTrigger=75,TalkTime=100,Rival=1}] {"text":"<May> But it won't work outside of battle if you don't have a Badge from Lavaridge Gym."}
-tellraw @s[scores={DialogueTrigger=75,TalkTime=109,Rival=1}] {"text":"<May> Gasp! What am I doing nattering away here? I'm supposed to be on my way to Fallarbor to visit Professor Cozmo!"}
-tellraw @s[scores={DialogueTrigger=75,TalkTime=119,Rival=1}] ["",{"text":"<May> I'm off for now, "},{"selector":"@s"},{"text":", but let's battle next time"}]
+tellraw @s[scores={DialogueTrigger=75,TalkTime=92,Rival=1}] {"text":"<Aura> I bet you can find all kinds of ways to use it in the mountains that lie ahead!"}
+tellraw @s[scores={DialogueTrigger=75,TalkTime=100,Rival=1}] {"text":"<Aura> But it won't work outside of battle if you don't have a Badge from Lavaridge Gym."}
+tellraw @s[scores={DialogueTrigger=75,TalkTime=109,Rival=1}] {"text":"<Aura> Gasp! What am I doing nattering away here? I'm supposed to be on my way to Fallarbor to visit Professor Cozmo!"}
+tellraw @s[scores={DialogueTrigger=75,TalkTime=119,Rival=1}] ["",{"text":"<Aura> I'm off for now, "},{"selector":"@s"},{"text":", but let's battle next time"}]
 
 #tps out
 execute as @s[scores={DialogueTrigger=75,TalkTime=128,Rival=1}] run particle cloud -1694 79 -1088 1 1 1 0.15 150
@@ -2476,39 +2476,39 @@ execute as @s[scores={DialogueTrigger=75,TalkTime=128,Rival=1}] run scoreboard p
 execute as @s[scores={DialogueTrigger=75,TalkTime=1,Rival=2}] run particle cloud -1694 79 -1088 1 1 1 0.15 150
 execute as @s[scores={DialogueTrigger=75,TalkTime=1,Rival=2}] run summon pixelmon:npc_chatting -1694 79 -1088 {Brain: {memories: {}}, HurtByTimestamp: 0, chatNum: 0, Attributes: [{Base: 0.699999988079071d, Name: "minecraft:generic.movement_speed"}, {Base: 0.08d, Name: "forge:entity_gravity"}, {Base: 0.0d, Name: "forge:step_height_addition"}], Invulnerable: 0b, FallFlying: 0b, PortalCooldown: 0, AbsorptionAmount: 0.0f, Name: "Brendan", FallDistance: 0.0f, CanUpdate: 1b, DeathTime: 0s, DefaultName: 0b, Commands: {interactCommands: []}, HandDropChances: [0.085f, 0.085f], PersistenceRequired: 1b, trainerLocation: 2, DefaultGreet: 0b, Motion: [0.0d, -0.0784000015258789d, 0.0d], TextureIndex: 4, TrainerIndex: "aquagruntmale", NameIndex: 4, Health: 20.0f, LeftHanded: 0b, Air: 300s, OnGround: 1b, Rotation: [5.6355925f, -2.2701373f], HandItems: [{}, {}], ChatIndex: 2, ArmorDropChances: [0.085f, 0.085f, 0.085f, 0.085f], Profession: -1s, Pos: [-1693.5d, 79.0d, -1087.5d], Fire: -1s, ArmorItems: [{}, {}, {}, {}], CanPickUpLoot: 0b, CustomSteveTexture: "brendan.png", HurtTime: 0s, BaseTrainer: "Steve", Inventory: [], AIMode: 3s}
 
-tellraw @s[scores={DialogueTrigger=75,TalkTime=5,Rival=2}] {"text":"<Brendan> Hm?"}
-tellraw @s[scores={DialogueTrigger=75,TalkTime=12,Rival=2}] ["",{"text":"<Brendan> So it's you, "},{"selector":"@s"},{"text":"."}]
-tellraw @s[scores={DialogueTrigger=75,TalkTime=19,Rival=2}] {"text":"<Brendan> You see that mountain up there? That's Mt. Chimney."}
+tellraw @s[scores={DialogueTrigger=75,TalkTime=5,Rival=2}] {"text":"<Bruno> Hm?"}
+tellraw @s[scores={DialogueTrigger=75,TalkTime=12,Rival=2}] ["",{"text":"<Bruno> So it's you, "},{"selector":"@s"},{"text":"."}]
+tellraw @s[scores={DialogueTrigger=75,TalkTime=19,Rival=2}] {"text":"<Bruno> You see that mountain up there? That's Mt. Chimney."}
 
 #Cutscene view
 execute as @s[scores={DialogueTrigger=75,TalkTime=23,Rival=2}] run gamemode spectator
 execute as @s[scores={DialogueTrigger=75,TalkTime=23,Rival=2}] run tp @s -1703 119 -1082 135 0
 
-tellraw @s[scores={DialogueTrigger=75,TalkTime=26,Rival=2}] {"text":"<Brendan> I dunno, but... But seeing it for real is, like..."}
-tellraw @s[scores={DialogueTrigger=75,TalkTime=34,Rival=2}] {"text":"<Brendan> Like a punch in the gut, you know?"}
-tellraw @s[scores={DialogueTrigger=75,TalkTime=51,Rival=2}] {"text":"<Brendan> Hope I might get to take the Cable Car up to the top someday..."}
+tellraw @s[scores={DialogueTrigger=75,TalkTime=26,Rival=2}] {"text":"<Bruno> I dunno, but... But seeing it for real is, like..."}
+tellraw @s[scores={DialogueTrigger=75,TalkTime=34,Rival=2}] {"text":"<Bruno> Like a punch in the gut, you know?"}
+tellraw @s[scores={DialogueTrigger=75,TalkTime=51,Rival=2}] {"text":"<Bruno> Hope I might get to take the Cable Car up to the top someday..."}
 
 #Back to normal view
 execute as @s[scores={DialogueTrigger=75,TalkTime=57,Rival=2}] run gamemode adventure
 execute as @s[scores={DialogueTrigger=75,TalkTime=57,Rival=2}] run tp @s -1690.25 79 -1085.5 120 12
 
-tellraw @s[scores={DialogueTrigger=75,TalkTime=59,Rival=2}] ["",{"text":"<Brendan> Hey, "},{"selector":"@s"},{"text":", doesn't your team seem a bit worse for wear?"}]
-tellraw @s[scores={DialogueTrigger=75,TalkTime=67,Rival=2}] {"text":"<Brendan> Here. I'll help them out for you."}
+tellraw @s[scores={DialogueTrigger=75,TalkTime=59,Rival=2}] ["",{"text":"<Bruno> Hey, "},{"selector":"@s"},{"text":", doesn't your team seem a bit worse for wear?"}]
+tellraw @s[scores={DialogueTrigger=75,TalkTime=67,Rival=2}] {"text":"<Bruno> Here. I'll help them out for you."}
 
 execute as @s[scores={DialogueTrigger=75,TalkTime=74,Rival=2}] run pokeheal
 tellraw @s[scores={DialogueTrigger=75,TalkTime=74,Rival=2}] {"text":"Your team's health was restored!","italic":true,"color":"gray"}
 
-tellraw @s[scores={DialogueTrigger=75,TalkTime=81,Rival=2}] {"text":"<Brendan> And why don't you take this?"}
+tellraw @s[scores={DialogueTrigger=75,TalkTime=81,Rival=2}] {"text":"<Bruno> And why don't you take this?"}
 
 tellraw @s[scores={DialogueTrigger=75,TalkTime=88,Rival=2}] ["",{"selector":"@s","italic":true,"color":"gray"},{"text":" obtained HM04 Strength","italic":true,"color":"gray"}]
 execute as @s[scores={DialogueTrigger=75,TalkTime=88,Rival=2}] run give @s pixelmon:hm4
 execute as @s[scores={DialogueTrigger=75,TalkTime=88,Rival=2}] run playsound keyitem ambient @s ~ ~ ~ 1 1 1
 
-tellraw @s[scores={DialogueTrigger=75,TalkTime=95,Rival=2}] {"text":"<Brendan> I bet you can find all kinds of ways to use it in the mountains that lie ahead!"}
-tellraw @s[scores={DialogueTrigger=75,TalkTime=104,Rival=2}] {"text":"<Brendan> Oh... But it won't work out here if you don't have a Badge from Lavaridge Gym."}
-tellraw @s[scores={DialogueTrigger=75,TalkTime=113,Rival=2}] {"text":"<Brendan> Bah! This is no time to be giving you tricks!"}
-tellraw @s[scores={DialogueTrigger=75,TalkTime=120,Rival=2}] {"text":"<Brendan> I'm supposed to be heading to Fallarbor to visit Professor Cozmo right now!"}
-tellraw @s[scores={DialogueTrigger=75,TalkTime=129,Rival=2}] ["",{"text":"<Brendan> See you later, "},{"selector":"@s"},{"text":". Next time let's have a battle, OK?"}]
+tellraw @s[scores={DialogueTrigger=75,TalkTime=95,Rival=2}] {"text":"<Bruno> I bet you can find all kinds of ways to use it in the mountains that lie ahead!"}
+tellraw @s[scores={DialogueTrigger=75,TalkTime=104,Rival=2}] {"text":"<Bruno> Oh... But it won't work out here if you don't have a Badge from Lavaridge Gym."}
+tellraw @s[scores={DialogueTrigger=75,TalkTime=113,Rival=2}] {"text":"<Bruno> Bah! This is no time to be giving you tricks!"}
+tellraw @s[scores={DialogueTrigger=75,TalkTime=120,Rival=2}] {"text":"<Bruno> I'm supposed to be heading to Fallarbor to visit Professor Cozmo right now!"}
+tellraw @s[scores={DialogueTrigger=75,TalkTime=129,Rival=2}] ["",{"text":"<Bruno> See you later, "},{"selector":"@s"},{"text":". Next time let's have a battle, OK?"}]
 
 execute as @s[scores={DialogueTrigger=75,TalkTime=137,Rival=2}] run particle cloud -1694 79 -1088 1 1 1 0.15 150
 execute as @s[scores={DialogueTrigger=75,TalkTime=137,Rival=2}] run tp @e[x=-1694,y=79,z=-1088,distance=..3,type=pixelmon:npc_chatting] 10000000 -50000 -10000000
@@ -2608,30 +2608,30 @@ tag @s[scores={DialogueTrigger=76,TalkTime=100..}] add Dialogue76
 #Rival
 #https://youtu.be/MgkqxXCmrtI?t=25356
 
-tellraw @s[scores={DialogueTrigger=77,TalkTime=1}] {"text":"<May> Hey!"}
-tellraw @s[scores={DialogueTrigger=77,TalkTime=1}] {"text":"<May> Phew..."}
-tellraw @s[scores={DialogueTrigger=77,TalkTime=1}] {"text":"<May> The road here was pretty long, huh? I got tired enough that I had to take a little break."}
-tellraw @s[scores={DialogueTrigger=77,TalkTime=1}] ["",{"text":"<May> "},{"selector":"@s"},{"text":", your Pokémon look pretty tired themselves. Let me take care of them for a sec."}]
+tellraw @s[scores={DialogueTrigger=77,TalkTime=1}] {"text":"<Aura> Hey!"}
+tellraw @s[scores={DialogueTrigger=77,TalkTime=1}] {"text":"<Aura> Phew..."}
+tellraw @s[scores={DialogueTrigger=77,TalkTime=1}] {"text":"<Aura> The road here was pretty long, huh? I got tired enough that I had to take a little break."}
+tellraw @s[scores={DialogueTrigger=77,TalkTime=1}] ["",{"text":"<Aura> "},{"selector":"@s"},{"text":", your Pokémon look pretty tired themselves. Let me take care of them for a sec."}]
 execute as @s[scores={DialogueTrigger=77,TalkTime=1}] run pokeheal
-tellraw @s[scores={DialogueTrigger=77,TalkTime=1}] {"text":"<May> ...There! That's all better."}
-tellraw @s[scores={DialogueTrigger=77,TalkTime=1}] {"text":"<May> I'm on my way to pay a visit to Professor Cozmo."}
-tellraw @s[scores={DialogueTrigger=77,TalkTime=1}] {"text":"<May> He's famous for his research on Meteorites."}
-tellraw @s[scores={DialogueTrigger=77,TalkTime=1}] {"text":"<May> He was working on a project with my dad—um, I mean, Professor Birch—on how Meteorites might affect Pokémon."}
-tellraw @s[scores={DialogueTrigger=77,TalkTime=1}] {"text":"<May> Enough dawdling! I think it's not much farther to Fallarbor."}
-tellraw @s[scores={DialogueTrigger=77,TalkTime=1}] {"text":"<May> Let's give it one last push!"}
+tellraw @s[scores={DialogueTrigger=77,TalkTime=1}] {"text":"<Aura> ...There! That's all better."}
+tellraw @s[scores={DialogueTrigger=77,TalkTime=1}] {"text":"<Aura> I'm on my way to pay a visit to Professor Cozmo."}
+tellraw @s[scores={DialogueTrigger=77,TalkTime=1}] {"text":"<Aura> He's famous for his research on Meteorites."}
+tellraw @s[scores={DialogueTrigger=77,TalkTime=1}] {"text":"<Aura> He was working on a project with my dad—um, I mean, Professor Birch—on how Meteorites might affect Pokémon."}
+tellraw @s[scores={DialogueTrigger=77,TalkTime=1}] {"text":"<Aura> Enough dawdling! I think it's not much farther to Fallarbor."}
+tellraw @s[scores={DialogueTrigger=77,TalkTime=1}] {"text":"<Aura> Let's give it one last push!"}
 
 #tps out
 
-tellraw @s[scores={DialogueTrigger=77,TalkTime=1}] {"text":"<Brendan> Hey!"}
-tellraw @s[scores={DialogueTrigger=77,TalkTime=1}] {"text":"<Brendan> Phew..."}
-tellraw @s[scores={DialogueTrigger=77,TalkTime=1}] {"text":"<Brendan> It took a long time to make it this far. Even I felt like I needed a little break."}
-tellraw @s[scores={DialogueTrigger=77,TalkTime=1}] ["",{"text":"<Brendan> Looks like your team could use one, too, "},{"selector":"@s"},{"text":". Lemme patch them up for you."}]
+tellraw @s[scores={DialogueTrigger=77,TalkTime=1}] {"text":"<Bruno> Hey!"}
+tellraw @s[scores={DialogueTrigger=77,TalkTime=1}] {"text":"<Bruno> Phew..."}
+tellraw @s[scores={DialogueTrigger=77,TalkTime=1}] {"text":"<Bruno> It took a long time to make it this far. Even I felt like I needed a little break."}
+tellraw @s[scores={DialogueTrigger=77,TalkTime=1}] ["",{"text":"<Bruno> Looks like your team could use one, too, "},{"selector":"@s"},{"text":". Lemme patch them up for you."}]
 execute as @s[scores={DialogueTrigger=77,TalkTime=1}] run pokeheal
-tellraw @s[scores={DialogueTrigger=77,TalkTime=1}] {"text":"<Brendan> I'm on my way to meet this Professor Cozmo fellow, right?"}
-tellraw @s[scores={DialogueTrigger=77,TalkTime=1}] {"text":"<Brendan> He's super famous for his research on Meteorites."}
-tellraw @s[scores={DialogueTrigger=77,TalkTime=1}] {"text":"<Brendan> He even worked with my dad—I mean, with Professor Birch—on figuring out if Meteorites could have any effect on Pokémon."}
-tellraw @s[scores={DialogueTrigger=77,TalkTime=1}] {"text":"<Brendan> OK! Time to get moving again! I think Fallarbor's pretty close now."}
-tellraw @s[scores={DialogueTrigger=77,TalkTime=1}] {"text":"<Brendan> Let's both give it one last push!"}
+tellraw @s[scores={DialogueTrigger=77,TalkTime=1}] {"text":"<Bruno> I'm on my way to meet this Professor Cozmo fellow, right?"}
+tellraw @s[scores={DialogueTrigger=77,TalkTime=1}] {"text":"<Bruno> He's super famous for his research on Meteorites."}
+tellraw @s[scores={DialogueTrigger=77,TalkTime=1}] {"text":"<Bruno> He even worked with my dad—I mean, with Professor Birch—on figuring out if Meteorites could have any effect on Pokémon."}
+tellraw @s[scores={DialogueTrigger=77,TalkTime=1}] {"text":"<Bruno> OK! Time to get moving again! I think Fallarbor's pretty close now."}
+tellraw @s[scores={DialogueTrigger=77,TalkTime=1}] {"text":"<Bruno> Let's both give it one last push!"}
 
 #tps out
 
@@ -2659,24 +2659,24 @@ tag @s[scores={DialogueTrigger=78,TalkTime=100..}] add Dialogue78
 #Rival in Fallarbor Town
 #https://youtu.be/MgkqxXCmrtI?t=26132
 
-tellraw @s[scores={DialogueTrigger=79,TalkTime=1}] {"text":"<May> Arghhh, what a disaster!"}
-tellraw @s[scores={DialogueTrigger=79,TalkTime=1}] ["",{"text":"<May> Oh! "},{"selector":"@s"},{"text":"! Help! You've got to come with me!"}]
+tellraw @s[scores={DialogueTrigger=79,TalkTime=1}] {"text":"<Aura> Arghhh, what a disaster!"}
+tellraw @s[scores={DialogueTrigger=79,TalkTime=1}] ["",{"text":"<Aura> Oh! "},{"selector":"@s"},{"text":"! Help! You've got to come with me!"}]
 
 
-tellraw @s[scores={DialogueTrigger=79,TalkTime=1}] ["",{"text":"<Brendan> "},{"selector":"@s"},{"text":"! C'mere!"}]
-tellraw @s[scores={DialogueTrigger=79,TalkTime=1}] {"text":"<Brendan> Everything's a mess!"}
+tellraw @s[scores={DialogueTrigger=79,TalkTime=1}] ["",{"text":"<Bruno> "},{"selector":"@s"},{"text":"! C'mere!"}]
+tellraw @s[scores={DialogueTrigger=79,TalkTime=1}] {"text":"<Bruno> Everything's a mess!"}
 
 #tps into observatory house
 
-tellraw @s[scores={DialogueTrigger=79,TalkTime=1}] {"text":"<May> -you see..."}
-tellraw @s[scores={DialogueTrigger=79,TalkTime=1}] {"text":"<May> Professor Cozmo..."}
-tellraw @s[scores={DialogueTrigger=79,TalkTime=1}] {"text":"<May> He got abducted by some weird guys calling themselves Team Something or Other..."}
+tellraw @s[scores={DialogueTrigger=79,TalkTime=1}] {"text":"<Aura> -you see..."}
+tellraw @s[scores={DialogueTrigger=79,TalkTime=1}] {"text":"<Aura> Professor Cozmo..."}
+tellraw @s[scores={DialogueTrigger=79,TalkTime=1}] {"text":"<Aura> He got abducted by some weird guys calling themselves Team Something or Other..."}
 
 
 
-tellraw @s[scores={DialogueTrigger=79,TalkTime=1}] {"text":"<Brendan> It's ridiculous..."}
-tellraw @s[scores={DialogueTrigger=79,TalkTime=1}] {"text":"<Brendan> Professor Cozmo..."}
-tellraw @s[scores={DialogueTrigger=79,TalkTime=1}] {"text":"<Brendan> They say that he was just up and kidnapped by some nuts calling themselves Team Something or Other..."}
+tellraw @s[scores={DialogueTrigger=79,TalkTime=1}] {"text":"<Bruno> It's ridiculous..."}
+tellraw @s[scores={DialogueTrigger=79,TalkTime=1}] {"text":"<Bruno> Professor Cozmo..."}
+tellraw @s[scores={DialogueTrigger=79,TalkTime=1}] {"text":"<Bruno> They say that he was just up and kidnapped by some nuts calling themselves Team Something or Other..."}
 
 tellraw @s[scores={DialogueTrigger=79,TalkTime=1}] {"text":"<Cozmo's Wife> Those shady characters... They called themselves Team Magma."}
 tellraw @s[scores={DialogueTrigger=79,TalkTime=1}] {"text":"<Cozmo's Wife> Those shady characters... They called themselves Team Aqua."}
@@ -2685,16 +2685,16 @@ tellraw @s[scores={DialogueTrigger=79,TalkTime=1}] {"text":"<Cozmo's Wife> The p
 tellraw @s[scores={DialogueTrigger=79,TalkTime=1}] {"text":"<Cozmo's Wife> If you show the least bit of interest in his research, he would happily go with you anywhere, without question."}
 
 
-tellraw @s[scores={DialogueTrigger=79,TalkTime=1}] ["",{"text":"<May> "},{"selector":"@s"},{"text":", please... You've got to help me save him!"}]
-tellraw @s[scores={DialogueTrigger=79,TalkTime=1}] {"text":"<May> They can't be planning to do anything good with Professor Cozmo's research."}
-tellraw @s[scores={DialogueTrigger=79,TalkTime=1}] {"text":"<May> We have to do something!"}
-tellraw @s[scores={DialogueTrigger=79,TalkTime=1}] {"text":"<May> I...I'm going to head after them right away!"}
-tellraw @s[scores={DialogueTrigger=79,TalkTime=1}] {"text":"<May> Let's meet up at Meteor Falls!"}
+tellraw @s[scores={DialogueTrigger=79,TalkTime=1}] ["",{"text":"<Aura> "},{"selector":"@s"},{"text":", please... You've got to help me save him!"}]
+tellraw @s[scores={DialogueTrigger=79,TalkTime=1}] {"text":"<Aura> They can't be planning to do anything good with Professor Cozmo's research."}
+tellraw @s[scores={DialogueTrigger=79,TalkTime=1}] {"text":"<Aura> We have to do something!"}
+tellraw @s[scores={DialogueTrigger=79,TalkTime=1}] {"text":"<Aura> I...I'm going to head after them right away!"}
+tellraw @s[scores={DialogueTrigger=79,TalkTime=1}] {"text":"<Aura> Let's meet up at Meteor Falls!"}
 
-tellraw @s[scores={DialogueTrigger=79,TalkTime=1}] ["",{"text":"<Brendan> "},{"selector":"@s"},{"text":"... I know it's a lot to ask, but we've gotta help Cozmo!"}]
-tellraw @s[scores={DialogueTrigger=79,TalkTime=1}] {"text":"<Brendan> I can't just stand by here and watch them use his life's work for their own corrupt reasons!"}
-tellraw @s[scores={DialogueTrigger=79,TalkTime=1}] {"text":"<Brendan> I'm going to head to Meteor Falls right away."}
-tellraw @s[scores={DialogueTrigger=79,TalkTime=1}] {"text":"<Brendan> Come catch up to me as soon as you can."}
+tellraw @s[scores={DialogueTrigger=79,TalkTime=1}] ["",{"text":"<Bruno> "},{"selector":"@s"},{"text":"... I know it's a lot to ask, but we've gotta help Cozmo!"}]
+tellraw @s[scores={DialogueTrigger=79,TalkTime=1}] {"text":"<Bruno> I can't just stand by here and watch them use his life's work for their own corrupt reasons!"}
+tellraw @s[scores={DialogueTrigger=79,TalkTime=1}] {"text":"<Bruno> I'm going to head to Meteor Falls right away."}
+tellraw @s[scores={DialogueTrigger=79,TalkTime=1}] {"text":"<Bruno> Come catch up to me as soon as you can."}
 
 #tps out
 
@@ -2706,11 +2706,11 @@ tag @s[scores={DialogueTrigger=79,TalkTime=100..}] add Dialogue79
 
 #Cinematic shot?
 
-tellraw @s[scores={DialogueTrigger=80,TalkTime=1}] {"text":"<May> You guys are— Where are you taking the professor?!"}
-tellraw @s[scores={DialogueTrigger=80,TalkTime=1}] {"text":"<May> H-hey! Wait up!"}
+tellraw @s[scores={DialogueTrigger=80,TalkTime=1}] {"text":"<Aura> You guys are— Where are you taking the professor?!"}
+tellraw @s[scores={DialogueTrigger=80,TalkTime=1}] {"text":"<Aura> H-hey! Wait up!"}
 
-tellraw @s[scores={DialogueTrigger=80,TalkTime=1}] {"text":"<Brendan> You guys are— Where are you taking the professor?!"}
-tellraw @s[scores={DialogueTrigger=80,TalkTime=1}] {"text":"<Brendan> H-hey! Stop right there!"}
+tellraw @s[scores={DialogueTrigger=80,TalkTime=1}] {"text":"<Bruno> You guys are— Where are you taking the professor?!"}
+tellraw @s[scores={DialogueTrigger=80,TalkTime=1}] {"text":"<Bruno> H-hey! Stop right there!"}
 
 #runs ahead
 
@@ -2720,9 +2720,9 @@ tag @s[scores={DialogueTrigger=80,TalkTime=100..}] add Dialogue80
 #Team Encounter
 #https://youtu.be/MgkqxXCmrtI?t=27516
 
-tellraw @s[scores={DialogueTrigger=81,TalkTime=1}] {"text":"<May> Give it up, you bozos! Let the professor go!"}
+tellraw @s[scores={DialogueTrigger=81,TalkTime=1}] {"text":"<Aura> Give it up, you bozos! Let the professor go!"}
 
-tellraw @s[scores={DialogueTrigger=81,TalkTime=1}] {"text":"<Brendan> Hey! You jerks! Let Professor Cozmo go!"}
+tellraw @s[scores={DialogueTrigger=81,TalkTime=1}] {"text":"<Bruno> Hey! You jerks! Let Professor Cozmo go!"}
 
 tellraw @s[scores={DialogueTrigger=81,TalkTime=1}] {"text":"<Team Magma Admin> Hyuh?"}
 tellraw @s[scores={DialogueTrigger=81,TalkTime=1}] {"text":"<Team Magma Admin> What have we here? Why has this child suddenly appeared?"}
@@ -2730,13 +2730,13 @@ tellraw @s[scores={DialogueTrigger=81,TalkTime=1}] {"text":"<Team Magma Admin> W
 tellraw @s[scores={DialogueTrigger=81,TalkTime=1}] {"text":"<Team Aqua Admin> Hahn?"}
 tellraw @s[scores={DialogueTrigger=81,TalkTime=1}] {"text":"<Team Aqua Admin> What's this? Who is this spoiled brat?"}
 
-tellraw @s[scores={DialogueTrigger=81,TalkTime=1}] ["",{"text":"<May> "},{"selector":"@s"},{"text":"! You came!"}]
-tellraw @s[scores={DialogueTrigger=81,TalkTime=1}] {"text":"<May> We've got to save Professor Cozmo from these people!"}
-tellraw @s[scores={DialogueTrigger=81,TalkTime=1}] ["",{"text":"<May> There are two of them... And two of us... "},{"selector":"@s"},{"text":", please! Battle together with me!"}]
+tellraw @s[scores={DialogueTrigger=81,TalkTime=1}] ["",{"text":"<Aura> "},{"selector":"@s"},{"text":"! You came!"}]
+tellraw @s[scores={DialogueTrigger=81,TalkTime=1}] {"text":"<Aura> We've got to save Professor Cozmo from these people!"}
+tellraw @s[scores={DialogueTrigger=81,TalkTime=1}] ["",{"text":"<Aura> There are two of them... And two of us... "},{"selector":"@s"},{"text":", please! Battle together with me!"}]
 
-tellraw @s[scores={DialogueTrigger=81,TalkTime=1}] ["",{"text":"<Brendan> "},{"selector":"@s"},{"text":"! You finally made it, huh!"}]
-tellraw @s[scores={DialogueTrigger=81,TalkTime=1}] {"text":"<Brendan> We've gotta protect the professor from these lunatics or else!"}
-tellraw @s[scores={DialogueTrigger=81,TalkTime=1}] ["",{"text":"<Brendan> There's two of them... And two of us, huh? Sorry to ask, "},{"selector":"@s"},{"text":", but... Battle alongside me!"}]
+tellraw @s[scores={DialogueTrigger=81,TalkTime=1}] ["",{"text":"<Bruno> "},{"selector":"@s"},{"text":"! You finally made it, huh!"}]
+tellraw @s[scores={DialogueTrigger=81,TalkTime=1}] {"text":"<Bruno> We've gotta protect the professor from these lunatics or else!"}
+tellraw @s[scores={DialogueTrigger=81,TalkTime=1}] ["",{"text":"<Bruno> There's two of them... And two of us, huh? Sorry to ask, "},{"selector":"@s"},{"text":", but... Battle alongside me!"}]
 
 
 tellraw @s[scores={DialogueTrigger=81,TalkTime=1}] {"text":"<Team Magma Admin> Ahyahyahya! Isn't this amusing?!"}
@@ -2761,9 +2761,9 @@ tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<Team Magma Admin> H
 
 tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<Team Aqua Admin> Ahhh?! Did I go too easy on you?!"}
 
-tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] ["",{"text":"<May> We did it, "},{"selector":"@s"},{"text":"!"}]
+tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] ["",{"text":"<Aura> We did it, "},{"selector":"@s"},{"text":"!"}]
 
-tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<Brendan> All right! We beat 'em!"}
+tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<Bruno> All right! We beat 'em!"}
 
 tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<Team Magma Admin> You children! I would like you to stay out of my way!"}
 tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<Team Magma Admin> Team Magma's scientific prowess, Mt. Chimney's energy..."}
@@ -2779,8 +2779,8 @@ tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<...> What a patheti
 tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<...> Hmph... Do these mere children give you so much trouble?"}
 tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<...> You—an Admin of Team Aqua..."}
 
-tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<May> Wh-who's there?!"}
-tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<Brendan> Who's that?!"}
+tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<Aura> Wh-who's there?!"}
+tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<Bruno> Who's that?!"}
 
 tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<Team Magma Admin> Hyahya! Even Team Aqua is making an appearance!"}
 tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<Team Magma Admin> The odds do not appear to be in my favor..."}
@@ -2802,8 +2802,8 @@ tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<Recluta del Team Aq
 
 tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<Professor Cosmo> Augh?!"}
 
-tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<May> Professor!"}
-tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<Brendan> Professor!"}
+tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<Aura> Professor!"}
+tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<Bruno> Professor!"}
 
 tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<Team Aqua Admin> Ahyahya! The Meteorite is in the palm of my hand!"}
 tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<Team Aqua Admin> Well, well, well... Adios to each and every one of you!"}
@@ -2845,23 +2845,23 @@ tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<Maxie> Be you child
 
 #Secondary leader and grunts tp out
 
-tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<May> Oh bother! I have no idea what's going on anymore with all these people!"}
-tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<May> Never mind those nuts! Professor, you doing OK?!"}
+tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<Aura> Oh bother! I have no idea what's going on anymore with all these people!"}
+tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<Aura> Never mind those nuts! Professor, you doing OK?!"}
 
-tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<Brendan> Oh man... What's with those lunatics?"}
-tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<Brendan> Forget those guys! Professor! Hey! Professor Cozmo! Hang in there, OK?"}
+tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<Bruno> Oh man... What's with those lunatics?"}
+tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<Bruno> Forget those guys! Professor! Hey! Professor Cozmo! Hang in there, OK?"}
 
 tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<Professor Cosmo> B-but...they... I...only..."}
 
-tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<May> Looks like he's still pretty out of it..."}
-tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] ["",{"text":"<May> "},{"selector":"@s"},{"text":"..."}]
-tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<May> Never mind what's happened! I've got to get the professor back to his lab in Fallarbor!"}
-tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<May> OK, Professor... Easy now..."}
+tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<Aura> Looks like he's still pretty out of it..."}
+tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] ["",{"text":"<Aura> "},{"selector":"@s"},{"text":"..."}]
+tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<Aura> Never mind what's happened! I've got to get the professor back to his lab in Fallarbor!"}
+tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<Aura> OK, Professor... Easy now..."}
 
-tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<Brendan> I think he's still pretty out of it..."}
-tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] ["",{"text":"<Brendan> "},{"selector":"@s"},{"text":"..."}]
-tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<Brendan> Never mind what's happened! I've got to get the professor back to his lab in Fallarbor!"}
-tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<Brendan> OK, Professor... Easy now..."}
+tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<Bruno> I think he's still pretty out of it..."}
+tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] ["",{"text":"<Bruno> "},{"selector":"@s"},{"text":"..."}]
+tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<Bruno> Never mind what's happened! I've got to get the professor back to his lab in Fallarbor!"}
+tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<Bruno> OK, Professor... Easy now..."}
 
 #tps everyone to Cosmos's house
 
@@ -2869,15 +2869,15 @@ tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<Cosmo's Wife> Ahhh!
 
 tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<Professor Cosmo> Hah...haha... Thanks to these children, I have somehow returned."}
 
-tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<May> Those nuts back there... What do you think they're hoping to do with the professor's Meteorite?"}
-tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<May> From the look of them, they kind of seem like bad guys, but..."}
-tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<May> We've both got to be careful."}
-tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] ["",{"text":"<May> Though I'm not worried a bit if it's you and your team, "},{"selector":"@s"},{"text":"!"}]
+tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<Aura> Those nuts back there... What do you think they're hoping to do with the professor's Meteorite?"}
+tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<Aura> From the look of them, they kind of seem like bad guys, but..."}
+tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<Aura> We've both got to be careful."}
+tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] ["",{"text":"<Aura> Though I'm not worried a bit if it's you and your team, "},{"selector":"@s"},{"text":"!"}]
 
-tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<Brendan> Those crazy jerks... What do you think they wanted with the professor's Meteorite anyway?"}
-tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<Brendan> I've gotta say, they sure didn't look like the good guys...but..."}
-tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<Brendan> I guess we'd both better be careful from here on out."}
-tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] ["",{"text":"<Brendan> Not that I'm really worried about you, "},{"selector":"@s"},{"text":". You and your team'd be fine for sure."}]
+tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<Bruno> Those crazy jerks... What do you think they wanted with the professor's Meteorite anyway?"}
+tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<Bruno> I've gotta say, they sure didn't look like the good guys...but..."}
+tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<Bruno> I guess we'd both better be careful from here on out."}
+tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] ["",{"text":"<Bruno> Not that I'm really worried about you, "},{"selector":"@s"},{"text":". You and your team'd be fine for sure."}]
 
 tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<Professor Cosmo> But I need to thank you, as well. You truly saved me from disaster."}
 tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<Professor Cosmo> I hope you'll take this TM as some small form of repayment."}
@@ -2885,20 +2885,20 @@ tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<Professor Cosmo> I 
 execute as @s[scores={DialogueTrigger=82,TalkTime=1}] run give @s pixelmon:tm_gen6{tm:23s}
 tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] ["",{"selector":"@s","italic":true,"color":"gray"},{"text":" obtained TM23 Smack Down","italic":true,"color":"gray"}]
 
-tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<May> Wow! Thanks, Professor!"}
-tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] ["",{"text":"<May> We-e-ell... What're you gonna do next, "},{"selector":"@s"},{"text":"?"}]
-tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<May> I'm thinking of checking out the next Gym on my list."}
-tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<May> It's the one in Mauville City."}
-tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] ["",{"text":"<May> Why don't you come with me, "},{"selector":"@s"},{"text":"? To Mauville!"}]
+tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<Aura> Wow! Thanks, Professor!"}
+tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] ["",{"text":"<Aura> We-e-ell... What're you gonna do next, "},{"selector":"@s"},{"text":"?"}]
+tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<Aura> I'm thinking of checking out the next Gym on my list."}
+tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<Aura> It's the one in Mauville City."}
+tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] ["",{"text":"<Aura> Why don't you come with me, "},{"selector":"@s"},{"text":"? To Mauville!"}]
 
 execute as @s[scores={DialogueTrigger=82,TalkTime=1}] run scoreboard players enable @s TriggerCommand
 tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] ["",{"text":"["},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 19"}},{"text":"] \u0020["},{"text":"No","color":"red","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 20"}},{"text":"]"}]
 
-tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<Brendan> Thank you, Professor."}
-tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] ["",{"text":"<Brendan> Now that that's over with... What're you planning to do next, "},{"selector":"@s"},{"text":"?"}]
-tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<Brendan> I'm thinking of going for my next Gym Badge."}
-tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<Brendan> The one from Mauville City."}
-tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] ["",{"text":"<Brendan> Wanna make the trip together, "},{"selector":"@s"},{"text":"? To Mauville, that is."}]
+tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<Bruno> Thank you, Professor."}
+tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] ["",{"text":"<Bruno> Now that that's over with... What're you planning to do next, "},{"selector":"@s"},{"text":"?"}]
+tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<Bruno> I'm thinking of going for my next Gym Badge."}
+tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] {"text":"<Bruno> The one from Mauville City."}
+tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] ["",{"text":"<Bruno> Wanna make the trip together, "},{"selector":"@s"},{"text":"? To Mauville, that is."}]
 
 execute as @s[scores={DialogueTrigger=82,TalkTime=1}] run scoreboard players enable @s TriggerCommand
 tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] ["",{"text":"["},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 19"}},{"text":"] \u0020["},{"text":"No","color":"red","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 20"}},{"text":"]"}]
@@ -2906,8 +2906,8 @@ tellraw @s[scores={DialogueTrigger=82,TalkTime=1}] ["",{"text":"["},{"text":"Yes
 tag @s[scores={DialogueTrigger=82,TalkTime=100..}] add Dialogue82
 #--------------------------------------------------------
 #Dialogue 83 - if player chooses to go with your rival
-tellraw @s[scores={DialogueTrigger=83,TalkTime=1}] {"text":"<May> Let's hit the road!"}
-tellraw @s[scores={DialogueTrigger=83,TalkTime=1}] {"text":"<Brendan> Let's go then."}
+tellraw @s[scores={DialogueTrigger=83,TalkTime=1}] {"text":"<Aura> Let's hit the road!"}
+tellraw @s[scores={DialogueTrigger=83,TalkTime=1}] {"text":"<Bruno> Let's go then."}
 
 
 
@@ -2915,15 +2915,15 @@ tellraw @s[scores={DialogueTrigger=83,TalkTime=1}] {"text":"<Brendan> Let's go t
 #https://youtu.be/MgkqxXCmrtI?t=27924
 
 #Mauville City
-tellraw @s[scores={DialogueTrigger=83,TalkTime=1}] {"text":"<May> All right, made it to Mauville City."}
-tellraw @s[scores={DialogueTrigger=83,TalkTime=1}] {"text":"<May> Up ahead here is Mt. Chimney, huh?"}
-tellraw @s[scores={DialogueTrigger=83,TalkTime=1}] {"text":"<May> That's the place those nut jobs at Meteor Falls were talking about going to."}
-tellraw @s[scores={DialogueTrigger=83,TalkTime=1}] ["",{"text":"<May> Be careful, "},{"selector":"@s"},{"text":". It might get dangerous around here."}]
+tellraw @s[scores={DialogueTrigger=83,TalkTime=1}] {"text":"<Aura> All right, made it to Mauville City."}
+tellraw @s[scores={DialogueTrigger=83,TalkTime=1}] {"text":"<Aura> Up ahead here is Mt. Chimney, huh?"}
+tellraw @s[scores={DialogueTrigger=83,TalkTime=1}] {"text":"<Aura> That's the place those nut jobs at Meteor Falls were talking about going to."}
+tellraw @s[scores={DialogueTrigger=83,TalkTime=1}] ["",{"text":"<Aura> Be careful, "},{"selector":"@s"},{"text":". It might get dangerous around here."}]
 
-tellraw @s[scores={DialogueTrigger=83,TalkTime=1}] {"text":"<Brendan> We've arrived in Mauville City!"}
-tellraw @s[scores={DialogueTrigger=83,TalkTime=1}] {"text":"<Brendan> Up ahead here is Mt. Chimney, huh?"}
-tellraw @s[scores={DialogueTrigger=83,TalkTime=1}] {"text":"<Brendan> That's the place those nut jobs at Meteor Falls were talking about going to."}
-tellraw @s[scores={DialogueTrigger=83,TalkTime=1}] ["",{"text":"<Brendan> Be careful, "},{"selector":"@s"},{"text":". It might get dangerous around here."}]
+tellraw @s[scores={DialogueTrigger=83,TalkTime=1}] {"text":"<Bruno> We've arrived in Mauville City!"}
+tellraw @s[scores={DialogueTrigger=83,TalkTime=1}] {"text":"<Bruno> Up ahead here is Mt. Chimney, huh?"}
+tellraw @s[scores={DialogueTrigger=83,TalkTime=1}] {"text":"<Bruno> That's the place those nut jobs at Meteor Falls were talking about going to."}
+tellraw @s[scores={DialogueTrigger=83,TalkTime=1}] ["",{"text":"<Bruno> Be careful, "},{"selector":"@s"},{"text":". It might get dangerous around here."}]
 
 #tps out, could do it on a portal block execution since the rival stays in place
 
@@ -2932,15 +2932,15 @@ tag @s[scores={DialogueTrigger=83,TalkTime=100..}] add Dialogue83
 #Dialogue 84 - if player chooses to go alone
 #Could activate if the player walks a specific distance away too
 
-tellraw @s[scores={DialogueTrigger=84,TalkTime=1}] {"text":"<May> Ah, right. Well, I will see you there!"}
-tellraw @s[scores={DialogueTrigger=84,TalkTime=1}] {"text":"<May> Mauville's right in the middle of Hoenn, so you can go to all sorts of places from there."}
-tellraw @s[scores={DialogueTrigger=84,TalkTime=1}] {"text":"<May> Even Mt. Chimney, the place those guys were talking about at Meteor Falls, is a pretty short trip from Mauville."}
-tellraw @s[scores={DialogueTrigger=84,TalkTime=1}] {"text":"<May> See ya!"}
+tellraw @s[scores={DialogueTrigger=84,TalkTime=1}] {"text":"<Aura> Ah, right. Well, I will see you there!"}
+tellraw @s[scores={DialogueTrigger=84,TalkTime=1}] {"text":"<Aura> Mauville's right in the middle of Hoenn, so you can go to all sorts of places from there."}
+tellraw @s[scores={DialogueTrigger=84,TalkTime=1}] {"text":"<Aura> Even Mt. Chimney, the place those guys were talking about at Meteor Falls, is a pretty short trip from Mauville."}
+tellraw @s[scores={DialogueTrigger=84,TalkTime=1}] {"text":"<Aura> See ya!"}
 
-tellraw @s[scores={DialogueTrigger=84,TalkTime=1}] {"text":"<Brendan> Oh. Right. Well, I will see you there!"}
-tellraw @s[scores={DialogueTrigger=84,TalkTime=1}] {"text":"<Brendan> Mauville's right in the middle of Hoenn, so you can go to all sorts of places from there."}
-tellraw @s[scores={DialogueTrigger=84,TalkTime=1}] {"text":"<Brendan> Even Mt. Chimney, the place those guys were talking about at Meteor Falls, in fact."}
-tellraw @s[scores={DialogueTrigger=84,TalkTime=1}] {"text":"<Brendan> It's just a short trip from Mauville."}
+tellraw @s[scores={DialogueTrigger=84,TalkTime=1}] {"text":"<Bruno> Oh. Right. Well, I will see you there!"}
+tellraw @s[scores={DialogueTrigger=84,TalkTime=1}] {"text":"<Bruno> Mauville's right in the middle of Hoenn, so you can go to all sorts of places from there."}
+tellraw @s[scores={DialogueTrigger=84,TalkTime=1}] {"text":"<Bruno> Even Mt. Chimney, the place those guys were talking about at Meteor Falls, in fact."}
+tellraw @s[scores={DialogueTrigger=84,TalkTime=1}] {"text":"<Bruno> It's just a short trip from Mauville."}
 
 tag @s[scores={DialogueTrigger=84,TalkTime=100..}] add Dialogue84
 #-----------------------------------------------------------------------------------------------------
@@ -3194,28 +3194,28 @@ tag @s[scores={DialogueTrigger=90,TalkTime=81..}] add Dialogue90
 
 #tp Rival in
 
-#tellraw @s[scores={DialogueTrigger=91,TalkTime=1}] ["",{"text":"<May> "},{"selector":"@s"},{"text":"! Wow, it's a relief to see you in one piece!"}]
-#tellraw @s[scores={DialogueTrigger=91,TalkTime=1}] {"text":"<May> Oh, well, you know..."}
-#tellraw @s[scores={DialogueTrigger=91,TalkTime=1}] {"text":"<May> The last time I saw you was right after battling those Team Whatsit people..."}
-#tellraw @s[scores={DialogueTrigger=91,TalkTime=1}] ["",{"text":"<May> So I was a bit worried, thinking about what might have happened to you after that, "},{"selector":"@s"},{"text":"..."}]
-#tellraw @s[scores={DialogueTrigger=91,TalkTime=1}] {"text":"<May> ...What? You battled them AGAIN after that?"}
-#tellraw @s[scores={DialogueTrigger=91,TalkTime=1}] ["",{"text":"<May> And you BEAT them! You really are something else, "},{"selector":"@s"},{"text":"."}]
-#tellraw @s[scores={DialogueTrigger=91,TalkTime=1}] {"text":"<May> I-I mean, you and your team are. I'm pretty impressed by you all!"}
-#tellraw @s[scores={DialogueTrigger=91,TalkTime=1}] {"text":"<May> And that pretty stone that's sparkling there..."}
-#tellraw @s[scores={DialogueTrigger=91,TalkTime=1}] {"text":"<May> Is that the Meteorite you got back from them?"}
-#tellraw @s[scores={DialogueTrigger=91,TalkTime=1}] {"text":"<May> Oh, that's right! Here! Here!"}
-#tellraw @s[scores={DialogueTrigger=91,TalkTime=1}] {"text":"<May> I've been thinking of giving these to you."}
+#tellraw @s[scores={DialogueTrigger=91,TalkTime=1}] ["",{"text":"<Aura> "},{"selector":"@s"},{"text":"! Wow, it's a relief to see you in one piece!"}]
+#tellraw @s[scores={DialogueTrigger=91,TalkTime=1}] {"text":"<Aura> Oh, well, you know..."}
+#tellraw @s[scores={DialogueTrigger=91,TalkTime=1}] {"text":"<Aura> The last time I saw you was right after battling those Team Whatsit people..."}
+#tellraw @s[scores={DialogueTrigger=91,TalkTime=1}] ["",{"text":"<Aura> So I was a bit worried, thinking about what might have happened to you after that, "},{"selector":"@s"},{"text":"..."}]
+#tellraw @s[scores={DialogueTrigger=91,TalkTime=1}] {"text":"<Aura> ...What? You battled them AGAIN after that?"}
+#tellraw @s[scores={DialogueTrigger=91,TalkTime=1}] ["",{"text":"<Aura> And you BEAT them! You really are something else, "},{"selector":"@s"},{"text":"."}]
+#tellraw @s[scores={DialogueTrigger=91,TalkTime=1}] {"text":"<Aura> I-I mean, you and your team are. I'm pretty impressed by you all!"}
+#tellraw @s[scores={DialogueTrigger=91,TalkTime=1}] {"text":"<Aura> And that pretty stone that's sparkling there..."}
+#tellraw @s[scores={DialogueTrigger=91,TalkTime=1}] {"text":"<Aura> Is that the Meteorite you got back from them?"}
+#tellraw @s[scores={DialogueTrigger=91,TalkTime=1}] {"text":"<Aura> Oh, that's right! Here! Here!"}
+#tellraw @s[scores={DialogueTrigger=91,TalkTime=1}] {"text":"<Aura> I've been thinking of giving these to you."}
 #
 #tellraw @s[scores={DialogueTrigger=91,TalkTime=1}] ["",{"selector":"@s","italic":true,"color":"gray"},{"text":" obtained the Go-Goggles!","italic":true,"color":"gray"}]
 #execute as @s[scores={DialogueTrigger=91,TalkTime=1}] run tag @s add SafetyGoggles
 #
-#tellraw @s[scores={DialogueTrigger=91,TalkTime=1}] {"text":"<May> If you put on those Go-Goggles, you'll be all set heading into the desert on Route 111."}
-#tellraw @s[scores={DialogueTrigger=91,TalkTime=1}] {"text":"<May> ...Oh! And isn't that— That's Lavaridge's Gym Badge!"}
-#tellraw @s[scores={DialogueTrigger=91,TalkTime=1}] {"text":"<May> So you beat Flannery, too?"}
-#tellraw @s[scores={DialogueTrigger=91,TalkTime=1}] {"text":"<May> I guess you really are training your Pokémon right..."}
-#tellraw @s[scores={DialogueTrigger=91,TalkTime=1}] {"text":"<May> Next up will be challenging your dad, Norman, in Petalia, right?"}
-#tellraw @s[scores={DialogueTrigger=91,TalkTime=1}] {"text":"<May> I'm headed to Petalia's Gym next myself..."}
-#tellraw @s[scores={DialogueTrigger=91,TalkTime=1}] {"text":"<May> Do you want to go back together? Back to Petalia?"}
+#tellraw @s[scores={DialogueTrigger=91,TalkTime=1}] {"text":"<Aura> If you put on those Go-Goggles, you'll be all set heading into the desert on Route 111."}
+#tellraw @s[scores={DialogueTrigger=91,TalkTime=1}] {"text":"<Aura> ...Oh! And isn't that— That's Lavaridge's Gym Badge!"}
+#tellraw @s[scores={DialogueTrigger=91,TalkTime=1}] {"text":"<Aura> So you beat Flannery, too?"}
+#tellraw @s[scores={DialogueTrigger=91,TalkTime=1}] {"text":"<Aura> I guess you really are training your Pokémon right..."}
+#tellraw @s[scores={DialogueTrigger=91,TalkTime=1}] {"text":"<Aura> Next up will be challenging your dad, Norman, in Petalia, right?"}
+#tellraw @s[scores={DialogueTrigger=91,TalkTime=1}] {"text":"<Aura> I'm headed to Petalia's Gym next myself..."}
+#tellraw @s[scores={DialogueTrigger=91,TalkTime=1}] {"text":"<Aura> Do you want to go back together? Back to Petalia?"}
 #
 #execute as @s[scores={DialogueTrigger=91,TalkTime=1}] run scoreboard players enable @s TriggerCommand
 #tellraw @s[scores={DialogueTrigger=91,TalkTime=1}] ["",{"text":"["},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 22"}},{"text":"] \u0020["},{"text":"No","color":"red","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 21"}},{"text":"]"}]
@@ -3227,22 +3227,22 @@ tag @s[scores={DialogueTrigger=90,TalkTime=81..}] add Dialogue90
 execute as @s[scores={DialogueTrigger=91,TalkTime=1,Rival=1}] run particle cloud -2036 84 -1044 1 1 1 0.15 150
 execute as @s[scores={DialogueTrigger=91,TalkTime=1,Rival=1}] run summon pixelmon:npc_chatting -2036 84 -1044 {Brain: {memories: {}}, HurtByTimestamp: 0, chatNum: 0, Attributes: [{Base: 0.699999988079071d, Name: "minecraft:generic.movement_speed"}, {Base: 0.08d, Name: "forge:entity_gravity"}, {Base: 0.0d, Name: "forge:step_height_addition"}], Invulnerable: 0b, FallFlying: 0b, PortalCooldown: 0, AbsorptionAmount: 0.0f, Name: "May", FallDistance: 0.0f, CanUpdate: 1b, DeathTime: 0s, DefaultName: 0b, Commands: {interactCommands: []}, HandDropChances: [0.085f, 0.085f], PersistenceRequired: 1b, trainerLocation: 2, DefaultGreet: 0b, Motion: [0.0d, -0.0784000015258789d, 0.0d], TextureIndex: 4, TrainerIndex: "aquagruntmale", NameIndex: 4, Health: 20.0f, LeftHanded: 0b, Air: 300s, OnGround: 1b, Rotation: [180.6355925f, -2.2701373f], HandItems: [{}, {}], ChatIndex: 2, ArmorDropChances: [0.085f, 0.085f, 0.085f, 0.085f], Profession: -1s, Pos: [-1693.5d, 79.0d, -1087.5d], Fire: -1s, ArmorItems: [{}, {}, {}, {}], CanPickUpLoot: 0b, CustomSteveTexture: "may.png", HurtTime: 0s, BaseTrainer: "Steve", Inventory: [], AIMode: 3s}
 
-tellraw @s[scores={DialogueTrigger=91,TalkTime=1,Rival=1}] ["",{"text":"<May> "},{"selector":"@s"},{"text":"! Wow, it's a relief to see you in one piece!"}]
-tellraw @s[scores={DialogueTrigger=91,TalkTime=10,Rival=1}] {"text":"<May> I-I mean, you and your team are something else. I'm pretty impressed by you all!"}
-tellraw @s[scores={DialogueTrigger=91,TalkTime=19,Rival=1}] {"text":"<May> Oh, that's right! Here! Here!"}
-tellraw @s[scores={DialogueTrigger=91,TalkTime=26,Rival=1}] {"text":"<May> I've been thinking of giving these to you."}
+tellraw @s[scores={DialogueTrigger=91,TalkTime=1,Rival=1}] ["",{"text":"<Aura> "},{"selector":"@s"},{"text":"! Wow, it's a relief to see you in one piece!"}]
+tellraw @s[scores={DialogueTrigger=91,TalkTime=10,Rival=1}] {"text":"<Aura> I-I mean, you and your team are something else. I'm pretty impressed by you all!"}
+tellraw @s[scores={DialogueTrigger=91,TalkTime=19,Rival=1}] {"text":"<Aura> Oh, that's right! Here! Here!"}
+tellraw @s[scores={DialogueTrigger=91,TalkTime=26,Rival=1}] {"text":"<Aura> I've been thinking of giving these to you."}
 
 tellraw @s[scores={DialogueTrigger=91,TalkTime=32,Rival=1}] ["",{"selector":"@s","italic":true,"color":"gray"},{"text":" obtained the Go-Goggles!","italic":true,"color":"gray"}]
 execute as @s[scores={DialogueTrigger=91,TalkTime=32,Rival=1}] run tag @s add SafetyGoggles
 execute as @s[scores={DialogueTrigger=91,TalkTime=32,Rival=1}] run playsound minecraft:keyitem ambient @s ~ ~ ~ 1 1 1
 
-tellraw @s[scores={DialogueTrigger=91,TalkTime=39,Rival=1}] {"text":"<May> If you put on those Go-Goggles, you'll be all set heading into the desert on Route 111."}
-tellraw @s[scores={DialogueTrigger=91,TalkTime=48,Rival=1}] {"text":"<May> ...Oh! And isn't that— That's Lavaridge's Gym Badge!"}
-tellraw @s[scores={DialogueTrigger=91,TalkTime=55,Rival=1}] {"text":"<May> So you beat Flannery, too?"}
-tellraw @s[scores={DialogueTrigger=91,TalkTime=62,Rival=1}] {"text":"<May> I guess you really are training your Pokémon right..."}
-tellraw @s[scores={DialogueTrigger=91,TalkTime=69,Rival=1}] {"text":"<May> Next up will be challenging your dad, Norman, in Petalia, right?"}
-tellraw @s[scores={DialogueTrigger=91,TalkTime=77,Rival=1}] {"text":"<May> I'm headed to Petalia's Gym next myself..."}
-tellraw @s[scores={DialogueTrigger=91,TalkTime=84,Rival=1}] {"text":"<May> I'll catch you there!"}
+tellraw @s[scores={DialogueTrigger=91,TalkTime=39,Rival=1}] {"text":"<Aura> If you put on those Go-Goggles, you'll be all set heading into the desert on Route 111."}
+tellraw @s[scores={DialogueTrigger=91,TalkTime=48,Rival=1}] {"text":"<Aura> ...Oh! And isn't that— That's Lavaridge's Gym Badge!"}
+tellraw @s[scores={DialogueTrigger=91,TalkTime=55,Rival=1}] {"text":"<Aura> So you beat Flannery, too?"}
+tellraw @s[scores={DialogueTrigger=91,TalkTime=62,Rival=1}] {"text":"<Aura> I guess you really are training your Pokémon right..."}
+tellraw @s[scores={DialogueTrigger=91,TalkTime=69,Rival=1}] {"text":"<Aura> Next up will be challenging your dad, Norman, in Petalia, right?"}
+tellraw @s[scores={DialogueTrigger=91,TalkTime=77,Rival=1}] {"text":"<Aura> I'm headed to Petalia's Gym next myself..."}
+tellraw @s[scores={DialogueTrigger=91,TalkTime=84,Rival=1}] {"text":"<Aura> I'll catch you there!"}
 
 #tp out
 execute as @s[scores={DialogueTrigger=91,TalkTime=91,Rival=1}] run particle cloud -2036 84 -1044 1 1 1 0.15 150
@@ -3251,31 +3251,31 @@ execute as @s[scores={DialogueTrigger=91,TalkTime=91,Rival=1}] run tp @e[type=pi
 execute as @s[scores={DialogueTrigger=91,TalkTime=91,Rival=1}] run scoreboard players add @s TalkTime 15
 
 
-#tellraw @s[scores={DialogueTrigger=91,TalkTime=1}] ["",{"text":"<Brendan> "},{"selector":"@s"},{"text":", hey! So you were all right, huh?"}]
-#tellraw @s[scores={DialogueTrigger=91,TalkTime=1}] {"text":"<Brendan> Oh, well, you know..."}
-#tellraw @s[scores={DialogueTrigger=91,TalkTime=1}] {"text":"<Brendan> The last time I saw you, you were mixed up with those \"Team Whatsit\" people..."}
-#tellraw @s[scores={DialogueTrigger=91,TalkTime=1}] {"text":"<Brendan> So I just wondered if you'd gotten back on the road after that."}
-#tellraw @s[scores={DialogueTrigger=91,TalkTime=1}] {"text":"<Brendan> It was, like, I don't know..."}
-#tellraw @s[scores={DialogueTrigger=91,TalkTime=1}] {"text":"<Brendan> I guess I was a bit...worried?"}
-#tellraw @s[scores={DialogueTrigger=91,TalkTime=1}] {"text":"<Brendan> What? You battled them AGAIN after that?"}
-#tellraw @s[scores={DialogueTrigger=91,TalkTime=1}] {"text":"<Brendan> And you even managed to beat them?"}
-#tellraw @s[scores={DialogueTrigger=91,TalkTime=1}] ["",{"text":"<Brendan> You really are something else, "},{"selector":"@s"},{"text":"..."}]
-#tellraw @s[scores={DialogueTrigger=91,TalkTime=1}] {"text":"<Brendan> You and your Pokémon. Your team."}
-#tellraw @s[scores={DialogueTrigger=91,TalkTime=1}] {"text":"<Brendan> And that...that sparkle there... Is that the Meteorite you got back from them?"}
-#tellraw @s[scores={DialogueTrigger=91,TalkTime=1}] {"text":"<Brendan> ...Oh, right! I forgot to give you these before."}
+#tellraw @s[scores={DialogueTrigger=91,TalkTime=1}] ["",{"text":"<Bruno> "},{"selector":"@s"},{"text":", hey! So you were all right, huh?"}]
+#tellraw @s[scores={DialogueTrigger=91,TalkTime=1}] {"text":"<Bruno> Oh, well, you know..."}
+#tellraw @s[scores={DialogueTrigger=91,TalkTime=1}] {"text":"<Bruno> The last time I saw you, you were mixed up with those \"Team Whatsit\" people..."}
+#tellraw @s[scores={DialogueTrigger=91,TalkTime=1}] {"text":"<Bruno> So I just wondered if you'd gotten back on the road after that."}
+#tellraw @s[scores={DialogueTrigger=91,TalkTime=1}] {"text":"<Bruno> It was, like, I don't know..."}
+#tellraw @s[scores={DialogueTrigger=91,TalkTime=1}] {"text":"<Bruno> I guess I was a bit...worried?"}
+#tellraw @s[scores={DialogueTrigger=91,TalkTime=1}] {"text":"<Bruno> What? You battled them AGAIN after that?"}
+#tellraw @s[scores={DialogueTrigger=91,TalkTime=1}] {"text":"<Bruno> And you even managed to beat them?"}
+#tellraw @s[scores={DialogueTrigger=91,TalkTime=1}] ["",{"text":"<Bruno> You really are something else, "},{"selector":"@s"},{"text":"..."}]
+#tellraw @s[scores={DialogueTrigger=91,TalkTime=1}] {"text":"<Bruno> You and your Pokémon. Your team."}
+#tellraw @s[scores={DialogueTrigger=91,TalkTime=1}] {"text":"<Bruno> And that...that sparkle there... Is that the Meteorite you got back from them?"}
+#tellraw @s[scores={DialogueTrigger=91,TalkTime=1}] {"text":"<Bruno> ...Oh, right! I forgot to give you these before."}
 #
 #tellraw @s[scores={DialogueTrigger=91,TalkTime=1}] ["",{"selector":"@s","italic":true,"color":"gray"},{"text":" obtained the Go-Goggles!","italic":true,"color":"gray"}]
 #execute as @s[scores={DialogueTrigger=91,TalkTime=1}] run scoreboard players enable @s TriggerCommand
 #
-#tellraw @s[scores={DialogueTrigger=91,TalkTime=1}] {"text":"<Brendan> Keep those with you if you're planning on going into that desert near Route 111."}
-#tellraw @s[scores={DialogueTrigger=91,TalkTime=1}] {"text":"<Brendan> There should be some Pokémon that only make their habitat in the desert, you know."}
-#tellraw @s[scores={DialogueTrigger=91,TalkTime=1}] {"text":"<Brendan> You might check 'em out—if you're up to it."}
-#tellraw @s[scores={DialogueTrigger=91,TalkTime=1}] {"text":"<Brendan> And... Huh? You got the Lavaridge Badge!"}
-#tellraw @s[scores={DialogueTrigger=91,TalkTime=1}] {"text":"<Brendan> So you even beat Flannery, huh? Looks like you've been taking proper care of your Pokémon."}
-#tellraw @s[scores={DialogueTrigger=91,TalkTime=1}] {"text":"<Brendan> Guess that means...that you'll be headed to Petalia City next, huh?"}
-#tellraw @s[scores={DialogueTrigger=91,TalkTime=1}] {"text":"<Brendan> To challenge your dad at his Gym?"}
-#tellraw @s[scores={DialogueTrigger=91,TalkTime=1}] {"text":"<Brendan> W-well, if you are... I just happened to be thinking of going to Petalia myself, so..."}
-#tellraw @s[scores={DialogueTrigger=91,TalkTime=1}] {"text":"<Brendan> How about it? Wanna go back to Petalia together?"}
+#tellraw @s[scores={DialogueTrigger=91,TalkTime=1}] {"text":"<Bruno> Keep those with you if you're planning on going into that desert near Route 111."}
+#tellraw @s[scores={DialogueTrigger=91,TalkTime=1}] {"text":"<Bruno> There should be some Pokémon that only make their habitat in the desert, you know."}
+#tellraw @s[scores={DialogueTrigger=91,TalkTime=1}] {"text":"<Bruno> You might check 'em out—if you're up to it."}
+#tellraw @s[scores={DialogueTrigger=91,TalkTime=1}] {"text":"<Bruno> And... Huh? You got the Lavaridge Badge!"}
+#tellraw @s[scores={DialogueTrigger=91,TalkTime=1}] {"text":"<Bruno> So you even beat Flannery, huh? Looks like you've been taking proper care of your Pokémon."}
+#tellraw @s[scores={DialogueTrigger=91,TalkTime=1}] {"text":"<Bruno> Guess that means...that you'll be headed to Petalia City next, huh?"}
+#tellraw @s[scores={DialogueTrigger=91,TalkTime=1}] {"text":"<Bruno> To challenge your dad at his Gym?"}
+#tellraw @s[scores={DialogueTrigger=91,TalkTime=1}] {"text":"<Bruno> W-well, if you are... I just happened to be thinking of going to Petalia myself, so..."}
+#tellraw @s[scores={DialogueTrigger=91,TalkTime=1}] {"text":"<Bruno> How about it? Wanna go back to Petalia together?"}
 #
 #execute as @s[scores={DialogueTrigger=91,TalkTime=1}] run scoreboard players enable @s TriggerCommand
 #tellraw @s[scores={DialogueTrigger=91,TalkTime=1}] ["",{"text":"["},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 22"}},{"text":"] \u0020["},{"text":"No","color":"red","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 21"}},{"text":"]"}]
@@ -3286,24 +3286,24 @@ execute as @s[scores={DialogueTrigger=91,TalkTime=91,Rival=1}] run scoreboard pl
 execute as @s[scores={DialogueTrigger=91,TalkTime=1,Rival=2}] run particle cloud -2036 84 -1044 1 1 1 0.15 150
 execute as @s[scores={DialogueTrigger=91,TalkTime=1,Rival=2}] run summon pixelmon:npc_chatting -2036 84 -1044 {Brain: {memories: {}}, HurtByTimestamp: 0, chatNum: 0, Attributes: [{Base: 0.699999988079071d, Name: "minecraft:generic.movement_speed"}, {Base: 0.08d, Name: "forge:entity_gravity"}, {Base: 0.0d, Name: "forge:step_height_addition"}], Invulnerable: 0b, FallFlying: 0b, PortalCooldown: 0, AbsorptionAmount: 0.0f, Name: "Brendan", FallDistance: 0.0f, CanUpdate: 1b, DeathTime: 0s, DefaultName: 0b, Commands: {interactCommands: []}, HandDropChances: [0.085f, 0.085f], PersistenceRequired: 1b, trainerLocation: 2, DefaultGreet: 0b, Motion: [0.0d, -0.0784000015258789d, 0.0d], TextureIndex: 4, TrainerIndex: "aquagruntmale", NameIndex: 4, Health: 20.0f, LeftHanded: 0b, Air: 300s, OnGround: 1b, Rotation: [180.6355925f, -2.2701373f], HandItems: [{}, {}], ChatIndex: 2, ArmorDropChances: [0.085f, 0.085f, 0.085f, 0.085f], Profession: -1s, Pos: [-1693.5d, 79.0d, -1087.5d], Fire: -1s, ArmorItems: [{}, {}, {}, {}], CanPickUpLoot: 0b, CustomSteveTexture: "brendan.png", HurtTime: 0s, BaseTrainer: "Steve", Inventory: [], AIMode: 3s}
 
-tellraw @s[scores={DialogueTrigger=91,TalkTime=3,Rival=2}] ["",{"text":"<Brendan> "},{"selector":"@s"},{"text":", hey! So you were all right, huh?"}]
-tellraw @s[scores={DialogueTrigger=91,TalkTime=10,Rival=2}] ["",{"text":"<Brendan> You really are something else, "},{"selector":"@s"},{"text":"..."}]
-tellraw @s[scores={DialogueTrigger=91,TalkTime=17,Rival=2}] {"text":"<Brendan> You and your Pokémon. Your team."}
-tellraw @s[scores={DialogueTrigger=91,TalkTime=24,Rival=2}] {"text":"<Brendan> ...Oh, right! I forgot to give you these before."}
+tellraw @s[scores={DialogueTrigger=91,TalkTime=3,Rival=2}] ["",{"text":"<Bruno> "},{"selector":"@s"},{"text":", hey! So you were all right, huh?"}]
+tellraw @s[scores={DialogueTrigger=91,TalkTime=10,Rival=2}] ["",{"text":"<Bruno> You really are something else, "},{"selector":"@s"},{"text":"..."}]
+tellraw @s[scores={DialogueTrigger=91,TalkTime=17,Rival=2}] {"text":"<Bruno> You and your Pokémon. Your team."}
+tellraw @s[scores={DialogueTrigger=91,TalkTime=24,Rival=2}] {"text":"<Bruno> ...Oh, right! I forgot to give you these before."}
 
 tellraw @s[scores={DialogueTrigger=91,TalkTime=31,Rival=2}] ["",{"selector":"@s","italic":true,"color":"gray"},{"text":" obtained the Go-Goggles!","italic":true,"color":"gray"}]
 execute as @s[scores={DialogueTrigger=91,TalkTime=31,Rival=2}] run tag @s add SafetyGoggles
 execute as @s[scores={DialogueTrigger=91,TalkTime=31,Rival=2}] run playsound minecraft:keyitem ambient @s ~ ~ ~ 1 1 1
 
-tellraw @s[scores={DialogueTrigger=91,TalkTime=38,Rival=2}] {"text":"<Brendan> Keep those with you if you're planning on going into that desert near Route 111."}
-tellraw @s[scores={DialogueTrigger=91,TalkTime=47,Rival=2}] {"text":"<Brendan> There should be some Pokémon that only make their habitat in the desert, you know."}
-tellraw @s[scores={DialogueTrigger=91,TalkTime=56,Rival=2}] {"text":"<Brendan> You might check 'em out—if you're up to it."}
-tellraw @s[scores={DialogueTrigger=91,TalkTime=63,Rival=2}] {"text":"<Brendan> And... Huh? You got the Lavaridge Badge!"}
-tellraw @s[scores={DialogueTrigger=91,TalkTime=70,Rival=2}] {"text":"<Brendan> So you even beat Flannery, huh? Looks like you've been taking proper care of your Pokémon."}
-tellraw @s[scores={DialogueTrigger=91,TalkTime=80,Rival=2}] {"text":"<Brendan> Guess that means...that you'll be headed to Petalia City next, huh?"}
-tellraw @s[scores={DialogueTrigger=91,TalkTime=88,Rival=2}] {"text":"<Brendan> To challenge your dad at his Gym?"}
-tellraw @s[scores={DialogueTrigger=91,TalkTime=95,Rival=2}] {"text":"<Brendan> W-well, if you are... I just happened to be thinking of going to Petalia myself, so..."}
-tellraw @s[scores={DialogueTrigger=91,TalkTime=103,Rival=2}] {"text":"<Brendan> I'll catch you there!"}
+tellraw @s[scores={DialogueTrigger=91,TalkTime=38,Rival=2}] {"text":"<Bruno> Keep those with you if you're planning on going into that desert near Route 111."}
+tellraw @s[scores={DialogueTrigger=91,TalkTime=47,Rival=2}] {"text":"<Bruno> There should be some Pokémon that only make their habitat in the desert, you know."}
+tellraw @s[scores={DialogueTrigger=91,TalkTime=56,Rival=2}] {"text":"<Bruno> You might check 'em out—if you're up to it."}
+tellraw @s[scores={DialogueTrigger=91,TalkTime=63,Rival=2}] {"text":"<Bruno> And... Huh? You got the Lavaridge Badge!"}
+tellraw @s[scores={DialogueTrigger=91,TalkTime=70,Rival=2}] {"text":"<Bruno> So you even beat Flannery, huh? Looks like you've been taking proper care of your Pokémon."}
+tellraw @s[scores={DialogueTrigger=91,TalkTime=80,Rival=2}] {"text":"<Bruno> Guess that means...that you'll be headed to Petalia City next, huh?"}
+tellraw @s[scores={DialogueTrigger=91,TalkTime=88,Rival=2}] {"text":"<Bruno> To challenge your dad at his Gym?"}
+tellraw @s[scores={DialogueTrigger=91,TalkTime=95,Rival=2}] {"text":"<Bruno> W-well, if you are... I just happened to be thinking of going to Petalia myself, so..."}
+tellraw @s[scores={DialogueTrigger=91,TalkTime=103,Rival=2}] {"text":"<Bruno> I'll catch you there!"}
 
 #tp out
 execute as @s[scores={DialogueTrigger=91,TalkTime=110,Rival=2}] run particle cloud -2036 84 -1044 1 1 1 0.15 150
@@ -3316,11 +3316,11 @@ tag @s[scores={DialogueTrigger=91,TalkTime=110..}] add Dialogue91
 #Dialogue 92 - Lavaridge Town
 #If player Declines
 
-tellraw @s[scores={DialogueTrigger=92,TalkTime=1}] {"text":"<May> Oh, yeah?"}
-tellraw @s[scores={DialogueTrigger=92,TalkTime=1}] {"text":"<May> Well, I'll still be here in Lavaridge for a while. But I'll catch up with you later!"}
+tellraw @s[scores={DialogueTrigger=92,TalkTime=1}] {"text":"<Aura> Oh, yeah?"}
+tellraw @s[scores={DialogueTrigger=92,TalkTime=1}] {"text":"<Aura> Well, I'll still be here in Lavaridge for a while. But I'll catch up with you later!"}
 
-tellraw @s[scores={DialogueTrigger=92,TalkTime=1}] {"text":"<Brendan> O-oh... Yeah, I get it..."}
-tellraw @s[scores={DialogueTrigger=92,TalkTime=1}] {"text":"<Brendan> But, well, I'll probably still be here in Lavaridge for a while. But I'll catch up with you later!"}
+tellraw @s[scores={DialogueTrigger=92,TalkTime=1}] {"text":"<Bruno> O-oh... Yeah, I get it..."}
+tellraw @s[scores={DialogueTrigger=92,TalkTime=1}] {"text":"<Bruno> But, well, I'll probably still be here in Lavaridge for a while. But I'll catch up with you later!"}
 
 #tp out
 
@@ -3331,25 +3331,25 @@ tag @s[scores={DialogueTrigger=92,TalkTime=100..}] add Dialogue92
 #If player Decides to fast travel
 #https://youtu.be/MgkqxXCmrtI?t=30799
 
-tellraw @s[scores={DialogueTrigger=93,TalkTime=1}] {"text":"<May> Aye aye! Then let's hit the road!"}
+tellraw @s[scores={DialogueTrigger=93,TalkTime=1}] {"text":"<Aura> Aye aye! Then let's hit the road!"}
 
-tellraw @s[scores={DialogueTrigger=93,TalkTime=1}] {"text":"<Brendan> Y-yeah? Then let's hit it!"}
+tellraw @s[scores={DialogueTrigger=93,TalkTime=1}] {"text":"<Bruno> Y-yeah? Then let's hit it!"}
 
 #tps npc out
 
 #tps to Petalia
 
-tellraw @s[scores={DialogueTrigger=93,TalkTime=1}] {"text":"<May> Well, we made it! The Petalia City Gym!"}
-tellraw @s[scores={DialogueTrigger=93,TalkTime=1}] ["",{"text":"<May> Good luck with taking on the Gym Leader, "},{"selector":"@s"},{"text":"."}]
-tellraw @s[scores={DialogueTrigger=93,TalkTime=1}] {"text":"<May> I'm cheering for you!"}
-tellraw @s[scores={DialogueTrigger=93,TalkTime=1}] {"text":"<May> Later!"}
+tellraw @s[scores={DialogueTrigger=93,TalkTime=1}] {"text":"<Aura> Well, we made it! The Petalia City Gym!"}
+tellraw @s[scores={DialogueTrigger=93,TalkTime=1}] ["",{"text":"<Aura> Good luck with taking on the Gym Leader, "},{"selector":"@s"},{"text":"."}]
+tellraw @s[scores={DialogueTrigger=93,TalkTime=1}] {"text":"<Aura> I'm cheering for you!"}
+tellraw @s[scores={DialogueTrigger=93,TalkTime=1}] {"text":"<Aura> Later!"}
 
 #tps off
 
-tellraw @s[scores={DialogueTrigger=93,TalkTime=1}] {"text":"<Brendan> So we're here. Petalia City."}
-tellraw @s[scores={DialogueTrigger=93,TalkTime=1}] ["",{"text":"<Brendan> "},{"selector":"@s"},{"text":", you do your best with the Gym."}]
-tellraw @s[scores={DialogueTrigger=93,TalkTime=1}] {"text":"<Brendan> I'm behind you all the way."}
-tellraw @s[scores={DialogueTrigger=93,TalkTime=1}] {"text":"<Brendan> See ya!"}
+tellraw @s[scores={DialogueTrigger=93,TalkTime=1}] {"text":"<Bruno> So we're here. Petalia City."}
+tellraw @s[scores={DialogueTrigger=93,TalkTime=1}] ["",{"text":"<Bruno> "},{"selector":"@s"},{"text":", you do your best with the Gym."}]
+tellraw @s[scores={DialogueTrigger=93,TalkTime=1}] {"text":"<Bruno> I'm behind you all the way."}
+tellraw @s[scores={DialogueTrigger=93,TalkTime=1}] {"text":"<Bruno> See ya!"}
 
 #tps off
 
@@ -3541,25 +3541,25 @@ tag @s[scores={DialogueTrigger=96,TalkTime=250..}] add Dialogue96
 #Summon exclamation
 execute as @s[scores={DialogueTrigger=97,TalkTime=1}] as @e[x=-977,y=64,z=-598,distance=..3,type=pixelmon:npc_chatting] at @s run summon armor_stand ~ ~ ~ {Invisible:1b,Invulnerable:1b,NoGravity:1b,CustomName:'{"text":"!"}',CustomNameVisible:1b}
 
-tellraw @s[scores={DialogueTrigger=97,TalkTime=1}] {"text":"<Steven> Why, hello."}
+tellraw @s[scores={DialogueTrigger=97,TalkTime=1}] {"text":"<Máximo> Why, hello."}
 
 execute as @s[scores={DialogueTrigger=97,TalkTime=3}] as @e[x=-977,y=64,z=-598,distance=..3,type=pixelmon:npc_chatting] at @s run kill @e[type=minecraft:armor_stand,distance=..5]
 
-tellraw @s[scores={DialogueTrigger=97,TalkTime=7}] {"text":"<Steven> We met in Granite Cave, didn't we?"}
-tellraw @s[scores={DialogueTrigger=97,TalkTime=14}] ["",{"text":"<Steven> No, I remember it. It's "},{"selector":"@s"},{"text":"... Right?"}]
-tellraw @s[scores={DialogueTrigger=97,TalkTime=22}] {"text":"<Steven> It's good to see that your journey is going well."}
-tellraw @s[scores={DialogueTrigger=97,TalkTime=29}] ["",{"text":"<Steven> You know, "},{"selector":"@s"},{"text":"..."}]
-tellraw @s[scores={DialogueTrigger=97,TalkTime=35}] {"text":"<Steven> In this vast world, there are many kinds of Pokémon."}
-tellraw @s[scores={DialogueTrigger=97,TalkTime=42}] {"text":"<Steven> They come in many types."}
-tellraw @s[scores={DialogueTrigger=97,TalkTime=49}] {"text":"<Steven> Should you raise different types?"}
-tellraw @s[scores={DialogueTrigger=97,TalkTime=56}] {"text":"<Steven> Or will you only raise Pokémon of a certain type you like?"}
-tellraw @s[scores={DialogueTrigger=97,TalkTime=64}] {"text":"<Steven> I wonder what you think, as a Pokémon Trainer?"}
-tellraw @s[scores={DialogueTrigger=97,TalkTime=71}] {"text":"<Steven> Not that it's anything I should be concerning myself with..."}
-tellraw @s[scores={DialogueTrigger=97,TalkTime=79}] {"text":"<Steven> But somehow I find myself wanting to know what you think."}
-tellraw @s[scores={DialogueTrigger=97,TalkTime=87}] {"text":"<Steven> I suppose I should be going. I hope to see you again though."}
+tellraw @s[scores={DialogueTrigger=97,TalkTime=7}] {"text":"<Máximo> We met in Granite Cave, didn't we?"}
+tellraw @s[scores={DialogueTrigger=97,TalkTime=14}] ["",{"text":"<Máximo> No, I remember it. It's "},{"selector":"@s"},{"text":"... Right?"}]
+tellraw @s[scores={DialogueTrigger=97,TalkTime=22}] {"text":"<Máximo> It's good to see that your journey is going well."}
+tellraw @s[scores={DialogueTrigger=97,TalkTime=29}] ["",{"text":"<Máximo> You know, "},{"selector":"@s"},{"text":"..."}]
+tellraw @s[scores={DialogueTrigger=97,TalkTime=35}] {"text":"<Máximo> In this vast world, there are many kinds of Pokémon."}
+tellraw @s[scores={DialogueTrigger=97,TalkTime=42}] {"text":"<Máximo> They come in many types."}
+tellraw @s[scores={DialogueTrigger=97,TalkTime=49}] {"text":"<Máximo> Should you raise different types?"}
+tellraw @s[scores={DialogueTrigger=97,TalkTime=56}] {"text":"<Máximo> Or will you only raise Pokémon of a certain type you like?"}
+tellraw @s[scores={DialogueTrigger=97,TalkTime=64}] {"text":"<Máximo> I wonder what you think, as a Pokémon Trainer?"}
+tellraw @s[scores={DialogueTrigger=97,TalkTime=71}] {"text":"<Máximo> Not that it's anything I should be concerning myself with..."}
+tellraw @s[scores={DialogueTrigger=97,TalkTime=79}] {"text":"<Máximo> But somehow I find myself wanting to know what you think."}
+tellraw @s[scores={DialogueTrigger=97,TalkTime=87}] {"text":"<Máximo> I suppose I should be going. I hope to see you again though."}
 
 execute as @s[scores={DialogueTrigger=97,TalkTime=95}] as @e[x=-977,y=64,z=-598,distance=..3,type=pixelmon:npc_chatting] at @s run summon armor_stand ~ ~ ~ {Invisible:1b,Invulnerable:1b,NoGravity:1b,CustomName:'{"text":"?"}',CustomNameVisible:1b}
-tellraw @s[scores={DialogueTrigger=97,TalkTime=95}] {"text":"<Steven> ...Hm?"}
+tellraw @s[scores={DialogueTrigger=97,TalkTime=95}] {"text":"<Máximo> ...Hm?"}
 execute as @s[scores={DialogueTrigger=97,TalkTime=95}] as @e[x=-977,y=64,z=-598,distance=..3,type=pixelmon:npc_chatting] run data merge entity @s {Rotation:[-90f,-75.0f]}
 execute as @s[scores={DialogueTrigger=97,TalkTime=98}] as @e[x=-977,y=64,z=-598,distance=..3,type=pixelmon:npc_chatting] at @s run kill @e[type=minecraft:armor_stand,distance=..5]
 
@@ -3577,13 +3577,13 @@ execute as @s[scores={DialogueTrigger=97,TalkTime=95,GameVersion=2}] run summon 
 
 execute as @s[scores={DialogueTrigger=97,TalkTime=102,GameVersion=1}] run playsound pixelmon:pixelmon.mob.latias ambient @s ~ ~ ~ 1 1 1
 tellraw @s[scores={DialogueTrigger=97,TalkTime=102,GameVersion=1}] {"text":"Hyahhn","bold":true,"italic":true}
-tellraw @s[scores={DialogueTrigger=97,TalkTime=107,GameVersion=1}] {"text":"<Steven> Latias!"}
+tellraw @s[scores={DialogueTrigger=97,TalkTime=107,GameVersion=1}] {"text":"<Máximo> Latias!"}
 tellraw @s[scores={DialogueTrigger=97,TalkTime=113,GameVersion=1}] {"text":"<Latias> Hyaahh!"}
 execute as @s[scores={DialogueTrigger=97,TalkTime=113,GameVersion=1}] run playsound pixelmon:pixelmon.mob.latias ambient @s ~ ~ ~ 1 1 1
 
 execute as @s[scores={DialogueTrigger=97,TalkTime=102,GameVersion=2}] run playsound pixelmon:pixelmon.mob.latios ambient @s ~ ~ ~ 1 1 1
 tellraw @s[scores={DialogueTrigger=97,TalkTime=102,GameVersion=2}] {"text":"Shwahhn","bold":true,"italic":true}
-tellraw @s[scores={DialogueTrigger=97,TalkTime=107,GameVersion=2}] {"text":"<Steven> Latios!"}
+tellraw @s[scores={DialogueTrigger=97,TalkTime=107,GameVersion=2}] {"text":"<Máximo> Latios!"}
 tellraw @s[scores={DialogueTrigger=97,TalkTime=113,GameVersion=2}] {"text":"<Latios> Shwaahh!"}
 execute as @s[scores={DialogueTrigger=97,TalkTime=113,GameVersion=2}] run playsound pixelmon:pixelmon.mob.latios ambient @s ~ ~ ~ 1 1 1
 
@@ -3598,13 +3598,13 @@ execute as @s[scores={DialogueTrigger=97,TalkTime=120}] run gamemode adventure
 execute as @s[scores={DialogueTrigger=97,TalkTime=120}] run tp @s -988 64 -545 -20 11
 execute as @s[scores={DialogueTrigger=97,TalkTime=120}] run summon pixelmon:npc_chatting -982 64 -545 {Brain: {memories: {}}, HurtByTimestamp: 0, chatNum: 0, Attributes: [{Base: 0.08d, Name: "forge:entity_gravity"}, {Base: 0.0d, Name: "forge:step_height_addition"}, {Base: 0.699999988079071d, Name: "minecraft:generic.movement_speed"}], Invulnerable: 0b, FallFlying: 0b, PortalCooldown: 0, AbsorptionAmount: 0.0f, Name: "", FallDistance: 0.0f, CanUpdate: 1b, DeathTime: 0s, DefaultName: 1b, Commands: {interactCommands: []}, HandDropChances: [0.085f, 0.085f], PersistenceRequired: 1b, trainerLocation: 2, DefaultGreet: 0b, Motion: [0.0d, -0.0784000015258789d, 0.0d], TextureIndex: 4, TrainerIndex: "blackbelt", NameIndex: 4, Health: 20.0f, LeftHanded: 0b, Air: 300s, OnGround: 1b, Rotation: [5.458856f, -3.158382f], HandItems: [{}, {}], ChatIndex: 1, ArmorDropChances: [0.085f, 0.085f, 0.085f, 0.085f], Profession: -1s, Pos: [-976.5d, 63.9375d, -597.5d], Fire: -1s, ArmorItems: [{}, {}, {}, {}], CanPickUpLoot: 0b, CustomSteveTexture: "steven.png", HurtTime: 0s, BaseTrainer: "Steve", Inventory: [], AIMode: 3s}
 
-tellraw @s[scores={DialogueTrigger=97,TalkTime=123}] {"text":"<Steven> Do you...want us to soar somewhere with you?"}
-tellraw @s[scores={DialogueTrigger=97,TalkTime=130}] ["",{"text":"<Steven> "},{"selector":"@s"},{"text":"."}]
-tellraw @s[scores={DialogueTrigger=97,TalkTime=137}] {"text":"<Steven> Come with me."}
+tellraw @s[scores={DialogueTrigger=97,TalkTime=123}] {"text":"<Máximo> Do you...want us to soar somewhere with you?"}
+tellraw @s[scores={DialogueTrigger=97,TalkTime=130}] ["",{"text":"<Máximo> "},{"selector":"@s"},{"text":"."}]
+tellraw @s[scores={DialogueTrigger=97,TalkTime=137}] {"text":"<Máximo> Come with me."}
 
-tellraw @s[scores={DialogueTrigger=97,TalkTime=144,GameVersion=1}] {"text":"<Steven> Latias... I believe that it sought us out for help."}
-tellraw @s[scores={DialogueTrigger=97,TalkTime=144,GameVersion=2}] {"text":"<Steven> Latios... I believe that it sought us out for help."}
-tellraw @s[scores={DialogueTrigger=97,TalkTime=151}] {"text":"<Steven> If that's the case, let's go!"}
+tellraw @s[scores={DialogueTrigger=97,TalkTime=144,GameVersion=1}] {"text":"<Máximo> Latias... I believe that it sought us out for help."}
+tellraw @s[scores={DialogueTrigger=97,TalkTime=144,GameVersion=2}] {"text":"<Máximo> Latios... I believe that it sought us out for help."}
+tellraw @s[scores={DialogueTrigger=97,TalkTime=151}] {"text":"<Máximo> If that's the case, let's go!"}
 
 #Blinds player
 execute as @s[scores={DialogueTrigger=97,TalkTime=158}] run effect give @s minecraft:blindness 3 1 true
@@ -3626,21 +3626,21 @@ execute as @s[scores={DialogueTrigger=97,TalkTime=170,GameVersion=1}] run summon
 execute as @s[scores={DialogueTrigger=97,TalkTime=170,GameVersion=2}] run summon pixelmon:statue 707 64 982 {Brain: {memories: {}}, HurtByTimestamp: 0, EVSpeed: 0s, Attributes: [], Moveset: [{MoveID: "Tackle", MovePP: 35b}, {MoveID: "Growth", MovePP: 20b}, {MoveID: "Poison Powder", MovePP: 35b}, {MoveID: "Sleep Powder", MovePP: 15b}], Invulnerable: 0b, statueTexture: 0b, Gender: 1b, ribbon_display2: {receiver: "null", received: 0L, type: "isi"}, AbsorptionAmount: 0.0f, Bred: 0b, FallDistance: 0.0f, InLove: 0, CanUpdate: 1b, IVSpDef: 19b, CaughtBall: "poke_ball", HandDropChances: [0.085f, 0.085f], statueLabel: "", PersistenceRequired: 0b, palette: "none", Ability: "Overgrow", IVDefense: 22b, DoesLevel: 1b, EVDefense: 0s, Air: 300s, PAbilitySlot: 0, DynamaxLevel: 0, HandItems: [{}, {}], Variant: "", ArmorDropChances: [0.085f, 0.085f, 0.085f, 0.085f], statueModelType: 1b, EVSpecialAttack: 0s, Pos: [707.5183364748955d, 64.0d, 982.4129032492638d], IVSpeed: 21b, Temper: 0, CanPickUpLoot: 0b, Level: -1, HurtTime: 0s, NoGravity: 1b, Tame: 0b, StatsDefense: 20s, IVAttack: 3b, Growth: 6b, PHiddenAbility: 0b, BoundingBoxMode: 2b, FallFlying: 0b, ForcedAge: 0, PersistentData: {}, PortalCooldown: 0, GigantamaxFactor: 0b, Friendship: 70s, statueAnimation: "idle", EatingHaystack: 0b, DeathTime: 0s, eggCycles: -1, EVAttack: 0s, StatsSpecialAttack: 28s, IVHP: 6b, EVHP: 0s, ndex: 381, StatsSpecialDefense: 27s, Age: 0, Nature: 18b, Motion: [0.0d, 0.0d, 0.0d], StatsHP: 39s, Health: 20, Animate: 1b, SpecFlags: [], LeftHanded: 0b, OnGround: 0b, NoAI: 1b, Rotation: [180.0f, 0.0f], StatsSpeed: 21s, StatsAttack: 20s, statueFrame: 0, Fire: -1s, ArmorItems: [{}, {}, {}, {}], IVSpAtt: 14b, NBT_VERSION: 2b, EVSpecialDefense: 0s, EXP: 0, RelrnMoves: [], ribbons2: []}
 
 
-tellraw @s[scores={DialogueTrigger=97,TalkTime=173}] {"text":"<Steven> We've arrived."}
-tellraw @s[scores={DialogueTrigger=97,TalkTime=180,GameVersion=1}] {"text":"<Steven> Thank you, Latias."}
-tellraw @s[scores={DialogueTrigger=97,TalkTime=180,GameVersion=2}] {"text":"<Steven> Thank you, Latios."}
+tellraw @s[scores={DialogueTrigger=97,TalkTime=173}] {"text":"<Máximo> We've arrived."}
+tellraw @s[scores={DialogueTrigger=97,TalkTime=180,GameVersion=1}] {"text":"<Máximo> Thank you, Latias."}
+tellraw @s[scores={DialogueTrigger=97,TalkTime=180,GameVersion=2}] {"text":"<Máximo> Thank you, Latios."}
 execute as @s[scores={DialogueTrigger=97,TalkTime=190}] as @e[x=704,y=64,z=971,distance=..3,type=pixelmon:npc_chatting] run data merge entity @s {Rotation:[-150f,0.0f]}
-tellraw @s[scores={DialogueTrigger=97,TalkTime=190}] {"text":"<Steven> ..."}
-tellraw @s[scores={DialogueTrigger=97,TalkTime=197}] {"text":"<Steven> I don't know what it is..."}
-tellraw @s[scores={DialogueTrigger=97,TalkTime=204}] {"text":"<Steven> Not quite unease, not quite fear..."}
-tellraw @s[scores={DialogueTrigger=97,TalkTime=211}] {"text":"<Steven> But there is something...unsettling..."}
+tellraw @s[scores={DialogueTrigger=97,TalkTime=190}] {"text":"<Máximo> ..."}
+tellraw @s[scores={DialogueTrigger=97,TalkTime=197}] {"text":"<Máximo> I don't know what it is..."}
+tellraw @s[scores={DialogueTrigger=97,TalkTime=204}] {"text":"<Máximo> Not quite unease, not quite fear..."}
+tellraw @s[scores={DialogueTrigger=97,TalkTime=211}] {"text":"<Máximo> But there is something...unsettling..."}
 execute as @s[scores={DialogueTrigger=97,TalkTime=218}] as @e[x=704,y=64,z=971,distance=..3,type=pixelmon:npc_chatting] run data merge entity @s {Rotation:[-34f,0.0f]}
-tellraw @s[scores={DialogueTrigger=97,TalkTime=218}] {"text":"<Steven> It is an odd feeling, as though I am walking in a dream— or an illusion."}
-tellraw @s[scores={DialogueTrigger=97,TalkTime=227}] {"text":"<Steven> I once heard an odd fable."}
-tellraw @s[scores={DialogueTrigger=97,TalkTime=234}] {"text":"<Steven> It was said that the two Pokémon that live on this island guard some secret about that great form of Evolution: Mega Evolution."}
-tellraw @s[scores={DialogueTrigger=97,TalkTime=244}] {"text":"<Steven> Could it be that some dangerous element is here because of that?"}
-tellraw @s[scores={DialogueTrigger=97,TalkTime=252}] {"text":"<Steven> ..."}
-tellraw @s[scores={DialogueTrigger=97,TalkTime=259}] {"text":"<Steven> Come, we should be going."}
+tellraw @s[scores={DialogueTrigger=97,TalkTime=218}] {"text":"<Máximo> It is an odd feeling, as though I am walking in a dream— or an illusion."}
+tellraw @s[scores={DialogueTrigger=97,TalkTime=227}] {"text":"<Máximo> I once heard an odd fable."}
+tellraw @s[scores={DialogueTrigger=97,TalkTime=234}] {"text":"<Máximo> It was said that the two Pokémon that live on this island guard some secret about that great form of Evolution: Mega Evolution."}
+tellraw @s[scores={DialogueTrigger=97,TalkTime=244}] {"text":"<Máximo> Could it be that some dangerous element is here because of that?"}
+tellraw @s[scores={DialogueTrigger=97,TalkTime=252}] {"text":"<Máximo> ..."}
+tellraw @s[scores={DialogueTrigger=97,TalkTime=259}] {"text":"<Máximo> Come, we should be going."}
 
 tag @s[scores={DialogueTrigger=97,TalkTime=259..}] add Dialogue97
 #---------------------------------
@@ -3661,21 +3661,21 @@ tag @s[scores={DialogueTrigger=98,TalkTime=100..}] add Dialogue98
 #teleports Steven in
 execute as @s[scores={DialogueTrigger=99,TalkTime=1}] run summon pixelmon:npc_chatting 722 74 769 {Brain: {memories: {}}, HurtByTimestamp: 0, chatNum: 0, Attributes: [{Base: 0.08d, Name: "forge:entity_gravity"}, {Base: 0.0d, Name: "forge:step_height_addition"}, {Base: 0.699999988079071d, Name: "minecraft:generic.movement_speed"}], Invulnerable: 0b, FallFlying: 0b, PortalCooldown: 0, AbsorptionAmount: 0.0f, Name: "", FallDistance: 0.0f, CanUpdate: 1b, DeathTime: 0s, DefaultName: 1b, Commands: {interactCommands: []}, HandDropChances: [0.085f, 0.085f], PersistenceRequired: 1b, trainerLocation: 2, DefaultGreet: 0b, Motion: [0.0d, -0.0784000015258789d, 0.0d], TextureIndex: 4, TrainerIndex: "blackbelt", NameIndex: 4, Health: 20.0f, LeftHanded: 0b, Air: 300s, OnGround: 1b, Rotation: [-144.0f, -3.158382f], HandItems: [{}, {}], ChatIndex: 1, ArmorDropChances: [0.085f, 0.085f, 0.085f, 0.085f], Profession: -1s, Pos: [-976.5d, 63.9375d, -597.5d], Fire: -1s, ArmorItems: [{}, {}, {}, {}], CanPickUpLoot: 0b, CustomSteveTexture: "steven.png", HurtTime: 0s, BaseTrainer: "Steve", Inventory: [], AIMode: 3s}
 
-tellraw @s[scores={DialogueTrigger=99,TalkTime=1,GameVersion=1}] {"text":"<Steven> Latios..."}
-tellraw @s[scores={DialogueTrigger=99,TalkTime=7,GameVersion=1}] {"text":"<Steven> It's beautiful..."}
-tellraw @s[scores={DialogueTrigger=99,TalkTime=15,GameVersion=1}] {"text":"<Steven> If I were to describe such beauty in terms of a stone, it would be a Water Stone."}
-tellraw @s[scores={DialogueTrigger=99,TalkTime=24,GameVersion=1}] {"text":"<Steven> No... It goes beyond that..."}
-tellraw @s[scores={DialogueTrigger=99,TalkTime=31,GameVersion=1}] {"text":"<Steven> Isn't its brilliance like that of a Dawn Stone?"}
-tellraw @s[scores={DialogueTrigger=99,TalkTime=40,GameVersion=1}] {"text":"<Steven> It is as fantastic as a Steel-type Pokémon..."}
+tellraw @s[scores={DialogueTrigger=99,TalkTime=1,GameVersion=1}] {"text":"<Máximo> Latios..."}
+tellraw @s[scores={DialogueTrigger=99,TalkTime=7,GameVersion=1}] {"text":"<Máximo> It's beautiful..."}
+tellraw @s[scores={DialogueTrigger=99,TalkTime=15,GameVersion=1}] {"text":"<Máximo> If I were to describe such beauty in terms of a stone, it would be a Water Stone."}
+tellraw @s[scores={DialogueTrigger=99,TalkTime=24,GameVersion=1}] {"text":"<Máximo> No... It goes beyond that..."}
+tellraw @s[scores={DialogueTrigger=99,TalkTime=31,GameVersion=1}] {"text":"<Máximo> Isn't its brilliance like that of a Dawn Stone?"}
+tellraw @s[scores={DialogueTrigger=99,TalkTime=40,GameVersion=1}] {"text":"<Máximo> It is as fantastic as a Steel-type Pokémon..."}
 
 
 
-tellraw @s[scores={DialogueTrigger=99,TalkTime=1,GameVersion=2}] {"text":"<Steven> Latias..."}
-tellraw @s[scores={DialogueTrigger=99,TalkTime=7,GameVersion=2}] {"text":"<Steven> It's beautiful..."}
-tellraw @s[scores={DialogueTrigger=99,TalkTime=15,GameVersion=2}] {"text":"<Steven> If I were to describe such beauty in terms of a stone, it would be a Sun Stone."}
-tellraw @s[scores={DialogueTrigger=99,TalkTime=24,GameVersion=2}] {"text":"<Steven> No... It goes beyond that..."}
-tellraw @s[scores={DialogueTrigger=99,TalkTime=31,GameVersion=2}] {"text":"<Steven> Isn't its brilliance like that of a Dawn Stone?"}
-tellraw @s[scores={DialogueTrigger=99,TalkTime=40,GameVersion=2}] {"text":"<Steven> It is as fantastic as a Steel-type Pokémon..."}
+tellraw @s[scores={DialogueTrigger=99,TalkTime=1,GameVersion=2}] {"text":"<Máximo> Latias..."}
+tellraw @s[scores={DialogueTrigger=99,TalkTime=7,GameVersion=2}] {"text":"<Máximo> It's beautiful..."}
+tellraw @s[scores={DialogueTrigger=99,TalkTime=15,GameVersion=2}] {"text":"<Máximo> If I were to describe such beauty in terms of a stone, it would be a Sun Stone."}
+tellraw @s[scores={DialogueTrigger=99,TalkTime=24,GameVersion=2}] {"text":"<Máximo> No... It goes beyond that..."}
+tellraw @s[scores={DialogueTrigger=99,TalkTime=31,GameVersion=2}] {"text":"<Máximo> Isn't its brilliance like that of a Dawn Stone?"}
+tellraw @s[scores={DialogueTrigger=99,TalkTime=40,GameVersion=2}] {"text":"<Máximo> It is as fantastic as a Steel-type Pokémon..."}
 
 #Lati Cry
 execute as @s[scores={DialogueTrigger=99,TalkTime=45,GameVersion=1}] run playsound pixelmon:pixelmon.mob.latios ambient @s ~ ~ ~ 1 1 1
@@ -3685,10 +3685,10 @@ execute as @s[scores={DialogueTrigger=99,TalkTime=45,GameVersion=2}] run playsou
 
 #Teleports Team Grunts In
 
-#tellraw @s[scores={DialogueTrigger=99,TalkTime=1}] {"text":"<Steven> Hm?"}
+#tellraw @s[scores={DialogueTrigger=99,TalkTime=1}] {"text":"<Máximo> Hm?"}
 #
-#tellraw @s[scores={DialogueTrigger=99,TalkTime=1}] {"text":"<Steven> Team Magma, is it?"}
-#tellraw @s[scores={DialogueTrigger=99,TalkTime=1}] {"text":"<Steven> So Latios noticed their coming, and that is why it called on us."}
+#tellraw @s[scores={DialogueTrigger=99,TalkTime=1}] {"text":"<Máximo> Team Magma, is it?"}
+#tellraw @s[scores={DialogueTrigger=99,TalkTime=1}] {"text":"<Máximo> So Latios noticed their coming, and that is why it called on us."}
 #
 #tellraw @s[scores={DialogueTrigger=99,TalkTime=1}] {"text":"<Team Magma Admin> ..."}
 #tellraw @s[scores={DialogueTrigger=99,TalkTime=1}] {"text":"<Team Magma Admin> Who are you?"}
@@ -3708,8 +3708,8 @@ execute as @s[scores={DialogueTrigger=99,TalkTime=45,GameVersion=2}] run playsou
 #tellraw @s[scores={DialogueTrigger=99,TalkTime=1}] {"text":"<Team Magma Courtney> How about it? Will you get away from me... or not?"}
 #
 #
-#tellraw @s[scores={DialogueTrigger=99,TalkTime=1}] {"text":"<Steven> Team Aqua, is it?"}
-#tellraw @s[scores={DialogueTrigger=99,TalkTime=1}] {"text":"<Steven> So Latias noticed their coming, and that is why it called on us."}
+#tellraw @s[scores={DialogueTrigger=99,TalkTime=1}] {"text":"<Máximo> Team Aqua, is it?"}
+#tellraw @s[scores={DialogueTrigger=99,TalkTime=1}] {"text":"<Máximo> So Latias noticed their coming, and that is why it called on us."}
 #
 #tellraw @s[scores={DialogueTrigger=99,TalkTime=1}] {"text":"<Team Aqua Admin> Huhn?! What's this?! You?!"}
 #
@@ -3729,13 +3729,13 @@ execute as @s[scores={DialogueTrigger=99,TalkTime=45,GameVersion=2}] run playsou
 #
 #
 #
-#tellraw @s[scores={DialogueTrigger=99,TalkTime=1}] {"text":"<Steven> I'll take part in this battle as well."}
+#tellraw @s[scores={DialogueTrigger=99,TalkTime=1}] {"text":"<Máximo> I'll take part in this battle as well."}
 #
-#tellraw @s[scores={DialogueTrigger=99,TalkTime=1}] {"text":"<Steven> Let's protect Latios from these beasts together."}
-#tellraw @s[scores={DialogueTrigger=99,TalkTime=1}] {"text":"<Steven> We cannot allow Latios or even a Mega Stone to fall into the hands of such villains!"}
+#tellraw @s[scores={DialogueTrigger=99,TalkTime=1}] {"text":"<Máximo> Let's protect Latios from these beasts together."}
+#tellraw @s[scores={DialogueTrigger=99,TalkTime=1}] {"text":"<Máximo> We cannot allow Latios or even a Mega Stone to fall into the hands of such villains!"}
 #
-#tellraw @s[scores={DialogueTrigger=99,TalkTime=1}] {"text":"<Steven> Let's protect Latias from these beasts together."}
-#tellraw @s[scores={DialogueTrigger=99,TalkTime=1}] {"text":"<Steven> We cannot allow Latias or even a Mega Stone to fall into the hands of such villains!"}
+#tellraw @s[scores={DialogueTrigger=99,TalkTime=1}] {"text":"<Máximo> Let's protect Latias from these beasts together."}
+#tellraw @s[scores={DialogueTrigger=99,TalkTime=1}] {"text":"<Máximo> We cannot allow Latias or even a Mega Stone to fall into the hands of such villains!"}
 #
 #tellraw @s[scores={DialogueTrigger=99,TalkTime=1}] {"text":"<Team Magma Courtney> ... Well then..."}
 #tellraw @s[scores={DialogueTrigger=99,TalkTime=1}] {"text":"<Team Magma Courtney> Deleting..."}
@@ -3761,28 +3761,28 @@ tag @s[scores={DialogueTrigger=99,TalkTime=50..}] add Dialogue99
 #
 ##tp Grunt out
 #@s[scores={DialogueTrigger=100,TalkTime=48}]
-#tellraw @s[scores={DialogueTrigger=100,TalkTime=51}] {"text":"<Steven> Hah..."}
-#tellraw @s[scores={DialogueTrigger=100,TalkTime=56}] ["",{"text":"<Steven> Good work, "},{"selector":"@s"},{"text":"."}]
-#tellraw @s[scores={DialogueTrigger=100,TalkTime=63}] {"text":"<Steven> Ah, that's right."}
-#tellraw @s[scores={DialogueTrigger=100,TalkTime=70}] {"text":"<Steven> We should first heal up the Pokémon that fought on our behalf, shouldn't we?"}
+#tellraw @s[scores={DialogueTrigger=100,TalkTime=51}] {"text":"<Máximo> Hah..."}
+#tellraw @s[scores={DialogueTrigger=100,TalkTime=56}] ["",{"text":"<Máximo> Good work, "},{"selector":"@s"},{"text":"."}]
+#tellraw @s[scores={DialogueTrigger=100,TalkTime=63}] {"text":"<Máximo> Ah, that's right."}
+#tellraw @s[scores={DialogueTrigger=100,TalkTime=70}] {"text":"<Máximo> We should first heal up the Pokémon that fought on our behalf, shouldn't we?"}
 #
 #tellraw @s[scores={DialogueTrigger=100,TalkTime=75}] {"text":"Your team's health was restored!","italic":true,"color":"gray"}
 #
-#tellraw @s[scores={DialogueTrigger=100,TalkTime=83}] {"text":"<Steven> You performed spectacularly."}
-#tellraw @s[scores={DialogueTrigger=100,TalkTime=90}] {"text":"<Steven> We were able to protect both this wondrous Pokémon and its Mega Stone, thanks to you."}
+#tellraw @s[scores={DialogueTrigger=100,TalkTime=83}] {"text":"<Máximo> You performed spectacularly."}
+#tellraw @s[scores={DialogueTrigger=100,TalkTime=90}] {"text":"<Máximo> We were able to protect both this wondrous Pokémon and its Mega Stone, thanks to you."}
 #
 ##Lati Cry
 #execute as @s[scores={DialogueTrigger=100,TalkTime=98,GameVersion=1}] run playsound pixelmon:pixelmon.mob.latios ambient @s ~ ~ ~ 1 1 1
 #execute as @s[scores={DialogueTrigger=100,TalkTime=98,GameVersion=2}] run playsound pixelmon:pixelmon.mob.latias ambient @s ~ ~ ~ 1 1 1
 
-#tellraw @s[scores={DialogueTrigger=100,TalkTime=103,GameVersion=1}] {"text":"<Steven> And it looks as though Latios may have also recognized you as a Trainer worthy of its trust."}
-#tellraw @s[scores={DialogueTrigger=100,TalkTime=103,GameVersion=2}] {"text":"<Steven> And it looks as though Latias may have also recognized you as a Trainer worthy of its trust."}
+#tellraw @s[scores={DialogueTrigger=100,TalkTime=103,GameVersion=1}] {"text":"<Máximo> And it looks as though Latios may have also recognized you as a Trainer worthy of its trust."}
+#tellraw @s[scores={DialogueTrigger=100,TalkTime=103,GameVersion=2}] {"text":"<Máximo> And it looks as though Latias may have also recognized you as a Trainer worthy of its trust."}
 
 #Version 1, picks up here
 execute as @s[scores={DialogueTrigger=100,TalkTime=..112}] run scoreboard players add @s TalkTime 112
-tellraw @s[scores={DialogueTrigger=100,TalkTime=113}] {"text":"<Steven> Look. It's trying to offer you its allegiance."}
-tellraw @s[scores={DialogueTrigger=100,TalkTime=120}] {"text":"<Steven> I believe it is trying to show that it wants to go with you on your journey."}
-tellraw @s[scores={DialogueTrigger=100,TalkTime=129}] {"text":"<Steven> Go on. Hold out your hand to it."}
+tellraw @s[scores={DialogueTrigger=100,TalkTime=113}] {"text":"<Máximo> Look. It's trying to offer you its allegiance."}
+tellraw @s[scores={DialogueTrigger=100,TalkTime=120}] {"text":"<Máximo> I believe it is trying to show that it wants to go with you on your journey."}
+tellraw @s[scores={DialogueTrigger=100,TalkTime=129}] {"text":"<Máximo> Go on. Hold out your hand to it."}
 
 #Opposite Color joins you, same color obtainable via Eon Ticket
 
@@ -3799,29 +3799,29 @@ execute as @s[scores={DialogueTrigger=100,TalkTime=136}] run tp @e[x=725,y=74,z=
 tellraw @s[scores={DialogueTrigger=100,TalkTime=143,GameVersion=1}] {"text":"Latios is carrying a piece of Latiosite!","italic":true,"color":"gray"}
 tellraw @s[scores={DialogueTrigger=100,TalkTime=143,GameVersion=2}] {"text":"Latias is carrying a piece of Latiasite!","italic":true,"color":"gray"}
 
-tellraw @s[scores={DialogueTrigger=100,TalkTime=150}] {"text":"<Steven> You should take this from me..."}
+tellraw @s[scores={DialogueTrigger=100,TalkTime=150}] {"text":"<Máximo> You should take this from me..."}
 
 tellraw @s[scores={DialogueTrigger=100,TalkTime=157}] ["",{"selector":"@s","italic":true,"color":"gray"},{"text":" obtained the Mega Braclet!","italic":true,"color":"gray"}]
 execute as @s[scores={DialogueTrigger=100,TalkTime=157}] run megaring
 execute as @s[scores={DialogueTrigger=100,TalkTime=157}] run playsound minecraft:keyitem ambient @s ~ ~ ~ 1 1 1
 
-tellraw @s[scores={DialogueTrigger=100,TalkTime=164}] {"text":"<Steven> With the Mega Bracelet that I just gave you and the Mega Stones that a Pokémon may hold,"}
-tellraw @s[scores={DialogueTrigger=100,TalkTime=173}] {"text":"<Steven> your Pokémon will be able to achieve a powerful boost, quite unlike any usual form of Evolution..."}
-tellraw @s[scores={DialogueTrigger=100,TalkTime=183}] {"text":"<Steven> but only if you are bound by great affection."}
-tellraw @s[scores={DialogueTrigger=100,TalkTime=190}] {"text":"<Steven> You will be able to achieve Mega Evolution."}
+tellraw @s[scores={DialogueTrigger=100,TalkTime=164}] {"text":"<Máximo> With the Mega Bracelet that I just gave you and the Mega Stones that a Pokémon may hold,"}
+tellraw @s[scores={DialogueTrigger=100,TalkTime=173}] {"text":"<Máximo> your Pokémon will be able to achieve a powerful boost, quite unlike any usual form of Evolution..."}
+tellraw @s[scores={DialogueTrigger=100,TalkTime=183}] {"text":"<Máximo> but only if you are bound by great affection."}
+tellraw @s[scores={DialogueTrigger=100,TalkTime=190}] {"text":"<Máximo> You will be able to achieve Mega Evolution."}
 
-tellraw @s[scores={DialogueTrigger=100,TalkTime=197,GameVersion=1}] {"text":"<Steven> I suggest you try it with Latios the next time that you happen to have the chance in battle."}
-tellraw @s[scores={DialogueTrigger=100,TalkTime=197,GameVersion=2}] {"text":"<Steven> I suggest you try it with Latias the next time that you happen to have the chance in battle."}
+tellraw @s[scores={DialogueTrigger=100,TalkTime=197,GameVersion=1}] {"text":"<Máximo> I suggest you try it with Latios the next time that you happen to have the chance in battle."}
+tellraw @s[scores={DialogueTrigger=100,TalkTime=197,GameVersion=2}] {"text":"<Máximo> I suggest you try it with Latias the next time that you happen to have the chance in battle."}
 
-tellraw @s[scores={DialogueTrigger=100,TalkTime=207}] {"text":"<Steven> Mega Evolution is a phenomenon that has long been shrouded in mystery."}
-tellraw @s[scores={DialogueTrigger=100,TalkTime=215}] {"text":"<Steven> What is a Mega Stone? What is a Key Stone?"}
-tellraw @s[scores={DialogueTrigger=100,TalkTime=222}] {"text":"<Steven> The process by which bonds between Pokémon and people manifest in tangible power..."}
-tellraw @s[scores={DialogueTrigger=100,TalkTime=230}] {"text":"<Steven> How do we explain that?"}
-tellraw @s[scores={DialogueTrigger=100,TalkTime=236}] {"text":"<Steven> I hope that the Mega Bracelet I just gave you might bring us one step closer to finding the answer to these questions."}
-tellraw @s[scores={DialogueTrigger=100,TalkTime=247}] {"text":"<Steven> If that settles that... Should we be heading back?"}
+tellraw @s[scores={DialogueTrigger=100,TalkTime=207}] {"text":"<Máximo> Mega Evolution is a phenomenon that has long been shrouded in mystery."}
+tellraw @s[scores={DialogueTrigger=100,TalkTime=215}] {"text":"<Máximo> What is a Mega Stone? What is a Key Stone?"}
+tellraw @s[scores={DialogueTrigger=100,TalkTime=222}] {"text":"<Máximo> The process by which bonds between Pokémon and people manifest in tangible power..."}
+tellraw @s[scores={DialogueTrigger=100,TalkTime=230}] {"text":"<Máximo> How do we explain that?"}
+tellraw @s[scores={DialogueTrigger=100,TalkTime=236}] {"text":"<Máximo> I hope that the Mega Bracelet I just gave you might bring us one step closer to finding the answer to these questions."}
+tellraw @s[scores={DialogueTrigger=100,TalkTime=247}] {"text":"<Máximo> If that settles that... Should we be heading back?"}
 
-tellraw @s[scores={DialogueTrigger=100,TalkTime=255,GameVersion=1}] {"text":"<Steven> Together with Latios, waiting so patiently for us there..."}
-tellraw @s[scores={DialogueTrigger=100,TalkTime=255,GameVersion=2}] {"text":"<Steven> Together with Latias, waiting so patiently for us there..."}
+tellraw @s[scores={DialogueTrigger=100,TalkTime=255,GameVersion=1}] {"text":"<Máximo> Together with Latios, waiting so patiently for us there..."}
+tellraw @s[scores={DialogueTrigger=100,TalkTime=255,GameVersion=2}] {"text":"<Máximo> Together with Latias, waiting so patiently for us there..."}
 
 #Cutscene shots?
 execute as @s[scores={DialogueTrigger=100,TalkTime=263}] run gamemode spectator
@@ -3850,15 +3850,15 @@ execute as @s[scores={DialogueTrigger=100,TalkTime=280,GameVersion=1}] run summo
 execute as @s[scores={DialogueTrigger=100,TalkTime=280,GameVersion=2}] run summon pixelmon:statue -985 65 -537 {Brain: {memories: {}}, HurtByTimestamp: 0, EVSpeed: 0s, Attributes: [], Moveset: [{MoveID: "Tackle", MovePP: 35b}, {MoveID: "Growth", MovePP: 20b}, {MoveID: "Poison Powder", MovePP: 35b}, {MoveID: "Sleep Powder", MovePP: 15b}], Invulnerable: 0b, statueTexture: 0b, Gender: 1b, ribbon_display2: {receiver: "null", received: 0L, type: "isi"}, AbsorptionAmount: 0.0f, Bred: 0b, FallDistance: 0.0f, InLove: 0, CanUpdate: 1b, IVSpDef: 19b, CaughtBall: "poke_ball", HandDropChances: [0.085f, 0.085f], statueLabel: "", PersistenceRequired: 0b, palette: "none", Ability: "Overgrow", IVDefense: 22b, DoesLevel: 1b, EVDefense: 0s, Air: 300s, PAbilitySlot: 0, DynamaxLevel: 0, HandItems: [{}, {}], Variant: "", ArmorDropChances: [0.085f, 0.085f, 0.085f, 0.085f], statueModelType: 1b, EVSpecialAttack: 0s, IVSpeed: 21b, Temper: 0, CanPickUpLoot: 0b, Level: -1, HurtTime: 0s, NoGravity: 1b, Tame: 0b, StatsDefense: 20s, IVAttack: 3b, Growth: 6b, PHiddenAbility: 0b, BoundingBoxMode: 2b, FallFlying: 0b, ForcedAge: 0, PersistentData: {}, PortalCooldown: 0, GigantamaxFactor: 0b, Friendship: 70s, statueAnimation: "idle", EatingHaystack: 0b, DeathTime: 0s, eggCycles: -1, EVAttack: 0s, StatsSpecialAttack: 28s, IVHP: 6b, EVHP: 0s, ndex: 381, StatsSpecialDefense: 27s, Age: 0, Nature: 18b, Motion: [0.0d, 0.0d, 0.0d], StatsHP: 39s, Health: 20, Animate: 1b, SpecFlags: [], LeftHanded: 0b, OnGround: 0b, NoAI: 1b, Rotation: [180.0f, 0.0f], StatsSpeed: 21s, StatsAttack: 20s, statueFrame: 0, Fire: -1s, ArmorItems: [{}, {}, {}, {}], IVSpAtt: 14b, NBT_VERSION: 2b, EVSpecialDefense: 0s, EXP: 0, RelrnMoves: [], ribbons2: []}
 
 
-tellraw @s[scores={DialogueTrigger=100,TalkTime=284}] ["",{"text":"<Steven> Thank you for your help, "},{"selector":"@s"},{"text":"."}]
+tellraw @s[scores={DialogueTrigger=100,TalkTime=284}] ["",{"text":"<Máximo> Thank you for your help, "},{"selector":"@s"},{"text":"."}]
 
 tellraw @s[scores={DialogueTrigger=100,TalkTime=291,GameVersion=1}] {"text":"<Latias> Hyan!"}
 tellraw @s[scores={DialogueTrigger=100,TalkTime=291,GameVersion=2}] {"text":"<Latios> Shwan!"}
 execute as @s[scores={DialogueTrigger=100,TalkTime=291,GameVersion=1}] run playsound pixelmon:pixelmon.mob.latias ambient @s ~ ~ ~ 1 1 1
 execute as @s[scores={DialogueTrigger=100,TalkTime=291,GameVersion=2}] run playsound pixelmon:pixelmon.mob.latios ambient @s ~ ~ ~ 1 1 1
 
-tellraw @s[scores={DialogueTrigger=100,TalkTime=298,GameVersion=1}] {"text":"<Steven> Perhaps it's trying to tell you to take good care of Latios."}
-tellraw @s[scores={DialogueTrigger=100,TalkTime=298,GameVersion=2}] {"text":"<Steven> Perhaps it's trying to tell you to take good care of Latias."}
+tellraw @s[scores={DialogueTrigger=100,TalkTime=298,GameVersion=1}] {"text":"<Máximo> Perhaps it's trying to tell you to take good care of Latios."}
+tellraw @s[scores={DialogueTrigger=100,TalkTime=298,GameVersion=2}] {"text":"<Máximo> Perhaps it's trying to tell you to take good care of Latias."}
 
 tellraw @s[scores={DialogueTrigger=100,TalkTime=307,GameVersion=1}] {"text":"<Latias> Hyaahhn!"}
 tellraw @s[scores={DialogueTrigger=100,TalkTime=307,GameVersion=2}] {"text":"<Latios> Shwaahhn!"}
@@ -3869,10 +3869,10 @@ execute as @s[scores={DialogueTrigger=100,TalkTime=307,GameVersion=2}] run plays
 execute as @s[scores={DialogueTrigger=100,TalkTime=310}] run execute as @e[x=-985,y=65,z=-537,distance=..3,type=pixelmon:statue] at @s run particle cloud ~ ~ ~ 1 1 1 0.15 300
 execute as @s[scores={DialogueTrigger=100,TalkTime=310}] run tp @e[x=-985,y=65,z=-537,distance=..3,type=pixelmon:statue] 10000000 -50000 -10000000
 
-tellraw @s[scores={DialogueTrigger=100,TalkTime=315}] {"text":"<Steven> In the end, you were a far greater help than I expected you might be."}
-tellraw @s[scores={DialogueTrigger=100,TalkTime=324}] {"text":"<Steven> I expect that you and your team will be able to best both Route 119 ahead and even the Fortree Gym beyond that."}
-tellraw @s[scores={DialogueTrigger=100,TalkTime=334}] {"text":"<Steven> I'll be curious to see how much stronger you might grow by the next time we meet."}
-tellraw @s[scores={DialogueTrigger=100,TalkTime=343}] ["",{"text":"<Steven> Until then, "},{"selector":"@s"},{"text":"."}]
+tellraw @s[scores={DialogueTrigger=100,TalkTime=315}] {"text":"<Máximo> In the end, you were a far greater help than I expected you might be."}
+tellraw @s[scores={DialogueTrigger=100,TalkTime=324}] {"text":"<Máximo> I expect that you and your team will be able to best both Route 119 ahead and even the Fortree Gym beyond that."}
+tellraw @s[scores={DialogueTrigger=100,TalkTime=334}] {"text":"<Máximo> I'll be curious to see how much stronger you might grow by the next time we meet."}
+tellraw @s[scores={DialogueTrigger=100,TalkTime=343}] ["",{"text":"<Máximo> Until then, "},{"selector":"@s"},{"text":"."}]
 
 #tp Steven out
 execute as @s[scores={DialogueTrigger=100,TalkTime=350}] run execute as @e[x=-982,y=64,z=-545,distance=..3,type=pixelmon:npc_chatting] at @s run particle cloud ~ ~ ~ 1 1 1 0.15 300
@@ -4053,42 +4053,42 @@ execute as @s[scores={DialogueTrigger=105,TalkTime=1,Rival=2,StarterPick=1}] run
 execute as @s[scores={DialogueTrigger=105,TalkTime=1,Rival=2,StarterPick=2}] run summon pixelmon:npc_trainer -867 79 -1300 {Brain: {memories: {}}, HurtByTimestamp: 0, NPCLevel: 3, RaiseToCap: 0b, TeamSelectTime: 0, LevelCap: 100, Attributes: [{Base: 0.699999988079071d, Name: "minecraft:generic.movement_speed"}, {Base: 0.08d, Name: "forge:entity_gravity"}, {Base: 0.0d, Name: "forge:step_height_addition"}], BattleType: 0, Invulnerable: 0b, AbsorptionAmount: 0.0f, DefaultLose: 0b, Name: "Brendan", FallDistance: 0.0f, WinningsTag:{item0:{id:"minecraft:nether_brick",Count:1b}}, CanUpdate: 1b, BossTier: "notboss", DefaultName: 1b, hasMegaItem: 0, TeamPreview: 0b, HandDropChances: [0.085f, 0.085f], PersistenceRequired: 1b, FullHeal: 0b, trainerLocation: 2, oldGen: 0, OldGen: 0, pokeStore: {party1: {EVSpeed: 0s, StatsDefense: 28s, IVAttack: 26b, Growth: 3b, PHiddenAbility: 0b, Moveset: [{MoveID: "Smog", MovePP: 20b}, {MoveID: "Yawn", MovePP: 10b}, {MoveID: "Rock Throw", MovePP: 15b}, {MoveID: "Harden", MovePP: 30b}], PersistentData: {}, Gender: 1b, GigantamaxFactor: 0b, Friendship: 70s, eggCycles: -1, EVAttack: 0s, StatsSpecialAttack: 53s, IVSpDef: 19b, CaughtBall: "poke_ball", IVHP: 13b, EVHP: 0s, ndex: 218, palette: "none", StatsSpecialDefense: 38s, Nature: 22b, Ability: "WeakArmor", StatsHP: 69s, IVDefense: 8b, Health: 69, SpecFlags: [], DoesLevel: 1b, EVDefense: 0s, PAbilitySlot: -1, DynamaxLevel: 0, Variant: "", StatsSpeed: 25s, EVSpecialAttack: 0s, StatsAttack: 37s, IVSpeed: 25b, Level: 31, IVSpAtt: 18b, NBT_VERSION: 2b, EVSpecialDefense: 0s, EXP: 0, RelrnMoves: [], ribbons2: []}, party0: {EVSpeed: 0s, StatsDefense: 43s, IVAttack: 25b, Growth: 2b, PHiddenAbility: 0b, Moveset: [{MoveID: "Absorb", MovePP: 25b}, {MoveID: "Leech Seed", MovePP: 10b}, {MoveID: "Mega Drain", MovePP: 15b}, {MoveID: "Poison Powder", MovePP: 35b}], PersistentData: {}, Gender: 0b, GigantamaxFactor: 0b, Friendship: 70s, eggCycles: -1, EVAttack: 0s, StatsSpecialAttack: 38s, IVSpDef: 5b, CaughtBall: "poke_ball", IVHP: 10b, EVHP: 0s, ndex: 285, palette: "none", StatsSpecialDefense: 38s, Nature: 20b, Ability: "EffectSpore", StatsHP: 81s, IVDefense: 3b, Health: 81, SpecFlags: [], DoesLevel: 1b, EVDefense: 0s, PAbilitySlot: -1, DynamaxLevel: 0, Variant: "", StatsSpeed: 31s, EVSpecialAttack: 0s, StatsAttack: 37s, IVSpeed: 14b, Level: 31, IVSpAtt: 17b, NBT_VERSION: 2b, EVSpecialDefense: 0s, EXP: 0, RelrnMoves: [], ribbons2: []}, party2: {EVSpeed: 0s, StatsDefense: 48s, IVAttack: 27b, Growth: 4b, PHiddenAbility: 0b, Moveset: [{MoveID: "Earthquake", MovePP: 10b}, {MoveID: "Growl", MovePP: 40b}, {MoveID: "Surf", MovePP: 15b}, {MoveID: "Rock Throw", MovePP: 15b}], PersistentData: {}, Gender: 0b, GigantamaxFactor: 0b, Friendship: 70s, eggCycles: -1, EVAttack: 0s, StatsSpecialAttack: 45s, IVSpDef: 24b, CaughtBall: "poke_ball", IVHP: 5b, EVHP: 0s, ndex: 259, palette: "none", StatsSpecialDefense: 59s, Nature: 14b, Ability: "Torrent", StatsHP: 90s, IVDefense: 11b, Health: 90, SpecFlags: [], DoesLevel: 1b, EVDefense: 0s, PAbilitySlot: -1, DynamaxLevel: 0, Variant: "", StatsSpeed: 47s, EVSpecialAttack: 0s, StatsAttack: 70s, IVSpeed: 17b, Level: 33, IVSpAtt: 2b, NBT_VERSION: 2b, EVSpecialDefense: 0s, EXP: 0, RelrnMoves: [], ribbons2: []}, TempPartyEnabled: 0b}, EncMode: 1s, Air: 300s, HandItems: [{}, {}], ArmorDropChances: [0.085f, 0.085f, 0.085f, 0.085f], Profession: -1s, Pos: [-866.5d, 79.0d, -1295.5d], CanPickUpLoot: 0b, HurtTime: 0s, Inventory: [], DefaultWin: 1b, WinMessage: "", Greeting: "", Encounters: [], FallFlying: 0b, PortalCooldown: 0, TurnTime: 0, DeathTime: 0s, Commands: {winCommands: [], loseCommands: [], preBattleCommands: [], interactCommands: [], forfeitCommands: []}, GymLeader: 0b, EngageDistance: 10, DefaultGreet: 1b, Motion: [0.0d, -0.0784000015258789d, 0.0d], TextureIndex: 4, TrainerIndex: "steve", Health: 20.0f, BattleAIMode: 0s, LoseMessage: "Achah! You're as strong as I expected!", LeftHanded: 0b, OnGround: 1b, Rotation: [0.0f, 0.0f], ChatIndex: 0, Fire: -1s, ArmorItems: [{}, {}, {}, {}], CustomSteveTexture: "Brendan", NumPokemon: 6, BaseTrainer: "Steve", WinMoney: 1320, AIMode: 0s}
 execute as @s[scores={DialogueTrigger=105,TalkTime=1,Rival=2,StarterPick=3}] run summon pixelmon:npc_trainer -867 79 -1300 {Brain: {memories: {}}, HurtByTimestamp: 0, NPCLevel: 3, RaiseToCap: 0b, TeamSelectTime: 0, LevelCap: 100, Attributes: [{Base: 0.699999988079071d, Name: "minecraft:generic.movement_speed"}, {Base: 0.08d, Name: "forge:entity_gravity"}, {Base: 0.0d, Name: "forge:step_height_addition"}], BattleType: 0, Invulnerable: 0b, AbsorptionAmount: 0.0f, DefaultLose: 0b, Name: "Brendan", FallDistance: 0.0f, WinningsTag:{item0:{id:"minecraft:nether_brick",Count:1b}}, CanUpdate: 1b, BossTier: "notboss", DefaultName: 1b, hasMegaItem: 0, TeamPreview: 0b, HandDropChances: [0.085f, 0.085f], PersistenceRequired: 1b, FullHeal: 0b, trainerLocation: 2, oldGen: 0, OldGen: 0, pokeStore: {party1: {EVSpeed: 0s, StatsDefense: 37s, IVAttack: 27b, Growth: 1b, PHiddenAbility: 0b, Moveset: [{MoveID: "Splash", MovePP: 40b}, {MoveID: "Astonish", MovePP: 15b}, {MoveID: "Water Pulse", MovePP: 20b}, {MoveID: "Heavy Slam", MovePP: 10b}], PersistentData: {}, Gender: 1b, GigantamaxFactor: 0b, Friendship: 70s, eggCycles: -1, EVAttack: 0s, StatsSpecialAttack: 43s, IVSpDef: 23b, CaughtBall: "poke_ball", IVHP: 9b, EVHP: 0s, ndex: 320, palette: "none", StatsSpecialDefense: 33s, Nature: 11b, Ability: "WaterVeil", StatsHP: 124s, IVDefense: 25b, Health: 124, SpecFlags: [], DoesLevel: 1b, EVDefense: 0s, PAbilitySlot: -1, DynamaxLevel: 0, Variant: "", StatsSpeed: 49s, EVSpecialAttack: 0s, StatsAttack: 56s, IVSpeed: 23b, Level: 31, IVSpAtt: 1b, NBT_VERSION: 2b, EVSpecialDefense: 0s, EXP: 0, RelrnMoves: [], ribbons2: []}, party0: {EVSpeed: 0s, StatsDefense: 30s, IVAttack: 27b, Growth: 5b, PHiddenAbility: 0b, Moveset: [{MoveID: "Smog", MovePP: 20b}, {MoveID: "Yawn", MovePP: 10b}, {MoveID: "Harden", MovePP: 30b}, {MoveID: "Incinerate", MovePP: 15b}], PersistentData: {}, Gender: 1b, GigantamaxFactor: 0b, Friendship: 70s, eggCycles: -1, EVAttack: 0s, StatsSpecialAttack: 45s, IVSpDef: 16b, CaughtBall: "poke_ball", IVHP: 22b, EVHP: 0s, ndex: 218, palette: "none", StatsSpecialDefense: 34s, Nature: 7b, Ability: "MagmaArmor", StatsHP: 72s, IVDefense: 2b, Health: 72, SpecFlags: [], DoesLevel: 1b, EVDefense: 0s, PAbilitySlot: -1, DynamaxLevel: 0, Variant: "", StatsSpeed: 27s, EVSpecialAttack: 0s, StatsAttack: 41s, IVSpeed: 31b, Level: 31, IVSpAtt: 11b, NBT_VERSION: 2b, EVSpecialDefense: 0s, EXP: 0, RelrnMoves: [], ribbons2: []}, party2: {EVSpeed: 0s, StatsDefense: 32s, IVAttack: 14b, Growth: 4b, PHiddenAbility: 0b, Moveset: [{MoveID: "Energy Ball", MovePP: 10b}, {MoveID: "Leer", MovePP: 30b}, {MoveID: "Mega Drain", MovePP: 15b}, {MoveID: "Quick Guard", MovePP: 15b}], PersistentData: {}, Gender: 0b, GigantamaxFactor: 0b, Friendship: 70s, eggCycles: -1, EVAttack: 0s, StatsSpecialAttack: 70s, IVSpDef: 7b, CaughtBall: "poke_ball", IVHP: 24b, EVHP: 0s, ndex: 253, palette: "none", StatsSpecialDefense: 50s, Nature: 5b, Ability: "Overgrow", StatsHP: 83s, IVDefense: 6b, Health: 83, SpecFlags: [], DoesLevel: 1b, EVDefense: 0s, PAbilitySlot: -1, DynamaxLevel: 0, Variant: "", StatsSpeed: 69s, EVSpecialAttack: 0s, StatsAttack: 57s, IVSpeed: 5b, Level: 33, IVSpAtt: 28b, NBT_VERSION: 2b, EVSpecialDefense: 0s, EXP: 0, RelrnMoves: [], ribbons2: []}, TempPartyEnabled: 0b}, EncMode: 1s, Air: 300s, HandItems: [{}, {}], ArmorDropChances: [0.085f, 0.085f, 0.085f, 0.085f], Profession: -1s, Pos: [-866.5d, 79.0d, -1295.5d], CanPickUpLoot: 0b, HurtTime: 0s, Inventory: [], DefaultWin: 1b, WinMessage: "", Greeting: "", Encounters: [], FallFlying: 0b, PortalCooldown: 0, TurnTime: 0, DeathTime: 0s, Commands: {winCommands: [], loseCommands: [], preBattleCommands: [], interactCommands: [], forfeitCommands: []}, GymLeader: 0b, EngageDistance: 10, DefaultGreet: 1b, Motion: [0.0d, -0.0784000015258789d, 0.0d], TextureIndex: 4, TrainerIndex: "steve", Health: 20.0f, BattleAIMode: 0s, LoseMessage: "Achah! You're as strong as I expected!", LeftHanded: 0b, OnGround: 1b, Rotation: [0.0f, 0.0f], ChatIndex: 0, Fire: -1s, ArmorItems: [{}, {}, {}, {}], CustomSteveTexture: "Brendan", NumPokemon: 6, BaseTrainer: "Steve", WinMoney: 1320, AIMode: 0s}
 
-tellraw @s[scores={DialogueTrigger=105,TalkTime=5,Rival=1}] ["",{"text":"<May> "},{"selector":"@s"},{"text":"!"}]
-tellraw @s[scores={DialogueTrigger=105,TalkTime=11,Rival=1}] {"text":"<May> Gosh, where have you been hiding? I've been looking all over for you!"}
+tellraw @s[scores={DialogueTrigger=105,TalkTime=5,Rival=1}] ["",{"text":"<Aura> "},{"selector":"@s"},{"text":"!"}]
+tellraw @s[scores={DialogueTrigger=105,TalkTime=11,Rival=1}] {"text":"<Aura> Gosh, where have you been hiding? I've been looking all over for you!"}
 
 #summon question mark
 execute as @s[scores={DialogueTrigger=105,TalkTime=20,Rival=1}] at @e[x=-867,y=79,z=-1300,distance=..5,type=pixelmon:npc_trainer] run summon armor_stand ~ ~ ~ {Invisible:1b,Invulnerable:1b,NoGravity:1b,CustomName:'{"text":"?"}',CustomNameVisible:1b}
 execute as @s[scores={DialogueTrigger=105,TalkTime=23,Rival=1}] as @e[x=-867,y=79,z=-1300,distance=..5,type=pixelmon:npc_trainer] at @s run kill @e[type=minecraft:armor_stand,distance=..5]
 
-tellraw @s[scores={DialogueTrigger=105,TalkTime=23,Rival=1}] {"text":"<May> Oh... Where did you get that thing on your wrist?"}
-tellraw @s[scores={DialogueTrigger=105,TalkTime=30,Rival=1}] {"text":"<May> That's a pretty fancy-looking bracelet..."}
-tellraw @s[scores={DialogueTrigger=105,TalkTime=36,Rival=1}] {"text":"<May> ..."}
-tellraw @s[scores={DialogueTrigger=105,TalkTime=41,Rival=1}] {"text":"<May> Wow! So that's a Mega Bracelet? And you can use it for Mega Evolution..."}
-tellraw @s[scores={DialogueTrigger=105,TalkTime=49,Rival=1}] {"text":"<May> I guess now you can keep getting even closer to your Pokémon, huh?"}
-tellraw @s[scores={DialogueTrigger=105,TalkTime=56,Rival=1}] {"text":"<May> Some people have all the luck..."}
-tellraw @s[scores={DialogueTrigger=105,TalkTime=63,Rival=1}] {"text":"<May> But I'm not about to lose to you and some accessory!"}
-tellraw @s[scores={DialogueTrigger=105,TalkTime=70,Rival=1}] {"text":"<May> Let's see who's best in battle!"}
-tellraw @s[scores={DialogueTrigger=105,TalkTime=77,Rival=1}] {"text":"<May> Are your Pokémon all ready? Of course they are! Let's go!"}
+tellraw @s[scores={DialogueTrigger=105,TalkTime=23,Rival=1}] {"text":"<Aura> Oh... Where did you get that thing on your wrist?"}
+tellraw @s[scores={DialogueTrigger=105,TalkTime=30,Rival=1}] {"text":"<Aura> That's a pretty fancy-looking bracelet..."}
+tellraw @s[scores={DialogueTrigger=105,TalkTime=36,Rival=1}] {"text":"<Aura> ..."}
+tellraw @s[scores={DialogueTrigger=105,TalkTime=41,Rival=1}] {"text":"<Aura> Wow! So that's a Mega Bracelet? And you can use it for Mega Evolution..."}
+tellraw @s[scores={DialogueTrigger=105,TalkTime=49,Rival=1}] {"text":"<Aura> I guess now you can keep getting even closer to your Pokémon, huh?"}
+tellraw @s[scores={DialogueTrigger=105,TalkTime=56,Rival=1}] {"text":"<Aura> Some people have all the luck..."}
+tellraw @s[scores={DialogueTrigger=105,TalkTime=63,Rival=1}] {"text":"<Aura> But I'm not about to lose to you and some accessory!"}
+tellraw @s[scores={DialogueTrigger=105,TalkTime=70,Rival=1}] {"text":"<Aura> Let's see who's best in battle!"}
+tellraw @s[scores={DialogueTrigger=105,TalkTime=77,Rival=1}] {"text":"<Aura> Are your Pokémon all ready? Of course they are! Let's go!"}
 
 #pokebattle
 #execute as @s[scores={DialogueTrigger=105,TalkTime=85,Rival=1}] run pokebattle @s May105
 
-tellraw @s[scores={DialogueTrigger=105,TalkTime=5,Rival=2}] ["",{"text":"<Brendan> "},{"selector":"@s"},{"text":"!"}]
-tellraw @s[scores={DialogueTrigger=105,TalkTime=11,Rival=2}] {"text":"<Brendan> You've been looking for Pokémon here?"}
+tellraw @s[scores={DialogueTrigger=105,TalkTime=5,Rival=2}] ["",{"text":"<Bruno> "},{"selector":"@s"},{"text":"!"}]
+tellraw @s[scores={DialogueTrigger=105,TalkTime=11,Rival=2}] {"text":"<Bruno> You've been looking for Pokémon here?"}
 
 #summon question mark
 execute as @s[scores={DialogueTrigger=105,TalkTime=18,Rival=2}] at @e[x=-867,y=79,z=-1300,distance=..5,type=pixelmon:npc_trainer] run summon armor_stand ~ ~ ~ {Invisible:1b,Invulnerable:1b,NoGravity:1b,CustomName:'{"text":"?"}',CustomNameVisible:1b}
 execute as @s[scores={DialogueTrigger=105,TalkTime=20,Rival=2}] as @e[x=-867,y=79,z=-1300,distance=..5,type=pixelmon:npc_trainer] at @s run kill @e[type=minecraft:armor_stand,distance=..5]
 
 
-tellraw @s[scores={DialogueTrigger=105,TalkTime=20,Rival=2}] {"text":"<Brendan> Huh? That bracelet you've got on..."}
-tellraw @s[scores={DialogueTrigger=105,TalkTime=27,Rival=2}] {"text":"<Brendan> It's like, I don't know, really cool..."}
-tellraw @s[scores={DialogueTrigger=105,TalkTime=34,Rival=2}] {"text":"<Brendan> ..."}
-tellraw @s[scores={DialogueTrigger=105,TalkTime=40,Rival=2}] {"text":"<Brendan> Whoa. So that's the Mega Bracelet? And you can use it for Mega Evolution..."}
-tellraw @s[scores={DialogueTrigger=105,TalkTime=50,Rival=2}] {"text":"<Brendan> So you'll just keep getting closer to your Pokémon and getting even stronger..."}
-tellraw @s[scores={DialogueTrigger=105,TalkTime=59,Rival=2}] {"text":"<Brendan> All right, then. I guess I've just gotta help you test how strong you've become, huh?"}
-tellraw @s[scores={DialogueTrigger=105,TalkTime=69,Rival=2}] {"text":"<Brendan> Show me in battle how much better you've gotten!"}
-tellraw @s[scores={DialogueTrigger=105,TalkTime=77,Rival=2}] {"text":"<Brendan> Come on! A battle! I'm challenging you to a battle!"}
+tellraw @s[scores={DialogueTrigger=105,TalkTime=20,Rival=2}] {"text":"<Bruno> Huh? That bracelet you've got on..."}
+tellraw @s[scores={DialogueTrigger=105,TalkTime=27,Rival=2}] {"text":"<Bruno> It's like, I don't know, really cool..."}
+tellraw @s[scores={DialogueTrigger=105,TalkTime=34,Rival=2}] {"text":"<Bruno> ..."}
+tellraw @s[scores={DialogueTrigger=105,TalkTime=40,Rival=2}] {"text":"<Bruno> Whoa. So that's the Mega Bracelet? And you can use it for Mega Evolution..."}
+tellraw @s[scores={DialogueTrigger=105,TalkTime=50,Rival=2}] {"text":"<Bruno> So you'll just keep getting closer to your Pokémon and getting even stronger..."}
+tellraw @s[scores={DialogueTrigger=105,TalkTime=59,Rival=2}] {"text":"<Bruno> All right, then. I guess I've just gotta help you test how strong you've become, huh?"}
+tellraw @s[scores={DialogueTrigger=105,TalkTime=69,Rival=2}] {"text":"<Bruno> Show me in battle how much better you've gotten!"}
+tellraw @s[scores={DialogueTrigger=105,TalkTime=77,Rival=2}] {"text":"<Bruno> Come on! A battle! I'm challenging you to a battle!"}
 
 #pokebattle
 #execute as @s[scores={DialogueTrigger=105,TalkTime=85,Rival=2}] run pokebattle @s Brendan
@@ -4100,40 +4100,40 @@ tag @s[scores={DialogueTrigger=105,TalkTime=85..}] add Dialogue105
 #https://youtu.be/MgkqxXCmrtI?t=36669
 
 clear @s[scores={DialogueTrigger=106}] minecraft:nether_brick
-tellraw @s[scores={DialogueTrigger=106,TalkTime=1,Rival=1}] {"text":"<May> Hm! Well, you did battle me like I asked, so I'll give you a reward."}
+tellraw @s[scores={DialogueTrigger=106,TalkTime=1,Rival=1}] {"text":"<Aura> Hm! Well, you did battle me like I asked, so I'll give you a reward."}
 
 execute as @s[scores={DialogueTrigger=106,TalkTime=10,Rival=1}] run playsound minecraft:keyitem ambient @s ~ ~ ~ 1 1 1
 execute as @s[scores={DialogueTrigger=106,TalkTime=10,Rival=1}] run give @s pixelmon:hm2
 execute as @s[scores={DialogueTrigger=106,TalkTime=10,Rival=1}] run function hoenn:spawn/flyhm
 tellraw @s[scores={DialogueTrigger=106,TalkTime=10,Rival=1}] [{"selector":"@s","italic":true,"color":"gray"},{"text":" obtained HM02 Fly!","italic":true,"color":"gray"}]
 
-tellraw @s[scores={DialogueTrigger=106,TalkTime=18,Rival=1}] {"text":"<May> If you use Fly, your Pokémon will carry you back to anywhere you've been before."}
-tellraw @s[scores={DialogueTrigger=106,TalkTime=28,Rival=1}] {"text":"<May> But you must have the Gym Badge from Fortree City to use Fly outside of battle."}
-tellraw @s[scores={DialogueTrigger=106,TalkTime=38,Rival=1}] {"text":"<May> That's the most important bit, so don't forget!"}
-tellraw @s[scores={DialogueTrigger=106,TalkTime=45,Rival=1}] {"text":"<May> Maybe you should Fly home and visit Littleroot sometimes."}
-tellraw @s[scores={DialogueTrigger=106,TalkTime=52,Rival=1}] ["",{"text":"<May> I bet your mom worries about you, "},{"selector":"@s"},{"text":"..."}]
-tellraw @s[scores={DialogueTrigger=106,TalkTime=59,Rival=1}] {"text":"<May> Well, till we meet again!"}
+tellraw @s[scores={DialogueTrigger=106,TalkTime=18,Rival=1}] {"text":"<Aura> If you use Fly, your Pokémon will carry you back to anywhere you've been before."}
+tellraw @s[scores={DialogueTrigger=106,TalkTime=28,Rival=1}] {"text":"<Aura> But you must have the Gym Badge from Fortree City to use Fly outside of battle."}
+tellraw @s[scores={DialogueTrigger=106,TalkTime=38,Rival=1}] {"text":"<Aura> That's the most important bit, so don't forget!"}
+tellraw @s[scores={DialogueTrigger=106,TalkTime=45,Rival=1}] {"text":"<Aura> Maybe you should Fly home and visit Littleroot sometimes."}
+tellraw @s[scores={DialogueTrigger=106,TalkTime=52,Rival=1}] ["",{"text":"<Aura> I bet your mom worries about you, "},{"selector":"@s"},{"text":"..."}]
+tellraw @s[scores={DialogueTrigger=106,TalkTime=59,Rival=1}] {"text":"<Aura> Well, till we meet again!"}
 execute as @s[scores={DialogueTrigger=106,TalkTime=59,Rival=1}] as @e[x=-867,y=79,z=-1300,distance=..5,type=pixelmon:npc_trainer] run data merge entity @s {Rotation:[180f,0.0f]}
-tellraw @s[scores={DialogueTrigger=106,TalkTime=66,Rival=1}] {"text":"<May> And next time I won't lose!"}
+tellraw @s[scores={DialogueTrigger=106,TalkTime=66,Rival=1}] {"text":"<Aura> And next time I won't lose!"}
 
 #tp out
 execute as @s[scores={DialogueTrigger=106,TalkTime=66,Rival=1}] run particle cloud -867 79 -1300 1 1 1 0.15 300
 execute as @s[scores={DialogueTrigger=106,TalkTime=66,Rival=1}] run tp @e[x=-867,y=79,z=-1300,distance=..5,type=pixelmon:npc_trainer] 10000000 -50000 -10000000
 
 
-tellraw @s[scores={DialogueTrigger=106,TalkTime=1,Rival=2}] {"text":"<Brendan> I'd say you're good enough to search for Pokémon anywhere by now."}
-tellraw @s[scores={DialogueTrigger=106,TalkTime=10,Rival=2}] {"text":"<Brendan> Here, I'll give you this, so try it out. You should be able to use it fine."}
+tellraw @s[scores={DialogueTrigger=106,TalkTime=1,Rival=2}] {"text":"<Bruno> I'd say you're good enough to search for Pokémon anywhere by now."}
+tellraw @s[scores={DialogueTrigger=106,TalkTime=10,Rival=2}] {"text":"<Bruno> Here, I'll give you this, so try it out. You should be able to use it fine."}
 
 execute as @s[scores={DialogueTrigger=106,TalkTime=20,Rival=2}] run playsound minecraft:keyitem ambient @s ~ ~ ~ 1 1 1
 execute as @s[scores={DialogueTrigger=106,TalkTime=20,Rival=2}] run give @s pixelmon:hm2
 execute as @s[scores={DialogueTrigger=106,TalkTime=20,Rival=2}] run function hoenn:spawn/flyhm
 tellraw @s[scores={DialogueTrigger=106,TalkTime=20,Rival=2}] {"text":"@s obtained HM02 Fly!","italic":true,"color":"gray"}
 
-tellraw @s[scores={DialogueTrigger=106,TalkTime=27,Rival=2}] {"text":"<Brendan> With Fly, your Pokémon can carry you back to just about anyplace you've visited before."}
-tellraw @s[scores={DialogueTrigger=106,TalkTime=37,Rival=2}] {"text":"<Brendan> Of course, you'll need the Fortree Gym Badge first, though..."}
-tellraw @s[scores={DialogueTrigger=106,TalkTime=45,Rival=2}] {"text":"<Brendan> Well, I'm going on ahead."}
+tellraw @s[scores={DialogueTrigger=106,TalkTime=27,Rival=2}] {"text":"<Bruno> With Fly, your Pokémon can carry you back to just about anyplace you've visited before."}
+tellraw @s[scores={DialogueTrigger=106,TalkTime=37,Rival=2}] {"text":"<Bruno> Of course, you'll need the Fortree Gym Badge first, though..."}
+tellraw @s[scores={DialogueTrigger=106,TalkTime=45,Rival=2}] {"text":"<Bruno> Well, I'm going on ahead."}
 execute as @s[scores={DialogueTrigger=106,TalkTime=52,Rival=2}] as @e[x=-867,y=79,z=-1300,distance=..5,type=pixelmon:npc_trainer] run data merge entity @s {Rotation:[180f,0.0f]}
-tellraw @s[scores={DialogueTrigger=106,TalkTime=52,Rival=2}] {"text":"<Brendan> But I'm definitely winning next time!"}
+tellraw @s[scores={DialogueTrigger=106,TalkTime=52,Rival=2}] {"text":"<Bruno> But I'm definitely winning next time!"}
 
 execute as @s[scores={DialogueTrigger=106,TalkTime=60,Rival=2}] run particle cloud -867 79 -1300 1 1 1 0.15 300
 execute as @s[scores={DialogueTrigger=106,TalkTime=60,Rival=2}] run tp @e[x=-867,y=79,z=-1300,distance=..5,type=pixelmon:npc_trainer] 10000000 -50000 -10000000
@@ -4197,8 +4197,8 @@ tag @s[scores={DialogueTrigger=110,TalkTime=100..}] add Dialogue110
 
 #tp in separately
 
-tellraw @s[scores={DialogueTrigger=111,TalkTime=1}] {"text":"<Steven> Hm..."}
-tellraw @s[scores={DialogueTrigger=111,TalkTime=1}] {"text":"<Steven> It looks as though that Pokémon can be found up on Route 120..."}
+tellraw @s[scores={DialogueTrigger=111,TalkTime=1}] {"text":"<Máximo> Hm..."}
+tellraw @s[scores={DialogueTrigger=111,TalkTime=1}] {"text":"<Máximo> It looks as though that Pokémon can be found up on Route 120..."}
 
 #tps off
 
@@ -4228,26 +4228,26 @@ tag @s[scores={DialogueTrigger=112,TalkTime=100..}] add Dialogue112
 #Steven on the bridge
 #https://youtu.be/MgkqxXCmrtI?t=37852
 
-tellraw @s[scores={DialogueTrigger=113,TalkTime=1}] {"text":"<Steven> Hm?"}
-tellraw @s[scores={DialogueTrigger=113,TalkTime=1}] ["",{"text":"<Steven> "},{"selector":"@s"},{"text":"? So, we meet again."}]
-tellraw @s[scores={DialogueTrigger=113,TalkTime=1}] {"text":"<Steven> How has it been? Have you been using the Mega Bracelet wisely?"}
-tellraw @s[scores={DialogueTrigger=113,TalkTime=1}] {"text":"<Steven> I suppose I needn't even ask, though."}
-tellraw @s[scores={DialogueTrigger=113,TalkTime=1}] {"text":"<Steven> Not when it comes to you and your team."}
-tellraw @s[scores={DialogueTrigger=113,TalkTime=1}] {"text":"<Steven> I wonder... Have you noticed? Hm?"}
-tellraw @s[scores={DialogueTrigger=113,TalkTime=1}] {"text":"<Steven> There's something here you can't see."}
-tellraw @s[scores={DialogueTrigger=113,TalkTime=1}] {"text":"<Steven> Now, if I were to use this device on the invisible obstacle..."}
-tellraw @s[scores={DialogueTrigger=113,TalkTime=1}] {"text":"<Steven> No, no... Rather than describing it, I should just show you."}
-tellraw @s[scores={DialogueTrigger=113,TalkTime=1}] {"text":"<Steven> That should be more entertaining."}
-tellraw @s[scores={DialogueTrigger=113,TalkTime=1}] ["",{"text":"<Steven> "},{"selector":"@s"},{"text":"..."}]
-tellraw @s[scores={DialogueTrigger=113,TalkTime=1}] {"text":"<Steven> Are you and your Pokémon ready for battle?"}
-tellraw @s[scores={DialogueTrigger=113,TalkTime=1}] {"text":"<Steven> I want you to take this."}
-tellraw @s[scores={DialogueTrigger=113,TalkTime=1}] {"text":"<Steven> Try it on. I'm sure it will fit you."}
+tellraw @s[scores={DialogueTrigger=113,TalkTime=1}] {"text":"<Máximo> Hm?"}
+tellraw @s[scores={DialogueTrigger=113,TalkTime=1}] ["",{"text":"<Máximo> "},{"selector":"@s"},{"text":"? So, we meet again."}]
+tellraw @s[scores={DialogueTrigger=113,TalkTime=1}] {"text":"<Máximo> How has it been? Have you been using the Mega Bracelet wisely?"}
+tellraw @s[scores={DialogueTrigger=113,TalkTime=1}] {"text":"<Máximo> I suppose I needn't even ask, though."}
+tellraw @s[scores={DialogueTrigger=113,TalkTime=1}] {"text":"<Máximo> Not when it comes to you and your team."}
+tellraw @s[scores={DialogueTrigger=113,TalkTime=1}] {"text":"<Máximo> I wonder... Have you noticed? Hm?"}
+tellraw @s[scores={DialogueTrigger=113,TalkTime=1}] {"text":"<Máximo> There's something here you can't see."}
+tellraw @s[scores={DialogueTrigger=113,TalkTime=1}] {"text":"<Máximo> Now, if I were to use this device on the invisible obstacle..."}
+tellraw @s[scores={DialogueTrigger=113,TalkTime=1}] {"text":"<Máximo> No, no... Rather than describing it, I should just show you."}
+tellraw @s[scores={DialogueTrigger=113,TalkTime=1}] {"text":"<Máximo> That should be more entertaining."}
+tellraw @s[scores={DialogueTrigger=113,TalkTime=1}] ["",{"text":"<Máximo> "},{"selector":"@s"},{"text":"..."}]
+tellraw @s[scores={DialogueTrigger=113,TalkTime=1}] {"text":"<Máximo> Are you and your Pokémon ready for battle?"}
+tellraw @s[scores={DialogueTrigger=113,TalkTime=1}] {"text":"<Máximo> I want you to take this."}
+tellraw @s[scores={DialogueTrigger=113,TalkTime=1}] {"text":"<Máximo> Try it on. I'm sure it will fit you."}
 tellraw @s[scores={DialogueTrigger=113,TalkTime=1}] ["",{"selector":"@s","italic":true,"color":"gray"},{"text":" slipped the Devon Scope on.","italic":true,"color":"gray"}]
 
 #changes Kecleon to visible
 
-tellraw @s[scores={DialogueTrigger=113,TalkTime=1}] {"text":"<Steven> A previously invisible Pokémon became visible to the naked eye!"}
-tellraw @s[scores={DialogueTrigger=113,TalkTime=1}] {"text":"<Steven> The startled Pokémon attacked!"}
+tellraw @s[scores={DialogueTrigger=113,TalkTime=1}] {"text":"<Máximo> A previously invisible Pokémon became visible to the naked eye!"}
+tellraw @s[scores={DialogueTrigger=113,TalkTime=1}] {"text":"<Máximo> The startled Pokémon attacked!"}
 
 execute as @s[scores={DialogueTrigger=113,TalkTime=1}] run pokebattle @s kecleon lvl:30
 
@@ -4256,13 +4256,13 @@ tag @s[scores={DialogueTrigger=113,TalkTime=100..}] add Dialogue113
 #Dialogue 114 - Route 120
 #Post Kecleon Battle
 
-tellraw @s[scores={DialogueTrigger=114,TalkTime=1}] {"text":"<Steven> Just as I expected. That's called a Devon Scope."}
-tellraw @s[scores={DialogueTrigger=114,TalkTime=1}] {"text":"<Steven> It's a fantastic piece of tech that lets you see Pokémon in hiding."}
-tellraw @s[scores={DialogueTrigger=114,TalkTime=1}] {"text":"<Steven> Consider it a gift from me. Take it."}
+tellraw @s[scores={DialogueTrigger=114,TalkTime=1}] {"text":"<Máximo> Just as I expected. That's called a Devon Scope."}
+tellraw @s[scores={DialogueTrigger=114,TalkTime=1}] {"text":"<Máximo> It's a fantastic piece of tech that lets you see Pokémon in hiding."}
+tellraw @s[scores={DialogueTrigger=114,TalkTime=1}] {"text":"<Máximo> Consider it a gift from me. Take it."}
 
 tellraw @s[scores={DialogueTrigger=114,TalkTime=1}] ["",{"selector":"@s","italic":true,"color":"gray"},{"text":" obtained the Devon Scope!","italic":true,"color":"gray"}]
 
-tellraw @s[scores={DialogueTrigger=114,TalkTime=1}] {"text":"<Steven> And one more thing..."}
+tellraw @s[scores={DialogueTrigger=114,TalkTime=1}] {"text":"<Máximo> And one more thing..."}
 
 tellraw @s[scores={DialogueTrigger=114,TalkTime=1}] ["",{"selector":"@s","italic":true,"color":"gray"},{"text":" obtained Sceptilite!","italic":true,"color":"gray"}]
 tellraw @s[scores={DialogueTrigger=114,TalkTime=1}] ["",{"selector":"@s","italic":true,"color":"gray"},{"text":" obtained Swampertite!","italic":true,"color":"gray"}]
@@ -4271,19 +4271,19 @@ execute as @s[scores={DialogueTrigger=114,TalkTime=1}] run give @s pixelmon:scep
 execute as @s[scores={DialogueTrigger=114,TalkTime=1}] run give @s pixelmon:swampertite
 execute as @s[scores={DialogueTrigger=114,TalkTime=1}] run give @s pixelmon:blazikenite
 
-tellraw @s[scores={DialogueTrigger=114,TalkTime=1}] {"text":"<Steven> This stone ranks as one of my top five favorite stones in existence."}
-tellraw @s[scores={DialogueTrigger=114,TalkTime=1}] {"text":"<Steven> I have no doubt that your Pokémon will like it, too."}
-tellraw @s[scores={DialogueTrigger=114,TalkTime=1}] ["",{"text":"<Steven> You know, "},{"selector":"@s"},{"text":"... I like to see Trainers and Pokémon who are trying their best."}]
-tellraw @s[scores={DialogueTrigger=114,TalkTime=1}] {"text":"<Steven> That's why I like you so much."}
+tellraw @s[scores={DialogueTrigger=114,TalkTime=1}] {"text":"<Máximo> This stone ranks as one of my top five favorite stones in existence."}
+tellraw @s[scores={DialogueTrigger=114,TalkTime=1}] {"text":"<Máximo> I have no doubt that your Pokémon will like it, too."}
+tellraw @s[scores={DialogueTrigger=114,TalkTime=1}] ["",{"text":"<Máximo> You know, "},{"selector":"@s"},{"text":"... I like to see Trainers and Pokémon who are trying their best."}]
+tellraw @s[scores={DialogueTrigger=114,TalkTime=1}] {"text":"<Máximo> That's why I like you so much."}
 
 #summon exclamation
 
-tellraw @s[scores={DialogueTrigger=114,TalkTime=1}] {"text":"<Steven> Hm?"}
-tellraw @s[scores={DialogueTrigger=114,TalkTime=1}] {"text":"<Steven> It seemed as though something just..."}
-tellraw @s[scores={DialogueTrigger=114,TalkTime=1}] {"text":"<Steven> shone for a moment in your Bag."}
-tellraw @s[scores={DialogueTrigger=114,TalkTime=1}] {"text":"<Steven> I'm sure I sensed the power of some kind of stone..."}
-tellraw @s[scores={DialogueTrigger=114,TalkTime=1}] {"text":"<Steven> A Meteorite...? No, it couldn't be..."}
-tellraw @s[scores={DialogueTrigger=114,TalkTime=1}] {"text":"<Steven> Let's meet again someday."}
+tellraw @s[scores={DialogueTrigger=114,TalkTime=1}] {"text":"<Máximo> Hm?"}
+tellraw @s[scores={DialogueTrigger=114,TalkTime=1}] {"text":"<Máximo> It seemed as though something just..."}
+tellraw @s[scores={DialogueTrigger=114,TalkTime=1}] {"text":"<Máximo> shone for a moment in your Bag."}
+tellraw @s[scores={DialogueTrigger=114,TalkTime=1}] {"text":"<Máximo> I'm sure I sensed the power of some kind of stone..."}
+tellraw @s[scores={DialogueTrigger=114,TalkTime=1}] {"text":"<Máximo> A Meteorite...? No, it couldn't be..."}
+tellraw @s[scores={DialogueTrigger=114,TalkTime=1}] {"text":"<Máximo> Let's meet again someday."}
 
 #tp Steven out
 
@@ -4697,77 +4697,77 @@ tag @s[scores={DialogueTrigger=127,TalkTime=100..}] add Dialogue127
 #Rival pre-battle
 #https://youtu.be/MgkqxXCmrtI?t=47196
 
-tellraw @s[scores={DialogueTrigger=128,TalkTime=1}] ["",{"text":"<May> Heeey! "},{"selector":"@s"},{"text":"!"}]
+tellraw @s[scores={DialogueTrigger=128,TalkTime=1}] ["",{"text":"<Aura> Heeey! "},{"selector":"@s"},{"text":"!"}]
 
 #tp in
 
-tellraw @s[scores={DialogueTrigger=128,TalkTime=1}] ["",{"text":"<May> Don't tell me... Are you here for the shopping, too, "},{"selector":"@s"},{"text":"?"}]
+tellraw @s[scores={DialogueTrigger=128,TalkTime=1}] ["",{"text":"<Aura> Don't tell me... Are you here for the shopping, too, "},{"selector":"@s"},{"text":"?"}]
 
 #shot of the department store
 
-tellraw @s[scores={DialogueTrigger=128,TalkTime=1}] {"text":"<May> We're right in front of the famous Lilycove Department Store, after all!"}
-tellraw @s[scores={DialogueTrigger=128,TalkTime=1}] {"text":"<May> When I saw you, I figured maybe you'd come here to do some shopping, same as me."}
+tellraw @s[scores={DialogueTrigger=128,TalkTime=1}] {"text":"<Aura> We're right in front of the famous Lilycove Department Store, after all!"}
+tellraw @s[scores={DialogueTrigger=128,TalkTime=1}] {"text":"<Aura> When I saw you, I figured maybe you'd come here to do some shopping, same as me."}
 
 #return to first person
 
-tellraw @s[scores={DialogueTrigger=128,TalkTime=1}] {"text":"<May> I'm afraid I already bought up tons of stuff! Like Pokémon Dolls...and posters...and..."}
-tellraw @s[scores={DialogueTrigger=128,TalkTime=1}] {"text":"<May> B-but—"}
-tellraw @s[scores={DialogueTrigger=128,TalkTime=1}] {"text":"<May> That's not all I've been doing, of course!"}
-tellraw @s[scores={DialogueTrigger=128,TalkTime=1}] {"text":"<May> I've also caught tons of different Pokémon, and I've been raising them well, too!"}
-tellraw @s[scores={DialogueTrigger=128,TalkTime=1}] ["",{"text":"<May> Let's test my team and see how they stack up against your passion for Pokémon, "},{"selector":"@s"},{"text":"!"}]
+tellraw @s[scores={DialogueTrigger=128,TalkTime=1}] {"text":"<Aura> I'm afraid I already bought up tons of stuff! Like Pokémon Dolls...and posters...and..."}
+tellraw @s[scores={DialogueTrigger=128,TalkTime=1}] {"text":"<Aura> B-but—"}
+tellraw @s[scores={DialogueTrigger=128,TalkTime=1}] {"text":"<Aura> That's not all I've been doing, of course!"}
+tellraw @s[scores={DialogueTrigger=128,TalkTime=1}] {"text":"<Aura> I've also caught tons of different Pokémon, and I've been raising them well, too!"}
+tellraw @s[scores={DialogueTrigger=128,TalkTime=1}] ["",{"text":"<Aura> Let's test my team and see how they stack up against your passion for Pokémon, "},{"selector":"@s"},{"text":"!"}]
 
 
-tellraw @s[scores={DialogueTrigger=128,TalkTime=1}] {"text":"<Brendan> Hm?"}
-tellraw @s[scores={DialogueTrigger=128,TalkTime=1}] ["",{"text":"<Brendan> Hey, if it isn't "},{"selector":"@s"},{"text":"! Did you come to do some shopping, too?"}]
-tellraw @s[scores={DialogueTrigger=128,TalkTime=1}] {"text":"<Brendan> You know what I'm talking about..."}
+tellraw @s[scores={DialogueTrigger=128,TalkTime=1}] {"text":"<Bruno> Hm?"}
+tellraw @s[scores={DialogueTrigger=128,TalkTime=1}] ["",{"text":"<Bruno> Hey, if it isn't "},{"selector":"@s"},{"text":"! Did you come to do some shopping, too?"}]
+tellraw @s[scores={DialogueTrigger=128,TalkTime=1}] {"text":"<Bruno> You know what I'm talking about..."}
 
 #shot of the department store
 
-tellraw @s[scores={DialogueTrigger=128,TalkTime=1}] {"text":"<Brendan> The Lilycove Department Store!"}
-tellraw @s[scores={DialogueTrigger=128,TalkTime=1}] {"text":"<Brendan> My dad asked me to pick him up a few things here."}
-tellraw @s[scores={DialogueTrigger=128,TalkTime=1}] {"text":"<Brendan> It's not like I'm here to buy Dolls or something, r-right!"}
+tellraw @s[scores={DialogueTrigger=128,TalkTime=1}] {"text":"<Bruno> The Lilycove Department Store!"}
+tellraw @s[scores={DialogueTrigger=128,TalkTime=1}] {"text":"<Bruno> My dad asked me to pick him up a few things here."}
+tellraw @s[scores={DialogueTrigger=128,TalkTime=1}] {"text":"<Bruno> It's not like I'm here to buy Dolls or something, r-right!"}
 
 #return to first person
 
-tellraw @s[scores={DialogueTrigger=128,TalkTime=1}] {"text":"<Brendan> A-anyway, it feels like it's been ages since we last ran into each other."}
-tellraw @s[scores={DialogueTrigger=128,TalkTime=1}] {"text":"<Brendan> How about I battle you so you can see which one of us is doing a better job raising our Pokémon?"}
-tellraw @s[scores={DialogueTrigger=128,TalkTime=1}] ["",{"text":"<Brendan> Though I think you and I both know who the winner is gonna be, "},{"selector":"@s"},{"text":"!"}]
+tellraw @s[scores={DialogueTrigger=128,TalkTime=1}] {"text":"<Bruno> A-anyway, it feels like it's been ages since we last ran into each other."}
+tellraw @s[scores={DialogueTrigger=128,TalkTime=1}] {"text":"<Bruno> How about I battle you so you can see which one of us is doing a better job raising our Pokémon?"}
+tellraw @s[scores={DialogueTrigger=128,TalkTime=1}] ["",{"text":"<Bruno> Though I think you and I both know who the winner is gonna be, "},{"selector":"@s"},{"text":"!"}]
 
 tag @s[scores={DialogueTrigger=128,TalkTime=100..}] add Dialogue128
 #------------------------------
 #Dialogue 129 - Lilycove City
 #Rival post-battle
 
-tellraw @s[scores={DialogueTrigger=129,TalkTime=1}] {"text":"<May> Ahhh, this reminds me of the battle I had with you back on Route 103!"}
-tellraw @s[scores={DialogueTrigger=129,TalkTime=1}] ["",{"text":"<May> You were able to become this strong because you battled me back then, right, "},{"selector":"@s"},{"text":"?"}]
-tellraw @s[scores={DialogueTrigger=129,TalkTime=1}] {"text":"<May> ...What would you think if I said something like that?"}
-tellraw @s[scores={DialogueTrigger=129,TalkTime=1}] {"text":"<May> Hee hee..."}
-tellraw @s[scores={DialogueTrigger=129,TalkTime=1}] {"text":"<May> I'm actually thinking that it's about time I went back to Littleroot, though."}
-tellraw @s[scores={DialogueTrigger=129,TalkTime=1}] {"text":"<May> I've caught a lot of different Pokémon, and my Pokédex is pretty complete, so I think I should go show it to my dad."}
-tellraw @s[scores={DialogueTrigger=129,TalkTime=1}] {"text":"<May> ...Huh? Did something just...sparkle in your Bag?"}
-tellraw @s[scores={DialogueTrigger=129,TalkTime=1}] {"text":"<May> It was like the light from that Meteorite..."}
-tellraw @s[scores={DialogueTrigger=129,TalkTime=1}] {"text":"<May> ...Oh, nothing! Sorry! Just forget it!"}
-tellraw @s[scores={DialogueTrigger=129,TalkTime=1}] {"text":"<May> I'm probably just imagining things!"}
-tellraw @s[scores={DialogueTrigger=129,TalkTime=1}] ["",{"text":"<May> "},{"selector":"@s"},{"text":", what are you going to do?"}]
-tellraw @s[scores={DialogueTrigger=129,TalkTime=1}] {"text":"<May> You going to collect all the Gym Badges and take on the Pokémon League challenge?"}
-tellraw @s[scores={DialogueTrigger=129,TalkTime=1}] ["",{"text":"<May> Typical "},{"selector":"@s"},{"text":"! Then while you're collecting your Badges, I guess I'll go and complete my Pokédex!"}]
-tellraw @s[scores={DialogueTrigger=129,TalkTime=1}] {"text":"<May> I guess I'll be off, then!"}
+tellraw @s[scores={DialogueTrigger=129,TalkTime=1}] {"text":"<Aura> Ahhh, this reminds me of the battle I had with you back on Route 103!"}
+tellraw @s[scores={DialogueTrigger=129,TalkTime=1}] ["",{"text":"<Aura> You were able to become this strong because you battled me back then, right, "},{"selector":"@s"},{"text":"?"}]
+tellraw @s[scores={DialogueTrigger=129,TalkTime=1}] {"text":"<Aura> ...What would you think if I said something like that?"}
+tellraw @s[scores={DialogueTrigger=129,TalkTime=1}] {"text":"<Aura> Hee hee..."}
+tellraw @s[scores={DialogueTrigger=129,TalkTime=1}] {"text":"<Aura> I'm actually thinking that it's about time I went back to Littleroot, though."}
+tellraw @s[scores={DialogueTrigger=129,TalkTime=1}] {"text":"<Aura> I've caught a lot of different Pokémon, and my Pokédex is pretty complete, so I think I should go show it to my dad."}
+tellraw @s[scores={DialogueTrigger=129,TalkTime=1}] {"text":"<Aura> ...Huh? Did something just...sparkle in your Bag?"}
+tellraw @s[scores={DialogueTrigger=129,TalkTime=1}] {"text":"<Aura> It was like the light from that Meteorite..."}
+tellraw @s[scores={DialogueTrigger=129,TalkTime=1}] {"text":"<Aura> ...Oh, nothing! Sorry! Just forget it!"}
+tellraw @s[scores={DialogueTrigger=129,TalkTime=1}] {"text":"<Aura> I'm probably just imagining things!"}
+tellraw @s[scores={DialogueTrigger=129,TalkTime=1}] ["",{"text":"<Aura> "},{"selector":"@s"},{"text":", what are you going to do?"}]
+tellraw @s[scores={DialogueTrigger=129,TalkTime=1}] {"text":"<Aura> You going to collect all the Gym Badges and take on the Pokémon League challenge?"}
+tellraw @s[scores={DialogueTrigger=129,TalkTime=1}] ["",{"text":"<Aura> Typical "},{"selector":"@s"},{"text":"! Then while you're collecting your Badges, I guess I'll go and complete my Pokédex!"}]
+tellraw @s[scores={DialogueTrigger=129,TalkTime=1}] {"text":"<Aura> I guess I'll be off, then!"}
 
 #tp out
 
 
-tellraw @s[scores={DialogueTrigger=129,TalkTime=1}] {"text":"<Brendan> Boy, that stings a bit..."}
-tellraw @s[scores={DialogueTrigger=129,TalkTime=1}] {"text":"<Brendan> I had a head start on you as a Pokémon Trainer, but still..."}
-tellraw @s[scores={DialogueTrigger=129,TalkTime=1}] {"text":"<Brendan> I, uh... I'm planning on going home to Littleroot."}
-tellraw @s[scores={DialogueTrigger=129,TalkTime=1}] {"text":"<Brendan> You know how I've been helping out my dad with the Pokédex, and it's been coming together pretty decently."}
-tellraw @s[scores={DialogueTrigger=129,TalkTime=1}] {"text":"<Brendan> So...I ought to go back home and show it to him."}
-tellraw @s[scores={DialogueTrigger=129,TalkTime=1}] ["",{"text":"<Brendan> "},{"selector":"@s"},{"text":", what are you gonna do?"}]
-tellraw @s[scores={DialogueTrigger=129,TalkTime=1}] {"text":"<Brendan> You still thinking of collecting all the Gym Badges and taking on the Pokémon League challenge?"}
-tellraw @s[scores={DialogueTrigger=129,TalkTime=1}] {"text":"<Brendan> Yeah? I guess I'm not surprised. Do your best. You know I'm behind you."}
-tellraw @s[scores={DialogueTrigger=129,TalkTime=1}] ["",{"text":"<Brendan> ...Uhhh. Huh? Did you... "},{"selector":"@s"},{"text":", I think there's something..."}]
-tellraw @s[scores={DialogueTrigger=129,TalkTime=1}] {"text":"<Brendan> There's something, like, sparkling in your Bag..."}
-tellraw @s[scores={DialogueTrigger=129,TalkTime=1}] {"text":"<Brendan> It's the same kinda light as that Meteorite had, the one you showed me in Lavaridge..."}
-tellraw @s[scores={DialogueTrigger=129,TalkTime=1}] {"text":"<Brendan> Ahhh, never mind! Just... Good luck out there!"}
+tellraw @s[scores={DialogueTrigger=129,TalkTime=1}] {"text":"<Bruno> Boy, that stings a bit..."}
+tellraw @s[scores={DialogueTrigger=129,TalkTime=1}] {"text":"<Bruno> I had a head start on you as a Pokémon Trainer, but still..."}
+tellraw @s[scores={DialogueTrigger=129,TalkTime=1}] {"text":"<Bruno> I, uh... I'm planning on going home to Littleroot."}
+tellraw @s[scores={DialogueTrigger=129,TalkTime=1}] {"text":"<Bruno> You know how I've been helping out my dad with the Pokédex, and it's been coming together pretty decently."}
+tellraw @s[scores={DialogueTrigger=129,TalkTime=1}] {"text":"<Bruno> So...I ought to go back home and show it to him."}
+tellraw @s[scores={DialogueTrigger=129,TalkTime=1}] ["",{"text":"<Bruno> "},{"selector":"@s"},{"text":", what are you gonna do?"}]
+tellraw @s[scores={DialogueTrigger=129,TalkTime=1}] {"text":"<Bruno> You still thinking of collecting all the Gym Badges and taking on the Pokémon League challenge?"}
+tellraw @s[scores={DialogueTrigger=129,TalkTime=1}] {"text":"<Bruno> Yeah? I guess I'm not surprised. Do your best. You know I'm behind you."}
+tellraw @s[scores={DialogueTrigger=129,TalkTime=1}] ["",{"text":"<Bruno> ...Uhhh. Huh? Did you... "},{"selector":"@s"},{"text":", I think there's something..."}]
+tellraw @s[scores={DialogueTrigger=129,TalkTime=1}] {"text":"<Bruno> There's something, like, sparkling in your Bag..."}
+tellraw @s[scores={DialogueTrigger=129,TalkTime=1}] {"text":"<Bruno> It's the same kinda light as that Meteorite had, the one you showed me in Lavaridge..."}
+tellraw @s[scores={DialogueTrigger=129,TalkTime=1}] {"text":"<Bruno> Ahhh, never mind! Just... Good luck out there!"}
 
 #tps out
 
@@ -5097,55 +5097,55 @@ tag @s[scores={DialogueTrigger=138,TalkTime=123..}] add Dialogue138
 #
 ##cut back to first person
 #
-#tellraw @s[scores={DialogueTrigger=139,TalkTime=1}] ["",{"text":"<Steven> "},{"selector":"@s"},{"text":"!"}]
-#tellraw @s[scores={DialogueTrigger=139,TalkTime=1}] {"text":"<Steven> I heard from little Liza and Tate that you visited their Gym."}
-#tellraw @s[scores={DialogueTrigger=139,TalkTime=1}] {"text":"<Steven> I was thinking of trying to catch you while you were in the area, but then this happened..."}
-#tellraw @s[scores={DialogueTrigger=139,TalkTime=1}] {"text":"<Steven> ..."}
-#tellraw @s[scores={DialogueTrigger=139,TalkTime=1}] {"text":"<Steven> We should talk."}
-#tellraw @s[scores={DialogueTrigger=139,TalkTime=1}] {"text":"<Steven> Let's go to my place."}
+#tellraw @s[scores={DialogueTrigger=139,TalkTime=1}] ["",{"text":"<Máximo> "},{"selector":"@s"},{"text":"!"}]
+#tellraw @s[scores={DialogueTrigger=139,TalkTime=1}] {"text":"<Máximo> I heard from little Liza and Tate that you visited their Gym."}
+#tellraw @s[scores={DialogueTrigger=139,TalkTime=1}] {"text":"<Máximo> I was thinking of trying to catch you while you were in the area, but then this happened..."}
+#tellraw @s[scores={DialogueTrigger=139,TalkTime=1}] {"text":"<Máximo> ..."}
+#tellraw @s[scores={DialogueTrigger=139,TalkTime=1}] {"text":"<Máximo> We should talk."}
+#tellraw @s[scores={DialogueTrigger=139,TalkTime=1}] {"text":"<Máximo> Let's go to my place."}
 #
 ##blinds player
 ##tp to Steven's house
 ##https://youtu.be/MgkqxXCmrtI?t=52020
 #
-#tellraw @s[scores={DialogueTrigger=139,TalkTime=1}] {"text":"<Steven> Ah... Yes... I suppose I should welcome you to my home."}
-#tellraw @s[scores={DialogueTrigger=139,TalkTime=1}] {"text":"<Steven> Please forgive the rather sparse décor..."}
-#tellraw @s[scores={DialogueTrigger=139,TalkTime=1}] {"text":"<Steven> Now, where to begin..."}
-#tellraw @s[scores={DialogueTrigger=139,TalkTime=1}] {"text":"<Steven> Let us take a moment to understand what is happening to our world right now."}
-#tellraw @s[scores={DialogueTrigger=139,TalkTime=1}] {"text":"<Steven> That rumbling that shook the earth just now..."}
-#tellraw @s[scores={DialogueTrigger=139,TalkTime=1}] {"text":"<Steven> The eardrum-rupturing explosion we heard..."}
-#tellraw @s[scores={DialogueTrigger=139,TalkTime=1}] {"text":"<Steven> They are proof that a seal, which was long hidden deep undersea, has been undone at last."}
-#tellraw @s[scores={DialogueTrigger=139,TalkTime=1}] {"text":"<Steven> The super-ancient Pokémon that has been sealed deep beneath Route 128 since ancient times..."}
-#tellraw @s[scores={DialogueTrigger=139,TalkTime=1}] {"text":"<Steven> It slept until now in the Seafloor Cavern."}
-#tellraw @s[scores={DialogueTrigger=139,TalkTime=1}] {"text":"<Steven> The entrance to that cavern was sealed by the power of a certain Pokémon, all in an effort to keep any human or Pokémon from ever breaching it."}
-#tellraw @s[scores={DialogueTrigger=139,TalkTime=1}] {"text":"<Steven> But now it appears that the scheming of that terrible team has undone the seal."}
-#tellraw @s[scores={DialogueTrigger=139,TalkTime=1}] {"text":"<Steven> There is no doubt that they intend to revive the super-ancient Pokémon."}
-#tellraw @s[scores={DialogueTrigger=139,TalkTime=1}] {"text":"<Steven> And once they do so, it seems they hope to make its power their own."}
-#tellraw @s[scores={DialogueTrigger=139,TalkTime=1}] ["",{"text":"<Steven> "},{"selector":"@s"},{"text":"..."}]
-#tellraw @s[scores={DialogueTrigger=139,TalkTime=1}] {"text":"<Steven> If that team obtains the power of the super-ancient Pokémon, it will upset the balance of nature in this world."}
-#tellraw @s[scores={DialogueTrigger=139,TalkTime=1}] {"text":"<Steven> A crisis unlike any other before it will befall every living thing on this planet."}
-#tellraw @s[scores={DialogueTrigger=139,TalkTime=1}] {"text":"<Steven> I plan to do everything in my power to quell this situation. That is my duty."}
-#tellraw @s[scores={DialogueTrigger=139,TalkTime=1}] {"text":"<Steven> But there is a limit to what I can do with my power alone..."}
-#tellraw @s[scores={DialogueTrigger=139,TalkTime=1}] {"text":"<Steven> That is why I am asking for your help. I have great faith in your abilities."}
-#tellraw @s[scores={DialogueTrigger=139,TalkTime=1}] {"text":"<Steven> Lend me your strength to help put a halt to these Teams' mad ambitions!"}
-#tellraw @s[scores={DialogueTrigger=139,TalkTime=1}] {"text":"<Steven> With you and I and our Pokémon all working together, we will overcome this disastrous turn of events."}
-#tellraw @s[scores={DialogueTrigger=139,TalkTime=1}] {"text":"<Steven> I don't think it is out of the question."}
-#tellraw @s[scores={DialogueTrigger=139,TalkTime=1}] {"text":"<Steven> I will entrust you with this."}
+#tellraw @s[scores={DialogueTrigger=139,TalkTime=1}] {"text":"<Máximo> Ah... Yes... I suppose I should welcome you to my home."}
+#tellraw @s[scores={DialogueTrigger=139,TalkTime=1}] {"text":"<Máximo> Please forgive the rather sparse décor..."}
+#tellraw @s[scores={DialogueTrigger=139,TalkTime=1}] {"text":"<Máximo> Now, where to begin..."}
+#tellraw @s[scores={DialogueTrigger=139,TalkTime=1}] {"text":"<Máximo> Let us take a moment to understand what is happening to our world right now."}
+#tellraw @s[scores={DialogueTrigger=139,TalkTime=1}] {"text":"<Máximo> That rumbling that shook the earth just now..."}
+#tellraw @s[scores={DialogueTrigger=139,TalkTime=1}] {"text":"<Máximo> The eardrum-rupturing explosion we heard..."}
+#tellraw @s[scores={DialogueTrigger=139,TalkTime=1}] {"text":"<Máximo> They are proof that a seal, which was long hidden deep undersea, has been undone at last."}
+#tellraw @s[scores={DialogueTrigger=139,TalkTime=1}] {"text":"<Máximo> The super-ancient Pokémon that has been sealed deep beneath Route 128 since ancient times..."}
+#tellraw @s[scores={DialogueTrigger=139,TalkTime=1}] {"text":"<Máximo> It slept until now in the Seafloor Cavern."}
+#tellraw @s[scores={DialogueTrigger=139,TalkTime=1}] {"text":"<Máximo> The entrance to that cavern was sealed by the power of a certain Pokémon, all in an effort to keep any human or Pokémon from ever breaching it."}
+#tellraw @s[scores={DialogueTrigger=139,TalkTime=1}] {"text":"<Máximo> But now it appears that the scheming of that terrible team has undone the seal."}
+#tellraw @s[scores={DialogueTrigger=139,TalkTime=1}] {"text":"<Máximo> There is no doubt that they intend to revive the super-ancient Pokémon."}
+#tellraw @s[scores={DialogueTrigger=139,TalkTime=1}] {"text":"<Máximo> And once they do so, it seems they hope to make its power their own."}
+#tellraw @s[scores={DialogueTrigger=139,TalkTime=1}] ["",{"text":"<Máximo> "},{"selector":"@s"},{"text":"..."}]
+#tellraw @s[scores={DialogueTrigger=139,TalkTime=1}] {"text":"<Máximo> If that team obtains the power of the super-ancient Pokémon, it will upset the balance of nature in this world."}
+#tellraw @s[scores={DialogueTrigger=139,TalkTime=1}] {"text":"<Máximo> A crisis unlike any other before it will befall every living thing on this planet."}
+#tellraw @s[scores={DialogueTrigger=139,TalkTime=1}] {"text":"<Máximo> I plan to do everything in my power to quell this situation. That is my duty."}
+#tellraw @s[scores={DialogueTrigger=139,TalkTime=1}] {"text":"<Máximo> But there is a limit to what I can do with my power alone..."}
+#tellraw @s[scores={DialogueTrigger=139,TalkTime=1}] {"text":"<Máximo> That is why I am asking for your help. I have great faith in your abilities."}
+#tellraw @s[scores={DialogueTrigger=139,TalkTime=1}] {"text":"<Máximo> Lend me your strength to help put a halt to these Teams' mad ambitions!"}
+#tellraw @s[scores={DialogueTrigger=139,TalkTime=1}] {"text":"<Máximo> With you and I and our Pokémon all working together, we will overcome this disastrous turn of events."}
+#tellraw @s[scores={DialogueTrigger=139,TalkTime=1}] {"text":"<Máximo> I don't think it is out of the question."}
+#tellraw @s[scores={DialogueTrigger=139,TalkTime=1}] {"text":"<Máximo> I will entrust you with this."}
 #
 #tellraw @s[scores={DialogueTrigger=139,TalkTime=1}] ["",{"selector":"@s","italic":true,"color":"gray"},{"text":" obtained HM07 Dive!","italic":true,"color":"gray"}]
 #execute as @s[scores={DialogueTrigger=139,TalkTime=1}] run tag @s add Dive
 #execute as @s[scores={DialogueTrigger=139,TalkTime=1}] run playsound tmget ambient @s ~ ~ ~ 1 1 1
 #
-#tellraw @s[scores={DialogueTrigger=139,TalkTime=1}] {"text":"<Steven> If you use Dive, you will be able to dive to the ocean floor with your Pokémon."}
-#tellraw @s[scores={DialogueTrigger=139,TalkTime=1}] {"text":"<Steven> And take this so you can stay with your Pokémon even in the depths of the ocean..."}
+#tellraw @s[scores={DialogueTrigger=139,TalkTime=1}] {"text":"<Máximo> If you use Dive, you will be able to dive to the ocean floor with your Pokémon."}
+#tellraw @s[scores={DialogueTrigger=139,TalkTime=1}] {"text":"<Máximo> And take this so you can stay with your Pokémon even in the depths of the ocean..."}
 #
 #tellraw @s[scores={DialogueTrigger=139,TalkTime=1}] ["",{"selector":"@s","italic":true,"color":"gray"},{"text":" obtained Devon Scuba Gear!","italic":true,"color":"gray"}]
 #
-#tellraw @s[scores={DialogueTrigger=139,TalkTime=1}] {"text":"<Steven> If you were to use Dive in the correct stretch of water along Route 128..."}
-#tellraw @s[scores={DialogueTrigger=139,TalkTime=1}] {"text":"<Steven> I believe you should be able to reach the entrance to the Seafloor Cavern."}
-#tellraw @s[scores={DialogueTrigger=139,TalkTime=1}] {"text":"<Steven> I will join you when I finish my duties."}
-#tellraw @s[scores={DialogueTrigger=139,TalkTime=1}] {"text":"<Steven> Please do what you can to stop Team Aqua and Team Magma until then."}
-#tellraw @s[scores={DialogueTrigger=139,TalkTime=1}] {"text":"<Steven> I am trusting you to do this for me!"}
+#tellraw @s[scores={DialogueTrigger=139,TalkTime=1}] {"text":"<Máximo> If you were to use Dive in the correct stretch of water along Route 128..."}
+#tellraw @s[scores={DialogueTrigger=139,TalkTime=1}] {"text":"<Máximo> I believe you should be able to reach the entrance to the Seafloor Cavern."}
+#tellraw @s[scores={DialogueTrigger=139,TalkTime=1}] {"text":"<Máximo> I will join you when I finish my duties."}
+#tellraw @s[scores={DialogueTrigger=139,TalkTime=1}] {"text":"<Máximo> Please do what you can to stop Team Aqua and Team Magma until then."}
+#tellraw @s[scores={DialogueTrigger=139,TalkTime=1}] {"text":"<Máximo> I am trusting you to do this for me!"}
 
 
 
@@ -5154,24 +5154,24 @@ tag @s[scores={DialogueTrigger=138,TalkTime=123..}] add Dialogue138
 #See Steven's house after beating the Mossdeep Gym
 #1388 46 -1042
 
-tellraw @s[scores={DialogueTrigger=139,TalkTime=1}] ["",{"text":"<Steven> "},{"selector":"@s"},{"text":"!"}]
-tellraw @s[scores={DialogueTrigger=139,TalkTime=8}] {"text":"<Steven> Ah... Yes... I suppose I should welcome you to my home."}
-tellraw @s[scores={DialogueTrigger=139,TalkTime=15}] {"text":"<Steven> Please forgive the rather sparse décor..."}
-tellraw @s[scores={DialogueTrigger=139,TalkTime=23}] {"text":"<Steven> With that badge, it seems you have proven yourself worthy."}
-tellraw @s[scores={DialogueTrigger=139,TalkTime=30}] {"text":"<Steven> I will entrust you with this."}
+tellraw @s[scores={DialogueTrigger=139,TalkTime=1}] ["",{"text":"<Máximo> "},{"selector":"@s"},{"text":"!"}]
+tellraw @s[scores={DialogueTrigger=139,TalkTime=8}] {"text":"<Máximo> Ah... Yes... I suppose I should welcome you to my home."}
+tellraw @s[scores={DialogueTrigger=139,TalkTime=15}] {"text":"<Máximo> Please forgive the rather sparse décor..."}
+tellraw @s[scores={DialogueTrigger=139,TalkTime=23}] {"text":"<Máximo> With that badge, it seems you have proven yourself worthy."}
+tellraw @s[scores={DialogueTrigger=139,TalkTime=30}] {"text":"<Máximo> I will entrust you with this."}
 
 tellraw @s[scores={DialogueTrigger=139,TalkTime=37}] ["",{"selector":"@s","italic":true,"color":"gray"},{"text":" obtained HM10 Dive!","italic":true,"color":"gray"}]
 execute as @s[scores={DialogueTrigger=139,TalkTime=37}] run tag @s add Dive
 execute as @s[scores={DialogueTrigger=139,TalkTime=37}] run give @s pixelmon:hm10
 execute as @s[scores={DialogueTrigger=139,TalkTime=37}] run playsound tmget ambient @s ~ ~ ~ 1 1 1
 
-tellraw @s[scores={DialogueTrigger=139,TalkTime=44}] {"text":"<Steven> If you use Dive, you will be able to dive to the ocean floor with your Pokémon."}
-tellraw @s[scores={DialogueTrigger=139,TalkTime=54}] {"text":"<Steven> And take this so you can stay with your Pokémon even in the depths of the ocean..."}
+tellraw @s[scores={DialogueTrigger=139,TalkTime=44}] {"text":"<Máximo> If you use Dive, you will be able to dive to the ocean floor with your Pokémon."}
+tellraw @s[scores={DialogueTrigger=139,TalkTime=54}] {"text":"<Máximo> And take this so you can stay with your Pokémon even in the depths of the ocean..."}
 
 tellraw @s[scores={DialogueTrigger=139,TalkTime=63}] ["",{"selector":"@s","italic":true,"color":"gray"},{"text":" obtained Devon Scuba Gear!","italic":true,"color":"gray"}]
 execute as @s[scores={DialogueTrigger=139,TalkTime=37}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 
-tellraw @s[scores={DialogueTrigger=139,TalkTime=71}] {"text":"<Steven> I trust you can make use of them on your journey!"}
+tellraw @s[scores={DialogueTrigger=139,TalkTime=71}] {"text":"<Máximo> I trust you can make use of them on your journey!"}
 
 
 tag @s[scores={DialogueTrigger=139,TalkTime=71..}] add Dialogue139
@@ -5314,26 +5314,26 @@ execute as @s[scores={DialogueTrigger=141,TalkTime=64}] run tp @s 1359 64 -52 18
 execute as @s[scores={DialogueTrigger=141,TalkTime=67}] run particle cloud 1359 64 -64 1 1 1 0.15 300
 execute as @s[scores={DialogueTrigger=141,TalkTime=67}] run summon pixelmon:npc_chatting 1359 64 -64 {Brain: {memories: {}}, HurtByTimestamp: 0, chatNum: 0, Attributes: [{Base: 0.08d, Name: "forge:entity_gravity"}, {Base: 0.0d, Name: "forge:step_height_addition"}, {Base: 0.699999988079071d, Name: "minecraft:generic.movement_speed"}], Invulnerable: 0b, FallFlying: 0b, PortalCooldown: 0, AbsorptionAmount: 0.0f, Name: "Steven", FallDistance: 0.0f, CanUpdate: 1b, DeathTime: 0s, DefaultName: 0b, Commands: {interactCommands: []}, HandDropChances: [0.085f, 0.085f], PersistenceRequired: 1b, trainerLocation: 2, DefaultGreet: 0b, Motion: [0.0d, -0.0784000015258789d, 0.0d], TextureIndex: 4, TrainerIndex: "doctor", NameIndex: 2, Health: 20.0f, LeftHanded: 0b, Air: 300s, OnGround: 1b, Rotation: [5.858773f, -1.982208f], HandItems: [{}, {}], ChatIndex: 0, ArmorDropChances: [0.085f, 0.085f, 0.085f, 0.085f], Profession: -1s, Pos: [1359.5d, 64.0d, -63.5d], Fire: -1s, ArmorItems: [{}, {}, {}, {}], CanPickUpLoot: 0b, CustomSteveTexture: "steven.png", HurtTime: 0s, BaseTrainer: "Steve", Inventory: [], AIMode: 3s}
 
-tellraw @s[scores={DialogueTrigger=141,TalkTime=70}] ["",{"text":"<Steven> "},{"selector":"@s"},{"text":"!"}]
-tellraw @s[scores={DialogueTrigger=141,TalkTime=76}] {"text":"<Steven> I'm sorry I could not be here sooner."}
-tellraw @s[scores={DialogueTrigger=141,TalkTime=83}] {"text":"<Steven> Terrible..."}
-tellraw @s[scores={DialogueTrigger=141,TalkTime=89}] {"text":"<Steven> So this is what was being depicted in that painting in Granite Cave."}
+tellraw @s[scores={DialogueTrigger=141,TalkTime=70}] ["",{"text":"<Máximo> "},{"selector":"@s"},{"text":"!"}]
+tellraw @s[scores={DialogueTrigger=141,TalkTime=76}] {"text":"<Máximo> I'm sorry I could not be here sooner."}
+tellraw @s[scores={DialogueTrigger=141,TalkTime=83}] {"text":"<Máximo> Terrible..."}
+tellraw @s[scores={DialogueTrigger=141,TalkTime=89}] {"text":"<Máximo> So this is what was being depicted in that painting in Granite Cave."}
 
-tellraw @s[scores={DialogueTrigger=141,TalkTime=97}] {"text":"<Steven> If this doesn't stop, all Hoenn— no, the entire world—will burn up."}
-tellraw @s[scores={DialogueTrigger=141,TalkTime=105}] {"text":"<Steven> Nothing could live in such a land of death—neither Pokémon nor humans!"}
-tellraw @s[scores={DialogueTrigger=141,TalkTime=114}] {"text":"<Steven> This dreadful blaze... It must be caused by the sweltering heat wave forming above Sootopolis..."}
+tellraw @s[scores={DialogueTrigger=141,TalkTime=97}] {"text":"<Máximo> If this doesn't stop, all Hoenn— no, the entire world—will burn up."}
+tellraw @s[scores={DialogueTrigger=141,TalkTime=105}] {"text":"<Máximo> Nothing could live in such a land of death—neither Pokémon nor humans!"}
+tellraw @s[scores={DialogueTrigger=141,TalkTime=114}] {"text":"<Máximo> This dreadful blaze... It must be caused by the sweltering heat wave forming above Sootopolis..."}
 
 execute as @s[scores={DialogueTrigger=141,TalkTime=124}] as @e[x=1359,y=64,z=-64,distance=..3,type=pixelmon:npc_chatting] run data merge entity @s {Rotation:[180f,0.0f]}
-tellraw @s[scores={DialogueTrigger=141,TalkTime=124}] {"text":"<Steven> Come on, Steven... Think! What are you going to do?"}
-tellraw @s[scores={DialogueTrigger=141,TalkTime=132}] {"text":"<Steven> ... ...No."}
-tellraw @s[scores={DialogueTrigger=141,TalkTime=140}] {"text":"<Steven> There's no point in agonizing over the situation from here..."}
-tellraw @s[scores={DialogueTrigger=141,TalkTime=147}] {"text":"<Steven> I have to go to Sootopolis. There must be answers there."}
+tellraw @s[scores={DialogueTrigger=141,TalkTime=124}] {"text":"<Máximo> Come on, Steven... Think! What are you going to do?"}
+tellraw @s[scores={DialogueTrigger=141,TalkTime=132}] {"text":"<Máximo> ... ...No."}
+tellraw @s[scores={DialogueTrigger=141,TalkTime=140}] {"text":"<Máximo> There's no point in agonizing over the situation from here..."}
+tellraw @s[scores={DialogueTrigger=141,TalkTime=147}] {"text":"<Máximo> I have to go to Sootopolis. There must be answers there."}
 execute as @s[scores={DialogueTrigger=141,TalkTime=155}] as @e[x=1359,y=64,z=-64,distance=..5,type=pixelmon:npc_chatting] at @s run tp @s ~ ~ ~ facing entity @p[scores={DialogueTrigger=141,TalkTime=155}]
-tellraw @s[scores={DialogueTrigger=141,TalkTime=155}] ["",{"text":"<Steven> "},{"selector":"@s"},{"text":"..."}]
-tellraw @s[scores={DialogueTrigger=141,TalkTime=160}] {"text":"<Steven> I will count on you to help with this crisis..."}
-tellraw @s[scores={DialogueTrigger=141,TalkTime=167}] {"text":"<Steven> But...please... Promise you won't do anything reckless."}
-tellraw @s[scores={DialogueTrigger=141,TalkTime=176}] {"text":"<Steven> Well then. I'll go ahead to Sootopolis."}
-tellraw @s[scores={DialogueTrigger=141,TalkTime=184}] {"text":"<Steven> Good luck to you."}
+tellraw @s[scores={DialogueTrigger=141,TalkTime=155}] ["",{"text":"<Máximo> "},{"selector":"@s"},{"text":"..."}]
+tellraw @s[scores={DialogueTrigger=141,TalkTime=160}] {"text":"<Máximo> I will count on you to help with this crisis..."}
+tellraw @s[scores={DialogueTrigger=141,TalkTime=167}] {"text":"<Máximo> But...please... Promise you won't do anything reckless."}
+tellraw @s[scores={DialogueTrigger=141,TalkTime=176}] {"text":"<Máximo> Well then. I'll go ahead to Sootopolis."}
+tellraw @s[scores={DialogueTrigger=141,TalkTime=184}] {"text":"<Máximo> Good luck to you."}
 
 #tps Steven out
 execute as @s[scores={DialogueTrigger=141,TalkTime=192}] run particle cloud 1359 64 -64 1 1 1 0.15 300
@@ -5470,24 +5470,24 @@ execute as @s[scores={DialogueTrigger=141,TalkTime=192}] run advancement grant @
 #
 ##Steven Stone flies in
 #
-#tellraw @s[scores={DialogueTrigger=141,TalkTime=1}] ["",{"text":"<Steven> "},{"selector":"@s"},{"text":"!"}]
-#tellraw @s[scores={DialogueTrigger=141,TalkTime=1}] {"text":"<Steven> I'm sorry I could not be here sooner."}
-#tellraw @s[scores={DialogueTrigger=141,TalkTime=1}] {"text":"<Steven> Terrible..."}
-#tellraw @s[scores={DialogueTrigger=141,TalkTime=1}] {"text":"<Steven> So this is what was being depicted in that painting in Granite Cave."}
+#tellraw @s[scores={DialogueTrigger=141,TalkTime=1}] ["",{"text":"<Máximo> "},{"selector":"@s"},{"text":"!"}]
+#tellraw @s[scores={DialogueTrigger=141,TalkTime=1}] {"text":"<Máximo> I'm sorry I could not be here sooner."}
+#tellraw @s[scores={DialogueTrigger=141,TalkTime=1}] {"text":"<Máximo> Terrible..."}
+#tellraw @s[scores={DialogueTrigger=141,TalkTime=1}] {"text":"<Máximo> So this is what was being depicted in that painting in Granite Cave."}
 #
-#tellraw @s[scores={DialogueTrigger=141,TalkTime=1}] {"text":"<Steven> If this doesn't stop, all Hoenn— no, the entire world—will burn up."}
-#tellraw @s[scores={DialogueTrigger=141,TalkTime=1}] {"text":"<Steven> Nothing could live in such a land of death—neither Pokémon nor humans!"}
-#tellraw @s[scores={DialogueTrigger=141,TalkTime=1}] {"text":"<Steven> This dreadful blaze... It must be caused by the sweltering heat wave forming above Sootopolis..."}
+#tellraw @s[scores={DialogueTrigger=141,TalkTime=1}] {"text":"<Máximo> If this doesn't stop, all Hoenn— no, the entire world—will burn up."}
+#tellraw @s[scores={DialogueTrigger=141,TalkTime=1}] {"text":"<Máximo> Nothing could live in such a land of death—neither Pokémon nor humans!"}
+#tellraw @s[scores={DialogueTrigger=141,TalkTime=1}] {"text":"<Máximo> This dreadful blaze... It must be caused by the sweltering heat wave forming above Sootopolis..."}
 #
-#tellraw @s[scores={DialogueTrigger=141,TalkTime=1}] {"text":"<Steven> Come on, Steven... Think! What are you going to do?"}
-#tellraw @s[scores={DialogueTrigger=141,TalkTime=1}] {"text":"<Steven> ... ...No."}
-#tellraw @s[scores={DialogueTrigger=141,TalkTime=1}] {"text":"<Steven> There's no point in agonizing over the situation from here..."}
-#tellraw @s[scores={DialogueTrigger=141,TalkTime=1}] {"text":"<Steven> I have to go to Sootopolis. There must be answers there."}
-#tellraw @s[scores={DialogueTrigger=141,TalkTime=1}] ["",{"text":"<Steven> "},{"selector":"@s"},{"text":"..."}]
-#tellraw @s[scores={DialogueTrigger=141,TalkTime=1}] {"text":"<Steven> I will count on you to help with this crisis..."}
-#tellraw @s[scores={DialogueTrigger=141,TalkTime=1}] {"text":"<Steven> But...please... Promise you won't do anything reckless."}
-#tellraw @s[scores={DialogueTrigger=141,TalkTime=1}] {"text":"<Steven> Well then. I'll go ahead to Sootopolis."}
-#tellraw @s[scores={DialogueTrigger=141,TalkTime=1}] {"text":"<Steven> Good luck to you."}
+#tellraw @s[scores={DialogueTrigger=141,TalkTime=1}] {"text":"<Máximo> Come on, Steven... Think! What are you going to do?"}
+#tellraw @s[scores={DialogueTrigger=141,TalkTime=1}] {"text":"<Máximo> ... ...No."}
+#tellraw @s[scores={DialogueTrigger=141,TalkTime=1}] {"text":"<Máximo> There's no point in agonizing over the situation from here..."}
+#tellraw @s[scores={DialogueTrigger=141,TalkTime=1}] {"text":"<Máximo> I have to go to Sootopolis. There must be answers there."}
+#tellraw @s[scores={DialogueTrigger=141,TalkTime=1}] ["",{"text":"<Máximo> "},{"selector":"@s"},{"text":"..."}]
+#tellraw @s[scores={DialogueTrigger=141,TalkTime=1}] {"text":"<Máximo> I will count on you to help with this crisis..."}
+#tellraw @s[scores={DialogueTrigger=141,TalkTime=1}] {"text":"<Máximo> But...please... Promise you won't do anything reckless."}
+#tellraw @s[scores={DialogueTrigger=141,TalkTime=1}] {"text":"<Máximo> Well then. I'll go ahead to Sootopolis."}
+#tellraw @s[scores={DialogueTrigger=141,TalkTime=1}] {"text":"<Máximo> Good luck to you."}
 #
 ##Steven flies away
 #
@@ -5539,50 +5539,50 @@ execute as @s[scores={DialogueTrigger=142,TalkTime=64}] run tp @s 1359 64 -52 18
 execute as @s[scores={DialogueTrigger=142,TalkTime=67}] run particle cloud 1359 64 -64 1 1 1 0.15 300
 execute as @s[scores={DialogueTrigger=142,TalkTime=67}] run summon pixelmon:npc_chatting 1359 64 -64 {Brain: {memories: {}}, HurtByTimestamp: 0, chatNum: 0, Attributes: [{Base: 0.08d, Name: "forge:entity_gravity"}, {Base: 0.0d, Name: "forge:step_height_addition"}, {Base: 0.699999988079071d, Name: "minecraft:generic.movement_speed"}], Invulnerable: 0b, FallFlying: 0b, PortalCooldown: 0, AbsorptionAmount: 0.0f, Name: "Steven", FallDistance: 0.0f, CanUpdate: 1b, DeathTime: 0s, DefaultName: 0b, Commands: {interactCommands: []}, HandDropChances: [0.085f, 0.085f], PersistenceRequired: 1b, trainerLocation: 2, DefaultGreet: 0b, Motion: [0.0d, -0.0784000015258789d, 0.0d], TextureIndex: 4, TrainerIndex: "doctor", NameIndex: 2, Health: 20.0f, LeftHanded: 0b, Air: 300s, OnGround: 1b, Rotation: [5.858773f, -1.982208f], HandItems: [{}, {}], ChatIndex: 0, ArmorDropChances: [0.085f, 0.085f, 0.085f, 0.085f], Profession: -1s, Pos: [1359.5d, 64.0d, -63.5d], Fire: -1s, ArmorItems: [{}, {}, {}, {}], CanPickUpLoot: 0b, CustomSteveTexture: "steven.png", HurtTime: 0s, BaseTrainer: "Steve", Inventory: [], AIMode: 3s}
 
-#tellraw @s[scores={DialogueTrigger=142,TalkTime=70}] ["",{"text":"<Steven> "},{"selector":"@s"},{"text":"!"}]
-#tellraw @s[scores={DialogueTrigger=142,TalkTime=76}] {"text":"<Steven> I'm sorry I could not be here sooner."}
-#tellraw @s[scores={DialogueTrigger=142,TalkTime=83}] {"text":"<Steven> Terrible..."}
-#tellraw @s[scores={DialogueTrigger=142,TalkTime=89}] {"text":"<Steven> So this is what was being depicted in that painting in Granite Cave."}
+#tellraw @s[scores={DialogueTrigger=142,TalkTime=70}] ["",{"text":"<Máximo> "},{"selector":"@s"},{"text":"!"}]
+#tellraw @s[scores={DialogueTrigger=142,TalkTime=76}] {"text":"<Máximo> I'm sorry I could not be here sooner."}
+#tellraw @s[scores={DialogueTrigger=142,TalkTime=83}] {"text":"<Máximo> Terrible..."}
+#tellraw @s[scores={DialogueTrigger=142,TalkTime=89}] {"text":"<Máximo> So this is what was being depicted in that painting in Granite Cave."}
 #
-#tellraw @s[scores={DialogueTrigger=142,TalkTime=97}] {"text":"<Steven> If this doesn't stop, all Hoenn— no, the entire world—will burn up."}
-#tellraw @s[scores={DialogueTrigger=142,TalkTime=105}] {"text":"<Steven> Nothing could live in such a land of death—neither Pokémon nor humans!"}
-#tellraw @s[scores={DialogueTrigger=142,TalkTime=114}] {"text":"<Steven> This dreadful blaze... It must be caused by the sweltering heat wave forming above Sootopolis..."}
+#tellraw @s[scores={DialogueTrigger=142,TalkTime=97}] {"text":"<Máximo> If this doesn't stop, all Hoenn— no, the entire world—will burn up."}
+#tellraw @s[scores={DialogueTrigger=142,TalkTime=105}] {"text":"<Máximo> Nothing could live in such a land of death—neither Pokémon nor humans!"}
+#tellraw @s[scores={DialogueTrigger=142,TalkTime=114}] {"text":"<Máximo> This dreadful blaze... It must be caused by the sweltering heat wave forming above Sootopolis..."}
 #
 #execute as @s[scores={DialogueTrigger=142,TalkTime=124}] as @e[x=1359,y=64,z=-64,distance=..3,type=pixelmon:npc_chatting] run data merge entity @s {Rotation:[180f,0.0f]}
-#tellraw @s[scores={DialogueTrigger=142,TalkTime=124}] {"text":"<Steven> Come on, Steven... Think! What are you going to do?"}
-#tellraw @s[scores={DialogueTrigger=142,TalkTime=132}] {"text":"<Steven> ... ...No."}
-#tellraw @s[scores={DialogueTrigger=142,TalkTime=140}] {"text":"<Steven> There's no point in agonizing over the situation from here..."}
-#tellraw @s[scores={DialogueTrigger=142,TalkTime=147}] {"text":"<Steven> I have to go to Sootopolis. There must be answers there."}
+#tellraw @s[scores={DialogueTrigger=142,TalkTime=124}] {"text":"<Máximo> Come on, Steven... Think! What are you going to do?"}
+#tellraw @s[scores={DialogueTrigger=142,TalkTime=132}] {"text":"<Máximo> ... ...No."}
+#tellraw @s[scores={DialogueTrigger=142,TalkTime=140}] {"text":"<Máximo> There's no point in agonizing over the situation from here..."}
+#tellraw @s[scores={DialogueTrigger=142,TalkTime=147}] {"text":"<Máximo> I have to go to Sootopolis. There must be answers there."}
 #execute as @s[scores={DialogueTrigger=142,TalkTime=155}] as @e[x=1359,y=64,z=-64,distance=..5,type=pixelmon:npc_chatting] at @s run tp @s ~ ~ ~ facing entity @p[scores={DialogueTrigger=141,TalkTime=155}]
-#tellraw @s[scores={DialogueTrigger=142,TalkTime=155}] ["",{"text":"<Steven> "},{"selector":"@s"},{"text":"..."}]
-#tellraw @s[scores={DialogueTrigger=142,TalkTime=160}] {"text":"<Steven> I will count on you to help with this crisis..."}
-#tellraw @s[scores={DialogueTrigger=142,TalkTime=167}] {"text":"<Steven> But...please... Promise you won't do anything reckless."}
-#tellraw @s[scores={DialogueTrigger=142,TalkTime=176}] {"text":"<Steven> Well then. I'll go ahead to Sootopolis."}
-#tellraw @s[scores={DialogueTrigger=142,TalkTime=184}] {"text":"<Steven> Good luck to you."}
+#tellraw @s[scores={DialogueTrigger=142,TalkTime=155}] ["",{"text":"<Máximo> "},{"selector":"@s"},{"text":"..."}]
+#tellraw @s[scores={DialogueTrigger=142,TalkTime=160}] {"text":"<Máximo> I will count on you to help with this crisis..."}
+#tellraw @s[scores={DialogueTrigger=142,TalkTime=167}] {"text":"<Máximo> But...please... Promise you won't do anything reckless."}
+#tellraw @s[scores={DialogueTrigger=142,TalkTime=176}] {"text":"<Máximo> Well then. I'll go ahead to Sootopolis."}
+#tellraw @s[scores={DialogueTrigger=142,TalkTime=184}] {"text":"<Máximo> Good luck to you."}
 
 ##tps Steven out
 
 
-tellraw @s[scores={DialogueTrigger=142,TalkTime=70}] ["",{"text":"<Steven> "},{"selector":"@s"},{"text":"!"}]
-tellraw @s[scores={DialogueTrigger=142,TalkTime=76}] {"text":"<Steven> I'm sorry I could not be here sooner."}
-tellraw @s[scores={DialogueTrigger=142,TalkTime=83}] {"text":"<Steven> Terrible..."}
-tellraw @s[scores={DialogueTrigger=142,TalkTime=89}] {"text":"<Steven> So this is what was being depicted in that painting in Granite Cave."}
+tellraw @s[scores={DialogueTrigger=142,TalkTime=70}] ["",{"text":"<Máximo> "},{"selector":"@s"},{"text":"!"}]
+tellraw @s[scores={DialogueTrigger=142,TalkTime=76}] {"text":"<Máximo> I'm sorry I could not be here sooner."}
+tellraw @s[scores={DialogueTrigger=142,TalkTime=83}] {"text":"<Máximo> Terrible..."}
+tellraw @s[scores={DialogueTrigger=142,TalkTime=89}] {"text":"<Máximo> So this is what was being depicted in that painting in Granite Cave."}
 
-tellraw @s[scores={DialogueTrigger=142,TalkTime=97}] {"text":"<Steven> If this doesn't stop, all Hoenn— no, the entire world—will drown."}
-tellraw @s[scores={DialogueTrigger=142,TalkTime=105}] {"text":"<Steven> Nothing could live in such a world— neither humans nor Pokémon!"}
-tellraw @s[scores={DialogueTrigger=142,TalkTime=114}] {"text":"<Steven> This huge rain cloud... Is it spreading out from Sootopolis?"}
+tellraw @s[scores={DialogueTrigger=142,TalkTime=97}] {"text":"<Máximo> If this doesn't stop, all Hoenn— no, the entire world—will drown."}
+tellraw @s[scores={DialogueTrigger=142,TalkTime=105}] {"text":"<Máximo> Nothing could live in such a world— neither humans nor Pokémon!"}
+tellraw @s[scores={DialogueTrigger=142,TalkTime=114}] {"text":"<Máximo> This huge rain cloud... Is it spreading out from Sootopolis?"}
 
 execute as @s[scores={DialogueTrigger=142,TalkTime=124}] as @e[x=1359,y=64,z=-64,distance=..3,type=pixelmon:npc_chatting] run data merge entity @s {Rotation:[180f,0.0f]}
-tellraw @s[scores={DialogueTrigger=142,TalkTime=124}] {"text":"<Steven> Come on, Steven... Think! What are you going to do?"}
-tellraw @s[scores={DialogueTrigger=142,TalkTime=132}] {"text":"<Steven> ... ...No."}
-tellraw @s[scores={DialogueTrigger=142,TalkTime=140}] {"text":"<Steven> There's no point in agonizing over the situation from here..."}
-tellraw @s[scores={DialogueTrigger=142,TalkTime=147}] {"text":"<Steven> I have to go to Sootopolis. There must be answers there."}
+tellraw @s[scores={DialogueTrigger=142,TalkTime=124}] {"text":"<Máximo> Come on, Steven... Think! What are you going to do?"}
+tellraw @s[scores={DialogueTrigger=142,TalkTime=132}] {"text":"<Máximo> ... ...No."}
+tellraw @s[scores={DialogueTrigger=142,TalkTime=140}] {"text":"<Máximo> There's no point in agonizing over the situation from here..."}
+tellraw @s[scores={DialogueTrigger=142,TalkTime=147}] {"text":"<Máximo> I have to go to Sootopolis. There must be answers there."}
 execute as @s[scores={DialogueTrigger=142,TalkTime=155}] as @e[x=1359,y=64,z=-64,distance=..5,type=pixelmon:npc_chatting] at @s run tp @s ~ ~ ~ facing entity @p[scores={DialogueTrigger=142,TalkTime=155}]
-tellraw @s[scores={DialogueTrigger=142,TalkTime=155}] ["",{"text":"<Steven> "},{"selector":"@s"},{"text":"..."}]
-tellraw @s[scores={DialogueTrigger=142,TalkTime=160}] {"text":"<Steven> I will count on you to help with this crisis..."}
-tellraw @s[scores={DialogueTrigger=142,TalkTime=167}] {"text":"<Steven> But...please... Promise you won't do anything reckless."}
-tellraw @s[scores={DialogueTrigger=142,TalkTime=176}] {"text":"<Steven> Well then. I'll go ahead to Sootopolis."}
-tellraw @s[scores={DialogueTrigger=142,TalkTime=184}] {"text":"<Steven> Good luck to you."}
+tellraw @s[scores={DialogueTrigger=142,TalkTime=155}] ["",{"text":"<Máximo> "},{"selector":"@s"},{"text":"..."}]
+tellraw @s[scores={DialogueTrigger=142,TalkTime=160}] {"text":"<Máximo> I will count on you to help with this crisis..."}
+tellraw @s[scores={DialogueTrigger=142,TalkTime=167}] {"text":"<Máximo> But...please... Promise you won't do anything reckless."}
+tellraw @s[scores={DialogueTrigger=142,TalkTime=176}] {"text":"<Máximo> Well then. I'll go ahead to Sootopolis."}
+tellraw @s[scores={DialogueTrigger=142,TalkTime=184}] {"text":"<Máximo> Good luck to you."}
 
 execute as @s[scores={DialogueTrigger=142,TalkTime=192}] run particle cloud 1359 64 -64 1 1 1 0.15 300
 execute as @s[scores={DialogueTrigger=142,TalkTime=192}] run tp @e[x=1359,y=64,z=-64,distance=..5,type=pixelmon:npc_chatting] 10000000 -50000 -10000000
@@ -5704,24 +5704,24 @@ execute as @s[scores={DialogueTrigger=142,TalkTime=192}] run advancement grant @
 #
 ##Steven Stone flies in
 #
-#tellraw @s[scores={DialogueTrigger=142,TalkTime=1}] ["",{"text":"<Steven> "},{"selector":"@s"},{"text":"!"}]
-#tellraw @s[scores={DialogueTrigger=142,TalkTime=1}] {"text":"<Steven> I'm sorry I could not be here sooner."}
-#tellraw @s[scores={DialogueTrigger=142,TalkTime=1}] {"text":"<Steven> Terrible..."}
-#tellraw @s[scores={DialogueTrigger=142,TalkTime=1}] {"text":"<Steven> So this is what was being depicted in that painting in Granite Cave."}
+#tellraw @s[scores={DialogueTrigger=142,TalkTime=1}] ["",{"text":"<Máximo> "},{"selector":"@s"},{"text":"!"}]
+#tellraw @s[scores={DialogueTrigger=142,TalkTime=1}] {"text":"<Máximo> I'm sorry I could not be here sooner."}
+#tellraw @s[scores={DialogueTrigger=142,TalkTime=1}] {"text":"<Máximo> Terrible..."}
+#tellraw @s[scores={DialogueTrigger=142,TalkTime=1}] {"text":"<Máximo> So this is what was being depicted in that painting in Granite Cave."}
 #
-#tellraw @s[scores={DialogueTrigger=142,TalkTime=1}] {"text":"<Steven> If this doesn't stop, all Hoenn— no, the entire world—will drown."}
-#tellraw @s[scores={DialogueTrigger=142,TalkTime=1}] {"text":"<Steven> Nothing could live in such a world— neither humans nor Pokémon!"}
-#tellraw @s[scores={DialogueTrigger=142,TalkTime=1}] {"text":"<Steven> This huge rain cloud... Is it spreading out from Sootopolis?"}
+#tellraw @s[scores={DialogueTrigger=142,TalkTime=1}] {"text":"<Máximo> If this doesn't stop, all Hoenn— no, the entire world—will drown."}
+#tellraw @s[scores={DialogueTrigger=142,TalkTime=1}] {"text":"<Máximo> Nothing could live in such a world— neither humans nor Pokémon!"}
+#tellraw @s[scores={DialogueTrigger=142,TalkTime=1}] {"text":"<Máximo> This huge rain cloud... Is it spreading out from Sootopolis?"}
 #
-#tellraw @s[scores={DialogueTrigger=142,TalkTime=1}] {"text":"<Steven> Come on, Steven... Think! What are you going to do?"}
-#tellraw @s[scores={DialogueTrigger=142,TalkTime=1}] {"text":"<Steven> ... ...No."}
-#tellraw @s[scores={DialogueTrigger=142,TalkTime=1}] {"text":"<Steven> There's no point in agonizing over the situation from here..."}
-#tellraw @s[scores={DialogueTrigger=142,TalkTime=1}] {"text":"<Steven> I have to go to Sootopolis. There must be answers there."}
-#tellraw @s[scores={DialogueTrigger=142,TalkTime=1}] ["",{"text":"<Steven> "},{"selector":"@s"},{"text":"..."}]
-#tellraw @s[scores={DialogueTrigger=142,TalkTime=1}] {"text":"<Steven> I will count on you to help with this crisis..."}
-#tellraw @s[scores={DialogueTrigger=142,TalkTime=1}] {"text":"<Steven> But...please... Promise you won't do anything reckless."}
-#tellraw @s[scores={DialogueTrigger=142,TalkTime=1}] {"text":"<Steven> Well then. I'll go ahead to Sootopolis."}
-#tellraw @s[scores={DialogueTrigger=142,TalkTime=1}] {"text":"<Steven> Good luck to you."}
+#tellraw @s[scores={DialogueTrigger=142,TalkTime=1}] {"text":"<Máximo> Come on, Steven... Think! What are you going to do?"}
+#tellraw @s[scores={DialogueTrigger=142,TalkTime=1}] {"text":"<Máximo> ... ...No."}
+#tellraw @s[scores={DialogueTrigger=142,TalkTime=1}] {"text":"<Máximo> There's no point in agonizing over the situation from here..."}
+#tellraw @s[scores={DialogueTrigger=142,TalkTime=1}] {"text":"<Máximo> I have to go to Sootopolis. There must be answers there."}
+#tellraw @s[scores={DialogueTrigger=142,TalkTime=1}] ["",{"text":"<Máximo> "},{"selector":"@s"},{"text":"..."}]
+#tellraw @s[scores={DialogueTrigger=142,TalkTime=1}] {"text":"<Máximo> I will count on you to help with this crisis..."}
+#tellraw @s[scores={DialogueTrigger=142,TalkTime=1}] {"text":"<Máximo> But...please... Promise you won't do anything reckless."}
+#tellraw @s[scores={DialogueTrigger=142,TalkTime=1}] {"text":"<Máximo> Well then. I'll go ahead to Sootopolis."}
+#tellraw @s[scores={DialogueTrigger=142,TalkTime=1}] {"text":"<Máximo> Good luck to you."}
 
 #Steven flies away
 
@@ -5731,16 +5731,16 @@ tag @s[scores={DialogueTrigger=142,TalkTime=192..}] add Dialogue142
 #Prior to Cave of Origin (Magma Variant)
 #https://youtu.be/MgkqxXCmrtI?t=55538
 
-tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] ["",{"text":"<Steven> "},{"selector":"@s"},{"text":"!"}]
-tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<Steven> So you did come... I have been waiting for you."}
+tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] ["",{"text":"<Máximo> "},{"selector":"@s"},{"text":"!"}]
+tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<Máximo> So you did come... I have been waiting for you."}
 
-tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<Steven> ... What terrible heat..."}
-tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<Steven> It feels as though the entire world will be burnt away..."}
+tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<Máximo> ... What terrible heat..."}
+tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<Máximo> It feels as though the entire world will be burnt away..."}
 
-tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<Steven> ... What terrible rain..."}
-tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<Steven> It feels as though the entire world will be washed away..."}
+tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<Máximo> ... What terrible rain..."}
+tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<Máximo> It feels as though the entire world will be washed away..."}
 
-tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<Steven> Ah, yes. You need to hear what my friend has to say."}
+tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<Máximo> Ah, yes. You need to hear what my friend has to say."}
 
 tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<Wallace> My name is Wallace. I'm this town's Gym Leader."}
 tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<Wallace> I've also been entrusted with the protection of the Cave of Origin."}
@@ -5757,19 +5757,19 @@ tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<Wallace> I see. Fo
 
 #teleports to side of path
 
-tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<Steven> This sunlight..."}
-tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<Steven> People and Pokémon need sunlight to live..."}
-tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<Steven> So why does this sunlight fill us with so much dread?"}
-tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<Steven> The blazing sun over Sootopolis is growing even more intense..."}
-tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<Steven> Soon all of Hoenn will be caught under its withering glare..."}
+tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<Máximo> This sunlight..."}
+tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<Máximo> People and Pokémon need sunlight to live..."}
+tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<Máximo> So why does this sunlight fill us with so much dread?"}
+tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<Máximo> The blazing sun over Sootopolis is growing even more intense..."}
+tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<Máximo> Soon all of Hoenn will be caught under its withering glare..."}
 
-tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<Steven> This rain..."}
-tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<Steven> People and Pokémon need water to live..."}
-tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<Steven> So why does this rain fill us with so much dread?"}
-tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<Steven> The rain clouds massing over Sootopolis keep building..."}
-tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<Steven> Soon they will extend over all of Hoenn..."}
+tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<Máximo> This rain..."}
+tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<Máximo> People and Pokémon need water to live..."}
+tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<Máximo> So why does this rain fill us with so much dread?"}
+tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<Máximo> The rain clouds massing over Sootopolis keep building..."}
+tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<Máximo> Soon they will extend over all of Hoenn..."}
 
-tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<Steven> If that were to happen..."}
+tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<Máximo> If that were to happen..."}
 
 #shot of leaders at entrance
 
@@ -5777,7 +5777,7 @@ tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<Steven> If that we
 
 #Magma line
 tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<Maxie> ..."}
-tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<Steven> Team Magma...and Team Aqua..."}
+tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<Máximo> Team Magma...and Team Aqua..."}
 tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<Archie> We've been waiting, ya scamp!"}
 tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<Team Magma Tabitha> Leader Maxie..."}
 tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<Team Magma Tabitha> to that child...?"}
@@ -5811,10 +5811,10 @@ tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<Wallace> Of course
 tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<Wallace> You will not reach Hoenn's Core that way."}
 tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<Wallace> Use the suit that you were just given."}
 tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<Wallace> With that, it will finally become possible to stand up against the forces of nature."}
-tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] ["",{"text":"<Steven> "},{"selector":"@s"},{"text":"... To think that you had the Blue Orb..."}]
-tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<Steven> You'll be OK."}
-tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<Steven> You and your Pokémon can handle it, whatever happens."}
-tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<Steven> I believe that."}
+tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] ["",{"text":"<Máximo> "},{"selector":"@s"},{"text":"... To think that you had the Blue Orb..."}]
+tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<Máximo> You'll be OK."}
+tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<Máximo> You and your Pokémon can handle it, whatever happens."}
+tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<Máximo> I believe that."}
 tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<Wallace> No man or woman from Sootopolis is permitted to enter the Cave of Origin."}
 tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<Wallace> But you must go, together with your Blue Orb."}
 tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<Wallace> You must go regardless of what waits for you inside that cave..."}
@@ -5833,38 +5833,38 @@ tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<Maxie> The fate of
 
 #May tps in
 
-tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] ["",{"text":"<May> "},{"selector":"@s"},{"text":"!"}]
-tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<May> I heard on the news that things were going haywire around Sootopolis."}
-tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] ["",{"text":"<May> And then I saw you on BuzzNav, "},{"selector":"@s"},{"text":"!"}]
-tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<May> I couldn't just sit there and do nothing when I knew you were here in the thick of it, so I came flying!"}
-tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<May> Bwuh?! Isn't that Team Aqua? And Team Magma?!"}
-tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<May> OK, can I just say that I am, like, shocked and confused on so many levels right now?"}
-tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<May> This is probably something way bigger than I can even imagine, isn't it?"}
-tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<May> So I'm not even going to ask right now."}
-tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<May> I'm going to try to find what I can do to help, and then I'm going to do my best with that."}
-tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] ["",{"text":"<May> And I'm going to keep on hoping and believing that y-you'll be OK out there, "},{"selector":"@s"},{"text":"."}]
-tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<May> Because..."}
-tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<May> Because you... You're the best friend I have!"}
-tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<May> I'll always be right there behind you."}
-tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<May> You're my best friend, after all!"}
+tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] ["",{"text":"<Aura> "},{"selector":"@s"},{"text":"!"}]
+tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<Aura> I heard on the news that things were going haywire around Sootopolis."}
+tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] ["",{"text":"<Aura> And then I saw you on BuzzNav, "},{"selector":"@s"},{"text":"!"}]
+tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<Aura> I couldn't just sit there and do nothing when I knew you were here in the thick of it, so I came flying!"}
+tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<Aura> Bwuh?! Isn't that Team Aqua? And Team Magma?!"}
+tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<Aura> OK, can I just say that I am, like, shocked and confused on so many levels right now?"}
+tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<Aura> This is probably something way bigger than I can even imagine, isn't it?"}
+tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<Aura> So I'm not even going to ask right now."}
+tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<Aura> I'm going to try to find what I can do to help, and then I'm going to do my best with that."}
+tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] ["",{"text":"<Aura> And I'm going to keep on hoping and believing that y-you'll be OK out there, "},{"selector":"@s"},{"text":"."}]
+tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<Aura> Because..."}
+tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<Aura> Because you... You're the best friend I have!"}
+tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<Aura> I'll always be right there behind you."}
+tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<Aura> You're my best friend, after all!"}
 
 
 
 
-tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] ["",{"text":"<Brendan> "},{"selector":"@s"},{"text":"!"}]
-tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] ["",{"text":"<Brendan> When I saw the news about Sootopolis on my BuzzNav, and there you were, "},{"selector":"@s"},{"text":"..."}]
-tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<Brendan> Well, anyway, all I could think of was coming to help!"}
-tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<Brendan> You don't know how glad I am to see that you're still in one piece."}
-tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<Brendan> Bwuh?! Is that Team Aqua? And Team Magma?!"}
-tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<Brendan> OK, I don't really know what to say right now—I'm kind of dumbfounded."}
-tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<Brendan> Look, I get that this is probably something way bigger than I've ever imagined."}
-tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<Brendan> So, I won't bother with any questions now."}
-tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<Brendan> I'm gonna find out what I should do to help, and then I'm going to do whatever I can."}
-tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] ["",{"text":"<Brendan> You'd better go do the same, "},{"selector":"@s"},{"text":"."}]
-tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<Brendan> Because..."}
-tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<Brendan> Because you... You're the best friend I have!"}
-tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<Brendan> I'll always be right there behind you."}
-tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<Brendan> You're my best friend, after all!"}
+tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] ["",{"text":"<Bruno> "},{"selector":"@s"},{"text":"!"}]
+tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] ["",{"text":"<Bruno> When I saw the news about Sootopolis on my BuzzNav, and there you were, "},{"selector":"@s"},{"text":"..."}]
+tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<Bruno> Well, anyway, all I could think of was coming to help!"}
+tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<Bruno> You don't know how glad I am to see that you're still in one piece."}
+tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<Bruno> Bwuh?! Is that Team Aqua? And Team Magma?!"}
+tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<Bruno> OK, I don't really know what to say right now—I'm kind of dumbfounded."}
+tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<Bruno> Look, I get that this is probably something way bigger than I've ever imagined."}
+tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<Bruno> So, I won't bother with any questions now."}
+tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<Bruno> I'm gonna find out what I should do to help, and then I'm going to do whatever I can."}
+tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] ["",{"text":"<Bruno> You'd better go do the same, "},{"selector":"@s"},{"text":"."}]
+tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<Bruno> Because..."}
+tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<Bruno> Because you... You're the best friend I have!"}
+tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<Bruno> I'll always be right there behind you."}
+tellraw @s[scores={DialogueTrigger=143,TalkTime=1}] {"text":"<Bruno> You're my best friend, after all!"}
 
 
 
@@ -6063,15 +6063,15 @@ tag @s[scores={DialogueTrigger=148,TalkTime=50..}] add Dialogue148
 
 #player tps out
 
-tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] ["",{"text":"<May> "},{"selector":"@s"},{"text":"!!!"}]
-tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<May> It's really over, isn't it..."}
+tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] ["",{"text":"<Aura> "},{"selector":"@s"},{"text":"!!!"}]
+tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<Aura> It's really over, isn't it..."}
 
-tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] ["",{"text":"<Brendan> "},{"selector":"@s"},{"text":"!!!"}]
-tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<Brendan> So it's all over..."}
+tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] ["",{"text":"<Bruno> "},{"selector":"@s"},{"text":"!!!"}]
+tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<Bruno> So it's all over..."}
 
-tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] ["",{"text":"<Steven> "},{"selector":"@s"},{"text":", we owe you great thanks."}]
-tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<Steven> Look above you."}
-tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<Steven> The sky over Sootopolis has returned to normal."}
+tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] ["",{"text":"<Máximo> "},{"selector":"@s"},{"text":", we owe you great thanks."}]
+tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<Máximo> Look above you."}
+tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<Máximo> The sky over Sootopolis has returned to normal."}
 
 tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<Archie> Somehow, it's...so warm..."}
 
@@ -6122,70 +6122,70 @@ tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<Maxie> Farewell."}
 
 #tps teams out
 
-tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<Steven> ..."}
-tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<Steven> Team Magma and Team Aqua are made up of people with completely opposing ideals and goals."}
-tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<Steven> But perhaps even they can learn to meet halfway...one small concession at a time."}
-tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<Steven> I know it's too much to expect that everything will change at once, but..."}
-tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<Steven> I hope this crisis might at least help them take that first vital step forward."}
-tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<Steven> I imagine that many changes are happening now all across Hoenn."}
-tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<Steven> I hope you will be able to travel this world and see its richness with your own eyes—"}
-tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<Steven> and revel in its newness in your own heart."}
-tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<Steven> But for the present, you may first wish to challenge this city's Pokémon Gym."}
-tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<Steven> There, you'll find the very same Wallace who helped us so much waiting for you."}
-tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<Steven> He's strong."}
-tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<Steven> But the way you are now, you should be capable of battling him on an equal footing."}
-tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<Steven> And when you travel the world, you should try to use this."}
-tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<Steven> This flute is one of my favorite items."}
+tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<Máximo> ..."}
+tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<Máximo> Team Magma and Team Aqua are made up of people with completely opposing ideals and goals."}
+tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<Máximo> But perhaps even they can learn to meet halfway...one small concession at a time."}
+tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<Máximo> I know it's too much to expect that everything will change at once, but..."}
+tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<Máximo> I hope this crisis might at least help them take that first vital step forward."}
+tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<Máximo> I imagine that many changes are happening now all across Hoenn."}
+tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<Máximo> I hope you will be able to travel this world and see its richness with your own eyes—"}
+tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<Máximo> and revel in its newness in your own heart."}
+tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<Máximo> But for the present, you may first wish to challenge this city's Pokémon Gym."}
+tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<Máximo> There, you'll find the very same Wallace who helped us so much waiting for you."}
+tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<Máximo> He's strong."}
+tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<Máximo> But the way you are now, you should be capable of battling him on an equal footing."}
+tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<Máximo> And when you travel the world, you should try to use this."}
+tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<Máximo> This flute is one of my favorite items."}
 
 tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] ["",{"selector":"@s","italic":true,"color":"gray"},{"text":" obtained the Eon Flute","italic":true,"color":"gray"}]
 execute as @s[scores={DialogueTrigger=149,TalkTime=1}] run function hoenn:spawn/eon_flute
 
-tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<Steven> This Eon Flute is proof of the bond between you and your Latios."}
-tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<Steven> No matter how far you may be from one another, play that flute and Latios will surely fly straight to you."}
-tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<Steven> Then it can take to the sky, soaring above the land with you astride its back."}
-tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<Steven> Yes, just like when we first encountered Latias and Latios at Southern Island..."}
+tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<Máximo> This Eon Flute is proof of the bond between you and your Latios."}
+tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<Máximo> No matter how far you may be from one another, play that flute and Latios will surely fly straight to you."}
+tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<Máximo> Then it can take to the sky, soaring above the land with you astride its back."}
+tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<Máximo> Yes, just like when we first encountered Latias and Latios at Southern Island..."}
 
 #shot of the tree
 
-tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<Steven> People, Pokémon, nature itself..."}
-tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<Steven> Our survival in this world depends on all of us living together in harmony."}
-tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<Steven> I feel I have just begun to understand that."}
-tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<Steven> And I'm wondering how the world will continue to change from this point on..."}
-tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<Steven> It fills me with an inexplicable excitement."}
+tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<Máximo> People, Pokémon, nature itself..."}
+tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<Máximo> Our survival in this world depends on all of us living together in harmony."}
+tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<Máximo> I feel I have just begun to understand that."}
+tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<Máximo> And I'm wondering how the world will continue to change from this point on..."}
+tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<Máximo> It fills me with an inexplicable excitement."}
 
 #back to first person
 
-tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] ["",{"text":"<Steven> "},{"selector":"@s"},{"text":"..."}]
-tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<Steven> As you and your Pokémon live and grow in this changed world, I wonder what effect it will have on you."}
-tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<Steven> What will you think about? What ideals will you believe in?"}
-tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<Steven> If we do get the chance to meet again, I hope you will be able to show me and my team the answers you've found."}
-tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<Steven> Until then."}
+tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] ["",{"text":"<Máximo> "},{"selector":"@s"},{"text":"..."}]
+tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<Máximo> As you and your Pokémon live and grow in this changed world, I wonder what effect it will have on you."}
+tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<Máximo> What will you think about? What ideals will you believe in?"}
+tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<Máximo> If we do get the chance to meet again, I hope you will be able to show me and my team the answers you've found."}
+tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<Máximo> Until then."}
 
 #tp out
 
-tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<May> Phew! Finally, it's just the two of us again."}
-tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] ["",{"text":"<May> I've got to say...thanks for everything you've done for our region, "},{"selector":"@s"},{"text":"."}]
-tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<May> You know, I thought we were supposed to have set out from Littleroot together, but..."}
-tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] ["",{"text":"<May> But you, "},{"selector":"@s"},{"text":"..."}]
-tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<May> It seems like you just keep getting further and further ahead of me..."}
-tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<May> I even started to feel like you'd gone somewhere that I can't even reach."}
-tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<May> It's pretty lonely, you know?"}
-tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<May> Not!"}
-tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<May> What would you think if I really said something like that?"}
-tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<May> Hee hee!"}
-tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<May> Anyway, you did something really amazing today, so try to take it easy for a while!"}
-tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<May> See you later!"}
+tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<Aura> Phew! Finally, it's just the two of us again."}
+tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] ["",{"text":"<Aura> I've got to say...thanks for everything you've done for our region, "},{"selector":"@s"},{"text":"."}]
+tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<Aura> You know, I thought we were supposed to have set out from Littleroot together, but..."}
+tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] ["",{"text":"<Aura> But you, "},{"selector":"@s"},{"text":"..."}]
+tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<Aura> It seems like you just keep getting further and further ahead of me..."}
+tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<Aura> I even started to feel like you'd gone somewhere that I can't even reach."}
+tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<Aura> It's pretty lonely, you know?"}
+tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<Aura> Not!"}
+tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<Aura> What would you think if I really said something like that?"}
+tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<Aura> Hee hee!"}
+tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<Aura> Anyway, you did something really amazing today, so try to take it easy for a while!"}
+tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<Aura> See you later!"}
 
 
-tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<Brendan> Phew! It feels like we can finally relax, huh?"}
-tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] ["",{"text":"<Brendan> I guess that now's the time to say thanks for all you've done, "},{"selector":"@s"},{"text":"."}]
-tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<Brendan> You know, we set out from Littleroot at the same time, but..."}
-tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<Brendan> It seems like you're just dashing ahead by yourself and leaving me behind..."}
-tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<Brendan> I feel like we're not even on the same level anymore, you know?"}
-tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<Brendan> ... It's kinda lonely thinking like that..."}
-tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<Brendan> Or it would be if I really thought that!"}
-tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<Brendan> But...well, you did do something pretty amazing. So take it easy for a while, OK, friend?"}
-tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<Brendan> Later!"}
+tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<Bruno> Phew! It feels like we can finally relax, huh?"}
+tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] ["",{"text":"<Bruno> I guess that now's the time to say thanks for all you've done, "},{"selector":"@s"},{"text":"."}]
+tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<Bruno> You know, we set out from Littleroot at the same time, but..."}
+tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<Bruno> It seems like you're just dashing ahead by yourself and leaving me behind..."}
+tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<Bruno> I feel like we're not even on the same level anymore, you know?"}
+tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<Bruno> ... It's kinda lonely thinking like that..."}
+tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<Bruno> Or it would be if I really thought that!"}
+tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<Bruno> But...well, you did do something pretty amazing. So take it easy for a while, OK, friend?"}
+tellraw @s[scores={DialogueTrigger=149,TalkTime=1}] {"text":"<Bruno> Later!"}
 
 tag @s[scores={DialogueTrigger=149,TalkTime=100..}] add Dialogue149
 #-----------------------------------------------------------------------------------------------------
@@ -6513,24 +6513,24 @@ execute as @s[scores={DialogueTrigger=163,TalkTime=1},tag=!MusicDisabled] run st
 execute as @s[scores={DialogueTrigger=163,TalkTime=1},tag=!MusicDisabled] run playsound minecraft:stevenopen record @s ~ ~ ~ 1 1 1
 execute as @s[scores={DialogueTrigger=163,TalkTime=1},tag=!MusicDisabled] run scoreboard players set @s MusicCooldown 91
 
-tellraw @s[scores={DialogueTrigger=163,PokemonLeague=0,TalkTime=1}] ["",{"text":"<Steven> Welcome, "},{"selector":"@s"},{"text":"."}]
-tellraw @s[scores={DialogueTrigger=163,PokemonLeague=0,TalkTime=8}] {"text":"<Steven> I was hoping I would get to see you make it here one day."}
-tellraw @s[scores={DialogueTrigger=163,PokemonLeague=0,TalkTime=16}] {"text":"<Steven> Tell me... What have you seen on your journey with your Pokémon?"}
-tellraw @s[scores={DialogueTrigger=163,PokemonLeague=0,TalkTime=25}] {"text":"<Steven> What have you felt, meeting so many other Trainers out there?"}
-tellraw @s[scores={DialogueTrigger=163,PokemonLeague=0,TalkTime=34}] {"text":"<Steven> Traveling this rich land of Hoenn..."}
-tellraw @s[scores={DialogueTrigger=163,PokemonLeague=0,TalkTime=41}] {"text":"<Steven> Has it awoken something inside you? I want you to come at me with all that you've learned."}
-tellraw @s[scores={DialogueTrigger=163,PokemonLeague=0,TalkTime=51}] {"text":"<Steven> My Pokémon and I will respond in turn with all that we know!"}
-tellraw @s[scores={DialogueTrigger=163,PokemonLeague=0,TalkTime=60}] {"text":"<Steven> Let it begin!"}
+tellraw @s[scores={DialogueTrigger=163,PokemonLeague=0,TalkTime=1}] ["",{"text":"<Máximo> Welcome, "},{"selector":"@s"},{"text":"."}]
+tellraw @s[scores={DialogueTrigger=163,PokemonLeague=0,TalkTime=8}] {"text":"<Máximo> I was hoping I would get to see you make it here one day."}
+tellraw @s[scores={DialogueTrigger=163,PokemonLeague=0,TalkTime=16}] {"text":"<Máximo> Tell me... What have you seen on your journey with your Pokémon?"}
+tellraw @s[scores={DialogueTrigger=163,PokemonLeague=0,TalkTime=25}] {"text":"<Máximo> What have you felt, meeting so many other Trainers out there?"}
+tellraw @s[scores={DialogueTrigger=163,PokemonLeague=0,TalkTime=34}] {"text":"<Máximo> Traveling this rich land of Hoenn..."}
+tellraw @s[scores={DialogueTrigger=163,PokemonLeague=0,TalkTime=41}] {"text":"<Máximo> Has it awoken something inside you? I want you to come at me with all that you've learned."}
+tellraw @s[scores={DialogueTrigger=163,PokemonLeague=0,TalkTime=51}] {"text":"<Máximo> My Pokémon and I will respond in turn with all that we know!"}
+tellraw @s[scores={DialogueTrigger=163,PokemonLeague=0,TalkTime=60}] {"text":"<Máximo> Let it begin!"}
 
 #Rematch
-tellraw @s[scores={DialogueTrigger=163,PokemonLeague=1,TalkTime=1}] {"text":"<Steven> Welcome, Champion."}
-tellraw @s[scores={DialogueTrigger=163,PokemonLeague=1,TalkTime=9}] {"text":"<Steven> Let me test my skills against you once again!"}
+tellraw @s[scores={DialogueTrigger=163,PokemonLeague=1,TalkTime=1}] {"text":"<Máximo> Welcome, Champion."}
+tellraw @s[scores={DialogueTrigger=163,PokemonLeague=1,TalkTime=9}] {"text":"<Máximo> Let me test my skills against you once again!"}
 execute as @s[scores={DialogueTrigger=163,PokemonLeague=1,TalkTime=9}] run scoreboard players add @s TalkTime 51
 
 #Rematch Second+
-tellraw @s[scores={DialogueTrigger=163,PokemonLeague=2..,TalkTime=1}] {"text":"<Steven> Now then..."}
-tellraw @s[scores={DialogueTrigger=163,PokemonLeague=2..,TalkTime=8}] {"text":"<Steven> There are no words left for us to exchange."}
-tellraw @s[scores={DialogueTrigger=163,PokemonLeague=2..,TalkTime=16}] {"text":"<Steven> We will understand one another through battle!"}
+tellraw @s[scores={DialogueTrigger=163,PokemonLeague=2..,TalkTime=1}] {"text":"<Máximo> Now then..."}
+tellraw @s[scores={DialogueTrigger=163,PokemonLeague=2..,TalkTime=8}] {"text":"<Máximo> There are no words left for us to exchange."}
+tellraw @s[scores={DialogueTrigger=163,PokemonLeague=2..,TalkTime=16}] {"text":"<Máximo> We will understand one another through battle!"}
 execute as @s[scores={DialogueTrigger=163,PokemonLeague=2..,TalkTime=16}] run scoreboard players add @s TalkTime 34
 
 tag @s[scores={DialogueTrigger=163,TalkTime=60..}] add Dialogue163
@@ -6539,28 +6539,28 @@ tag @s[scores={DialogueTrigger=163,TalkTime=60..}] add Dialogue163
 #Steven Post-Battle
 #https://youtu.be/MgkqxXCmrtI?t=63093
 
-#tellraw @s[scores={DialogueTrigger=164,PokemonLeague=0,TalkTime=1}] {"text":"<Steven> Just as I have come to expect."}
-#tellraw @s[scores={DialogueTrigger=164,PokemonLeague=0,TalkTime=1}] ["",{"text":"<Steven> "},{"selector":"@s"},{"text":", you are truly an excellent Pokémon Trainer."}]
-#tellraw @s[scores={DialogueTrigger=164,PokemonLeague=0,TalkTime=1}] {"text":"<Steven> Congratulations to you!"}
-#tellraw @s[scores={DialogueTrigger=164,PokemonLeague=0,TalkTime=1}] {"text":"<Steven> And thank you..."}
-#tellraw @s[scores={DialogueTrigger=164,PokemonLeague=0,TalkTime=1}] {"text":"<Steven> I had wanted to learn how you feel about this world, what kinds of ideals you have developed with your Pokémon..."}
-#tellraw @s[scores={DialogueTrigger=164,PokemonLeague=0,TalkTime=1}] {"text":"<Steven> I feel I was able to find the answer in our battle."}
-#tellraw @s[scores={DialogueTrigger=164,PokemonLeague=0,TalkTime=1}] {"text":"<Steven> The feelings you have for your Pokémon..."}
-#tellraw @s[scores={DialogueTrigger=164,PokemonLeague=0,TalkTime=1}] {"text":"<Steven> And the way that your Pokémon gave their all in battle in response to those feelings..."}
-#tellraw @s[scores={DialogueTrigger=164,PokemonLeague=0,TalkTime=1}] {"text":"<Steven> Those two together created a great power. That is how you seized victory today."}
-#tellraw @s[scores={DialogueTrigger=164,PokemonLeague=0,TalkTime=1}] {"text":"<Steven> I felt a thrill of excitement in my breast when we first met, and now I know for sure that feeling was not misplaced!"}
-#tellraw @s[scores={DialogueTrigger=164,PokemonLeague=0,TalkTime=1}] {"text":"<Steven> You are rightfully the Hoenn region's new..."}
+#tellraw @s[scores={DialogueTrigger=164,PokemonLeague=0,TalkTime=1}] {"text":"<Máximo> Just as I have come to expect."}
+#tellraw @s[scores={DialogueTrigger=164,PokemonLeague=0,TalkTime=1}] ["",{"text":"<Máximo> "},{"selector":"@s"},{"text":", you are truly an excellent Pokémon Trainer."}]
+#tellraw @s[scores={DialogueTrigger=164,PokemonLeague=0,TalkTime=1}] {"text":"<Máximo> Congratulations to you!"}
+#tellraw @s[scores={DialogueTrigger=164,PokemonLeague=0,TalkTime=1}] {"text":"<Máximo> And thank you..."}
+#tellraw @s[scores={DialogueTrigger=164,PokemonLeague=0,TalkTime=1}] {"text":"<Máximo> I had wanted to learn how you feel about this world, what kinds of ideals you have developed with your Pokémon..."}
+#tellraw @s[scores={DialogueTrigger=164,PokemonLeague=0,TalkTime=1}] {"text":"<Máximo> I feel I was able to find the answer in our battle."}
+#tellraw @s[scores={DialogueTrigger=164,PokemonLeague=0,TalkTime=1}] {"text":"<Máximo> The feelings you have for your Pokémon..."}
+#tellraw @s[scores={DialogueTrigger=164,PokemonLeague=0,TalkTime=1}] {"text":"<Máximo> And the way that your Pokémon gave their all in battle in response to those feelings..."}
+#tellraw @s[scores={DialogueTrigger=164,PokemonLeague=0,TalkTime=1}] {"text":"<Máximo> Those two together created a great power. That is how you seized victory today."}
+#tellraw @s[scores={DialogueTrigger=164,PokemonLeague=0,TalkTime=1}] {"text":"<Máximo> I felt a thrill of excitement in my breast when we first met, and now I know for sure that feeling was not misplaced!"}
+#tellraw @s[scores={DialogueTrigger=164,PokemonLeague=0,TalkTime=1}] {"text":"<Máximo> You are rightfully the Hoenn region's new..."}
 #
 ##Rival tps in
 #
-#tellraw @s[scores={DialogueTrigger=164,PokemonLeague=0,TalkTime=1}] ["",{"text":"<May> "},{"selector":"@s"},{"text":", wait!"}]
-#tellraw @s[scores={DialogueTrigger=164,PokemonLeague=0,TalkTime=1}] {"text":"<May> I've got some advice you've got to hear before you challenge the Champion..."}
+#tellraw @s[scores={DialogueTrigger=164,PokemonLeague=0,TalkTime=1}] ["",{"text":"<Aura> "},{"selector":"@s"},{"text":", wait!"}]
+#tellraw @s[scores={DialogueTrigger=164,PokemonLeague=0,TalkTime=1}] {"text":"<Aura> I've got some advice you've got to hear before you challenge the Champion..."}
 #
 ##summon exclamation
 #
-#tellraw @s[scores={DialogueTrigger=164,PokemonLeague=0,TalkTime=1}] {"text":"<May> Huh? Wait—what?"}
-#tellraw @s[scores={DialogueTrigger=164,PokemonLeague=0,TalkTime=1}] ["",{"text":"<May> What? "},{"selector":"@s"},{"text":"... Could it be that..."}]
-#tellraw @s[scores={DialogueTrigger=164,PokemonLeague=0,TalkTime=1}] {"text":"<May> It's already over?"}
+#tellraw @s[scores={DialogueTrigger=164,PokemonLeague=0,TalkTime=1}] {"text":"<Aura> Huh? Wait—what?"}
+#tellraw @s[scores={DialogueTrigger=164,PokemonLeague=0,TalkTime=1}] ["",{"text":"<Aura> What? "},{"selector":"@s"},{"text":"... Could it be that..."}]
+#tellraw @s[scores={DialogueTrigger=164,PokemonLeague=0,TalkTime=1}] {"text":"<Aura> It's already over?"}
 #
 ##tp in Birch
 #
@@ -6574,12 +6574,12 @@ tag @s[scores={DialogueTrigger=163,TalkTime=60..}] add Dialogue163
 #
 #
 #
-#tellraw @s[scores={DialogueTrigger=164,PokemonLeague=0,TalkTime=1}] ["",{"text":"<Brendan> "},{"selector":"@s"},{"text":"! Before you go to challenge the Champion, I've got one last thing you've got to..."}]
+#tellraw @s[scores={DialogueTrigger=164,PokemonLeague=0,TalkTime=1}] ["",{"text":"<Bruno> "},{"selector":"@s"},{"text":"! Before you go to challenge the Champion, I've got one last thing you've got to..."}]
 #
 ##summon exclamation
 #
-#tellraw @s[scores={DialogueTrigger=164,PokemonLeague=0,TalkTime=1}] ["",{"text":"<Brendan> "},{"selector":"@s"},{"text":"... You didn't..."}]
-#tellraw @s[scores={DialogueTrigger=164,PokemonLeague=0,TalkTime=1}] {"text":"<Brendan> No, you couldn't have... Did you already beat the Champion?!"}
+#tellraw @s[scores={DialogueTrigger=164,PokemonLeague=0,TalkTime=1}] ["",{"text":"<Bruno> "},{"selector":"@s"},{"text":"... You didn't..."}]
+#tellraw @s[scores={DialogueTrigger=164,PokemonLeague=0,TalkTime=1}] {"text":"<Bruno> No, you couldn't have... Did you already beat the Champion?!"}
 #
 ##tp in Birch
 #
@@ -6591,9 +6591,9 @@ tag @s[scores={DialogueTrigger=163,TalkTime=60..}] add Dialogue163
 #tellraw @s[scores={DialogueTrigger=164,PokemonLeague=0,TalkTime=1}] {"text":"<Professor Birch> But congratulations on today's victory!"}
 #tellraw @s[scores={DialogueTrigger=164,PokemonLeague=0,TalkTime=1}] {"text":"<Professor Birch> Now go in there with your head held high!"}
 #
-#tellraw @s[scores={DialogueTrigger=164,PokemonLeague=0,TalkTime=1}] ["",{"text":"<Steven> "},{"selector":"@s"},{"text":"..."}]
-#tellraw @s[scores={DialogueTrigger=164,PokemonLeague=0,TalkTime=1}] {"text":"<Steven> No, I should call you the Hoenn region's new Pokémon League Champion..."}
-#tellraw @s[scores={DialogueTrigger=164,PokemonLeague=0,TalkTime=1}] {"text":"<Steven> Step into this room with me, Champion."}
+#tellraw @s[scores={DialogueTrigger=164,PokemonLeague=0,TalkTime=1}] ["",{"text":"<Máximo> "},{"selector":"@s"},{"text":"..."}]
+#tellraw @s[scores={DialogueTrigger=164,PokemonLeague=0,TalkTime=1}] {"text":"<Máximo> No, I should call you the Hoenn region's new Pokémon League Champion..."}
+#tellraw @s[scores={DialogueTrigger=164,PokemonLeague=0,TalkTime=1}] {"text":"<Máximo> Step into this room with me, Champion."}
 
 #tp out the NPCs on portal tp to hall of fame
 
@@ -6601,43 +6601,43 @@ tag @s[scores={DialogueTrigger=163,TalkTime=60..}] add Dialogue163
 #Simplified rival-non-butt-in version
 
 clear @s[scores={DialogueTrigger=164}] minecraft:nether_brick
-tellraw @s[scores={DialogueTrigger=164,PokemonLeague=0,TalkTime=1}] ["",{"text":"<Steven> "},{"selector":"@s"},{"text":", you are truly an excellent Pokémon Trainer."}]
-tellraw @s[scores={DialogueTrigger=164,PokemonLeague=0,TalkTime=9}] {"text":"<Steven> Congratulations to you!"}
-tellraw @s[scores={DialogueTrigger=164,PokemonLeague=0,TalkTime=15}] {"text":"<Steven> And thank you..."}
-tellraw @s[scores={DialogueTrigger=164,PokemonLeague=0,TalkTime=21}] {"text":"<Steven> I had wanted to learn how you feel about this world, what kinds of ideals you have developed with your Pokémon..."}
-tellraw @s[scores={DialogueTrigger=164,PokemonLeague=0,TalkTime=31}] {"text":"<Steven> I feel I was able to find the answer in our battle."}
-tellraw @s[scores={DialogueTrigger=164,PokemonLeague=0,TalkTime=39}] {"text":"<Steven> The feelings you have for your Pokémon..."}
-tellraw @s[scores={DialogueTrigger=164,PokemonLeague=0,TalkTime=46}] {"text":"<Steven> And the way that your Pokémon gave their all in battle in response to those feelings..."}
-tellraw @s[scores={DialogueTrigger=164,PokemonLeague=0,TalkTime=55}] {"text":"<Steven> Those two together created a great power. That is how you seized victory today."}
-tellraw @s[scores={DialogueTrigger=164,PokemonLeague=0,TalkTime=63}] {"text":"<Steven> I felt a thrill of excitement in my breast when we first met, and now I know for sure that feeling was not misplaced!"}
-tellraw @s[scores={DialogueTrigger=164,PokemonLeague=0,TalkTime=73}] {"text":"<Steven> You are rightfully the Hoenn region's new Champion!"}
-tellraw @s[scores={DialogueTrigger=164,PokemonLeague=0,TalkTime=82}] {"text":"<Steven> Step into this room with me, Champion."}
+tellraw @s[scores={DialogueTrigger=164,PokemonLeague=0,TalkTime=1}] ["",{"text":"<Máximo> "},{"selector":"@s"},{"text":", you are truly an excellent Pokémon Trainer."}]
+tellraw @s[scores={DialogueTrigger=164,PokemonLeague=0,TalkTime=9}] {"text":"<Máximo> Congratulations to you!"}
+tellraw @s[scores={DialogueTrigger=164,PokemonLeague=0,TalkTime=15}] {"text":"<Máximo> And thank you..."}
+tellraw @s[scores={DialogueTrigger=164,PokemonLeague=0,TalkTime=21}] {"text":"<Máximo> I had wanted to learn how you feel about this world, what kinds of ideals you have developed with your Pokémon..."}
+tellraw @s[scores={DialogueTrigger=164,PokemonLeague=0,TalkTime=31}] {"text":"<Máximo> I feel I was able to find the answer in our battle."}
+tellraw @s[scores={DialogueTrigger=164,PokemonLeague=0,TalkTime=39}] {"text":"<Máximo> The feelings you have for your Pokémon..."}
+tellraw @s[scores={DialogueTrigger=164,PokemonLeague=0,TalkTime=46}] {"text":"<Máximo> And the way that your Pokémon gave their all in battle in response to those feelings..."}
+tellraw @s[scores={DialogueTrigger=164,PokemonLeague=0,TalkTime=55}] {"text":"<Máximo> Those two together created a great power. That is how you seized victory today."}
+tellraw @s[scores={DialogueTrigger=164,PokemonLeague=0,TalkTime=63}] {"text":"<Máximo> I felt a thrill of excitement in my breast when we first met, and now I know for sure that feeling was not misplaced!"}
+tellraw @s[scores={DialogueTrigger=164,PokemonLeague=0,TalkTime=73}] {"text":"<Máximo> You are rightfully the Hoenn region's new Champion!"}
+tellraw @s[scores={DialogueTrigger=164,PokemonLeague=0,TalkTime=82}] {"text":"<Máximo> Step into this room with me, Champion."}
 
 
 #Rematch
 #https://youtu.be/MgkqxXCmrtI?t=91802
-tellraw @s[scores={DialogueTrigger=164,PokemonLeague=1,TalkTime=1}] {"text":"<Steven> I knew you would be strong..."}
-tellraw @s[scores={DialogueTrigger=164,PokemonLeague=1,TalkTime=8}] {"text":"<Steven> But I don't regret our battle."}
-tellraw @s[scores={DialogueTrigger=164,PokemonLeague=1,TalkTime=15}] {"text":"<Steven> Because each time that I battle you, I learn more about Pokémon..."}
-tellraw @s[scores={DialogueTrigger=164,PokemonLeague=1,TalkTime=24}] {"text":"<Steven> Yes..."}
-tellraw @s[scores={DialogueTrigger=164,PokemonLeague=1,TalkTime=30}] {"text":"<Steven> I have something I'd like to give to you in thanks for all you've done."}
+tellraw @s[scores={DialogueTrigger=164,PokemonLeague=1,TalkTime=1}] {"text":"<Máximo> I knew you would be strong..."}
+tellraw @s[scores={DialogueTrigger=164,PokemonLeague=1,TalkTime=8}] {"text":"<Máximo> But I don't regret our battle."}
+tellraw @s[scores={DialogueTrigger=164,PokemonLeague=1,TalkTime=15}] {"text":"<Máximo> Because each time that I battle you, I learn more about Pokémon..."}
+tellraw @s[scores={DialogueTrigger=164,PokemonLeague=1,TalkTime=24}] {"text":"<Máximo> Yes..."}
+tellraw @s[scores={DialogueTrigger=164,PokemonLeague=1,TalkTime=30}] {"text":"<Máximo> I have something I'd like to give to you in thanks for all you've done."}
 
 tellraw @s[scores={DialogueTrigger=164,PokemonLeague=1,TalkTime=38}] ["",{"selector":"@s","italic":true,"color":"gray"},{"text":" obtained a Metagrossite!","italic":true,"color":"gray"}]
 execute as @s[scores={DialogueTrigger=164,PokemonLeague=1,TalkTime=38}] run give @s pixelmon:metagrossite
 execute as @s[scores={DialogueTrigger=164,PokemonLeague=1,TalkTime=38}] run playsound minecraft:megastoneget ambient @s ~ ~ ~ 1 1 1
 
-tellraw @s[scores={DialogueTrigger=164,PokemonLeague=1,TalkTime=44}] {"text":"<Steven> That is a very special piece from my collection..."}
-tellraw @s[scores={DialogueTrigger=164,PokemonLeague=1,TalkTime=52}] {"text":"<Steven> But I think you are capable of appreciating its worth."}
-tellraw @s[scores={DialogueTrigger=164,PokemonLeague=1,TalkTime=60}] {"text":"<Steven> Come. It is time we record your great victory."}
+tellraw @s[scores={DialogueTrigger=164,PokemonLeague=1,TalkTime=44}] {"text":"<Máximo> That is a very special piece from my collection..."}
+tellraw @s[scores={DialogueTrigger=164,PokemonLeague=1,TalkTime=52}] {"text":"<Máximo> But I think you are capable of appreciating its worth."}
+tellraw @s[scores={DialogueTrigger=164,PokemonLeague=1,TalkTime=60}] {"text":"<Máximo> Come. It is time we record your great victory."}
 execute as @s[scores={DialogueTrigger=164,PokemonLeague=1,TalkTime=60}] run scoreboard players add @s TalkTime 22
 
 #tps to Hall of Fame room
 
 
 #Rematch #2
-tellraw @s[scores={DialogueTrigger=164,PokemonLeague=2..,TalkTime=1}] {"text":"<Steven> In the end, you are still the strongest."}
-tellraw @s[scores={DialogueTrigger=164,PokemonLeague=2..,TalkTime=9}] {"text":"<Steven> Amazing."}
-tellraw @s[scores={DialogueTrigger=164,PokemonLeague=2..,TalkTime=15}] {"text":"<Steven> Now let us make a record of your victory!"}
+tellraw @s[scores={DialogueTrigger=164,PokemonLeague=2..,TalkTime=1}] {"text":"<Máximo> In the end, you are still the strongest."}
+tellraw @s[scores={DialogueTrigger=164,PokemonLeague=2..,TalkTime=9}] {"text":"<Máximo> Amazing."}
+tellraw @s[scores={DialogueTrigger=164,PokemonLeague=2..,TalkTime=15}] {"text":"<Máximo> Now let us make a record of your victory!"}
 execute as @s[scores={DialogueTrigger=164,PokemonLeague=2..,TalkTime=15}] run scoreboard players add @s TalkTime 67
 
 #tp to Hall of Fame
@@ -6647,23 +6647,23 @@ tag @s[scores={DialogueTrigger=164,TalkTime=82..}] add Dialogue164
 #Dialogue 165 - Hall of Fame room pre-credits
 #https://youtu.be/MgkqxXCmrtI?t=63203
 
-tellraw @s[scores={DialogueTrigger=165,TalkTime=1}] {"text":"<Steven> This room..."}
-tellraw @s[scores={DialogueTrigger=165,TalkTime=8}] {"text":"<Steven> This is where we maintain the records of Pokémon that prevailed through the harshest of battles."}
-tellraw @s[scores={DialogueTrigger=165,TalkTime=19}] {"text":"<Steven> It is here that League Champions are honored."}
-tellraw @s[scores={DialogueTrigger=165,TalkTime=27}] {"text":"<Steven> Come. We will use this machine to record your name and the names of the partners who battled along with you to triumph over the Pokémon League!"}
+tellraw @s[scores={DialogueTrigger=165,TalkTime=1}] {"text":"<Máximo> This room..."}
+tellraw @s[scores={DialogueTrigger=165,TalkTime=8}] {"text":"<Máximo> This is where we maintain the records of Pokémon that prevailed through the harshest of battles."}
+tellraw @s[scores={DialogueTrigger=165,TalkTime=19}] {"text":"<Máximo> It is here that League Champions are honored."}
+tellraw @s[scores={DialogueTrigger=165,TalkTime=27}] {"text":"<Máximo> Come. We will use this machine to record your name and the names of the partners who battled along with you to triumph over the Pokémon League!"}
 
 #Version 1, add the Eon Flute here?
-tellraw @s[scores={DialogueTrigger=165,TalkTime=40}] {"text":"<Steven> And when you travel the world, you should try to use this."}
-tellraw @s[scores={DialogueTrigger=165,TalkTime=47}] {"text":"<Steven> This flute is one of my favorite items."}
+tellraw @s[scores={DialogueTrigger=165,TalkTime=40}] {"text":"<Máximo> And when you travel the world, you should try to use this."}
+tellraw @s[scores={DialogueTrigger=165,TalkTime=47}] {"text":"<Máximo> This flute is one of my favorite items."}
 
 tellraw @s[scores={DialogueTrigger=165,TalkTime=54}] ["",{"selector":"@s","italic":true,"color":"gray"},{"text":" obtained the Eon Flute","italic":true,"color":"gray"}]
 execute as @s[scores={DialogueTrigger=165,TalkTime=54}] run function hoenn:spawn/eon_flute
 execute as @s[scores={DialogueTrigger=165,TalkTime=54}] run playsound keyitem ambient @s ~ ~ ~ 1 1 1
 
-tellraw @s[scores={DialogueTrigger=165,TalkTime=61,GameVersion=1}] {"text":"<Steven> This Eon Flute is proof of the bond between you and your Latios."}
-tellraw @s[scores={DialogueTrigger=165,TalkTime=61,GameVersion=2}] {"text":"<Steven> This Eon Flute is proof of the bond between you and your Latias."}
-tellraw @s[scores={DialogueTrigger=165,TalkTime=70}] {"text":"<Steven> No matter how far you may be from one another, play that flute and Latios will surely fly straight to you."}
-tellraw @s[scores={DialogueTrigger=165,TalkTime=80}] {"text":"<Steven> Then it can take to the sky, soaring above the land with you astride its back."}
+tellraw @s[scores={DialogueTrigger=165,TalkTime=61,GameVersion=1}] {"text":"<Máximo> This Eon Flute is proof of the bond between you and your Latios."}
+tellraw @s[scores={DialogueTrigger=165,TalkTime=61,GameVersion=2}] {"text":"<Máximo> This Eon Flute is proof of the bond between you and your Latias."}
+tellraw @s[scores={DialogueTrigger=165,TalkTime=70}] {"text":"<Máximo> No matter how far you may be from one another, play that flute and Latios will surely fly straight to you."}
+tellraw @s[scores={DialogueTrigger=165,TalkTime=80}] {"text":"<Máximo> Then it can take to the sky, soaring above the land with you astride its back."}
 
 tag @s[scores={DialogueTrigger=165,TalkTime=80..}] add Dialogue165
 #--------------------------------
@@ -6703,17 +6703,17 @@ execute as @s[scores={DialogueTrigger=166,TalkTime=70}] run function hoenn:trigg
 #Tps player to exterior room with rival
 #https://youtu.be/MgkqxXCmrtI?t=63290
 
-#tellraw @s[scores={DialogueTrigger=166,TalkTime=1}] ["",{"text":"<May> Welcome back, "},{"selector":"@s"},{"text":"."}]
-#tellraw @s[scores={DialogueTrigger=166,TalkTime=1}] {"text":"<May> I just thought, you know, that since we were both here and all...that I'd wait for you."}
-#tellraw @s[scores={DialogueTrigger=166,TalkTime=1}] {"text":"<May> We set out on this journey together, right? So maybe we should finish it together, too."}
-#tellraw @s[scores={DialogueTrigger=166,TalkTime=1}] {"text":"<May> Hee hee..."}
-#tellraw @s[scores={DialogueTrigger=166,TalkTime=1}] {"text":"<May> So...come on! Let's go home! Back to Littleroot Town!"}
+#tellraw @s[scores={DialogueTrigger=166,TalkTime=1}] ["",{"text":"<Aura> Welcome back, "},{"selector":"@s"},{"text":"."}]
+#tellraw @s[scores={DialogueTrigger=166,TalkTime=1}] {"text":"<Aura> I just thought, you know, that since we were both here and all...that I'd wait for you."}
+#tellraw @s[scores={DialogueTrigger=166,TalkTime=1}] {"text":"<Aura> We set out on this journey together, right? So maybe we should finish it together, too."}
+#tellraw @s[scores={DialogueTrigger=166,TalkTime=1}] {"text":"<Aura> Hee hee..."}
+#tellraw @s[scores={DialogueTrigger=166,TalkTime=1}] {"text":"<Aura> So...come on! Let's go home! Back to Littleroot Town!"}
 #
-#tellraw @s[scores={DialogueTrigger=166,TalkTime=1}] ["",{"text":"<Brendan> Welcome back, "},{"selector":"@s"},{"text":"."}]
-#tellraw @s[scores={DialogueTrigger=166,TalkTime=1}] {"text":"<Brendan> I just, uh, you know..."}
-#tellraw @s[scores={DialogueTrigger=166,TalkTime=1}] {"text":"<Brendan> We set out on this journey together, right? So maybe we should finish it together, too."}
-#tellraw @s[scores={DialogueTrigger=166,TalkTime=1}] {"text":"<Brendan> D-don't go trying to read anything into it, though!"}
-#tellraw @s[scores={DialogueTrigger=166,TalkTime=1}] {"text":"<Brendan> Now, come on! We're going home! Back to Littleroot Town!"}
+#tellraw @s[scores={DialogueTrigger=166,TalkTime=1}] ["",{"text":"<Bruno> Welcome back, "},{"selector":"@s"},{"text":"."}]
+#tellraw @s[scores={DialogueTrigger=166,TalkTime=1}] {"text":"<Bruno> I just, uh, you know..."}
+#tellraw @s[scores={DialogueTrigger=166,TalkTime=1}] {"text":"<Bruno> We set out on this journey together, right? So maybe we should finish it together, too."}
+#tellraw @s[scores={DialogueTrigger=166,TalkTime=1}] {"text":"<Bruno> D-don't go trying to read anything into it, though!"}
+#tellraw @s[scores={DialogueTrigger=166,TalkTime=1}] {"text":"<Bruno> Now, come on! We're going home! Back to Littleroot Town!"}
 
 #blinds player
 
@@ -6721,27 +6721,27 @@ execute as @s[scores={DialogueTrigger=166,TalkTime=70}] run function hoenn:trigg
 
 #https://youtu.be/MgkqxXCmrtI?t=63769
 
-#tellraw @s[scores={DialogueTrigger=166,TalkTime=1}] {"text":"<May> Here we are on Route 103 again! Wow, it's so nostalgic, you know?"}
-#tellraw @s[scores={DialogueTrigger=166,TalkTime=1}] {"text":"<May> Oh! Remember that pond? This is where we first battled, isn't it?"}
-#tellraw @s[scores={DialogueTrigger=166,TalkTime=1}] ["",{"text":"<May> ..."},{"selector":"@s"},{"text":"! Could you do something for me?"}]
-#tellraw @s[scores={DialogueTrigger=166,TalkTime=1}] {"text":"<May> Come on! Let's battle one more time!"}
-#tellraw @s[scores={DialogueTrigger=166,TalkTime=1}] {"text":"<May> I wanna know what you saw on your journey, how you felt, and what you experienced out there."}
-#tellraw @s[scores={DialogueTrigger=166,TalkTime=1}] ["",{"text":"<May> I want to understand everything about you and your Pokémon, "},{"selector":"@s"},{"text":"!"}]
-#tellraw @s[scores={DialogueTrigger=166,TalkTime=1}] {"text":"<May> And then..."}
-#tellraw @s[scores={DialogueTrigger=166,TalkTime=1}] {"text":"<May> I want you to understand everything about me and mine!"}
+#tellraw @s[scores={DialogueTrigger=166,TalkTime=1}] {"text":"<Aura> Here we are on Route 103 again! Wow, it's so nostalgic, you know?"}
+#tellraw @s[scores={DialogueTrigger=166,TalkTime=1}] {"text":"<Aura> Oh! Remember that pond? This is where we first battled, isn't it?"}
+#tellraw @s[scores={DialogueTrigger=166,TalkTime=1}] ["",{"text":"<Aura> ..."},{"selector":"@s"},{"text":"! Could you do something for me?"}]
+#tellraw @s[scores={DialogueTrigger=166,TalkTime=1}] {"text":"<Aura> Come on! Let's battle one more time!"}
+#tellraw @s[scores={DialogueTrigger=166,TalkTime=1}] {"text":"<Aura> I wanna know what you saw on your journey, how you felt, and what you experienced out there."}
+#tellraw @s[scores={DialogueTrigger=166,TalkTime=1}] ["",{"text":"<Aura> I want to understand everything about you and your Pokémon, "},{"selector":"@s"},{"text":"!"}]
+#tellraw @s[scores={DialogueTrigger=166,TalkTime=1}] {"text":"<Aura> And then..."}
+#tellraw @s[scores={DialogueTrigger=166,TalkTime=1}] {"text":"<Aura> I want you to understand everything about me and mine!"}
 
 #pokebattle
 
 
 
-#tellraw @s[scores={DialogueTrigger=166,TalkTime=1}] {"text":"<Brendan> Man, this is nostalgic. Back on Route 103, huh?"}
-#tellraw @s[scores={DialogueTrigger=166,TalkTime=1}] {"text":"<Brendan> Remember that pond over there? This is where we battled the first time, huh?"}
-#tellraw @s[scores={DialogueTrigger=166,TalkTime=1}] ["",{"text":"<Brendan> Hey, "},{"selector":"@s"},{"text":"... Do me a favor?"}]
-#tellraw @s[scores={DialogueTrigger=166,TalkTime=1}] {"text":"<Brendan> Come on! Let's battle one more time!"}
-#tellraw @s[scores={DialogueTrigger=166,TalkTime=1}] {"text":"<Brendan> I wanna know about what you saw on your journey, how you felt, and what you experienced out there."}
-#tellraw @s[scores={DialogueTrigger=166,TalkTime=1}] ["",{"text":"<Brendan> I want to know all about you and your Pokémon, "},{"selector":"@s"},{"text":"."}]
-#tellraw @s[scores={DialogueTrigger=166,TalkTime=1}] {"text":"<Brendan> But that's not all..."}
-#tellraw @s[scores={DialogueTrigger=166,TalkTime=1}] {"text":"<Brendan> I want you to know all about me and mine!"}
+#tellraw @s[scores={DialogueTrigger=166,TalkTime=1}] {"text":"<Bruno> Man, this is nostalgic. Back on Route 103, huh?"}
+#tellraw @s[scores={DialogueTrigger=166,TalkTime=1}] {"text":"<Bruno> Remember that pond over there? This is where we battled the first time, huh?"}
+#tellraw @s[scores={DialogueTrigger=166,TalkTime=1}] ["",{"text":"<Bruno> Hey, "},{"selector":"@s"},{"text":"... Do me a favor?"}]
+#tellraw @s[scores={DialogueTrigger=166,TalkTime=1}] {"text":"<Bruno> Come on! Let's battle one more time!"}
+#tellraw @s[scores={DialogueTrigger=166,TalkTime=1}] {"text":"<Bruno> I wanna know about what you saw on your journey, how you felt, and what you experienced out there."}
+#tellraw @s[scores={DialogueTrigger=166,TalkTime=1}] ["",{"text":"<Bruno> I want to know all about you and your Pokémon, "},{"selector":"@s"},{"text":"."}]
+#tellraw @s[scores={DialogueTrigger=166,TalkTime=1}] {"text":"<Bruno> But that's not all..."}
+#tellraw @s[scores={DialogueTrigger=166,TalkTime=1}] {"text":"<Bruno> I want you to know all about me and mine!"}
 
 #pokebattle
 
@@ -6757,25 +6757,25 @@ tag @s[scores={DialogueTrigger=166,TalkTime=83..}] add Dialogue166
 #Rival post-Credit rematch
 #https://youtu.be/MgkqxXCmrtI?t=63979
 
-tellraw @s[scores={DialogueTrigger=167,TalkTime=1}] {"text":"<May> ..."}
-tellraw @s[scores={DialogueTrigger=167,TalkTime=1}] ["",{"text":"<May> Thanks, "},{"selector":"@s"},{"text":"! You really are a Champion!"}]
-tellraw @s[scores={DialogueTrigger=167,TalkTime=1}] {"text":"<May> Meeting so many different people..."}
-tellraw @s[scores={DialogueTrigger=167,TalkTime=1}] {"text":"<May> And encountering so many Pokémon..."}
-tellraw @s[scores={DialogueTrigger=167,TalkTime=1}] {"text":"<May> It's just really..."}
-tellraw @s[scores={DialogueTrigger=167,TalkTime=1}] {"text":"<May> It's been really, really fun!"}
-tellraw @s[scores={DialogueTrigger=167,TalkTime=1}] {"text":"<May> Ah!"}
-tellraw @s[scores={DialogueTrigger=167,TalkTime=1}] ["",{"text":"<May> "},{"selector":"@s"},{"text":"! Look at that!"}]
+tellraw @s[scores={DialogueTrigger=167,TalkTime=1}] {"text":"<Aura> ..."}
+tellraw @s[scores={DialogueTrigger=167,TalkTime=1}] ["",{"text":"<Aura> Thanks, "},{"selector":"@s"},{"text":"! You really are a Champion!"}]
+tellraw @s[scores={DialogueTrigger=167,TalkTime=1}] {"text":"<Aura> Meeting so many different people..."}
+tellraw @s[scores={DialogueTrigger=167,TalkTime=1}] {"text":"<Aura> And encountering so many Pokémon..."}
+tellraw @s[scores={DialogueTrigger=167,TalkTime=1}] {"text":"<Aura> It's just really..."}
+tellraw @s[scores={DialogueTrigger=167,TalkTime=1}] {"text":"<Aura> It's been really, really fun!"}
+tellraw @s[scores={DialogueTrigger=167,TalkTime=1}] {"text":"<Aura> Ah!"}
+tellraw @s[scores={DialogueTrigger=167,TalkTime=1}] ["",{"text":"<Aura> "},{"selector":"@s"},{"text":"! Look at that!"}]
 
 
 
-tellraw @s[scores={DialogueTrigger=167,TalkTime=1}] {"text":"<Brendan> ..."}
-tellraw @s[scores={DialogueTrigger=167,TalkTime=1}] ["",{"text":"<Brendan> Thanks, "},{"selector":"@s"},{"text":"! Just what I'd expect from a Champion!"}]
-tellraw @s[scores={DialogueTrigger=167,TalkTime=1}] {"text":"<Brendan> Getting to meet so many different people..."}
-tellraw @s[scores={DialogueTrigger=167,TalkTime=1}] {"text":"<Brendan> And so many different Pokémon..."}
-tellraw @s[scores={DialogueTrigger=167,TalkTime=1}] {"text":"<Brendan> It's like... I don't know..."}
-tellraw @s[scores={DialogueTrigger=167,TalkTime=1}] {"text":"<Brendan> It's been really, really fun!"}
-tellraw @s[scores={DialogueTrigger=167,TalkTime=1}] {"text":"<Brendan> Oh!"}
-tellraw @s[scores={DialogueTrigger=167,TalkTime=1}] ["",{"text":"<Brendan> "},{"selector":"@s"},{"text":"! Look there!"}]
+tellraw @s[scores={DialogueTrigger=167,TalkTime=1}] {"text":"<Bruno> ..."}
+tellraw @s[scores={DialogueTrigger=167,TalkTime=1}] ["",{"text":"<Bruno> Thanks, "},{"selector":"@s"},{"text":"! Just what I'd expect from a Champion!"}]
+tellraw @s[scores={DialogueTrigger=167,TalkTime=1}] {"text":"<Bruno> Getting to meet so many different people..."}
+tellraw @s[scores={DialogueTrigger=167,TalkTime=1}] {"text":"<Bruno> And so many different Pokémon..."}
+tellraw @s[scores={DialogueTrigger=167,TalkTime=1}] {"text":"<Bruno> It's like... I don't know..."}
+tellraw @s[scores={DialogueTrigger=167,TalkTime=1}] {"text":"<Bruno> It's been really, really fun!"}
+tellraw @s[scores={DialogueTrigger=167,TalkTime=1}] {"text":"<Bruno> Oh!"}
+tellraw @s[scores={DialogueTrigger=167,TalkTime=1}] ["",{"text":"<Bruno> "},{"selector":"@s"},{"text":"! Look there!"}]
 
 #look up to sky, shooting star particles
 
@@ -6940,46 +6940,46 @@ tag @s[scores={DialogueTrigger=169,TalkTime=100..}] add Dialogue169
 #https://youtu.be/MgkqxXCmrtI?t=64553
 
 
-tellraw @s[scores={DialogueTrigger=170,TalkTime=1}] {"text":"<May> Owwww..."}
+tellraw @s[scores={DialogueTrigger=170,TalkTime=1}] {"text":"<Aura> Owwww..."}
 tellraw @s[scores={DialogueTrigger=170,TalkTime=1}] {"text":"<Mrs. Birch> May, are you OK?!"}
 tellraw @s[scores={DialogueTrigger=170,TalkTime=1}] {"text":"<Mrs. Birch> Oh, what should I do! What should I do?! Oh, wibble..."}
-tellraw @s[scores={DialogueTrigger=170,TalkTime=1}] {"text":"<May> It's not that big of a deal, Mom."}
-tellraw @s[scores={DialogueTrigger=170,TalkTime=1}] {"text":"<May> She just knocked me down a bit... Yowch! That stings!"}
-tellraw @s[scores={DialogueTrigger=170,TalkTime=1}] ["",{"text":"<May> ... Oh! "},{"selector":"@s"},{"text":"!"}]
-tellraw @s[scores={DialogueTrigger=170,TalkTime=1}] ["",{"text":"<May> "},{"selector":"@s"},{"text":", you... You're all right, huh?"}]
-tellraw @s[scores={DialogueTrigger=170,TalkTime=1}] {"text":"<May> ...That's a relief."}
-tellraw @s[scores={DialogueTrigger=170,TalkTime=1}] {"text":"<May> It all happened so fast that I couldn't do a thing, but..."}
-tellraw @s[scores={DialogueTrigger=170,TalkTime=1}] {"text":"<May> Some strange woman came in my window, upstairs..."}
-tellraw @s[scores={DialogueTrigger=170,TalkTime=1}] {"text":"<May> And then she... She took my Key Stone from me..."}
-tellraw @s[scores={DialogueTrigger=170,TalkTime=1}] {"text":"<May> I tried to fight her off with my team, but..."}
-tellraw @s[scores={DialogueTrigger=170,TalkTime=1}] {"text":"<May> She was really strong... I didn't stand a chance..."}
-tellraw @s[scores={DialogueTrigger=170,TalkTime=1}] {"text":"<May> I think I heard her muttering under her breath as she left, though..."}
-tellraw @s[scores={DialogueTrigger=170,TalkTime=1}] {"text":"<May> Something like \"Petalia's next...\""}
-tellraw @s[scores={DialogueTrigger=170,TalkTime=1}] ["",{"text":"<May> "},{"selector":"@s"},{"text":"...be careful."}]
-tellraw @s[scores={DialogueTrigger=170,TalkTime=1}] {"text":"<May> I'm really happy you came to visit me, but...I'm sorry..."}
-tellraw @s[scores={DialogueTrigger=170,TalkTime=1}] {"text":"<May> I think I'll have to sit this one out."}
+tellraw @s[scores={DialogueTrigger=170,TalkTime=1}] {"text":"<Aura> It's not that big of a deal, Mom."}
+tellraw @s[scores={DialogueTrigger=170,TalkTime=1}] {"text":"<Aura> She just knocked me down a bit... Yowch! That stings!"}
+tellraw @s[scores={DialogueTrigger=170,TalkTime=1}] ["",{"text":"<Aura> ... Oh! "},{"selector":"@s"},{"text":"!"}]
+tellraw @s[scores={DialogueTrigger=170,TalkTime=1}] ["",{"text":"<Aura> "},{"selector":"@s"},{"text":", you... You're all right, huh?"}]
+tellraw @s[scores={DialogueTrigger=170,TalkTime=1}] {"text":"<Aura> ...That's a relief."}
+tellraw @s[scores={DialogueTrigger=170,TalkTime=1}] {"text":"<Aura> It all happened so fast that I couldn't do a thing, but..."}
+tellraw @s[scores={DialogueTrigger=170,TalkTime=1}] {"text":"<Aura> Some strange woman came in my window, upstairs..."}
+tellraw @s[scores={DialogueTrigger=170,TalkTime=1}] {"text":"<Aura> And then she... She took my Key Stone from me..."}
+tellraw @s[scores={DialogueTrigger=170,TalkTime=1}] {"text":"<Aura> I tried to fight her off with my team, but..."}
+tellraw @s[scores={DialogueTrigger=170,TalkTime=1}] {"text":"<Aura> She was really strong... I didn't stand a chance..."}
+tellraw @s[scores={DialogueTrigger=170,TalkTime=1}] {"text":"<Aura> I think I heard her muttering under her breath as she left, though..."}
+tellraw @s[scores={DialogueTrigger=170,TalkTime=1}] {"text":"<Aura> Something like \"Petalia's next...\""}
+tellraw @s[scores={DialogueTrigger=170,TalkTime=1}] ["",{"text":"<Aura> "},{"selector":"@s"},{"text":"...be careful."}]
+tellraw @s[scores={DialogueTrigger=170,TalkTime=1}] {"text":"<Aura> I'm really happy you came to visit me, but...I'm sorry..."}
+tellraw @s[scores={DialogueTrigger=170,TalkTime=1}] {"text":"<Aura> I think I'll have to sit this one out."}
 tellraw @s[scores={DialogueTrigger=170,TalkTime=1}] {"text":"<Mrs. Birch> Who could have done such a thing to my sweet girl..."}
 
 
 
-tellraw @s[scores={DialogueTrigger=170,TalkTime=1}] {"text":"<Brendan> Ughhh..."}
+tellraw @s[scores={DialogueTrigger=170,TalkTime=1}] {"text":"<Bruno> Ughhh..."}
 tellraw @s[scores={DialogueTrigger=170,TalkTime=1}] {"text":"<Mrs. Birch> Brendan, are you OK?!"}
 tellraw @s[scores={DialogueTrigger=170,TalkTime=1}] {"text":"<Mrs. Birch> Oh, what should I do! What should I do?! Oh, wibble..."}
-tellraw @s[scores={DialogueTrigger=170,TalkTime=1}] {"text":"<Brendan> It's not that big of a deal, Mom."}
-tellraw @s[scores={DialogueTrigger=170,TalkTime=1}] {"text":"<Brendan> She just knocked me down a bit... Yowch! That stings!"}
-tellraw @s[scores={DialogueTrigger=170,TalkTime=1}] ["",{"text":"<Brendan> ... Oh! H-hey, "},{"selector":"@s"},{"text":"!"}]
-tellraw @s[scores={DialogueTrigger=170,TalkTime=1}] {"text":"<Brendan> Looks like she didn't get you, huh?"}
-tellraw @s[scores={DialogueTrigger=170,TalkTime=1}] {"text":"<Brendan> That's a relief."}
-tellraw @s[scores={DialogueTrigger=170,TalkTime=1}] {"text":"<Brendan> Everything happened so fast that I couldn't do a thing, but..."}
-tellraw @s[scores={DialogueTrigger=170,TalkTime=1}] {"text":"<Brendan> Some strange woman came in my window, upstairs..."}
-tellraw @s[scores={DialogueTrigger=170,TalkTime=1}] {"text":"<Brendan> And then she... She stole my Key Stone..."}
-tellraw @s[scores={DialogueTrigger=170,TalkTime=1}] {"text":"<Brendan> I tried to fight her off with my team, but..."}
-tellraw @s[scores={DialogueTrigger=170,TalkTime=1}] {"text":"<Brendan> She was unstoppable... I didn't stand a chance..."}
-tellraw @s[scores={DialogueTrigger=170,TalkTime=1}] {"text":"<Brendan> I think I heard her muttering under her breath when she left, though..."}
-tellraw @s[scores={DialogueTrigger=170,TalkTime=1}] {"text":"<Brendan> Something like \"Petalia's next...\""}
-tellraw @s[scores={DialogueTrigger=170,TalkTime=1}] ["",{"text":"<Brendan> ...You be careful, "},{"selector":"@s"},{"text":"."}]
-tellraw @s[scores={DialogueTrigger=170,TalkTime=1}] {"text":"<Brendan> Um, it's really cool that you came to visit me, but...sorry..."}
-tellraw @s[scores={DialogueTrigger=170,TalkTime=1}] {"text":"<Brendan> I think I gotta sit this one out..."}
+tellraw @s[scores={DialogueTrigger=170,TalkTime=1}] {"text":"<Bruno> It's not that big of a deal, Mom."}
+tellraw @s[scores={DialogueTrigger=170,TalkTime=1}] {"text":"<Bruno> She just knocked me down a bit... Yowch! That stings!"}
+tellraw @s[scores={DialogueTrigger=170,TalkTime=1}] ["",{"text":"<Bruno> ... Oh! H-hey, "},{"selector":"@s"},{"text":"!"}]
+tellraw @s[scores={DialogueTrigger=170,TalkTime=1}] {"text":"<Bruno> Looks like she didn't get you, huh?"}
+tellraw @s[scores={DialogueTrigger=170,TalkTime=1}] {"text":"<Bruno> That's a relief."}
+tellraw @s[scores={DialogueTrigger=170,TalkTime=1}] {"text":"<Bruno> Everything happened so fast that I couldn't do a thing, but..."}
+tellraw @s[scores={DialogueTrigger=170,TalkTime=1}] {"text":"<Bruno> Some strange woman came in my window, upstairs..."}
+tellraw @s[scores={DialogueTrigger=170,TalkTime=1}] {"text":"<Bruno> And then she... She stole my Key Stone..."}
+tellraw @s[scores={DialogueTrigger=170,TalkTime=1}] {"text":"<Bruno> I tried to fight her off with my team, but..."}
+tellraw @s[scores={DialogueTrigger=170,TalkTime=1}] {"text":"<Bruno> She was unstoppable... I didn't stand a chance..."}
+tellraw @s[scores={DialogueTrigger=170,TalkTime=1}] {"text":"<Bruno> I think I heard her muttering under her breath when she left, though..."}
+tellraw @s[scores={DialogueTrigger=170,TalkTime=1}] {"text":"<Bruno> Something like \"Petalia's next...\""}
+tellraw @s[scores={DialogueTrigger=170,TalkTime=1}] ["",{"text":"<Bruno> ...You be careful, "},{"selector":"@s"},{"text":"."}]
+tellraw @s[scores={DialogueTrigger=170,TalkTime=1}] {"text":"<Bruno> Um, it's really cool that you came to visit me, but...sorry..."}
+tellraw @s[scores={DialogueTrigger=170,TalkTime=1}] {"text":"<Bruno> I think I gotta sit this one out..."}
 tellraw @s[scores={DialogueTrigger=170,TalkTime=1}] {"text":"<Mrs. Birch> Who could have done such a thing to my sweet boy..."}
 
 tag @s[scores={DialogueTrigger=170,TalkTime=100..}] add Dialogue170
@@ -7165,15 +7165,15 @@ tellraw @s[scores={DialogueTrigger=178,TalkTime=1}] ["",{"text":"<Blasco> You be
 tellraw @s[scores={DialogueTrigger=178,TalkTime=1}] {"text":"The Entry Call (Ver. 0.09) app rang on your PokéNav Plus!"}
 tellraw @s[scores={DialogueTrigger=178,TalkTime=1}] {"text":"???: ...'Lo? Hello?"}
 tellraw @s[scores={DialogueTrigger=178,TalkTime=1}] ["",{"text":"???: ...Is that you, "},{"selector":"@s"},{"text":"?"}]
-tellraw @s[scores={DialogueTrigger=178,TalkTime=1}] {"text":"<Steven> It's me. Steven. Have you been doing well?"}
-tellraw @s[scores={DialogueTrigger=178,TalkTime=1}] {"text":"<Steven> Heh... I imagine you must be quite shocked."}
-tellraw @s[scores={DialogueTrigger=178,TalkTime=1}] {"text":"<Steven> This is a communication mode that Devon is still currently developing."}
-tellraw @s[scores={DialogueTrigger=178,TalkTime=1}] {"text":"<Steven> It comes installed on every PokéNav Plus."}
-tellraw @s[scores={DialogueTrigger=178,TalkTime=1}] {"text":"<Steven> I thought I would only use it if I needed to contact you urgently..."}
-tellraw @s[scores={DialogueTrigger=178,TalkTime=1}] {"text":"<Steven> But it looks as though that time has already come."}
-tellraw @s[scores={DialogueTrigger=178,TalkTime=1}] {"text":"<Steven> I'm sorry to ask this of you, but I need you to come to the Devon Corporation in Férrica."}
-tellraw @s[scores={DialogueTrigger=178,TalkTime=1}] {"text":"<Steven> There's something I have to talk to you about—in person..."}
-tellraw @s[scores={DialogueTrigger=178,TalkTime=1}] {"text":"<Steven> I'll be waiting for you there."}
+tellraw @s[scores={DialogueTrigger=178,TalkTime=1}] {"text":"<Máximo> It's me. Steven. Have you been doing well?"}
+tellraw @s[scores={DialogueTrigger=178,TalkTime=1}] {"text":"<Máximo> Heh... I imagine you must be quite shocked."}
+tellraw @s[scores={DialogueTrigger=178,TalkTime=1}] {"text":"<Máximo> This is a communication mode that Devon is still currently developing."}
+tellraw @s[scores={DialogueTrigger=178,TalkTime=1}] {"text":"<Máximo> It comes installed on every PokéNav Plus."}
+tellraw @s[scores={DialogueTrigger=178,TalkTime=1}] {"text":"<Máximo> I thought I would only use it if I needed to contact you urgently..."}
+tellraw @s[scores={DialogueTrigger=178,TalkTime=1}] {"text":"<Máximo> But it looks as though that time has already come."}
+tellraw @s[scores={DialogueTrigger=178,TalkTime=1}] {"text":"<Máximo> I'm sorry to ask this of you, but I need you to come to the Devon Corporation in Férrica."}
+tellraw @s[scores={DialogueTrigger=178,TalkTime=1}] {"text":"<Máximo> There's something I have to talk to you about—in person..."}
+tellraw @s[scores={DialogueTrigger=178,TalkTime=1}] {"text":"<Máximo> I'll be waiting for you there."}
 tellraw @s[scores={DialogueTrigger=178,TalkTime=1}] {"text":"...Kzt!"}
 
 tag @s[scores={DialogueTrigger=178,TalkTime=100..}] add Dialogue178
@@ -7182,13 +7182,13 @@ tag @s[scores={DialogueTrigger=178,TalkTime=100..}] add Dialogue178
 #Meeting Steven outside Devon Corp
 #https://youtu.be/MgkqxXCmrtI?t=65021
 
-tellraw @s[scores={DialogueTrigger=179,TalkTime=1}] ["",{"text":"<Steven> "},{"selector":"@s"},{"text":"..."}]
-tellraw @s[scores={DialogueTrigger=179,TalkTime=1}] {"text":"<Steven> I'm sorry about summoning you so suddenly."}
-tellraw @s[scores={DialogueTrigger=179,TalkTime=1}] {"text":"<Steven> It's well known how often my intuition turns out to be right."}
-tellraw @s[scores={DialogueTrigger=179,TalkTime=1}] {"text":"<Steven> But I never imagined we would be meeting again this soon!"}
-tellraw @s[scores={DialogueTrigger=179,TalkTime=1}] {"text":"<Steven> I'm sorry to say it is not happy news that brings us together."}
-tellraw @s[scores={DialogueTrigger=179,TalkTime=1}] {"text":"<Steven> Sigh. This isn't something we should discuss in public."}
-tellraw @s[scores={DialogueTrigger=179,TalkTime=1}] {"text":"<Steven> Let's continue this inside. After you."}
+tellraw @s[scores={DialogueTrigger=179,TalkTime=1}] ["",{"text":"<Máximo> "},{"selector":"@s"},{"text":"..."}]
+tellraw @s[scores={DialogueTrigger=179,TalkTime=1}] {"text":"<Máximo> I'm sorry about summoning you so suddenly."}
+tellraw @s[scores={DialogueTrigger=179,TalkTime=1}] {"text":"<Máximo> It's well known how often my intuition turns out to be right."}
+tellraw @s[scores={DialogueTrigger=179,TalkTime=1}] {"text":"<Máximo> But I never imagined we would be meeting again this soon!"}
+tellraw @s[scores={DialogueTrigger=179,TalkTime=1}] {"text":"<Máximo> I'm sorry to say it is not happy news that brings us together."}
+tellraw @s[scores={DialogueTrigger=179,TalkTime=1}] {"text":"<Máximo> Sigh. This isn't something we should discuss in public."}
+tellraw @s[scores={DialogueTrigger=179,TalkTime=1}] {"text":"<Máximo> Let's continue this inside. After you."}
 
 #tp Steven NPC out upon player going into building
 
@@ -7199,14 +7199,14 @@ tag @s[scores={DialogueTrigger=179,TalkTime=100..}] add Dialogue179
 
 #tp player upstairs to Stone's room
 
-tellraw @s[scores={DialogueTrigger=180,TalkTime=1}] {"text":"<Steven> Dad..."}
-tellraw @s[scores={DialogueTrigger=180,TalkTime=1}] ["",{"text":"<Steven> "},{"selector":"@s"},{"text":" is here."}]
+tellraw @s[scores={DialogueTrigger=180,TalkTime=1}] {"text":"<Máximo> Dad..."}
+tellraw @s[scores={DialogueTrigger=180,TalkTime=1}] ["",{"text":"<Máximo> "},{"selector":"@s"},{"text":" is here."}]
 tellraw @s[scores={DialogueTrigger=180,TalkTime=1}] {"text":"<Mr. Stone> Well, welcome, welcome."}
 tellraw @s[scores={DialogueTrigger=180,TalkTime=1}] {"text":"<Mr. Stone> It's been quite a while... hasn't it?"}
 tellraw @s[scores={DialogueTrigger=180,TalkTime=1}] {"text":"<Mr. Stone> Ho ho ho... I suppose I'm just getting old."}
 tellraw @s[scores={DialogueTrigger=180,TalkTime=1}] {"text":"<Mr. Stone> Recently I seem to forget details just as soon as I learn them..."}
 tellraw @s[scores={DialogueTrigger=180,TalkTime=1}] {"text":"<Mr. Stone> Ho ho ho ho..."}
-tellraw @s[scores={DialogueTrigger=180,TalkTime=1}] {"text":"<Steven> ...Dad?"}
+tellraw @s[scores={DialogueTrigger=180,TalkTime=1}] {"text":"<Máximo> ...Dad?"}
 tellraw @s[scores={DialogueTrigger=180,TalkTime=1}] {"text":"<Mr. Stone> Ahem!"}
 tellraw @s[scores={DialogueTrigger=180,TalkTime=1}] {"text":"<Mr. Stone> Oh, I know. I know what you want to say."}
 tellraw @s[scores={DialogueTrigger=180,TalkTime=1}] {"text":"<Mr. Stone> My, what a hasty, impatient one you are!"}
@@ -7215,7 +7215,7 @@ tellraw @s[scores={DialogueTrigger=180,TalkTime=1}] {"text":"<Mr. Stone> ...Hm? 
 tellraw @s[scores={DialogueTrigger=180,TalkTime=1}] ["",{"text":"<Mr. Stone> So you're the new Champion, "},{"selector":"@s"},{"text":"?"}]
 tellraw @s[scores={DialogueTrigger=180,TalkTime=1}] {"text":"<Mr. Stone> Then I guess we'll never break you of that impatience after all, Steven!"}
 tellraw @s[scores={DialogueTrigger=180,TalkTime=1}] {"text":"<Mr. Stone> Ho ho ho ho!"}
-tellraw @s[scores={DialogueTrigger=180,TalkTime=1}] {"text":"<Steven> Dad!"}
+tellraw @s[scores={DialogueTrigger=180,TalkTime=1}] {"text":"<Máximo> Dad!"}
 tellraw @s[scores={DialogueTrigger=180,TalkTime=1}] {"text":"<Mr. Stone> Bah! I know... I know..."}
 tellraw @s[scores={DialogueTrigger=180,TalkTime=1}] {"text":"<Mr. Stone> Can't you take a joke..."}
 tellraw @s[scores={DialogueTrigger=180,TalkTime=1}] ["",{"text":"<Mr. Stone> Now then, "},{"selector":"@s."}]
@@ -7244,23 +7244,23 @@ tellraw @s[scores={DialogueTrigger=180,TalkTime=1}] {"text":"<Mr. Stone> A huge 
 tellraw @s[scores={DialogueTrigger=180,TalkTime=1}] {"text":"<Mr. Stone> We have been working together with the Mossdeep Space Center, which was first to recognize this danger."}
 tellraw @s[scores={DialogueTrigger=180,TalkTime=1}] {"text":"<Mr. Stone> We are devising countermeasures that would use our rockets, but..."}
 tellraw @s[scores={DialogueTrigger=180,TalkTime=1}] {"text":"<Mr. Stone> In order for these plans to succeed, though, we need a Meteorite Shard."}
-tellraw @s[scores={DialogueTrigger=180,TalkTime=1}] {"text":"<Steven> So that's it..."}
-tellraw @s[scores={DialogueTrigger=180,TalkTime=1}] {"text":"<Steven> You want them to go and get that shard for you."}
+tellraw @s[scores={DialogueTrigger=180,TalkTime=1}] {"text":"<Máximo> So that's it..."}
+tellraw @s[scores={DialogueTrigger=180,TalkTime=1}] {"text":"<Máximo> You want them to go and get that shard for you."}
 tellraw @s[scores={DialogueTrigger=180,TalkTime=1}] {"text":"<Mr. Stone> Hah! That's my boy, all right! I knew you'd understand at once."}
-tellraw @s[scores={DialogueTrigger=180,TalkTime=1}] {"text":"<Steven> It was hardly a deduction worthy of praise..."}
-tellraw @s[scores={DialogueTrigger=180,TalkTime=1}] {"text":"<Mr. Stone> I want you to make your way to the Granite Cave near Dewford."}
+tellraw @s[scores={DialogueTrigger=180,TalkTime=1}] {"text":"<Máximo> It was hardly a deduction worthy of praise..."}
+tellraw @s[scores={DialogueTrigger=180,TalkTime=1}] {"text":"<Mr. Stone> I want you to make your way to the Granite Cave near Azuliza."}
 tellraw @s[scores={DialogueTrigger=180,TalkTime=1}] {"text":"<Mr. Stone> According to our surveys, you should be able to find the kind of Meteorite Shards that we need there."}
 tellraw @s[scores={DialogueTrigger=180,TalkTime=1}] {"text":"<Mr. Stone> And you, Steven..."}
 tellraw @s[scores={DialogueTrigger=180,TalkTime=1}] {"text":"<Mr. Stone> I want you, Son, to head for the Space Center at once to start the preparations, using that Link Cable that I gave you."}
-tellraw @s[scores={DialogueTrigger=180,TalkTime=1}] {"text":"<Steven> The Link Cable? So it is to be a warp system..."}
-tellraw @s[scores={DialogueTrigger=180,TalkTime=1}] {"text":"<Steven> Yes, I understand. But Granite Cave..."}
-tellraw @s[scores={DialogueTrigger=180,TalkTime=1}] {"text":"<Steven> Ah. I see. The floor where we first met— the floor with the ancient wall paintings."}
-tellraw @s[scores={DialogueTrigger=180,TalkTime=1}] {"text":"<Steven> It is true that there were many shards of meteorite scattered about there."}
-tellraw @s[scores={DialogueTrigger=180,TalkTime=1}] ["",{"text":"<Steven> It looks as though it's decided then, "},{"selector":"@s"},{"text":"."}]
-tellraw @s[scores={DialogueTrigger=180,TalkTime=1}] {"text":"<Steven> I will head for the Space Center in Mossdeep."}
-tellraw @s[scores={DialogueTrigger=180,TalkTime=1}] {"text":"<Steven> If I learn anything, I will contact you at once."}
-tellraw @s[scores={DialogueTrigger=180,TalkTime=1}] {"text":"<Steven> Though it will end up as another one-sided message like the one I sent you, I'm afraid."}
-tellraw @s[scores={DialogueTrigger=180,TalkTime=1}] {"text":"<Steven> Good luck."}
+tellraw @s[scores={DialogueTrigger=180,TalkTime=1}] {"text":"<Máximo> The Link Cable? So it is to be a warp system..."}
+tellraw @s[scores={DialogueTrigger=180,TalkTime=1}] {"text":"<Máximo> Yes, I understand. But Granite Cave..."}
+tellraw @s[scores={DialogueTrigger=180,TalkTime=1}] {"text":"<Máximo> Ah. I see. The floor where we first met— the floor with the ancient wall paintings."}
+tellraw @s[scores={DialogueTrigger=180,TalkTime=1}] {"text":"<Máximo> It is true that there were many shards of meteorite scattered about there."}
+tellraw @s[scores={DialogueTrigger=180,TalkTime=1}] ["",{"text":"<Máximo> It looks as though it's decided then, "},{"selector":"@s"},{"text":"."}]
+tellraw @s[scores={DialogueTrigger=180,TalkTime=1}] {"text":"<Máximo> I will head for the Space Center in Mossdeep."}
+tellraw @s[scores={DialogueTrigger=180,TalkTime=1}] {"text":"<Máximo> If I learn anything, I will contact you at once."}
+tellraw @s[scores={DialogueTrigger=180,TalkTime=1}] {"text":"<Máximo> Though it will end up as another one-sided message like the one I sent you, I'm afraid."}
+tellraw @s[scores={DialogueTrigger=180,TalkTime=1}] {"text":"<Máximo> Good luck."}
 tellraw @s[scores={DialogueTrigger=180,TalkTime=1}] {"text":"<Mr. Stone> ...Steven? You be careful."}
 
 #Steven tps out
@@ -7320,11 +7320,11 @@ tellraw @s[scores={DialogueTrigger=182,TalkTime=1}] {"text":"<Zinnia> So what'll
 #tp out
 
 tellraw @s[scores={DialogueTrigger=182,TalkTime=1}] {"text":"The Entry Call (Ver. 0.09) app rang on your PokéNav Plus!"}
-tellraw @s[scores={DialogueTrigger=182,TalkTime=1}] ["",{"text":"<Steven> ..."},{"selector":"@s"},{"text":"."}]
-tellraw @s[scores={DialogueTrigger=182,TalkTime=1}] {"text":"<Steven> Were you able to find the Meteorite Shard that we need?"}
-tellraw @s[scores={DialogueTrigger=182,TalkTime=1}] {"text":"<Steven> If you were able to secure it, could you hurry back to us at the Mossdeep Space Center?"}
-tellraw @s[scores={DialogueTrigger=182,TalkTime=1}] {"text":"<Steven> I'm afraid we don't seem to have much time left..."}
-tellraw @s[scores={DialogueTrigger=182,TalkTime=1}] {"text":"<Steven> ...I'll be waiting for you."}
+tellraw @s[scores={DialogueTrigger=182,TalkTime=1}] ["",{"text":"<Máximo> ..."},{"selector":"@s"},{"text":"."}]
+tellraw @s[scores={DialogueTrigger=182,TalkTime=1}] {"text":"<Máximo> Were you able to find the Meteorite Shard that we need?"}
+tellraw @s[scores={DialogueTrigger=182,TalkTime=1}] {"text":"<Máximo> If you were able to secure it, could you hurry back to us at the Mossdeep Space Center?"}
+tellraw @s[scores={DialogueTrigger=182,TalkTime=1}] {"text":"<Máximo> I'm afraid we don't seem to have much time left..."}
+tellraw @s[scores={DialogueTrigger=182,TalkTime=1}] {"text":"<Máximo> ...I'll be waiting for you."}
 tellraw @s[scores={DialogueTrigger=182,TalkTime=1}] {"text":"...Kzt!"}
 
 tag @s[scores={DialogueTrigger=182,TalkTime=100..}] add Dialogue182
@@ -7344,10 +7344,10 @@ tellraw @s[scores={DialogueTrigger=183,TalkTime=1}] {"text":"<Professor Cozmo> A
 
 tellraw @s[scores={DialogueTrigger=183,TalkTime=1}] ["",{"selector":"@s","italic":true,"color":"gray"},{"text":" handed over the Meteorite Shard to Professor Cozmo!","italic":true,"color":"gray"}]
 
-tellraw @s[scores={DialogueTrigger=183,TalkTime=1}] {"text":"<Steven> I was rather surprised to learn that you knew the professor."}
-tellraw @s[scores={DialogueTrigger=183,TalkTime=1}] {"text":"<Steven> You really do seem to make connections everywhere you go."}
-tellraw @s[scores={DialogueTrigger=183,TalkTime=1}] {"text":"<Steven> Now then, Professor..."}
-tellraw @s[scores={DialogueTrigger=183,TalkTime=1}] {"text":"<Steven> Could I ask you to explain once more about the current plan?"}
+tellraw @s[scores={DialogueTrigger=183,TalkTime=1}] {"text":"<Máximo> I was rather surprised to learn that you knew the professor."}
+tellraw @s[scores={DialogueTrigger=183,TalkTime=1}] {"text":"<Máximo> You really do seem to make connections everywhere you go."}
+tellraw @s[scores={DialogueTrigger=183,TalkTime=1}] {"text":"<Máximo> Now then, Professor..."}
+tellraw @s[scores={DialogueTrigger=183,TalkTime=1}] {"text":"<Máximo> Could I ask you to explain once more about the current plan?"}
 tellraw @s[scores={DialogueTrigger=183,TalkTime=1}] {"text":"<Professor Cozmo> Indeed... Please come this way."}
 
 #tps over to the control panel
@@ -7365,8 +7365,8 @@ tellraw @s[scores={DialogueTrigger=183,TalkTime=1}] {"text":"<Professor Cozmo> I
 tellraw @s[scores={DialogueTrigger=183,TalkTime=1}] {"text":"<Professor Cozmo> Those panels that spin you about and then out you come, warped to another spot."}
 tellraw @s[scores={DialogueTrigger=183,TalkTime=1}] {"text":"<Professor Cozmo> I imagine you've stepped on a few such?"}
 
-tellraw @s[scores={DialogueTrigger=183,TalkTime=1}] {"text":"<Steven> An audacious plan... And using such technology you would..."}
-tellraw @s[scores={DialogueTrigger=183,TalkTime=1}] {"text":"<Steven> May I ask where exactly the asteroid will be warped to?"}
+tellraw @s[scores={DialogueTrigger=183,TalkTime=1}] {"text":"<Máximo> An audacious plan... And using such technology you would..."}
+tellraw @s[scores={DialogueTrigger=183,TalkTime=1}] {"text":"<Máximo> May I ask where exactly the asteroid will be warped to?"}
 tellraw @s[scores={DialogueTrigger=183,TalkTime=1}] {"text":"<Professor Cozmo> Well. We're not entirely sure, but..."}
 tellraw @s[scores={DialogueTrigger=183,TalkTime=1}] {"text":"<Professor Cozmo> We do have a device that links the warp holes."}
 tellraw @s[scores={DialogueTrigger=183,TalkTime=1}] {"text":"<Professor Cozmo> We've named it the Link Cable."}
@@ -7388,7 +7388,7 @@ tellraw @s[scores={DialogueTrigger=183,TalkTime=1}] {"text":"<Lass> Ugh..."}
 
 #tps Steven and Cozmo near Zinnia
 
-tellraw @s[scores={DialogueTrigger=183,TalkTime=1}] {"text":"<Steven> Who...are you? You're no sightseer..."}
+tellraw @s[scores={DialogueTrigger=183,TalkTime=1}] {"text":"<Máximo> Who...are you? You're no sightseer..."}
 tellraw @s[scores={DialogueTrigger=183,TalkTime=1}] {"text":"<Zinnia> Oh me, we do seem to keep running into one another."}
 tellraw @s[scores={DialogueTrigger=183,TalkTime=1}] ["",{"text":"<Zinnia> You are a busy trainer, "},{"selector":"@s"},{"text":"."}]
 tellraw @s[scores={DialogueTrigger=183,TalkTime=1}] {"text":"<Professor Cozmo> Wh-who are you?! What're you doing here?!"}
@@ -7404,7 +7404,7 @@ tellraw @s[scores={DialogueTrigger=183,TalkTime=1}] {"text":"<Zinnia> So you're 
 tellraw @s[scores={DialogueTrigger=183,TalkTime=1}] {"text":"<Zinnia> It's a snap of your fingers to repeat the sins of the past."}
 tellraw @s[scores={DialogueTrigger=183,TalkTime=1}] {"text":"<Zinnia> Worse, if what I overheard is true..."}
 tellraw @s[scores={DialogueTrigger=183,TalkTime=1}] {"text":"<Zinnia> This time, you're about to commit an error more abominable than before!"}
-tellraw @s[scores={DialogueTrigger=183,TalkTime=1}] {"text":"<Steven> Tell me, would you rather we sit here wringing our hands, waiting for that meteoroid to strike us?"}
+tellraw @s[scores={DialogueTrigger=183,TalkTime=1}] {"text":"<Máximo> Tell me, would you rather we sit here wringing our hands, waiting for that meteoroid to strike us?"}
 tellraw @s[scores={DialogueTrigger=183,TalkTime=1}] {"text":"<Zinnia> Ahahahaha! What's up with that?"}
 tellraw @s[scores={DialogueTrigger=183,TalkTime=1}] {"text":"<Zinnia> You're a pretty simple guy for a former Pokémon League Champion."}
 tellraw @s[scores={DialogueTrigger=183,TalkTime=1}] {"text":"<Zinnia> Then I guess I'll hang my hopes on what our current Champion will have to say."}
@@ -7449,19 +7449,19 @@ tellraw @s[scores={DialogueTrigger=184,TalkTime=1}] {"text":"<Whismur> Mur mur m
 
 #tps out
 
-tellraw @s[scores={DialogueTrigger=184,TalkTime=1}] {"text":"<Steven> ... Who was that woman?"}
-tellraw @s[scores={DialogueTrigger=184,TalkTime=1}] {"text":"<Steven> And the way she spoke to us..."}
-tellraw @s[scores={DialogueTrigger=184,TalkTime=1}] {"text":"<Steven> It's almost as if she came here for some kind of confirmation..."}
-tellraw @s[scores={DialogueTrigger=184,TalkTime=1}] {"text":"<Steven> Ah, Professor, forgive me."}
-tellraw @s[scores={DialogueTrigger=184,TalkTime=1}] {"text":"<Steven> I believe you were trying to tell us something before that woman interrupted us?"}
+tellraw @s[scores={DialogueTrigger=184,TalkTime=1}] {"text":"<Máximo> ... Who was that woman?"}
+tellraw @s[scores={DialogueTrigger=184,TalkTime=1}] {"text":"<Máximo> And the way she spoke to us..."}
+tellraw @s[scores={DialogueTrigger=184,TalkTime=1}] {"text":"<Máximo> It's almost as if she came here for some kind of confirmation..."}
+tellraw @s[scores={DialogueTrigger=184,TalkTime=1}] {"text":"<Máximo> Ah, Professor, forgive me."}
+tellraw @s[scores={DialogueTrigger=184,TalkTime=1}] {"text":"<Máximo> I believe you were trying to tell us something before that woman interrupted us?"}
 tellraw @s[scores={DialogueTrigger=184,TalkTime=1}] {"text":"<Professor Cozmo> Uh... Yes... Ah, you see..."}
 tellraw @s[scores={DialogueTrigger=184,TalkTime=1}] {"text":"<Professor Cozmo> In order to complete the warp hole, we will need another Meteorite Shard, an extremely pure one..."}
-tellraw @s[scores={DialogueTrigger=184,TalkTime=1}] {"text":"<Steven> Then should we head to Granite Cave once again?"}
+tellraw @s[scores={DialogueTrigger=184,TalkTime=1}] {"text":"<Máximo> Then should we head to Granite Cave once again?"}
 tellraw @s[scores={DialogueTrigger=184,TalkTime=1}] {"text":"<Professor Cozmo> No... The kind of Meteorite Shard we need this time can only be found at Meteor Falls."}
-tellraw @s[scores={DialogueTrigger=184,TalkTime=1}] {"text":"<Steven> Meteor Falls!"}
-tellraw @s[scores={DialogueTrigger=184,TalkTime=1}] {"text":"<Steven> I see... Perhaps we will learn something there..."}
-tellraw @s[scores={DialogueTrigger=184,TalkTime=1}] {"text":"<Steven> I will head to Meteor Falls at once. Follow as soon as you are ready."}
-tellraw @s[scores={DialogueTrigger=184,TalkTime=1}] {"text":"<Steven> I feel we might discover even more than a Meteorite Shard there..."}
+tellraw @s[scores={DialogueTrigger=184,TalkTime=1}] {"text":"<Máximo> Meteor Falls!"}
+tellraw @s[scores={DialogueTrigger=184,TalkTime=1}] {"text":"<Máximo> I see... Perhaps we will learn something there..."}
+tellraw @s[scores={DialogueTrigger=184,TalkTime=1}] {"text":"<Máximo> I will head to Meteor Falls at once. Follow as soon as you are ready."}
+tellraw @s[scores={DialogueTrigger=184,TalkTime=1}] {"text":"<Máximo> I feel we might discover even more than a Meteorite Shard there..."}
 
 #Steven TPs out
 
@@ -7473,10 +7473,10 @@ tag @s[scores={DialogueTrigger=184,TalkTime=100..}] add Dialogue184
 
 #summon exclamation
 
-tellraw @s[scores={DialogueTrigger=185,TalkTime=1}] ["",{"text":"<Steven> "},{"selector":"@s"},{"text":". We have the Meteorite Shard."}]
-tellraw @s[scores={DialogueTrigger=185,TalkTime=1}] {"text":"<Steven> And I have come to understand many things, as I suspected might happen."}
-tellraw @s[scores={DialogueTrigger=185,TalkTime=1}] {"text":"<Steven> Allow me to introduce you."}
-tellraw @s[scores={DialogueTrigger=185,TalkTime=1}] {"text":"<Steven> The honorable lady you see before you is a descendant of the ancient Draconids."}
+tellraw @s[scores={DialogueTrigger=185,TalkTime=1}] ["",{"text":"<Máximo> "},{"selector":"@s"},{"text":". We have the Meteorite Shard."}]
+tellraw @s[scores={DialogueTrigger=185,TalkTime=1}] {"text":"<Máximo> And I have come to understand many things, as I suspected might happen."}
+tellraw @s[scores={DialogueTrigger=185,TalkTime=1}] {"text":"<Máximo> Allow me to introduce you."}
+tellraw @s[scores={DialogueTrigger=185,TalkTime=1}] {"text":"<Máximo> The honorable lady you see before you is a descendant of the ancient Draconids."}
 tellraw @s[scores={DialogueTrigger=185,TalkTime=1}] {"text":"<Draconids Lady> Yes, I am one of the Draconid people."}
 tellraw @s[scores={DialogueTrigger=185,TalkTime=1}] {"text":"<Draconids Lady> One of those ancient folk tasked with passing down the knowledge of Mega Evolution—"}
 tellraw @s[scores={DialogueTrigger=185,TalkTime=1}] {"text":"<Draconids Lady> with the great lore of Lord Rayquaza, who was the beginning of all."}
@@ -7488,15 +7488,15 @@ tellraw @s[scores={DialogueTrigger=185,TalkTime=1}] {"text":"<Draconids Lady> Th
 tellraw @s[scores={DialogueTrigger=185,TalkTime=1}] {"text":"<Draconids Lady> And Lord Rayquaza's body was suffused with a brilliant light and transformed."}
 tellraw @s[scores={DialogueTrigger=185,TalkTime=1}] {"text":"<Draconids Lady> In its transformed state, Rayquaza's power was more devastating than ever before,"}
 tellraw @s[scores={DialogueTrigger=185,TalkTime=1}] {"text":"<Draconids Lady> overcoming even the super-ancient Pokémon with all their primal power."}
-tellraw @s[scores={DialogueTrigger=185,TalkTime=1}] {"text":"<Steven> A rainbow-colored stone..."}
-tellraw @s[scores={DialogueTrigger=185,TalkTime=1}] {"text":"<Steven> An invocation from the Lorekeeper..."}
-tellraw @s[scores={DialogueTrigger=185,TalkTime=1}] {"text":"<Steven> And a Rayquaza unlike any ever seen..."}
-tellraw @s[scores={DialogueTrigger=185,TalkTime=1}] {"text":"<Steven> I see. It does resemble what we know of the process of Mega Evolution..."}
+tellraw @s[scores={DialogueTrigger=185,TalkTime=1}] {"text":"<Máximo> A rainbow-colored stone..."}
+tellraw @s[scores={DialogueTrigger=185,TalkTime=1}] {"text":"<Máximo> An invocation from the Lorekeeper..."}
+tellraw @s[scores={DialogueTrigger=185,TalkTime=1}] {"text":"<Máximo> And a Rayquaza unlike any ever seen..."}
+tellraw @s[scores={DialogueTrigger=185,TalkTime=1}] {"text":"<Máximo> I see. It does resemble what we know of the process of Mega Evolution..."}
 tellraw @s[scores={DialogueTrigger=185,TalkTime=1}] {"text":"<Draconids Lady> Yes, it does indeed. A Pokémon, a person, a stone of power."}
 tellraw @s[scores={DialogueTrigger=185,TalkTime=1}] {"text":"<Draconids Lady> The bonds that tie them all together..."}
 tellraw @s[scores={DialogueTrigger=185,TalkTime=1}] {"text":"<Draconids Lady> The transformation of the Pokémon that occurs as a result of this phenomenon was called \"Mega Evolution\" by later peoples."}
-tellraw @s[scores={DialogueTrigger=185,TalkTime=1}] {"text":"<Steven> So the mechanism for Mega Evolution was discovered as a result of the first meeting between humanity and Rayquaza..."}
-tellraw @s[scores={DialogueTrigger=185,TalkTime=1}] {"text":"<Steven> Hmmmm. But I have one last question. That \"Lorekeeper\" you spoke of..."}
+tellraw @s[scores={DialogueTrigger=185,TalkTime=1}] {"text":"<Máximo> So the mechanism for Mega Evolution was discovered as a result of the first meeting between humanity and Rayquaza..."}
+tellraw @s[scores={DialogueTrigger=185,TalkTime=1}] {"text":"<Máximo> Hmmmm. But I have one last question. That \"Lorekeeper\" you spoke of..."}
 tellraw @s[scores={DialogueTrigger=185,TalkTime=1}] {"text":"<Draconids Lady> The Lorekeeper is the one who has inherited the knowledge and power to summon Lord Rayquaza when disaster imperils this world."}
 tellraw @s[scores={DialogueTrigger=185,TalkTime=1}] {"text":"<Draconids Lady> The true Lorekeeper of the current generation is the one called Zinnia."}
 tellraw @s[scores={DialogueTrigger=185,TalkTime=1}] {"text":"<Draconids Lady> The disaster that now approaches our planet, as it has twice before..."}
@@ -7504,13 +7504,13 @@ tellraw @s[scores={DialogueTrigger=185,TalkTime=1}] {"text":"<Draconids Lady> Zi
 tellraw @s[scores={DialogueTrigger=185,TalkTime=1}] {"text":"<Draconids Lady> To draw Lord Rayquaza to our sphere, she joined a certain organization that sought to revive the super-ancient Pokémon."}
 tellraw @s[scores={DialogueTrigger=185,TalkTime=1}] {"text":"<Draconids Lady> She taught them the secrets needed to bring back these threats and summon the great Dragon itself."}
 tellraw @s[scores={DialogueTrigger=185,TalkTime=1}] {"text":"<Draconids Lady> And now it seems she travels the land, scouring the world for Key Stones..."}
-tellraw @s[scores={DialogueTrigger=185,TalkTime=1}] {"text":"<Steven> So it was true..."}
-tellraw @s[scores={DialogueTrigger=185,TalkTime=1}] {"text":"<Steven> As I had suspected, that woman who appeared at the Space Center was one of the Draconids..."}
-tellraw @s[scores={DialogueTrigger=185,TalkTime=1}] {"text":"<Steven> But I never dreamed she was involved in the attempted revival of the super-ancient Pokémon..."}
-tellraw @s[scores={DialogueTrigger=185,TalkTime=1}] {"text":"<Steven> In full knowledge of the power they held, fully understanding the terrible changes they would wreak upon our world..."}
-tellraw @s[scores={DialogueTrigger=185,TalkTime=1}] {"text":"<Steven> Still she helped bring that situation about?"}
-tellraw @s[scores={DialogueTrigger=185,TalkTime=1}] {"text":"<Steven> Did she give a thought to the many people and Pokémon whose lives were put at grave risk by her actions?"}
-tellraw @s[scores={DialogueTrigger=185,TalkTime=1}] {"text":"<Steven> Could she accept the inevitable sacrifice of so many lives, in order to protect the planet from the coming meteoroid?"}
+tellraw @s[scores={DialogueTrigger=185,TalkTime=1}] {"text":"<Máximo> So it was true..."}
+tellraw @s[scores={DialogueTrigger=185,TalkTime=1}] {"text":"<Máximo> As I had suspected, that woman who appeared at the Space Center was one of the Draconids..."}
+tellraw @s[scores={DialogueTrigger=185,TalkTime=1}] {"text":"<Máximo> But I never dreamed she was involved in the attempted revival of the super-ancient Pokémon..."}
+tellraw @s[scores={DialogueTrigger=185,TalkTime=1}] {"text":"<Máximo> In full knowledge of the power they held, fully understanding the terrible changes they would wreak upon our world..."}
+tellraw @s[scores={DialogueTrigger=185,TalkTime=1}] {"text":"<Máximo> Still she helped bring that situation about?"}
+tellraw @s[scores={DialogueTrigger=185,TalkTime=1}] {"text":"<Máximo> Did she give a thought to the many people and Pokémon whose lives were put at grave risk by her actions?"}
+tellraw @s[scores={DialogueTrigger=185,TalkTime=1}] {"text":"<Máximo> Could she accept the inevitable sacrifice of so many lives, in order to protect the planet from the coming meteoroid?"}
 tellraw @s[scores={DialogueTrigger=185,TalkTime=1}] {"text":"<Draconids Lady> Balance must rule this world. History is doomed to repeat itself..."}
 tellraw @s[scores={DialogueTrigger=185,TalkTime=1}] {"text":"<Draconids Lady> While our people have overcome many disasters in the past, it was always through great, great sacrifice..."}
 tellraw @s[scores={DialogueTrigger=185,TalkTime=1}] {"text":"<Draconids Lady> Yet we have continued to struggle to preserve peace for as many years as we can."}
@@ -7521,12 +7521,12 @@ tellraw @s[scores={DialogueTrigger=185,TalkTime=1}] {"text":"<Draconids Lady> Bu
 tellraw @s[scores={DialogueTrigger=185,TalkTime=1}] {"text":"<Draconids Lady> Zinnia will follow her convictions until the very end."}
 tellraw @s[scores={DialogueTrigger=185,TalkTime=1}] {"text":"<Draconids Lady> Even knowing the sacrifices that they will require."}
 tellraw @s[scores={DialogueTrigger=185,TalkTime=1}] {"text":"<Draconids Lady> Even if the sacrificial blade is leveled at her own heart."}
-tellraw @s[scores={DialogueTrigger=185,TalkTime=1}] {"text":"<Steven> ... Is that right?"}
-tellraw @s[scores={DialogueTrigger=185,TalkTime=1}] {"text":"<Steven> ... I understand."}
-tellraw @s[scores={DialogueTrigger=185,TalkTime=1}] {"text":"<Steven> Thank you for everything."}
-tellraw @s[scores={DialogueTrigger=185,TalkTime=1}] {"text":"<Steven> What is this... This vague sense of apprehension..."}
-tellraw @s[scores={DialogueTrigger=185,TalkTime=1}] {"text":"<Steven> And my intuition has often proven true."}
-tellraw @s[scores={DialogueTrigger=185,TalkTime=1}] {"text":"<Steven> I am going back to Férrica first. I have to get back to Devon."}
+tellraw @s[scores={DialogueTrigger=185,TalkTime=1}] {"text":"<Máximo> ... Is that right?"}
+tellraw @s[scores={DialogueTrigger=185,TalkTime=1}] {"text":"<Máximo> ... I understand."}
+tellraw @s[scores={DialogueTrigger=185,TalkTime=1}] {"text":"<Máximo> Thank you for everything."}
+tellraw @s[scores={DialogueTrigger=185,TalkTime=1}] {"text":"<Máximo> What is this... This vague sense of apprehension..."}
+tellraw @s[scores={DialogueTrigger=185,TalkTime=1}] {"text":"<Máximo> And my intuition has often proven true."}
+tellraw @s[scores={DialogueTrigger=185,TalkTime=1}] {"text":"<Máximo> I am going back to Férrica first. I have to get back to Devon."}
 
 #tp steven out
 
@@ -7701,13 +7701,13 @@ tag @s[scores={DialogueTrigger=192,TalkTime=100..}] add Dialogue192
 #Pre-battle team admin
 #https://youtu.be/MgkqxXCmrtI?t=68207
 
-tellraw @s[scores={DialogueTrigger=193,TalkTime=1}] ["",{"text":"<Steven> Your timing is impeccable as always, "},{"selector":"@s"},{"text":"."}]
+tellraw @s[scores={DialogueTrigger=193,TalkTime=1}] ["",{"text":"<Máximo> Your timing is impeccable as always, "},{"selector":"@s"},{"text":"."}]
 
-tellraw @s[scores={DialogueTrigger=193,TalkTime=1}] {"text":"<Steven> Team Magma..."}
-tellraw @s[scores={DialogueTrigger=193,TalkTime=1}] {"text":"<Steven> Team Aqua..."}
+tellraw @s[scores={DialogueTrigger=193,TalkTime=1}] {"text":"<Máximo> Team Magma..."}
+tellraw @s[scores={DialogueTrigger=193,TalkTime=1}] {"text":"<Máximo> Team Aqua..."}
 
-tellraw @s[scores={DialogueTrigger=193,TalkTime=1}] {"text":"<Steven> What do you intend to do with that device?"}
-tellraw @s[scores={DialogueTrigger=193,TalkTime=1}] {"text":"<Steven> You do realize that this is the last hope we have of saving this planet?"}
+tellraw @s[scores={DialogueTrigger=193,TalkTime=1}] {"text":"<Máximo> What do you intend to do with that device?"}
+tellraw @s[scores={DialogueTrigger=193,TalkTime=1}] {"text":"<Máximo> You do realize that this is the last hope we have of saving this planet?"}
 
 tellraw @s[scores={DialogueTrigger=193,TalkTime=1}] {"text":"<Team Magma Courtney> ..."}
 tellraw @s[scores={DialogueTrigger=193,TalkTime=1}] {"text":"<Team Magma Courtney> Last...hope?"}
@@ -7732,7 +7732,7 @@ tellraw @s[scores={DialogueTrigger=193,TalkTime=1}] {"text":"<Team Aqua Matt> Th
 tellraw @s[scores={DialogueTrigger=193,TalkTime=1}] {"text":"<Team Aqua Matt> all of it was a mistake? My bro has changed since he got mixed up with you!"}
 
 
-tellraw @s[scores={DialogueTrigger=193,TalkTime=1}] {"text":"<Steven> How convenient it must be for you to put all the blame on another."}
+tellraw @s[scores={DialogueTrigger=193,TalkTime=1}] {"text":"<Máximo> How convenient it must be for you to put all the blame on another."}
 
 tellraw @s[scores={DialogueTrigger=193,TalkTime=1}] {"text":"<Team Magma Courtney> Grrr... Shut up! Enough!"}
 tellraw @s[scores={DialogueTrigger=193,TalkTime=1}] {"text":"<Team Magma Courtney> I've had enough of this world!"}
@@ -7746,7 +7746,7 @@ tellraw @s[scores={DialogueTrigger=193,TalkTime=1}] {"text":"<Team Aqua Matt> Sh
 tellraw @s[scores={DialogueTrigger=193,TalkTime=1}] {"text":"<Team Aqua Matt> Know what? That rocket's full of crazy amounts of energy!"}
 tellraw @s[scores={DialogueTrigger=193,TalkTime=1}] {"text":"<Team Aqua Matt> It's even more awesome than the ultimate weapon that ended the war 3,000 years ago, right?"}
 
-tellraw @s[scores={DialogueTrigger=193,TalkTime=1}] {"text":"<Steven> Wha—?!"}
+tellraw @s[scores={DialogueTrigger=193,TalkTime=1}] {"text":"<Máximo> Wha—?!"}
 
 tellraw @s[scores={DialogueTrigger=193,TalkTime=1}] {"text":"<Team Magma Courtney> Ahaha! ♪"}
 tellraw @s[scores={DialogueTrigger=193,TalkTime=1}] {"text":"<Team Magma Courtney> I think we're in for an impact so big it will surpass the massive explosion that ended that war!"}
@@ -7757,10 +7757,10 @@ tellraw @s[scores={DialogueTrigger=193,TalkTime=1}] {"text":"<Team Magma Courtne
 tellraw @s[scores={DialogueTrigger=193,TalkTime=1}] {"text":"<Team Magma Courtney> I will...fix...Project AZOTH!"}
 tellraw @s[scores={DialogueTrigger=193,TalkTime=1}] {"text":"<Team Magma Courtney> Of course, I'll also destroy this dimensional shifter that's supposed to warp the asteroid away someplace, too. ♪"}
 
-tellraw @s[scores={DialogueTrigger=193,TalkTime=1}] ["",{"text":"<Steven> ..."},{"selector":"@s"},{"text":"."}]
-tellraw @s[scores={DialogueTrigger=193,TalkTime=1}] {"text":"<Steven> This fool!"}
-tellraw @s[scores={DialogueTrigger=193,TalkTime=1}] {"text":"<Steven> This incredible fool really intends to do it! If we don't stop this now,"}
-tellraw @s[scores={DialogueTrigger=193,TalkTime=1}] {"text":"<Steven> our whole world will be embroiled in the destruction!"}
+tellraw @s[scores={DialogueTrigger=193,TalkTime=1}] ["",{"text":"<Máximo> ..."},{"selector":"@s"},{"text":"."}]
+tellraw @s[scores={DialogueTrigger=193,TalkTime=1}] {"text":"<Máximo> This fool!"}
+tellraw @s[scores={DialogueTrigger=193,TalkTime=1}] {"text":"<Máximo> This incredible fool really intends to do it! If we don't stop this now,"}
+tellraw @s[scores={DialogueTrigger=193,TalkTime=1}] {"text":"<Máximo> our whole world will be embroiled in the destruction!"}
 
 
 tellraw @s[scores={DialogueTrigger=193,TalkTime=1}] {"text":"<Team Magma Courtney> Don't. Get. In. My. Way."}
@@ -7782,9 +7782,9 @@ tellraw @s[scores={DialogueTrigger=194,TalkTime=1}] {"text":"<Team Aqua Matt> Wh
 tellraw @s[scores={DialogueTrigger=194,TalkTime=1}] {"text":"<Team Aqua Matt> Darn! Dang it..."}
 tellraw @s[scores={DialogueTrigger=194,TalkTime=1}] {"text":"<Team Aqua Matt> Dang it! Am I not good enough, bro?!"}
 
-tellraw @s[scores={DialogueTrigger=194,TalkTime=1}] {"text":"<Steven> ..."}
-tellraw @s[scores={DialogueTrigger=194,TalkTime=1}] ["",{"text":"<Steven> ..."},{"selector":"@s"},{"text":"! Now is our chance!"}]
-tellraw @s[scores={DialogueTrigger=194,TalkTime=1}] {"text":"<Steven> Take the dimensional shifter and—"}
+tellraw @s[scores={DialogueTrigger=194,TalkTime=1}] {"text":"<Máximo> ..."}
+tellraw @s[scores={DialogueTrigger=194,TalkTime=1}] ["",{"text":"<Máximo> ..."},{"selector":"@s"},{"text":"! Now is our chance!"}]
+tellraw @s[scores={DialogueTrigger=194,TalkTime=1}] {"text":"<Máximo> Take the dimensional shifter and—"}
 
 #tps Whismur in
 
@@ -7796,13 +7796,13 @@ tellraw @s[scores={DialogueTrigger=194,TalkTime=1}] {"text":"Aster snatched the 
 tellraw @s[scores={DialogueTrigger=194,TalkTime=1}] {"text":"<Team Aqua Matt> Wha—?!"}
 tellraw @s[scores={DialogueTrigger=194,TalkTime=1}] {"text":"Aster snatched the dimensional shifter away from Matt!","italic":true,"color":"gray"}
 
-tellraw @s[scores={DialogueTrigger=194,TalkTime=1}] {"text":"<Steven> That Pokémon... Doesn't it belong to..."}
+tellraw @s[scores={DialogueTrigger=194,TalkTime=1}] {"text":"<Máximo> That Pokémon... Doesn't it belong to..."}
 
 tellraw @s[scores={DialogueTrigger=194,TalkTime=1}] {"text":"<???> Nice one, Aster!"}
 
 #tp Zinnia in
 
-tellraw @s[scores={DialogueTrigger=194,TalkTime=1}] {"text":"<Steven> You're the—!"}
+tellraw @s[scores={DialogueTrigger=194,TalkTime=1}] {"text":"<Máximo> You're the—!"}
 tellraw @s[scores={DialogueTrigger=194,TalkTime=1}] {"text":"<Zinnia> The Draconid, yup. Or you could just call me Zinnia."}
 tellraw @s[scores={DialogueTrigger=194,TalkTime=1}] {"text":"<Zinnia> Aster!"}
 tellraw @s[scores={DialogueTrigger=194,TalkTime=1}] {"text":"<Whismur> Murrr!"}
@@ -7813,9 +7813,9 @@ tellraw @s[scores={DialogueTrigger=194,TalkTime=1}] {"text":"<Zinnia> Ahahahah! 
 tellraw @s[scores={DialogueTrigger=194,TalkTime=1}] {"text":"<Zinnia> This thing is the best hope we have of saving this planet and everything on it."}
 tellraw @s[scores={DialogueTrigger=194,TalkTime=1}] {"text":"<Zinnia> But you know..."}
 tellraw @s[scores={DialogueTrigger=194,TalkTime=1}] {"text":"<Zinnia> It could also be the worst tragedy imaginable for some other world and everything on it."}
-tellraw @s[scores={DialogueTrigger=194,TalkTime=1}] {"text":"<Steven> ...What are you trying to say?"}
+tellraw @s[scores={DialogueTrigger=194,TalkTime=1}] {"text":"<Máximo> ...What are you trying to say?"}
 tellraw @s[scores={DialogueTrigger=194,TalkTime=1}] {"text":"<Zinnia> I'm not talking to you. You don't get it."}
-tellraw @s[scores={DialogueTrigger=194,TalkTime=1}] {"text":"<Steven> Ugh..."}
+tellraw @s[scores={DialogueTrigger=194,TalkTime=1}] {"text":"<Máximo> Ugh..."}
 tellraw @s[scores={DialogueTrigger=194,TalkTime=1}] ["",{"text":"<Zinnia> But you, "},{"selector":"@s"},{"text":"..."}]
 tellraw @s[scores={DialogueTrigger=194,TalkTime=1}] {"text":"<Zinnia> Hope for our world... Tragedy for another... You get it, don't you?"}
 tellraw @s[scores={DialogueTrigger=194,TalkTime=1}] {"text":"<Zinnia> My people know it."}
@@ -7838,14 +7838,14 @@ tellraw @s[scores={DialogueTrigger=194,TalkTime=1}] {"text":"Zinnia crushed the 
 tellraw @s[scores={DialogueTrigger=194,TalkTime=1}] {"text":"<Professor Cozmo> What kind of fool are you!"}
 tellraw @s[scores={DialogueTrigger=194,TalkTime=1}] {"text":"<Professor Cozmo> You have no substantive proof, and yet you claim another world, one just like our own, exists?"}
 tellraw @s[scores={DialogueTrigger=194,TalkTime=1}] {"text":"<Professor Cozmo> Out of this fantasy, you—you have destroyed our only hope!"}
-tellraw @s[scores={DialogueTrigger=194,TalkTime=1}] {"text":"<Steven> What have...you done..."}
+tellraw @s[scores={DialogueTrigger=194,TalkTime=1}] {"text":"<Máximo> What have...you done..."}
 tellraw @s[scores={DialogueTrigger=194,TalkTime=1}] {"text":"<Zinnia> Farewell, brief hope..."}
 tellraw @s[scores={DialogueTrigger=194,TalkTime=1}] {"text":"<Professor Cozmo> Y-you! Do you even know— Now what are we to do?!"}
 tellraw @s[scores={DialogueTrigger=194,TalkTime=1}] {"text":"<Zinnia> Calm down there, Prof."}
 tellraw @s[scores={DialogueTrigger=194,TalkTime=1}] {"text":"<Zinnia> It'll be OK. I..."}
 tellraw @s[scores={DialogueTrigger=194,TalkTime=1}] {"text":"<Zinnia> We..."}
 tellraw @s[scores={DialogueTrigger=194,TalkTime=1}] {"text":"<Zinnia> We can protect this world...and the other."}
-tellraw @s[scores={DialogueTrigger=194,TalkTime=1}] {"text":"<Steven> Who exactly is \"we\"? What are your intentions?"}
+tellraw @s[scores={DialogueTrigger=194,TalkTime=1}] {"text":"<Máximo> Who exactly is \"we\"? What are your intentions?"}
 tellraw @s[scores={DialogueTrigger=194,TalkTime=1}] {"text":"<Zinnia> Oh yeah! Silly me... I forgot the other thing I came for."}
 
 tellraw @s[scores={DialogueTrigger=194,TalkTime=1}] {"text":"<Team Magma Courtney> Wha-what..."}
@@ -7868,12 +7868,12 @@ tellraw @s[scores={DialogueTrigger=194,TalkTime=1}] {"text":"<Whismur> Murrr!"}
 
 tellraw @s[scores={DialogueTrigger=194,TalkTime=1}] {"text":"<Team Magma Courtney> Our...leader... Leader Maxie's... Key Stone."}
 tellraw @s[scores={DialogueTrigger=194,TalkTime=1}] {"text":"<Team Magma Courtney> Is she trying... to steal it?! No...no..."}
-tellraw @s[scores={DialogueTrigger=194,TalkTime=1}] {"text":"<Steven> Confound it all... So she must be making for Team Magma's hideout next..."}
+tellraw @s[scores={DialogueTrigger=194,TalkTime=1}] {"text":"<Máximo> Confound it all... So she must be making for Team Magma's hideout next..."}
 
 tellraw @s[scores={DialogueTrigger=194,TalkTime=1}] {"text":"<Team Aqua Matt> Th-that punk! How dare she try to take my bro Archie's Key Stone?! Not cool, man! Not cool!"}
-tellraw @s[scores={DialogueTrigger=194,TalkTime=1}] {"text":"<Steven> Confound it all... So she must be making for Team Aqua's hideout next..."}
+tellraw @s[scores={DialogueTrigger=194,TalkTime=1}] {"text":"<Máximo> Confound it all... So she must be making for Team Aqua's hideout next..."}
 
-tellraw @s[scores={DialogueTrigger=194,TalkTime=1}] {"text":"<Steven> Think, Steven. Think! What to do, what to do..."}
+tellraw @s[scores={DialogueTrigger=194,TalkTime=1}] {"text":"<Máximo> Think, Steven. Think! What to do, what to do..."}
 
 tag @s[scores={DialogueTrigger=194,TalkTime=100..}] add Dialogue194
 #-----------------------------------------------------------------------------------------------------
@@ -8002,14 +8002,14 @@ tellraw @s[scores={DialogueTrigger=195,TalkTime=1}] {"text":"<Archie> But I thin
 
 
 tellraw @s[scores={DialogueTrigger=195,TalkTime=1}] {"text":"The Entry Call (Ver. 0.09) app rang on your PokéNav Plus!"}
-tellraw @s[scores={DialogueTrigger=195,TalkTime=1}] ["",{"text":"<Steven> "},{"selector":"@s"},{"text":"! Are you all right?!"}]
-tellraw @s[scores={DialogueTrigger=195,TalkTime=1}] {"text":"<Steven> ..."}
-tellraw @s[scores={DialogueTrigger=195,TalkTime=1}] {"text":"<Steven> Is that right... I never even imagined..."}
-tellraw @s[scores={DialogueTrigger=195,TalkTime=1}] {"text":"<Steven> The Key Stone... The Sky Pillar... And the Draconid people..."}
-tellraw @s[scores={DialogueTrigger=195,TalkTime=1}] {"text":"<Steven> So that's it... I begin to see the line connecting these dots."}
-tellraw @s[scores={DialogueTrigger=195,TalkTime=1}] {"text":"<Steven> I think we need to meet up at once to discuss what we should do next."}
-tellraw @s[scores={DialogueTrigger=195,TalkTime=1}] {"text":"<Steven> I'll be waiting at the Space Center. Up on 2F."}
-tellraw @s[scores={DialogueTrigger=195,TalkTime=1}] {"text":"<Steven> Do hurry."}
+tellraw @s[scores={DialogueTrigger=195,TalkTime=1}] ["",{"text":"<Máximo> "},{"selector":"@s"},{"text":"! Are you all right?!"}]
+tellraw @s[scores={DialogueTrigger=195,TalkTime=1}] {"text":"<Máximo> ..."}
+tellraw @s[scores={DialogueTrigger=195,TalkTime=1}] {"text":"<Máximo> Is that right... I never even imagined..."}
+tellraw @s[scores={DialogueTrigger=195,TalkTime=1}] {"text":"<Máximo> The Key Stone... The Sky Pillar... And the Draconid people..."}
+tellraw @s[scores={DialogueTrigger=195,TalkTime=1}] {"text":"<Máximo> So that's it... I begin to see the line connecting these dots."}
+tellraw @s[scores={DialogueTrigger=195,TalkTime=1}] {"text":"<Máximo> I think we need to meet up at once to discuss what we should do next."}
+tellraw @s[scores={DialogueTrigger=195,TalkTime=1}] {"text":"<Máximo> I'll be waiting at the Space Center. Up on 2F."}
+tellraw @s[scores={DialogueTrigger=195,TalkTime=1}] {"text":"<Máximo> Do hurry."}
 tellraw @s[scores={DialogueTrigger=195,TalkTime=1}] {"text":"...Kzt!"}
 
 tag @s[scores={DialogueTrigger=195,TalkTime=100..}] add Dialogue195
@@ -8018,22 +8018,22 @@ tag @s[scores={DialogueTrigger=195,TalkTime=100..}] add Dialogue195
 #Steven and Cozmo
 #https://youtu.be/MgkqxXCmrtI?t=69791
 
-tellraw @s[scores={DialogueTrigger=196,TalkTime=1}] ["",{"text":"<Steven> "},{"selector":"@s"},{"text":"! I have been expecting you!"}]
-tellraw @s[scores={DialogueTrigger=196,TalkTime=1}] {"text":"<Steven> Ah... That's it."}
-tellraw @s[scores={DialogueTrigger=196,TalkTime=1}] {"text":"<Steven> That woman... That \"Zinnia\"..."}
-tellraw @s[scores={DialogueTrigger=196,TalkTime=1}] {"text":"<Steven> She mentioned the Sky Pillar."}
-tellraw @s[scores={DialogueTrigger=196,TalkTime=1}] {"text":"<Steven> Few can enter it—only the successors of the ancient world, who know of what has been..."}
-tellraw @s[scores={DialogueTrigger=196,TalkTime=1}] {"text":"<Steven> The Lorekeepers who are tasked with passing on that knowledge to those who come after..."}
-tellraw @s[scores={DialogueTrigger=196,TalkTime=1}] {"text":"<Steven> Do you remember Wallace, whom you met in Sootopolis?"}
-tellraw @s[scores={DialogueTrigger=196,TalkTime=1}] {"text":"<Steven> The Gym Leader of Sootopolis, Wallace, should know how to undo the seal on the Sky Pillar's entrance."}
-tellraw @s[scores={DialogueTrigger=196,TalkTime=1}] {"text":"<Steven> He is also one of the few humans to have inherited such ancient lore."}
-tellraw @s[scores={DialogueTrigger=196,TalkTime=1}] {"text":"<Steven> I will remain here and work with the professor and his team to devise a plan for what to do next."}
-tellraw @s[scores={DialogueTrigger=196,TalkTime=1}] {"text":"<Steven> That woman...Zinnia... I cannot put my faith in her."}
-tellraw @s[scores={DialogueTrigger=196,TalkTime=1}] {"text":"<Steven> We will think of a new way to stop the meteoroid on our own."}
-tellraw @s[scores={DialogueTrigger=196,TalkTime=1}] {"text":"<Steven> Zinnia...and the Sky Pillar..."}
-tellraw @s[scores={DialogueTrigger=196,TalkTime=1}] {"text":"<Steven> I will leave them in your hands."}
-tellraw @s[scores={DialogueTrigger=196,TalkTime=1}] {"text":"<Steven> I will send a message to Wallace for you, so he knows to help."}
-tellraw @s[scores={DialogueTrigger=196,TalkTime=1}] {"text":"<Steven> You will probably find him in the Cave of Origin in Sootopolis."}
+tellraw @s[scores={DialogueTrigger=196,TalkTime=1}] ["",{"text":"<Máximo> "},{"selector":"@s"},{"text":"! I have been expecting you!"}]
+tellraw @s[scores={DialogueTrigger=196,TalkTime=1}] {"text":"<Máximo> Ah... That's it."}
+tellraw @s[scores={DialogueTrigger=196,TalkTime=1}] {"text":"<Máximo> That woman... That \"Zinnia\"..."}
+tellraw @s[scores={DialogueTrigger=196,TalkTime=1}] {"text":"<Máximo> She mentioned the Sky Pillar."}
+tellraw @s[scores={DialogueTrigger=196,TalkTime=1}] {"text":"<Máximo> Few can enter it—only the successors of the ancient world, who know of what has been..."}
+tellraw @s[scores={DialogueTrigger=196,TalkTime=1}] {"text":"<Máximo> The Lorekeepers who are tasked with passing on that knowledge to those who come after..."}
+tellraw @s[scores={DialogueTrigger=196,TalkTime=1}] {"text":"<Máximo> Do you remember Wallace, whom you met in Sootopolis?"}
+tellraw @s[scores={DialogueTrigger=196,TalkTime=1}] {"text":"<Máximo> The Gym Leader of Sootopolis, Wallace, should know how to undo the seal on the Sky Pillar's entrance."}
+tellraw @s[scores={DialogueTrigger=196,TalkTime=1}] {"text":"<Máximo> He is also one of the few humans to have inherited such ancient lore."}
+tellraw @s[scores={DialogueTrigger=196,TalkTime=1}] {"text":"<Máximo> I will remain here and work with the professor and his team to devise a plan for what to do next."}
+tellraw @s[scores={DialogueTrigger=196,TalkTime=1}] {"text":"<Máximo> That woman...Zinnia... I cannot put my faith in her."}
+tellraw @s[scores={DialogueTrigger=196,TalkTime=1}] {"text":"<Máximo> We will think of a new way to stop the meteoroid on our own."}
+tellraw @s[scores={DialogueTrigger=196,TalkTime=1}] {"text":"<Máximo> Zinnia...and the Sky Pillar..."}
+tellraw @s[scores={DialogueTrigger=196,TalkTime=1}] {"text":"<Máximo> I will leave them in your hands."}
+tellraw @s[scores={DialogueTrigger=196,TalkTime=1}] {"text":"<Máximo> I will send a message to Wallace for you, so he knows to help."}
+tellraw @s[scores={DialogueTrigger=196,TalkTime=1}] {"text":"<Máximo> You will probably find him in the Cave of Origin in Sootopolis."}
 
 tag @s[scores={DialogueTrigger=196,TalkTime=100..}] add Dialogue196
 #-----------------------------------------------------------------------------------------------------
@@ -8678,40 +8678,40 @@ execute as @s[scores={DialogueTrigger=208,TalkTime=36}] run gamemode adventure
 ##Steven's Room of Elite Four, talking to Wallace
 ##https://youtu.be/MgkqxXCmrtI?t=72378
 #
-#tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] {"text":"<Steven> I still owe you for your help at the Sky Pillar. Thank you for that."}
+#tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] {"text":"<Máximo> I still owe you for your help at the Sky Pillar. Thank you for that."}
 #tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] {"text":"<Wallace> Hahaha!"}
 #tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] {"text":"<Wallace> How unlike you to be so thoughtful."}
-#tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] {"text":"<Steven> Heh..."}
-#tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] {"text":"<Steven> You know, this experience really brought it home for me again..."}
-#tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] {"text":"<Steven> That there is still so much about this world that I do not know."}
-#tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] {"text":"<Steven> I wonder what would have happened to Hoenn..."}
-#tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] ["",{"text":"<Steven> If "},{"selector":"@s"},{"text":" had not been here to aid us with this, and the incident with the super-ancient Pokémon..."}]
-#tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] {"text":"<Steven> I alone was powerless to stop either."}
+#tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] {"text":"<Máximo> Heh..."}
+#tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] {"text":"<Máximo> You know, this experience really brought it home for me again..."}
+#tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] {"text":"<Máximo> That there is still so much about this world that I do not know."}
+#tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] {"text":"<Máximo> I wonder what would have happened to Hoenn..."}
+#tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] ["",{"text":"<Máximo> If "},{"selector":"@s"},{"text":" had not been here to aid us with this, and the incident with the super-ancient Pokémon..."}]
+#tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] {"text":"<Máximo> I alone was powerless to stop either."}
 #tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] {"text":"<Wallace> There is no one person in this world who knows all."}
 #tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] {"text":"<Wallace> None who can do all."}
 #tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] {"text":"<Wallace> Steven... There is no cause for such worries or concern."}
-#tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] {"text":"<Steven> Hmm."}
-#tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] {"text":"<Steven> Heh. Don't worry."}
-#tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] {"text":"<Steven> It's not that I am so shocked by my own disappointing performance. But rather..."}
+#tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] {"text":"<Máximo> Hmm."}
+#tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] {"text":"<Máximo> Heh. Don't worry."}
+#tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] {"text":"<Máximo> It's not that I am so shocked by my own disappointing performance. But rather..."}
 #tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] {"text":"<Wallace> Rather what?"}
-#tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] {"text":"<Steven> I was just thinking how much more there is I must learn about nature...about Pokémon..."}
-#tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] {"text":"<Steven> and about my fellow humans as well... If I am to keep living in this huge, wide world."}
-#tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] {"text":"<Steven> I want to walk this world on my own two feet."}
-#tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] {"text":"<Steven> To see it with my own eyes. To feel it on my very skin..."}
-#tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] ["",{"text":"<Steven> I need to put into practice all of the advice I ever gave to "},{"selector":"@s"},{"text":"."}]
-#tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] {"text":"<Steven> That's what I am thinking now."}
+#tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] {"text":"<Máximo> I was just thinking how much more there is I must learn about nature...about Pokémon..."}
+#tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] {"text":"<Máximo> and about my fellow humans as well... If I am to keep living in this huge, wide world."}
+#tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] {"text":"<Máximo> I want to walk this world on my own two feet."}
+#tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] {"text":"<Máximo> To see it with my own eyes. To feel it on my very skin..."}
+#tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] ["",{"text":"<Máximo> I need to put into practice all of the advice I ever gave to "},{"selector":"@s"},{"text":"."}]
+#tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] {"text":"<Máximo> That's what I am thinking now."}
 #tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] {"text":"<Wallace> ...? Steven... You can't intend to..."}
-#tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] {"text":"<Steven> Hah hah hah! But no need to fear..."}
-#tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] {"text":"<Steven> I won't just disappear at once."}
-#tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] {"text":"<Steven> I'll still be around doing my duty on behalf of the Pokémon League."}
-#tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] {"text":"<Steven> But, hmm..."}
-#tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] {"text":"<Steven> When the time does come for me to pursue my own hopes..."}
-#tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] {"text":"<Steven> Well... I hope that you, Wallace, will be behind me to lend a hand."}
+#tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] {"text":"<Máximo> Hah hah hah! But no need to fear..."}
+#tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] {"text":"<Máximo> I won't just disappear at once."}
+#tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] {"text":"<Máximo> I'll still be around doing my duty on behalf of the Pokémon League."}
+#tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] {"text":"<Máximo> But, hmm..."}
+#tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] {"text":"<Máximo> When the time does come for me to pursue my own hopes..."}
+#tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] {"text":"<Máximo> Well... I hope that you, Wallace, will be behind me to lend a hand."}
 #tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] {"text":"<Wallace> ..."}
 #tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] {"text":"<Wallace> Hmph. It seems I have little choice."}
 #tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] {"text":"<Wallace> I bow to the whims of the pampered heir. I, Wallace, will do this thing you wish."}
 #tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] {"text":"<Wallace> Heh."}
-#tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] {"text":"<Steven> Hah hah hah... Thank you, my friend..."}
+#tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] {"text":"<Máximo> Hah hah hah... Thank you, my friend..."}
 #
 #
 ##Zinnia in Meteor Falls
@@ -8780,43 +8780,43 @@ execute as @s[scores={DialogueTrigger=208,TalkTime=36}] run gamemode adventure
 #
 ##tps in rival
 #
-#tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] {"text":"<May> That was amazing... So those are the Litleonids!"}
-#tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] {"text":"<May> I'm really going to need to thank your dad for this one."}
-#tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] {"text":"<May> 'Cause... Come on..."}
-#tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] {"text":"<May> I've never felt this touched before..."}
-#tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] ["",{"text":"<May> Oh, I guess I should thank you, too, "},{"selector":"@s"},{"text":"!"}]
-#tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] {"text":"<May> I'm so glad I got to see this with you."}
+#tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] {"text":"<Aura> That was amazing... So those are the Litleonids!"}
+#tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] {"text":"<Aura> I'm really going to need to thank your dad for this one."}
+#tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] {"text":"<Aura> 'Cause... Come on..."}
+#tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] {"text":"<Aura> I've never felt this touched before..."}
+#tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] ["",{"text":"<Aura> Oh, I guess I should thank you, too, "},{"selector":"@s"},{"text":"!"}]
+#tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] {"text":"<Aura> I'm so glad I got to see this with you."}
 #
 #
-#tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] {"text":"<Brendan> That was kinda awesome. Wow. So those are the Litleonids."}
-#tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] {"text":"<Brendan> I'm really gonna have to thank your old man for this one."}
-#tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] {"text":"<Brendan> It's like...I don't know..."}
-#tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] {"text":"<Brendan> I feel like I've been knocked flat on my back..."}
-#tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] ["",{"text":"<Brendan> ...Thanks, "},{"selector":"@s"},{"text":"."}]
-#tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] {"text":"<Brendan> I'm really glad I got to see this with you."}
+#tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] {"text":"<Bruno> That was kinda awesome. Wow. So those are the Litleonids."}
+#tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] {"text":"<Bruno> I'm really gonna have to thank your old man for this one."}
+#tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] {"text":"<Bruno> It's like...I don't know..."}
+#tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] {"text":"<Bruno> I feel like I've been knocked flat on my back..."}
+#tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] ["",{"text":"<Bruno> ...Thanks, "},{"selector":"@s"},{"text":"."}]
+#tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] {"text":"<Bruno> I'm really glad I got to see this with you."}
 #
 #tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] {"text":"<Announcement> Thank you for visiting the Mossdeep Space Center."}
 #tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] {"text":"<Announcement> This center will be closing shortly."}
 #tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] {"text":"<Announcement> Please make sure that you don't forget anything when you leave."}
 #
-#tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] {"text":"<May> It's true what they say, though. Time really flies when you're having fun..."}
-#tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] {"text":"<Brendan> It's true what they say, though. Time really flies when you're having fun..."}
+#tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] {"text":"<Aura> It's true what they say, though. Time really flies when you're having fun..."}
+#tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] {"text":"<Bruno> It's true what they say, though. Time really flies when you're having fun..."}
 #
 ##Littleroot OVerhead
 ##https://youtu.be/MgkqxXCmrtI?t=72716
 #
 ##tps to first person
 #
-#tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] {"text":"<May> Well... Bye then..."}
-#tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] {"text":"<May> ..."}
-#tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] ["",{"text":"<May> "},{"selector":"@s"},{"text":"!"}]
-#tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] {"text":"<May> See you tomorrow!"}
+#tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] {"text":"<Aura> Well... Bye then..."}
+#tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] {"text":"<Aura> ..."}
+#tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] ["",{"text":"<Aura> "},{"selector":"@s"},{"text":"!"}]
+#tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] {"text":"<Aura> See you tomorrow!"}
 #
 #
-#tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] {"text":"<Brendan> Well... Bye..."}
-#tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] {"text":"<Brendan> ..."}
-#tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] ["",{"text":"<Brendan> "},{"selector":"@s"},{"text":"!"}]
-#tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] {"text":"<Brendan> See you tomorrow!"}
+#tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] {"text":"<Bruno> Well... Bye..."}
+#tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] {"text":"<Bruno> ..."}
+#tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] ["",{"text":"<Bruno> "},{"selector":"@s"},{"text":"!"}]
+#tellraw @s[scores={DialogueTrigger=208,TalkTime=1}] {"text":"<Bruno> See you tomorrow!"}
 #
 ##rival goes inside
 
@@ -9483,15 +9483,15 @@ tag @s[scores={DialogueTrigger=244,TalkTime=100..}] add Dialogue244
 #Mr. Briney and Drake conversation
 #https://youtu.be/MgkqxXCmrtI?t=85767
 
-tellraw @s[scores={DialogueTrigger=245,TalkTime=1}] {"text":"<Mr. Briney> ...But I thank ye for coming along."}
+tellraw @s[scores={DialogueTrigger=245,TalkTime=1}] {"text":"<Sr. Arenque> ...But I thank ye for coming along."}
 tellraw @s[scores={DialogueTrigger=245,TalkTime=1}] {"text":"<Drake> Briney, it's like the good old days, having you guide the rudder again after all this time."}
 tellraw @s[scores={DialogueTrigger=245,TalkTime=1}] {"text":"<Drake> And it's great to see Peeko again, too!"}
 tellraw @s[scores={DialogueTrigger=245,TalkTime=1}] {"text":"<Peeko> Pi pi!"}
-tellraw @s[scores={DialogueTrigger=245,TalkTime=1}] {"text":"<Mr. Briney> Ohoho! Look how thrilled Peeko is to see her old pal Drake!"}
-tellraw @s[scores={DialogueTrigger=245,TalkTime=1}] {"text":"<Mr. Briney> But no need to keep goin' on about it, mind you."}
-tellraw @s[scores={DialogueTrigger=245,TalkTime=1}] {"text":"<Mr. Briney> Eh-hrrmm. Anyhow, it's a short crossing, so drink it all in, eh?"}
+tellraw @s[scores={DialogueTrigger=245,TalkTime=1}] {"text":"<Sr. Arenque> Ohoho! Look how thrilled Peeko is to see her old pal Drake!"}
+tellraw @s[scores={DialogueTrigger=245,TalkTime=1}] {"text":"<Sr. Arenque> But no need to keep goin' on about it, mind you."}
+tellraw @s[scores={DialogueTrigger=245,TalkTime=1}] {"text":"<Sr. Arenque> Eh-hrrmm. Anyhow, it's a short crossing, so drink it all in, eh?"}
 tellraw @s[scores={DialogueTrigger=245,TalkTime=1}] {"text":"<Drake> Well then, I'll see you later on! Full speed ahead, Briney!"}
-tellraw @s[scores={DialogueTrigger=245,TalkTime=1}] {"text":"<Mr. Briney> Aye aye, old friend! Full speed ahead."}
+tellraw @s[scores={DialogueTrigger=245,TalkTime=1}] {"text":"<Sr. Arenque> Aye aye, old friend! Full speed ahead."}
 
 #Drake TPS out
 
